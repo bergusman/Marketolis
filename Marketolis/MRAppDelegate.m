@@ -11,6 +11,10 @@
 #import "MRMenuViewController.h"
 #import "MRMapViewController.h"
 
+#import "MRWelcomeViewController.h"
+#import "MRSignUpViewController.h"
+#import "MRConfirmViewController.h"
+
 #import <ViewDeck/IIViewDeckController.h>
 #import <Crashlytics/Crashlytics.h>
 
@@ -33,7 +37,25 @@
     self.window.rootViewController = viewDeckController;
     [self.window makeKeyAndVisible];
     
+    //MRWelcomeViewController *welcomeVc = [[MRWelcomeViewController alloc] init];
+    //[self.window.rootViewController presentViewController:welcomeVc animated:YES completion:nil];
+    
+    MRSignUpViewController *signUpVc = [[MRSignUpViewController alloc] init];
+    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:signUpVc];
+    [self.window.rootViewController presentViewController:nc animated:YES completion:nil];
+    
+    
+    [self setupAppearance];
+    
     return YES;
+}
+
+- (void)setupAppearance {
+    [self setupNavigationBarAppearance];
+}
+
+- (void)setupNavigationBarAppearance {
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"register-header-background"] forBarMetrics:UIBarMetricsDefault];
 }
 
 @end
