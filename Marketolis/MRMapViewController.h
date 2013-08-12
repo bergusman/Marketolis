@@ -1,5 +1,5 @@
 //
-//  MRAppDelegate.h
+//  MRMapViewController.h
 //  Marketolis
 //
 //  Created by Vitaly Berg on 12.08.13.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MRAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface MRMapViewController : UIViewController
 
 @end

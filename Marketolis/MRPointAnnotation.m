@@ -1,13 +1,13 @@
 //
-//  MRViewController.h
+//  MRPointAnnotation.m
 //  Marketolis
 //
 //  Created by Vitaly Berg on 12.08.13.
 //  Copyright (c) 2013 Vitaly Berg. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "MRPointAnnotation.h"
 
-@interface MRViewController : UIViewController
+@implementation MRPointAnnotation
 
 @end
