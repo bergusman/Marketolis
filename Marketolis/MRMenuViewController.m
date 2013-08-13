@@ -8,7 +8,11 @@
 
 #import "MRMenuViewController.h"
 
+#import "MRMessagesViewController.h"
+
 #import "MRMenuItemCell.h"
+
+#import <IIViewDeckController.h>
 
 @interface MRMenuViewController () <
     UITableViewDataSource,
@@ -111,8 +115,12 @@
     } else if ([item isEqualToString:@"favorites"]) {
         
     } else if ([item isEqualToString:@"messages"]) {
-        
+        MRMessagesViewController *messagesVc = [[MRMessagesViewController alloc] init];
+        UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:messagesVc];
+        self.viewDeckController.centerController = nc;
     }
+    
+    [self.viewDeckController closeLeftViewAnimated:YES];
 }
 
 @end

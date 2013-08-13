@@ -12,6 +12,8 @@
 
 @interface MRSignUpViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
+
 @end
 
 @implementation MRSignUpViewController
@@ -28,6 +30,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupNavigationItem];
+    
+    [self.nameTextField becomeFirstResponder];
 }
 
 #pragma mark - Setups

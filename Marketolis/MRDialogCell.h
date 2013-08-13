@@ -10,4 +10,13 @@
 
 @interface MRDialogCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *photoImageView;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *messageLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+
+@property (assign, nonatomic) BOOL read;
+
++ (CGFloat)height;
+
 @end

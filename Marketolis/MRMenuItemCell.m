@@ -32,11 +32,17 @@
     // Configure the view for the selected state
 }
 
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    NSLog(@"layoutSubviews");
+    NSLog(@"%@", self.selectedBackgroundView);
+    NSLog(@"%@", self.selectedBackgroundView.backgroundColor);
+}
+
 - (void)awakeFromNib {
     [super awakeFromNib];
     UIView *sbv = [[UIView alloc] init];
-    sbv.backgroundColor = [UIColor colorWithRed:228/255.f green:232/255.f blue:233/255.f alpha:1];
-    
+    sbv.backgroundColor = MR_RGB(228, 232, 233);
     self.selectedBackgroundView = sbv;
 }
 

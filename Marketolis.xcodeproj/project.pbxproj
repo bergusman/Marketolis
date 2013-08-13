@@ -88,6 +88,8 @@
 		AD06D3DD17B99E09009C880D /* MRMessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD06D3DB17B99E09009C880D /* MRMessagesViewController.xib */; };
 		AD06D3E117B99E22009C880D /* MRDialogCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD06D3E017B99E22009C880D /* MRDialogCell.m */; };
 		AD06D3E317B9A3BC009C880D /* MRDialogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD06D3E217B9A3BC009C880D /* MRDialogCell.xib */; };
+		AD06D3E817B9EE75009C880D /* MRChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD06D3E617B9EE75009C880D /* MRChatViewController.m */; };
+		AD06D3E917B9EE75009C880D /* MRChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD06D3E717B9EE75009C880D /* MRChatViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -186,6 +188,9 @@
 		AD06D3DF17B99E22009C880D /* MRDialogCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRDialogCell.h; sourceTree = "<group>"; };
 		AD06D3E017B99E22009C880D /* MRDialogCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRDialogCell.m; sourceTree = "<group>"; };
 		AD06D3E217B9A3BC009C880D /* MRDialogCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRDialogCell.xib; sourceTree = "<group>"; };
+		AD06D3E517B9EE75009C880D /* MRChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRChatViewController.h; sourceTree = "<group>"; };
+		AD06D3E617B9EE75009C880D /* MRChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRChatViewController.m; sourceTree = "<group>"; };
+		AD06D3E717B9EE75009C880D /* MRChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRChatViewController.xib; sourceTree = "<group>"; };
 		D03B0167DD914BCF8AE73A6F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -298,6 +303,7 @@
 		4424BBE317B95AA30060CD49 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AD06D3E417B9EE5D009C880D /* Chat */,
 				AD06D3D817B99DF4009C880D /* Messages */,
 				AD06D3CD17B9994A009C880D /* Confirm */,
 				AD06D3CC17B99942009C880D /* Sign Up */,
@@ -517,6 +523,16 @@
 			name = "Dialog Cell";
 			sourceTree = "<group>";
 		};
+		AD06D3E417B9EE5D009C880D /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				AD06D3E517B9EE75009C880D /* MRChatViewController.h */,
+				AD06D3E617B9EE75009C880D /* MRChatViewController.m */,
+				AD06D3E717B9EE75009C880D /* MRChatViewController.xib */,
+			);
+			name = Chat;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -634,6 +650,7 @@
 				AD06D3D717B99DE3009C880D /* MRSignUpViewController.xib in Resources */,
 				AD06D3DD17B99E09009C880D /* MRMessagesViewController.xib in Resources */,
 				AD06D3E317B9A3BC009C880D /* MRDialogCell.xib in Resources */,
+				AD06D3E917B9EE75009C880D /* MRChatViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -700,6 +717,7 @@
 				AD06D3D617B99DE3009C880D /* MRSignUpViewController.m in Sources */,
 				AD06D3DC17B99E09009C880D /* MRMessagesViewController.m in Sources */,
 				AD06D3E117B99E22009C880D /* MRDialogCell.m in Sources */,
+				AD06D3E817B9EE75009C880D /* MRChatViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

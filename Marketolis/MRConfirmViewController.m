@@ -10,29 +10,23 @@
 
 @interface MRConfirmViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextField *codeTextField;
+
 @end
 
 @implementation MRConfirmViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [self setupNavigationItem];
+    
+    [self.codeTextField becomeFirstResponder];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - Setups
+
+- (void)setupNavigationItem {
+    self.navigationItem.title = @"Подтверждение";
 }
 
 @end
