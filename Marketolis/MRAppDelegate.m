@@ -25,10 +25,19 @@
 
 @implementation MRAppDelegate
 
+#pragma mark - Welcome
+
+- (void)showWelcome {
+    MRWelcomeViewController *welcomeVc = [[MRWelcomeViewController alloc] init];
+    [self.window.rootViewController presentViewController:welcomeVc animated:NO completion:nil];
+}
+
 #pragma mark - UIApplicationDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [Crashlytics startWithAPIKey:@"9ca680cb0b1764352949438282f40e14139eb082"];
+    
+    [self setupAppearance];
     
     MRMenuViewController *menuVc = [[MRMenuViewController alloc] init];
     MRMapViewController *mapVc = [[MRMapViewController alloc] init];
@@ -45,16 +54,7 @@
     self.window.rootViewController = viewDeckController;
     [self.window makeKeyAndVisible];
     
-    //MRWelcomeViewController *welcomeVc = [[MRWelcomeViewController alloc] init];
-    //[self.window.rootViewController presentViewController:welcomeVc animated:YES completion:nil];
-    
-    /*
-    MRSignUpViewController *signUpVc = [[MRSignUpViewController alloc] init];
-    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:signUpVc];
-    [self.window.rootViewController presentViewController:nc animated:YES completion:nil];
-    */
-    
-    [self setupAppearance];
+    [self showWelcome];
     
     return YES;
 }
@@ -77,6 +77,9 @@
 }
 
 - (void)setupNavigationBarAppearance {
+    UIImage *bg;
+    
+    // Navigation Bar
     UINavigationBar *navBar = [UINavigationBar appearance];
     
     navBar.tintColor = [UIColor redColor];
@@ -92,6 +95,26 @@
     };
     
     [navBar setTitleTextAttributes:navBarTitleAttrs];
+    
+    // Navigation Bar Button Item
+    UIBarButtonItem *barButtonItem = [UIBarButtonItem appearance];
+    barButtonItem.tintColor = [UIColor redColor];
+    
+    bg = [UIImage imageNamed:@"navbar-button-back-passive"];
+    bg = [bg stretchableImageWithLeftCapWidth:18 topCapHeight:0];
+    [barButtonItem setBackButtonBackgroundImage:bg forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    
+    bg = [UIImage imageNamed:@"navbar-button-back-active"];
+    bg = [bg stretchableImageWithLeftCapWidth:18 topCapHeight:0];
+    [barButtonItem setBackButtonBackgroundImage:bg forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
+    
+    bg = [UIImage imageNamed:@"navbar-button-action-passive"];
+    bg = [bg stretchableImageWithLeftCapWidth:10 topCapHeight:0];
+    [barButtonItem setBackgroundImage:bg forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    
+    bg = [UIImage imageNamed:@"navbar-button-action-active"];
+    bg = [bg stretchableImageWithLeftCapWidth:10 topCapHeight:0];
+    [barButtonItem setBackgroundImage:bg forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
 }
 
 @end

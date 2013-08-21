@@ -8,7 +8,11 @@
 
 #import "MRMenuViewController.h"
 
+#import "MRMapViewController.h"
+#import "MRSettingsViewController.h"
+#import "MROffersViewController.h"
 #import "MRMessagesViewController.h"
+
 
 #import "MRMenuItemCell.h"
 
@@ -46,13 +50,15 @@
 
 - (void)setupItems {
     self.items = @[
-        @"settings",
-        @"history",
+        @"map",
         @"favorites",
-        @"messages"
+        @"history",
+        @"messages",
+        @"settings"
     ];
     
     self.itemIcons = @{
+        @"map": @"menu-icon-map",
         @"settings": @"menu-icon-settings",
         @"history": @"menu-icon-history",
         @"favorites": @"menu-icon-favorites",
@@ -60,10 +66,11 @@
     };
     
     self.itemTitles = @{
-        @"settings": @"Настройки",
-        @"history": @"Просмотренные",
-        @"favorites": @"Избранное",
-        @"messages": @"Сообщения"
+        @"map": NSLocalizedString(@"menu.item.map", @""),
+        @"settings": NSLocalizedString(@"menu.item.settings", @""),
+        @"history": NSLocalizedString(@"menu.item.history", @""),
+        @"favorites": NSLocalizedString(@"menu.item.favorites", @""),
+        @"messages": NSLocalizedString(@"menu.item.messages", @"")
     };
 }
 
@@ -108,18 +115,35 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     NSString *item = self.items[indexPath.row];
     
-    if ([item isEqualToString:@"settings"]) {
-        
-    } else if ([item isEqualToString:@"history"]) {
-        
-    } else if ([item isEqualToString:@"favorites"]) {
-        
-    } else if ([item isEqualToString:@"messages"]) {
+    UIViewController *vc;
+    
+    if ([item isEqualToString:@"map"]) {
+        MRMapViewController *mapVc = [[MRMapViewController alloc] init];
+        self.viewDeckController.centerController = mapVc;
+        [self.viewDeckController closeLeftViewAnimated:YES];
+        return;
+    }
+    else if ([item isEqualToString:@"settings"]) {
+        MRSettingsViewController *settingsVc = [[MRSettingsViewController alloc] init];
+        vc = settingsVc;
+    }
+    else if ([item isEqualToString:@"history"]) {
+        MROffersViewController *offersVc = [[MROffersViewController alloc] init];
+        offersVc.title = NSLocalizedString(@"history.title", @"");
+        vc = offersVc;
+    }
+    else if ([item isEqualToString:@"favorites"]) {
+        MROffersViewController *offersVc = [[MROffersViewController alloc] init];
+        offersVc.title = NSLocalizedString(@"favorites.title", @"");
+        vc = offersVc;
+    }
+    else if ([item isEqualToString:@"messages"]) {
         MRMessagesViewController *messagesVc = [[MRMessagesViewController alloc] init];
-        UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:messagesVc];
-        self.viewDeckController.centerController = nc;
+        vc = messagesVc;
     }
     
+    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.viewDeckController.centerController = nc;
     [self.viewDeckController closeLeftViewAnimated:YES];
 }
 

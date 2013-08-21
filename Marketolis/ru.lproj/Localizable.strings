@@ -1,0 +1,37 @@
+/* 
+  Localizable.strings
+  Marketolis
+
+  Created by Vitaly Berg on 8/21/13.
+  Copyright (c) 2013 Vitaly Berg. All rights reserved.
+*/
+
+// Common
+
+// Sign Up
+"signup.title" = "Регистрация";
+
+// Confirm
+"confirm.title" = "Подтверждение";
+
+// Menu
+"menu.item.map" = "Карта";
+"menu.item.favorites" = "Избранное";
+"menu.item.history" = "Просмотренные";
+"menu.item.messages" = "Сообщения";
+"menu.item.settings" = "Настройки";
+
+// Map
+"map.title" = "Карта";
+
+// Favorites
+"favorites.title" = "Избранное";
+
+// History
+"history.title" = "Просмотренные";
+
+// Messages
+"messages.title" = "Сообщения";
+
+// Settings
+"settings.title" = "Настройки";

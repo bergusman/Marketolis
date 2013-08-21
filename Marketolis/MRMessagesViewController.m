@@ -42,7 +42,7 @@
 #pragma mark - Setups
 
 - (void)setupNavigationItem {
-    self.navigationItem.title = @"Сообщения";
+    self.navigationItem.title = NSLocalizedString(@"messages.title", @"");
 }
 
 - (void)setupTableView {

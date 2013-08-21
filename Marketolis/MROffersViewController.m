@@ -1,18 +1,18 @@
 //
-//  MRChatViewController.m
+//  MRListViewController.m
 //  Marketolis
 //
-//  Created by Vitaly Berg on 8/13/13.
+//  Created by Vitaly Berg on 8/21/13.
 //  Copyright (c) 2013 Vitaly Berg. All rights reserved.
 //
 
-#import "MRChatViewController.h"
+#import "MROffersViewController.h"
 
-@interface MRChatViewController ()
+@interface MROffersViewController ()
 
 @end
 
-@implementation MRChatViewController
+@implementation MROffersViewController
 
 #pragma mark - UIViewController
 

@@ -8,6 +8,8 @@
 
 #import "MRConfirmViewController.h"
 
+NSString * const MRSignUpConfirmedNotification = @"MRSignUpConfirmedNotification";
+
 @interface MRConfirmViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *codeTextField;
@@ -15,6 +17,8 @@
 @end
 
 @implementation MRConfirmViewController
+
+#pragma mark - UIViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -26,7 +30,13 @@
 #pragma mark - Setups
 
 - (void)setupNavigationItem {
-    self.navigationItem.title = @"Подтверждение";
+    self.navigationItem.title = NSLocalizedString(@"confirm.title", @"");
+}
+
+#pragma mark - Actions
+
+- (IBAction)confirmButtonTouchUpInside:(id)sender {
+    [self.view.window.rootViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

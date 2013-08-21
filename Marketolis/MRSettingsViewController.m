@@ -1,18 +1,18 @@
 //
-//  MRChatViewController.m
+//  MRSettingsViewController.m
 //  Marketolis
 //
-//  Created by Vitaly Berg on 8/13/13.
+//  Created by Vitaly Berg on 8/21/13.
 //  Copyright (c) 2013 Vitaly Berg. All rights reserved.
 //
 
-#import "MRChatViewController.h"
+#import "MRSettingsViewController.h"
 
-@interface MRChatViewController ()
+@interface MRSettingsViewController ()
 
 @end
 
-@implementation MRChatViewController
+@implementation MRSettingsViewController
 
 #pragma mark - UIViewController
 
@@ -24,6 +24,7 @@
 #pragma mark - Setups
 
 - (void)setupNavigationItem {
+    self.navigationItem.title = NSLocalizedString(@"settings.title", @"");
 }
 
 @end
