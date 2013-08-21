@@ -118,6 +118,8 @@
 		AD3A480217C5516D00CA2FD9 /* MROffersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3A480017C5516D00CA2FD9 /* MROffersViewController.m */; };
 		AD3A480317C5516D00CA2FD9 /* MROffersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD3A480117C5516D00CA2FD9 /* MROffersViewController.xib */; };
 		AD3A480717C5525B00CA2FD9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD3A480917C5525B00CA2FD9 /* Localizable.strings */; };
+		AD3A480E17C557BE00CA2FD9 /* MROfferCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3A480D17C557BE00CA2FD9 /* MROfferCell.m */; };
+		AD3A481017C557CC00CA2FD9 /* MROfferCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD3A480F17C557CC00CA2FD9 /* MROfferCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -252,6 +254,9 @@
 		AD3A480617C5525300CA2FD9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AD3A480817C5525B00CA2FD9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AD3A480A17C5525F00CA2FD9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AD3A480C17C557BE00CA2FD9 /* MROfferCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MROfferCell.h; sourceTree = "<group>"; };
+		AD3A480D17C557BE00CA2FD9 /* MROfferCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MROfferCell.m; sourceTree = "<group>"; };
+		AD3A480F17C557CC00CA2FD9 /* MROfferCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MROfferCell.xib; sourceTree = "<group>"; };
 		D03B0167DD914BCF8AE73A6F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -403,6 +408,7 @@
 		4424BBEB17B95AD90060CD49 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AD3A480B17C557A600CA2FD9 /* Offer Cell */,
 				AD3A47F017C54F1200CA2FD9 /* Separator */,
 				AD06D3DE17B99E0F009C880D /* Dialog Cell */,
 				4424BC4B17B96DA60060CD49 /* Offer Annotation View */,
@@ -665,6 +671,16 @@
 			name = List;
 			sourceTree = "<group>";
 		};
+		AD3A480B17C557A600CA2FD9 /* Offer Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AD3A480C17C557BE00CA2FD9 /* MROfferCell.h */,
+				AD3A480D17C557BE00CA2FD9 /* MROfferCell.m */,
+				AD3A480F17C557CC00CA2FD9 /* MROfferCell.xib */,
+			);
+			name = "Offer Cell";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -809,6 +825,7 @@
 				AD3A47FD17C5511700CA2FD9 /* MRSettingsViewController.xib in Resources */,
 				AD3A480317C5516D00CA2FD9 /* MROffersViewController.xib in Resources */,
 				AD3A480717C5525B00CA2FD9 /* Localizable.strings in Resources */,
+				AD3A481017C557CC00CA2FD9 /* MROfferCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -879,6 +896,7 @@
 				AD3A47F317C54F2700CA2FD9 /* MRSeparatorView.m in Sources */,
 				AD3A47FC17C5511700CA2FD9 /* MRSettingsViewController.m in Sources */,
 				AD3A480217C5516D00CA2FD9 /* MROffersViewController.m in Sources */,
+				AD3A480E17C557BE00CA2FD9 /* MROfferCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
