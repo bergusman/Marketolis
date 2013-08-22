@@ -42,9 +42,11 @@
     MRMenuViewController *menuVc = [[MRMenuViewController alloc] init];
     MRMapViewController *mapVc = [[MRMapViewController alloc] init];
     
+    UINavigationController *mapNc = [[UINavigationController alloc] initWithRootViewController:mapVc];
+    
     IIViewDeckController *viewDeckController = [[IIViewDeckController alloc] init];
     viewDeckController.delegate = self;
-    viewDeckController.centerController = mapVc;
+    viewDeckController.centerController = mapNc;
     viewDeckController.leftController = menuVc;
     
     viewDeckController.leftSize = 70;

@@ -8,6 +8,8 @@
 
 #import "MRMapViewController.h"
 
+#import "MROfferViewController.h"
+
 #import "MRPointAnnotation.h"
 #import "MROfferAnnotationView.h"
 
@@ -40,6 +42,13 @@
     MRPointAnnotation *pointAnnotation = [[MRPointAnnotation alloc] init];
     pointAnnotation.coordinate = CLLocationCoordinate2DMake(45, 52);
     [self.mapView addAnnotation:pointAnnotation];
+    
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 #pragma mark - Setups
@@ -95,6 +104,19 @@
     annotationView.priceLabel.text = @"2,500 руб.";
     
     return annotationView;
+}
+
+- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view {
+    if ([view.annotation isKindOfClass:[MKUserLocation class]]) {
+        return;
+    }
+    
+    [mapView deselectAnnotation:view.annotation animated:YES];
+    
+    if ([view.annotation isKindOfClass:[MRPointAnnotation class]]) {
+        MROfferViewController *offerVc = [[MROfferViewController alloc] init];
+        [self.navigationController pushViewController:offerVc animated:YES];
+    }
 }
 
 @end

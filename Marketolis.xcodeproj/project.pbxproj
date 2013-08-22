@@ -120,6 +120,10 @@
 		AD3A480717C5525B00CA2FD9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD3A480917C5525B00CA2FD9 /* Localizable.strings */; };
 		AD3A480E17C557BE00CA2FD9 /* MROfferCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3A480D17C557BE00CA2FD9 /* MROfferCell.m */; };
 		AD3A481017C557CC00CA2FD9 /* MROfferCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD3A480F17C557CC00CA2FD9 /* MROfferCell.xib */; };
+		AD3A481517C5D99E00CA2FD9 /* MROfferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3A481317C5D99E00CA2FD9 /* MROfferViewController.m */; };
+		AD3A481617C5D99E00CA2FD9 /* MROfferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD3A481417C5D99E00CA2FD9 /* MROfferViewController.xib */; };
+		AD3A481A17C5DEC300CA2FD9 /* MROfferPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3A481917C5DEC300CA2FD9 /* MROfferPhotoCell.m */; };
+		AD3A481C17C5DEDC00CA2FD9 /* MROfferPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD3A481B17C5DEDB00CA2FD9 /* MROfferPhotoCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -257,6 +261,12 @@
 		AD3A480C17C557BE00CA2FD9 /* MROfferCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MROfferCell.h; sourceTree = "<group>"; };
 		AD3A480D17C557BE00CA2FD9 /* MROfferCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MROfferCell.m; sourceTree = "<group>"; };
 		AD3A480F17C557CC00CA2FD9 /* MROfferCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MROfferCell.xib; sourceTree = "<group>"; };
+		AD3A481217C5D99E00CA2FD9 /* MROfferViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MROfferViewController.h; sourceTree = "<group>"; };
+		AD3A481317C5D99E00CA2FD9 /* MROfferViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MROfferViewController.m; sourceTree = "<group>"; };
+		AD3A481417C5D99E00CA2FD9 /* MROfferViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MROfferViewController.xib; sourceTree = "<group>"; };
+		AD3A481817C5DEC300CA2FD9 /* MROfferPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MROfferPhotoCell.h; sourceTree = "<group>"; };
+		AD3A481917C5DEC300CA2FD9 /* MROfferPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MROfferPhotoCell.m; sourceTree = "<group>"; };
+		AD3A481B17C5DEDB00CA2FD9 /* MROfferPhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MROfferPhotoCell.xib; sourceTree = "<group>"; };
 		D03B0167DD914BCF8AE73A6F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -372,7 +382,8 @@
 		4424BBE317B95AA30060CD49 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AD3A47FE17C5515F00CA2FD9 /* List */,
+				AD3A481117C5D98600CA2FD9 /* Offer */,
+				AD3A47FE17C5515F00CA2FD9 /* Offers */,
 				AD3A47F817C550FB00CA2FD9 /* Settings */,
 				AD06D3E417B9EE5D009C880D /* Chat */,
 				AD06D3D817B99DF4009C880D /* Messages */,
@@ -408,6 +419,7 @@
 		4424BBEB17B95AD90060CD49 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AD3A481717C5DE9300CA2FD9 /* Offer Photo Cell */,
 				AD3A480B17C557A600CA2FD9 /* Offer Cell */,
 				AD3A47F017C54F1200CA2FD9 /* Separator */,
 				AD06D3DE17B99E0F009C880D /* Dialog Cell */,
@@ -661,14 +673,14 @@
 			name = Settings;
 			sourceTree = "<group>";
 		};
-		AD3A47FE17C5515F00CA2FD9 /* List */ = {
+		AD3A47FE17C5515F00CA2FD9 /* Offers */ = {
 			isa = PBXGroup;
 			children = (
 				AD3A47FF17C5516D00CA2FD9 /* MROffersViewController.h */,
 				AD3A480017C5516D00CA2FD9 /* MROffersViewController.m */,
 				AD3A480117C5516D00CA2FD9 /* MROffersViewController.xib */,
 			);
-			name = List;
+			name = Offers;
 			sourceTree = "<group>";
 		};
 		AD3A480B17C557A600CA2FD9 /* Offer Cell */ = {
@@ -679,6 +691,26 @@
 				AD3A480F17C557CC00CA2FD9 /* MROfferCell.xib */,
 			);
 			name = "Offer Cell";
+			sourceTree = "<group>";
+		};
+		AD3A481117C5D98600CA2FD9 /* Offer */ = {
+			isa = PBXGroup;
+			children = (
+				AD3A481217C5D99E00CA2FD9 /* MROfferViewController.h */,
+				AD3A481317C5D99E00CA2FD9 /* MROfferViewController.m */,
+				AD3A481417C5D99E00CA2FD9 /* MROfferViewController.xib */,
+			);
+			name = Offer;
+			sourceTree = "<group>";
+		};
+		AD3A481717C5DE9300CA2FD9 /* Offer Photo Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AD3A481817C5DEC300CA2FD9 /* MROfferPhotoCell.h */,
+				AD3A481917C5DEC300CA2FD9 /* MROfferPhotoCell.m */,
+				AD3A481B17C5DEDB00CA2FD9 /* MROfferPhotoCell.xib */,
+			);
+			name = "Offer Photo Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -826,6 +858,8 @@
 				AD3A480317C5516D00CA2FD9 /* MROffersViewController.xib in Resources */,
 				AD3A480717C5525B00CA2FD9 /* Localizable.strings in Resources */,
 				AD3A481017C557CC00CA2FD9 /* MROfferCell.xib in Resources */,
+				AD3A481617C5D99E00CA2FD9 /* MROfferViewController.xib in Resources */,
+				AD3A481C17C5DEDC00CA2FD9 /* MROfferPhotoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -897,6 +931,8 @@
 				AD3A47FC17C5511700CA2FD9 /* MRSettingsViewController.m in Sources */,
 				AD3A480217C5516D00CA2FD9 /* MROffersViewController.m in Sources */,
 				AD3A480E17C557BE00CA2FD9 /* MROfferCell.m in Sources */,
+				AD3A481517C5D99E00CA2FD9 /* MROfferViewController.m in Sources */,
+				AD3A481A17C5DEC300CA2FD9 /* MROfferPhotoCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -119,9 +119,12 @@
     
     if ([item isEqualToString:@"map"]) {
         MRMapViewController *mapVc = [[MRMapViewController alloc] init];
+        vc = mapVc;
+        /*
         self.viewDeckController.centerController = mapVc;
         [self.viewDeckController closeLeftViewAnimated:YES];
         return;
+         */
     }
     else if ([item isEqualToString:@"settings"]) {
         MRSettingsViewController *settingsVc = [[MRSettingsViewController alloc] init];
