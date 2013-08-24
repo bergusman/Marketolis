@@ -53,24 +53,27 @@
         @"map",
         @"favorites",
         @"history",
+        @"my_offers",
         @"messages",
         @"settings"
     ];
     
     self.itemIcons = @{
         @"map": @"menu-icon-map",
-        @"settings": @"menu-icon-settings",
-        @"history": @"menu-icon-history",
         @"favorites": @"menu-icon-favorites",
-        @"messages": @"menu-icon-messages"
+        @"history": @"menu-icon-history",
+        @"my_offers": @"menu-icon-added-by-me",
+        @"messages": @"menu-icon-messages",
+        @"settings": @"menu-icon-settings"
     };
     
     self.itemTitles = @{
         @"map": NSLocalizedString(@"menu.item.map", @""),
-        @"settings": NSLocalizedString(@"menu.item.settings", @""),
-        @"history": NSLocalizedString(@"menu.item.history", @""),
         @"favorites": NSLocalizedString(@"menu.item.favorites", @""),
-        @"messages": NSLocalizedString(@"menu.item.messages", @"")
+        @"history": NSLocalizedString(@"menu.item.history", @""),
+        @"my_offers": NSLocalizedString(@"menu.item.my_offers", @""),
+        @"messages": NSLocalizedString(@"menu.item.messages", @""),
+        @"settings": NSLocalizedString(@"menu.item.settings", @"")
     };
 }
 
@@ -120,11 +123,6 @@
     if ([item isEqualToString:@"map"]) {
         MRMapViewController *mapVc = [[MRMapViewController alloc] init];
         vc = mapVc;
-        /*
-        self.viewDeckController.centerController = mapVc;
-        [self.viewDeckController closeLeftViewAnimated:YES];
-        return;
-         */
     }
     else if ([item isEqualToString:@"settings"]) {
         MRSettingsViewController *settingsVc = [[MRSettingsViewController alloc] init];
@@ -138,6 +136,11 @@
     else if ([item isEqualToString:@"favorites"]) {
         MROffersViewController *offersVc = [[MROffersViewController alloc] init];
         offersVc.title = NSLocalizedString(@"favorites.title", @"");
+        vc = offersVc;
+    }
+    else if ([item isEqualToString:@"my_offers"]) {
+        MROffersViewController *offersVc = [[MROffersViewController alloc] init];
+        offersVc.title = NSLocalizedString(@"my_offers.title", @"");
         vc = offersVc;
     }
     else if ([item isEqualToString:@"messages"]) {

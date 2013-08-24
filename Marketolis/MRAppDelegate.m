@@ -103,19 +103,19 @@
     barButtonItem.tintColor = [UIColor redColor];
     
     bg = [UIImage imageNamed:@"navbar-button-back-passive"];
-    bg = [bg stretchableImageWithLeftCapWidth:18 topCapHeight:0];
+    //bg = [bg stretchableImageWithLeftCapWidth:18 topCapHeight:0];
     [barButtonItem setBackButtonBackgroundImage:bg forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     
     bg = [UIImage imageNamed:@"navbar-button-back-active"];
-    bg = [bg stretchableImageWithLeftCapWidth:18 topCapHeight:0];
+    //bg = [bg stretchableImageWithLeftCapWidth:18 topCapHeight:0];
     [barButtonItem setBackButtonBackgroundImage:bg forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
     
     bg = [UIImage imageNamed:@"navbar-button-action-passive"];
-    bg = [bg stretchableImageWithLeftCapWidth:10 topCapHeight:0];
+    //bg = [bg stretchableImageWithLeftCapWidth:10 topCapHeight:0];
     [barButtonItem setBackgroundImage:bg forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     
     bg = [UIImage imageNamed:@"navbar-button-action-active"];
-    bg = [bg stretchableImageWithLeftCapWidth:10 topCapHeight:0];
+    //bg = [bg stretchableImageWithLeftCapWidth:10 topCapHeight:0];
     [barButtonItem setBackgroundImage:bg forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
 }
 

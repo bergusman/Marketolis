@@ -18,6 +18,7 @@
 "menu.item.map" = "Map";
 "menu.item.favorites" = "Favorites";
 "menu.item.history" = "History";
+"menu.item.my_offers" = "My offers";
 "menu.item.messages" = "Messages";
 "menu.item.settings" = "Settings";
 
@@ -29,6 +30,9 @@
 
 // History
 "history.title" = "History";
+
+// My Offers
+"my_offers.title" = "My Offers";
 
 // Messages
 "messages.title" = "Messages";

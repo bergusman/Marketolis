@@ -8,6 +8,10 @@
 
 #import "MROffersViewController.h"
 
+#import "MRMenuButton.h"
+
+#import <ViewDeck/IIViewDeckController.h>
+
 @interface MROffersViewController ()
 
 @end
@@ -24,6 +28,13 @@
 #pragma mark - Setups
 
 - (void)setupNavigationItem {
+    if ([self.navigationController.viewControllers count] == 1) {
+        MRMenuButton *menuButton = [[MRMenuButton alloc] init];
+        menuButton.actionHandler = ^() {
+            [self.viewDeckController toggleLeftView];
+        };
+        self.navigationItem.leftBarButtonItem = [menuButton barButtonItem];
+    }
 }
 
 @end

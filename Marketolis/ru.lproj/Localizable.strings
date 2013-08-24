@@ -18,6 +18,7 @@
 "menu.item.map" = "Карта";
 "menu.item.favorites" = "Избранное";
 "menu.item.history" = "Просмотренные";
+"menu.item.my_offers" = "Свои объявления";
 "menu.item.messages" = "Сообщения";
 "menu.item.settings" = "Настройки";
 
@@ -29,6 +30,9 @@
 
 // History
 "history.title" = "Просмотренные";
+
+// My Offers
+"my_offers.title" = "Мои объявления";
 
 // Messages
 "messages.title" = "Сообщения";

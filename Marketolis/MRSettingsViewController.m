@@ -8,6 +8,10 @@
 
 #import "MRSettingsViewController.h"
 
+#import "MRMenuButton.h"
+
+#import <ViewDeck/IIViewDeckController.h>
+
 @interface MRSettingsViewController ()
 
 @end
@@ -25,6 +29,14 @@
 
 - (void)setupNavigationItem {
     self.navigationItem.title = NSLocalizedString(@"settings.title", @"");
+    
+    if ([self.navigationController.viewControllers count] == 1) {
+        MRMenuButton *menuButton = [[MRMenuButton alloc] init];
+        menuButton.actionHandler = ^() {
+            [self.viewDeckController toggleLeftView];
+        };
+        self.navigationItem.leftBarButtonItem = [menuButton barButtonItem];
+    }
 }
 
 @end
