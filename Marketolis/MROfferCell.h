@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+#import "MRBadgeView.h"
+
 @interface MROfferCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *photoImageView;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+@property (weak, nonatomic) IBOutlet MRBadgeView *badgeView;
 
 + (CGFloat)height;
 

@@ -14,6 +14,8 @@
 
 #import "MRInterfaceHelper.h"
 
+#import <SDWebImage/UIImageView+WebCache.h>
+
 @interface MROffersViewController () <
     UITableViewDataSource,
     UITableViewDelegate
@@ -53,6 +55,11 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *cellId = @"OfferCell";
     MROfferCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
+    
+    [cell.photoImageView setImageWithURL:[NSURL URLWithString:@"http://cs7004.vk.me/c540104/v540104123/10369/yWYN-dipi_Q.jpg"] placeholderImage:nil];
+    
+    cell.badgeView.text = @"32,000 руб.";
+    
     return cell;
 }
 
