@@ -29,8 +29,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setupNavigationItem];
     [self setupPhotoCollectionView];
-    //[self.navigationController setNavigationBarHidden:NO animated:NO];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

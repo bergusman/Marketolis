@@ -107,7 +107,7 @@
     NSString *item = self.items[indexPath.row];
     cell.iconImageView.image = [UIImage imageNamed:[self iconNameForItem:item]];
     cell.titleLabel.text = [self titleForItem:item];
-    cell.badgeLabel.text = [self badgeTextForItem:item];
+    cell.badgeView.text = [self badgeTextForItem:item];
     
     return cell;
 }

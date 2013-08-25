@@ -10,4 +10,10 @@
 
 @interface MROfferCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *photoImageView;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+
++ (CGFloat)height;
+
 @end

@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+#import "MRBadgeView.h"
+
 @interface MRMenuItemCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *iconImageView;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-@property (weak, nonatomic) IBOutlet UILabel *badgeLabel;
+
+@property (weak, nonatomic) IBOutlet MRBadgeView *badgeView;
 
 @end

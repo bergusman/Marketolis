@@ -27,6 +27,8 @@
         [self setImage:bg forState:UIControlStateNormal];
         [self setImage:bg forState:UIControlStateHighlighted];
         
+        [self setImageEdgeInsets:UIEdgeInsetsMake(0, 3, 0, 0)];
+        
         [self sizeToFit];
         
         [self addTarget:self action:@selector(touchUpInside:) forControlEvents:UIControlEventTouchUpInside];
@@ -35,7 +37,7 @@
 }
 
 - (CGSize)sizeThatFits:(CGSize)size {
-    return CGSizeMake(40, 30);
+    return CGSizeMake(38, 30);
 }
 
 - (void)touchUpInside:(id)sender {

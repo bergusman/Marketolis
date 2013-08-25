@@ -10,20 +10,16 @@
 
 @implementation MROfferCell
 
-- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
-{
-    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    if (self) {
-        // Initialization code
-    }
-    return self;
++ (CGFloat)height {
+    return 82;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated
-{
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    
+    UIView *sbv = [[UIView alloc] init];
+    sbv.backgroundColor = MR_RGB(228, 232, 233);
+    self.selectedBackgroundView = sbv;
 }
 
 @end
