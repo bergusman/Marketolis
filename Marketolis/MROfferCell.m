@@ -20,6 +20,9 @@
     UIView *sbv = [[UIView alloc] init];
     sbv.backgroundColor = MR_RGB(228, 232, 233);
     self.selectedBackgroundView = sbv;
+    
+    self.badgeView.textFont = [UIFont boldSystemFontOfSize:12];
+    self.badgeView.cornerRadius = 4;
 }
 
 @end

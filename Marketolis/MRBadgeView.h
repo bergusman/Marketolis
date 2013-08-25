@@ -13,9 +13,12 @@
 @property (assign, nonatomic) CGFloat height;
 @property (assign, nonatomic) CGFloat minWidth;
 @property (assign, nonatomic) CGFloat textPadding;
+@property (assign, nonatomic) CGFloat cornerRadius;
 
 @property (strong, nonatomic) UIColor *badgeColor;
 @property (strong, nonatomic) UIColor *textColor;
+
+@property (strong, nonatomic) UIFont *textFont;
 
 @property (copy, nonatomic) NSString *text;
 

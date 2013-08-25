@@ -10,8 +10,6 @@
 
 @interface MRBadgeView ()
 
-@property (strong, nonatomic) UIFont *font;
-
 @end
 
 @implementation MRBadgeView
@@ -33,13 +31,14 @@
 }
 
 - (void)commonInit {
-    self.font = [UIFont boldSystemFontOfSize:16];
+    self.textFont = [UIFont boldSystemFontOfSize:16];
     self.backgroundColor = [UIColor clearColor];
     self.badgeColor = MR_RGB(45, 154, 194);
     self.textColor = [UIColor whiteColor];
     self.minWidth = 27;
     self.height = 27;
     self.textPadding = 6;
+    self.cornerRadius = 7.5;
     [self setText:nil];
 }
 
@@ -82,22 +81,22 @@
 #pragma mark - Sizing
 
 - (CGSize)sizeThatFits:(CGSize)size {
-    CGSize textSize = [self.text sizeWithFont:self.font];
+    CGSize textSize = [self.text sizeWithFont:self.textFont];
     return CGSizeMake(MAX(textSize.width + self.textPadding, self.minWidth), self.height);
 }
 
 #pragma mark - Drawing
 
 - (void)drawRect:(CGRect)rect {
-    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:rect cornerRadius:7.5];
+    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:rect cornerRadius:self.cornerRadius];
     [self.badgeColor setFill];
     [path fill];
     
     CGRect textRect = rect;
-    textRect.origin.y = (rect.size.height - self.font.lineHeight) / 2;
+    textRect.origin.y = (rect.size.height - self.textFont.lineHeight) / 2;
     
     [self.textColor setFill];
-    [self.text drawInRect:textRect withFont:self.font lineBreakMode:NSLineBreakByClipping alignment:NSTextAlignmentCenter];
+    [self.text drawInRect:textRect withFont:self.textFont lineBreakMode:NSLineBreakByClipping alignment:NSTextAlignmentCenter];
 }
 
 @end
