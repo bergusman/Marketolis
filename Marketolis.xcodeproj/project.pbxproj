@@ -142,6 +142,7 @@
 		AD84AA4217C95A1C000444FD /* navbar-icon-menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD84AA4017C95A1C000444FD /* navbar-icon-menu@2x.png */; };
 		AD84AA4617C95C45000444FD /* MRMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AD84AA4517C95C45000444FD /* MRMenuButton.m */; };
 		AD84AA4D17C96978000444FD /* MRBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AD84AA4C17C96977000444FD /* MRBackButton.m */; };
+		AD84AA5117C9D31B000444FD /* MRInterfaceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD84AA5017C9D31B000444FD /* MRInterfaceHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -305,6 +306,8 @@
 		AD84AA4517C95C45000444FD /* MRMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMenuButton.m; sourceTree = "<group>"; };
 		AD84AA4B17C96977000444FD /* MRBackButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRBackButton.h; sourceTree = "<group>"; };
 		AD84AA4C17C96977000444FD /* MRBackButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRBackButton.m; sourceTree = "<group>"; };
+		AD84AA4F17C9D31B000444FD /* MRInterfaceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRInterfaceHelper.h; sourceTree = "<group>"; };
+		AD84AA5017C9D31B000444FD /* MRInterfaceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRInterfaceHelper.m; sourceTree = "<group>"; };
 		D03B0167DD914BCF8AE73A6F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -387,6 +390,7 @@
 		4424BBE017B95A510060CD49 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				AD84AA4E17C9D2FF000444FD /* Utilities */,
 				4424BBEC17B95ADE0060CD49 /* Models */,
 				4424BBEB17B95AD90060CD49 /* Views */,
 				4424BBE317B95AA30060CD49 /* Controllers */,
@@ -795,6 +799,15 @@
 			name = "Back Button";
 			sourceTree = "<group>";
 		};
+		AD84AA4E17C9D2FF000444FD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AD84AA4F17C9D31B000444FD /* MRInterfaceHelper.h */,
+				AD84AA5017C9D31B000444FD /* MRInterfaceHelper.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1033,6 +1046,7 @@
 				AD3A481A17C5DEC300CA2FD9 /* MROfferPhotoCell.m in Sources */,
 				AD84AA4617C95C45000444FD /* MRMenuButton.m in Sources */,
 				AD84AA4D17C96978000444FD /* MRBackButton.m in Sources */,
+				AD84AA5117C9D31B000444FD /* MRInterfaceHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

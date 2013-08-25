@@ -11,9 +11,9 @@
 #import "MRChatViewController.h"
 
 #import "MRDialogCell.h"
-#import "MRMenuButton.h"
 
-#import <ViewDeck/IIViewDeckController.h>
+#import "MRInterfaceHelper.h"
+
 #import <SDWebImage/UIImageView+WebCache.h>
 
 @interface MRMessagesViewController () <
@@ -45,14 +45,7 @@
 
 - (void)setupNavigationItem {
     self.navigationItem.title = NSLocalizedString(@"messages.title", @"");
-    
-    if ([self.navigationController.viewControllers count] == 1) {
-        MRMenuButton *menuButton = [[MRMenuButton alloc] init];
-        menuButton.actionHandler = ^() {
-            [self.viewDeckController toggleLeftView];
-        };
-        self.navigationItem.leftBarButtonItem = [menuButton barButtonItem];
-    }
+    [MRInterfaceHelper setupLeftBarButtonItemForViewController:self];
 }
 
 - (void)setupTableView {

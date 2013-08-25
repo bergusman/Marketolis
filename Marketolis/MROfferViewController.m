@@ -8,11 +8,11 @@
 
 #import "MROfferViewController.h"
 
-#import "MRMenuButton.h"
 #import "MROfferPhotoCell.h"
 
+#import "MRInterfaceHelper.h"
+
 #import <SDWebImage/UIImageView+WebCache.h>
-#import <ViewDeck/IIViewDeckController.h>
 
 @interface MROfferViewController () <
     UICollectionViewDataSource,
@@ -41,13 +41,7 @@
 #pragma mark - Setups
 
 - (void)setupNavigationItem {
-    if ([self.navigationController.viewControllers count] == 1) {
-        MRMenuButton *menuButton = [[MRMenuButton alloc] init];
-        menuButton.actionHandler = ^() {
-            [self.viewDeckController toggleLeftView];
-        };
-        self.navigationItem.leftBarButtonItem = [menuButton barButtonItem];
-    }
+    [MRInterfaceHelper setupLeftBarButtonItemForViewController:self];
 }
 
 - (void)setupPhotoCollectionView {
