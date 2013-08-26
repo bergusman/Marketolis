@@ -14,6 +14,10 @@
     return 82;
 }
 
+- (void)layoutSubviews {
+    [super layoutSubviews];
+}
+
 - (void)awakeFromNib {
     [super awakeFromNib];
     

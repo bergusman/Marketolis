@@ -60,6 +60,12 @@
     
     cell.badgeView.text = @"32,000 руб.";
     
+    if (indexPath.row % 2) {
+        cell.titleLabel.text = @"Bingo bongo\nSpecial Huecial";
+    } else {
+        cell.titleLabel.text = @"Bingo bongo\nSpecial Huecial\nZeptus Loptus";
+    }
+    
     return cell;
 }
 

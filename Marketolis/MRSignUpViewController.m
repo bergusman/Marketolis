@@ -20,6 +20,15 @@
 
 #pragma mark - UIViewController
 
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    if (MR_IS_IPHONE_5) {
+        self = [super initWithNibName:@"MRSignUpViewController~568h" bundle:nibBundleOrNil];
+    } else {
+        self = [super initWithNibName:@"MRSignUpViewController" bundle:nibBundleOrNil];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupNavigationItem];
