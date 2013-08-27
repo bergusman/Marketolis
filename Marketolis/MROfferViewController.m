@@ -8,7 +8,10 @@
 
 #import "MROfferViewController.h"
 
+#import "MRChatViewController.h"
+
 #import "MROfferPhotoCell.h"
+#import "MRBadgeView.h"
 
 #import "MRInterfaceHelper.h"
 
@@ -19,7 +22,17 @@
     UICollectionViewDelegate
 >
 
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+
+
 @property (weak, nonatomic) IBOutlet UICollectionView *photoCollectionView;
+
+@property (weak, nonatomic) IBOutlet MRBadgeView *priceBadgeView;
+
+@property (weak, nonatomic) IBOutlet UIButton *callButton;
+@property (weak, nonatomic) IBOutlet UIButton *writeButton;
+
+
 
 @end
 
@@ -31,6 +44,14 @@
     [super viewDidLoad];
     [self setupNavigationItem];
     [self setupPhotoCollectionView];
+    
+    self.scrollView.contentSize = CGSizeMake(320, 580);
+    
+    self.priceBadgeView.textFont = [UIFont boldSystemFontOfSize:12];
+    self.priceBadgeView.cornerRadius = 4;
+    
+    self.priceBadgeView.text = @"43,534 руб";
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -47,6 +68,16 @@
 - (void)setupPhotoCollectionView {
     UINib *nib = [UINib nibWithNibName:NSStringFromClass([MROfferPhotoCell class]) bundle:[NSBundle mainBundle]];
     [self.photoCollectionView registerNib:nib forCellWithReuseIdentifier:@"PhotoCell"];
+}
+
+#pragma mark - Actions
+
+- (IBAction)callButtonTouchUpInside:(id)sender {
+}
+
+- (IBAction)writeButtonTouchUpInside:(id)sender {
+    MRChatViewController *chatVC = [[MRChatViewController alloc] init];
+    [self.navigationController pushViewController:chatVC animated:YES];
 }
 
 #pragma mark - UICollectionViewDataSource
