@@ -90,6 +90,12 @@
 		AD06D3E317B9A3BC009C880D /* MRDialogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD06D3E217B9A3BC009C880D /* MRDialogCell.xib */; };
 		AD06D3E817B9EE75009C880D /* MRChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD06D3E617B9EE75009C880D /* MRChatViewController.m */; };
 		AD06D3E917B9EE75009C880D /* MRChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD06D3E717B9EE75009C880D /* MRChatViewController.xib */; };
+		AD38C74C17E7AB8E00831CF8 /* MRRightBubbleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD38C74B17E7AB8E00831CF8 /* MRRightBubbleCell.m */; };
+		AD38C74F17E7AB9E00831CF8 /* MRLeftBubbleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD38C74E17E7AB9E00831CF8 /* MRLeftBubbleCell.m */; };
+		AD38C75217E7ABB300831CF8 /* MRInputTextBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AD38C75117E7ABB300831CF8 /* MRInputTextBar.m */; };
+		AD38C75417E7AC5500831CF8 /* MRLeftBubbleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD38C75317E7AC5500831CF8 /* MRLeftBubbleCell.xib */; };
+		AD38C75617E7AC7D00831CF8 /* MRRightBubbleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD38C75517E7AC7C00831CF8 /* MRRightBubbleCell.xib */; };
+		AD38C75817E82B6100831CF8 /* MRInputTextBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD38C75717E82B6000831CF8 /* MRInputTextBar.xib */; };
 		AD3A47D117C542F900CA2FD9 /* navbar-button-action-active.png in Resources */ = {isa = PBXBuildFile; fileRef = AD3A47C717C542F900CA2FD9 /* navbar-button-action-active.png */; };
 		AD3A47D217C542F900CA2FD9 /* navbar-button-action-active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD3A47C817C542F900CA2FD9 /* navbar-button-action-active@2x.png */; };
 		AD3A47D317C542F900CA2FD9 /* navbar-button-action-passive.png in Resources */ = {isa = PBXBuildFile; fileRef = AD3A47C917C542F900CA2FD9 /* navbar-button-action-passive.png */; };
@@ -247,6 +253,15 @@
 		AD06D3E517B9EE75009C880D /* MRChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRChatViewController.h; sourceTree = "<group>"; };
 		AD06D3E617B9EE75009C880D /* MRChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRChatViewController.m; sourceTree = "<group>"; };
 		AD06D3E717B9EE75009C880D /* MRChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRChatViewController.xib; sourceTree = "<group>"; };
+		AD38C74A17E7AB8E00831CF8 /* MRRightBubbleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRRightBubbleCell.h; sourceTree = "<group>"; };
+		AD38C74B17E7AB8E00831CF8 /* MRRightBubbleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRRightBubbleCell.m; sourceTree = "<group>"; };
+		AD38C74D17E7AB9E00831CF8 /* MRLeftBubbleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRLeftBubbleCell.h; sourceTree = "<group>"; };
+		AD38C74E17E7AB9E00831CF8 /* MRLeftBubbleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRLeftBubbleCell.m; sourceTree = "<group>"; };
+		AD38C75017E7ABB300831CF8 /* MRInputTextBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRInputTextBar.h; sourceTree = "<group>"; };
+		AD38C75117E7ABB300831CF8 /* MRInputTextBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRInputTextBar.m; sourceTree = "<group>"; };
+		AD38C75317E7AC5500831CF8 /* MRLeftBubbleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRLeftBubbleCell.xib; sourceTree = "<group>"; };
+		AD38C75517E7AC7C00831CF8 /* MRRightBubbleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRRightBubbleCell.xib; sourceTree = "<group>"; };
+		AD38C75717E82B6000831CF8 /* MRInputTextBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRInputTextBar.xib; sourceTree = "<group>"; };
 		AD3A47C717C542F900CA2FD9 /* navbar-button-action-active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navbar-button-action-active.png"; path = "Resources/Images/navbar-button-action-active.png"; sourceTree = "<group>"; };
 		AD3A47C817C542F900CA2FD9 /* navbar-button-action-active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navbar-button-action-active@2x.png"; path = "Resources/Images/navbar-button-action-active@2x.png"; sourceTree = "<group>"; };
 		AD3A47C917C542F900CA2FD9 /* navbar-button-action-passive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navbar-button-action-passive.png"; path = "Resources/Images/navbar-button-action-passive.png"; sourceTree = "<group>"; };
@@ -469,6 +484,7 @@
 		4424BBEB17B95AD90060CD49 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AD38C74617E7AB3000831CF8 /* Chat */,
 				AD84AA5517C9F087000444FD /* Badge View */,
 				AD84AA4717C961CE000444FD /* Back Button */,
 				AD84AA4317C95C31000444FD /* Menu Button */,
@@ -673,6 +689,46 @@
 				AD06D3E717B9EE75009C880D /* MRChatViewController.xib */,
 			);
 			name = Chat;
+			sourceTree = "<group>";
+		};
+		AD38C74617E7AB3000831CF8 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				AD38C74917E7AB7700831CF8 /* Input Text Bar */,
+				AD38C74817E7AB4400831CF8 /* Right Bubble */,
+				AD38C74717E7AB3D00831CF8 /* Left Bubble */,
+			);
+			name = Chat;
+			sourceTree = "<group>";
+		};
+		AD38C74717E7AB3D00831CF8 /* Left Bubble */ = {
+			isa = PBXGroup;
+			children = (
+				AD38C74D17E7AB9E00831CF8 /* MRLeftBubbleCell.h */,
+				AD38C74E17E7AB9E00831CF8 /* MRLeftBubbleCell.m */,
+				AD38C75317E7AC5500831CF8 /* MRLeftBubbleCell.xib */,
+			);
+			name = "Left Bubble";
+			sourceTree = "<group>";
+		};
+		AD38C74817E7AB4400831CF8 /* Right Bubble */ = {
+			isa = PBXGroup;
+			children = (
+				AD38C74A17E7AB8E00831CF8 /* MRRightBubbleCell.h */,
+				AD38C74B17E7AB8E00831CF8 /* MRRightBubbleCell.m */,
+				AD38C75517E7AC7C00831CF8 /* MRRightBubbleCell.xib */,
+			);
+			name = "Right Bubble";
+			sourceTree = "<group>";
+		};
+		AD38C74917E7AB7700831CF8 /* Input Text Bar */ = {
+			isa = PBXGroup;
+			children = (
+				AD38C75017E7ABB300831CF8 /* MRInputTextBar.h */,
+				AD38C75117E7ABB300831CF8 /* MRInputTextBar.m */,
+				AD38C75717E82B6000831CF8 /* MRInputTextBar.xib */,
+			);
+			name = "Input Text Bar";
 			sourceTree = "<group>";
 		};
 		AD3A47C617C5426C00CA2FD9 /* NavBar */ = {
@@ -992,6 +1048,9 @@
 				AD84AA4217C95A1C000444FD /* navbar-icon-menu@2x.png in Resources */,
 				AD48FFB117CBEE86005E198C /* MRConfirmViewController.xib in Resources */,
 				AD48FFB317CBEF93005E198C /* MRSignUpViewController.xib in Resources */,
+				AD38C75417E7AC5500831CF8 /* MRLeftBubbleCell.xib in Resources */,
+				AD38C75617E7AC7D00831CF8 /* MRRightBubbleCell.xib in Resources */,
+				AD38C75817E82B6100831CF8 /* MRInputTextBar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1069,6 +1128,9 @@
 				AD84AA4D17C96978000444FD /* MRBackButton.m in Sources */,
 				AD84AA5117C9D31B000444FD /* MRInterfaceHelper.m in Sources */,
 				AD84AA5417C9F082000444FD /* MRBadgeView.m in Sources */,
+				AD38C74C17E7AB8E00831CF8 /* MRRightBubbleCell.m in Sources */,
+				AD38C74F17E7AB9E00831CF8 /* MRLeftBubbleCell.m in Sources */,
+				AD38C75217E7ABB300831CF8 /* MRInputTextBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
