@@ -19,6 +19,10 @@
 #import <Crashlytics/Crashlytics.h>
 #import <QuartzCore/QuartzCore.h>
 
+////////////
+
+#import "MRChatViewController.h"
+
 @interface MRAppDelegate () <IIViewDeckControllerDelegate>
 
 @end
@@ -57,6 +61,11 @@
     [self.window makeKeyAndVisible];
     
     [self showWelcome];
+    
+    MRChatViewController *chatVC = [[MRChatViewController alloc] init];
+    UINavigationController *chatNC = [[UINavigationController alloc] initWithRootViewController:chatVC];
+    
+    self.window.rootViewController = chatNC;
     
     return YES;
 }
