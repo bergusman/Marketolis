@@ -440,7 +440,7 @@
 				AD84AA4E17C9D2FF000444FD /* Utilities */,
 				4424BBEC17B95ADE0060CD49 /* Models */,
 				4424BBEB17B95AD90060CD49 /* Views */,
-				4424BBE317B95AA30060CD49 /* Controllers */,
+				4424BBE317B95AA30060CD49 /* Controllers & Views */,
 				4424BBC817B956970060CD49 /* MRAppDelegate.h */,
 				4424BBC917B956970060CD49 /* MRAppDelegate.m */,
 			);
@@ -469,17 +469,17 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
-		4424BBE317B95AA30060CD49 /* Controllers */ = {
+		4424BBE317B95AA30060CD49 /* Controllers & Views */ = {
 			isa = PBXGroup;
 			children = (
 				ADAA10011826BCB70036F14E /* Map */,
-				ADAA10021826BCCF0036F14E /* Favorites */,
+				ADAA10021826BCCF0036F14E /* Offers */,
 				ADAA10041826BD200036F14E /* Messages */,
 				ADAA10031826BD1B0036F14E /* Profile */,
 				ADAA10051826BD260036F14E /* Create */,
 				ADAA10001826BCAE0036F14E /* Old */,
 			);
-			name = Controllers;
+			name = "Controllers & Views";
 			sourceTree = "<group>";
 		};
 		4424BBE917B95ABA0060CD49 /* Map */ = {
@@ -931,14 +931,14 @@
 			name = Map;
 			sourceTree = "<group>";
 		};
-		ADAA10021826BCCF0036F14E /* Favorites */ = {
+		ADAA10021826BCCF0036F14E /* Offers */ = {
 			isa = PBXGroup;
 			children = (
 				ADAA100B1826BF9C0036F14E /* MRNewOffersViewController.h */,
 				ADAA100C1826BF9C0036F14E /* MRNewOffersViewController.m */,
 				ADAA100D1826BF9C0036F14E /* MRNewOffersViewController.xib */,
 			);
-			name = Favorites;
+			name = Offers;
 			sourceTree = "<group>";
 		};
 		ADAA10031826BD1B0036F14E /* Profile */ = {

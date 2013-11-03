@@ -62,7 +62,7 @@
 #pragma mark - Setups
 
 - (void)setupNavigationItem {
-    [MRInterfaceHelper setupLeftBarButtonItemForViewController:self];
+    //[MRInterfaceHelper setupLeftBarButtonItemForViewController:self];
 }
 
 - (void)setupPhotoCollectionView {
