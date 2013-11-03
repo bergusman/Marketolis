@@ -8,6 +8,13 @@
 
 // Common
 
+// Tab Bar
+"tabbar.map" = "Карта";
+"tabbar.offers" = "Объявления";
+"tabbar.messages" = "Сообщения";
+"tabbar.profile" = "Профиль";
+"tabbar.create_offer" = "Разместить";
+
 // Sign Up
 "signup.title" = "Регистрация";
 

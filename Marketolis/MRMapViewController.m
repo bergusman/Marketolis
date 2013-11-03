@@ -30,7 +30,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *filterBackgroundImageView;
 @property (weak, nonatomic) IBOutlet UITextField *filterTextField;
 
-
 @end
 
 @implementation MRMapViewController

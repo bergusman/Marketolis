@@ -19,9 +19,13 @@
 #import <Crashlytics/Crashlytics.h>
 #import <QuartzCore/QuartzCore.h>
 
-////////////
+////////////////////////////////////////////
 
-#import "MRChatViewController.h"
+#import "MRNewMapViewController.h"
+#import "MRNewOffersViewController.h"
+#import "MRNewMessagesViewController.h"
+#import "MRNewProfileViewController.h"
+#import "MRNewCreateOfferViewController.h"
 
 @interface MRAppDelegate () <IIViewDeckControllerDelegate>
 
@@ -41,6 +45,32 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [Crashlytics startWithAPIKey:@"9ca680cb0b1764352949438282f40e14139eb082"];
     
+    MRNewMapViewController *mapVC = [[MRNewMapViewController alloc] init];
+    UINavigationController *mapNC = [[UINavigationController alloc] initWithRootViewController:mapVC];
+    
+    MRNewOffersViewController *favoritesVC = [[MRNewOffersViewController alloc] init];
+    UINavigationController *favoritesNC = [[UINavigationController alloc] initWithRootViewController:favoritesVC];
+    
+    MRNewMessagesViewController *messagesVC = [[MRNewMessagesViewController alloc] init];
+    UINavigationController *messagesNC = [[UINavigationController alloc] initWithRootViewController:messagesVC];
+    
+    MRNewProfileViewController *profileVC = [[MRNewProfileViewController alloc] init];
+    UINavigationController *profileNC = [[UINavigationController alloc] initWithRootViewController:profileVC];
+    
+    MRNewCreateOfferViewController *createOfferVC = [[MRNewCreateOfferViewController alloc] init];
+    UINavigationController *createOfferNC = [[UINavigationController alloc] initWithRootViewController:createOfferVC];
+    
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    tabBarController.viewControllers = @[mapNC, favoritesNC, messagesNC, profileNC, createOfferNC];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.tintColor = [UIColor redColor];
+    self.window.rootViewController = tabBarController;
+    [self.window makeKeyAndVisible];
+    
+    ////////////////////
+    
+    /*
     [self setupAppearance];
     
     MRMenuViewController *menuVc = [[MRMenuViewController alloc] init];
@@ -61,11 +91,7 @@
     [self.window makeKeyAndVisible];
     
     [self showWelcome];
-    
-    MRChatViewController *chatVC = [[MRChatViewController alloc] init];
-    UINavigationController *chatNC = [[UINavigationController alloc] initWithRootViewController:chatVC];
-    
-    self.window.rootViewController = chatNC;
+    */
     
     return YES;
 }

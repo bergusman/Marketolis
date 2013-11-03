@@ -152,6 +152,16 @@
 		AD84AA4D17C96978000444FD /* MRBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AD84AA4C17C96977000444FD /* MRBackButton.m */; };
 		AD84AA5117C9D31B000444FD /* MRInterfaceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD84AA5017C9D31B000444FD /* MRInterfaceHelper.m */; };
 		AD84AA5417C9F082000444FD /* MRBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD84AA5317C9F081000444FD /* MRBadgeView.m */; };
+		ADAA10091826BD6C0036F14E /* MRNewMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA10071826BD6C0036F14E /* MRNewMapViewController.m */; };
+		ADAA100A1826BD6C0036F14E /* MRNewMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA10081826BD6C0036F14E /* MRNewMapViewController.xib */; };
+		ADAA100E1826BF9C0036F14E /* MRNewOffersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA100C1826BF9C0036F14E /* MRNewOffersViewController.m */; };
+		ADAA100F1826BF9C0036F14E /* MRNewOffersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA100D1826BF9C0036F14E /* MRNewOffersViewController.xib */; };
+		ADAA10131826BFA80036F14E /* MRNewMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA10111826BFA80036F14E /* MRNewMessagesViewController.m */; };
+		ADAA10141826BFA80036F14E /* MRNewMessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA10121826BFA80036F14E /* MRNewMessagesViewController.xib */; };
+		ADAA10181826BFB80036F14E /* MRNewProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA10161826BFB80036F14E /* MRNewProfileViewController.m */; };
+		ADAA10191826BFB80036F14E /* MRNewProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA10171826BFB80036F14E /* MRNewProfileViewController.xib */; };
+		ADAA101D1826BFCC0036F14E /* MRNewCreateOfferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA101B1826BFCC0036F14E /* MRNewCreateOfferViewController.m */; };
+		ADAA101E1826BFCC0036F14E /* MRNewCreateOfferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA101C1826BFCC0036F14E /* MRNewCreateOfferViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -330,6 +340,21 @@
 		AD84AA5017C9D31B000444FD /* MRInterfaceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRInterfaceHelper.m; sourceTree = "<group>"; };
 		AD84AA5217C9F081000444FD /* MRBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRBadgeView.h; sourceTree = "<group>"; };
 		AD84AA5317C9F081000444FD /* MRBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRBadgeView.m; sourceTree = "<group>"; };
+		ADAA10061826BD6C0036F14E /* MRNewMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNewMapViewController.h; sourceTree = "<group>"; };
+		ADAA10071826BD6C0036F14E /* MRNewMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNewMapViewController.m; sourceTree = "<group>"; };
+		ADAA10081826BD6C0036F14E /* MRNewMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRNewMapViewController.xib; sourceTree = "<group>"; };
+		ADAA100B1826BF9C0036F14E /* MRNewOffersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNewOffersViewController.h; sourceTree = "<group>"; };
+		ADAA100C1826BF9C0036F14E /* MRNewOffersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNewOffersViewController.m; sourceTree = "<group>"; };
+		ADAA100D1826BF9C0036F14E /* MRNewOffersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRNewOffersViewController.xib; sourceTree = "<group>"; };
+		ADAA10101826BFA80036F14E /* MRNewMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNewMessagesViewController.h; sourceTree = "<group>"; };
+		ADAA10111826BFA80036F14E /* MRNewMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNewMessagesViewController.m; sourceTree = "<group>"; };
+		ADAA10121826BFA80036F14E /* MRNewMessagesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRNewMessagesViewController.xib; sourceTree = "<group>"; };
+		ADAA10151826BFB80036F14E /* MRNewProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNewProfileViewController.h; sourceTree = "<group>"; };
+		ADAA10161826BFB80036F14E /* MRNewProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNewProfileViewController.m; sourceTree = "<group>"; };
+		ADAA10171826BFB80036F14E /* MRNewProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRNewProfileViewController.xib; sourceTree = "<group>"; };
+		ADAA101A1826BFCC0036F14E /* MRNewCreateOfferViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNewCreateOfferViewController.h; sourceTree = "<group>"; };
+		ADAA101B1826BFCC0036F14E /* MRNewCreateOfferViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNewCreateOfferViewController.m; sourceTree = "<group>"; };
+		ADAA101C1826BFCC0036F14E /* MRNewCreateOfferViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRNewCreateOfferViewController.xib; sourceTree = "<group>"; };
 		D03B0167DD914BCF8AE73A6F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -447,16 +472,12 @@
 		4424BBE317B95AA30060CD49 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AD3A481117C5D98600CA2FD9 /* Offer */,
-				AD3A47FE17C5515F00CA2FD9 /* Offers */,
-				AD3A47F817C550FB00CA2FD9 /* Settings */,
-				AD06D3E417B9EE5D009C880D /* Chat */,
-				AD06D3D817B99DF4009C880D /* Messages */,
-				AD06D3CD17B9994A009C880D /* Confirm */,
-				AD06D3CC17B99942009C880D /* Sign Up */,
-				AD06D3A817B995C9009C880D /* Welcome */,
-				4424BBEA17B95AC60060CD49 /* Menu */,
-				4424BBE917B95ABA0060CD49 /* Map */,
+				ADAA10011826BCB70036F14E /* Map */,
+				ADAA10021826BCCF0036F14E /* Favorites */,
+				ADAA10041826BD200036F14E /* Messages */,
+				ADAA10031826BD1B0036F14E /* Profile */,
+				ADAA10051826BD260036F14E /* Create */,
+				ADAA10001826BCAE0036F14E /* Old */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -883,6 +904,73 @@
 			name = "Badge View";
 			sourceTree = "<group>";
 		};
+		ADAA10001826BCAE0036F14E /* Old */ = {
+			isa = PBXGroup;
+			children = (
+				AD3A481117C5D98600CA2FD9 /* Offer */,
+				AD3A47FE17C5515F00CA2FD9 /* Offers */,
+				AD3A47F817C550FB00CA2FD9 /* Settings */,
+				AD06D3E417B9EE5D009C880D /* Chat */,
+				AD06D3D817B99DF4009C880D /* Messages */,
+				AD06D3CD17B9994A009C880D /* Confirm */,
+				AD06D3CC17B99942009C880D /* Sign Up */,
+				AD06D3A817B995C9009C880D /* Welcome */,
+				4424BBEA17B95AC60060CD49 /* Menu */,
+				4424BBE917B95ABA0060CD49 /* Map */,
+			);
+			name = Old;
+			sourceTree = "<group>";
+		};
+		ADAA10011826BCB70036F14E /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				ADAA10061826BD6C0036F14E /* MRNewMapViewController.h */,
+				ADAA10071826BD6C0036F14E /* MRNewMapViewController.m */,
+				ADAA10081826BD6C0036F14E /* MRNewMapViewController.xib */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		ADAA10021826BCCF0036F14E /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				ADAA100B1826BF9C0036F14E /* MRNewOffersViewController.h */,
+				ADAA100C1826BF9C0036F14E /* MRNewOffersViewController.m */,
+				ADAA100D1826BF9C0036F14E /* MRNewOffersViewController.xib */,
+			);
+			name = Favorites;
+			sourceTree = "<group>";
+		};
+		ADAA10031826BD1B0036F14E /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				ADAA10151826BFB80036F14E /* MRNewProfileViewController.h */,
+				ADAA10161826BFB80036F14E /* MRNewProfileViewController.m */,
+				ADAA10171826BFB80036F14E /* MRNewProfileViewController.xib */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		ADAA10041826BD200036F14E /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				ADAA10101826BFA80036F14E /* MRNewMessagesViewController.h */,
+				ADAA10111826BFA80036F14E /* MRNewMessagesViewController.m */,
+				ADAA10121826BFA80036F14E /* MRNewMessagesViewController.xib */,
+			);
+			name = Messages;
+			sourceTree = "<group>";
+		};
+		ADAA10051826BD260036F14E /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				ADAA101A1826BFCC0036F14E /* MRNewCreateOfferViewController.h */,
+				ADAA101B1826BFCC0036F14E /* MRNewCreateOfferViewController.m */,
+				ADAA101C1826BFCC0036F14E /* MRNewCreateOfferViewController.xib */,
+			);
+			name = Create;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -942,6 +1030,7 @@
 				4424BBC417B956970060CD49 /* InfoPlist.strings in Resources */,
 				4424BBCC17B956970060CD49 /* Default.png in Resources */,
 				4424BBCE17B956970060CD49 /* Default@2x.png in Resources */,
+				ADAA101E1826BFCC0036F14E /* MRNewCreateOfferViewController.xib in Resources */,
 				4424BBD017B956970060CD49 /* Default-568h@2x.png in Resources */,
 				4424BBE817B95AB50060CD49 /* MRMapViewController.xib in Resources */,
 				4424BBF117B95AFA0060CD49 /* MRMenuViewController.xib in Resources */,
@@ -975,6 +1064,7 @@
 				4424BC3317B965330060CD49 /* map-search-filed.png in Resources */,
 				4424BC3417B965330060CD49 /* map-search-filed@2x.png in Resources */,
 				4424BC3F17B966160060CD49 /* Icon-72.png in Resources */,
+				ADAA100A1826BD6C0036F14E /* MRNewMapViewController.xib in Resources */,
 				4424BC4017B966160060CD49 /* Icon-72@2x.png in Resources */,
 				4424BC4117B966160060CD49 /* Icon-Small-50.png in Resources */,
 				4424BC4217B966160060CD49 /* Icon-Small-50@2x.png in Resources */,
@@ -986,6 +1076,7 @@
 				AD06D3B217B99626009C880D /* splash-background-pattern.png in Resources */,
 				AD06D3B317B99626009C880D /* splash-background-pattern@2x.png in Resources */,
 				AD06D3B417B99626009C880D /* splash-logo.png in Resources */,
+				ADAA100F1826BF9C0036F14E /* MRNewOffersViewController.xib in Resources */,
 				AD06D3B517B99626009C880D /* splash-logo@2x.png in Resources */,
 				AD06D3C217B997F0009C880D /* register-big-button.png in Resources */,
 				AD06D3C317B997F0009C880D /* register-big-button@2x.png in Resources */,
@@ -1041,12 +1132,14 @@
 				AD84AA3717C95992000444FD /* chat-field-background.png in Resources */,
 				AD84AA3817C95992000444FD /* chat-field-background@2x.png in Resources */,
 				AD84AA3917C95992000444FD /* chat-field.png in Resources */,
+				ADAA10191826BFB80036F14E /* MRNewProfileViewController.xib in Resources */,
 				AD84AA3A17C95992000444FD /* chat-field@2x.png in Resources */,
 				AD84AA3D17C959EB000444FD /* menu-icon-added-by-me.png in Resources */,
 				AD84AA3E17C959EB000444FD /* menu-icon-added-by-me@2x.png in Resources */,
 				AD84AA4117C95A1C000444FD /* navbar-icon-menu.png in Resources */,
 				AD84AA4217C95A1C000444FD /* navbar-icon-menu@2x.png in Resources */,
 				AD48FFB117CBEE86005E198C /* MRConfirmViewController.xib in Resources */,
+				ADAA10141826BFA80036F14E /* MRNewMessagesViewController.xib in Resources */,
 				AD48FFB317CBEF93005E198C /* MRSignUpViewController.xib in Resources */,
 				AD38C75417E7AC5500831CF8 /* MRLeftBubbleCell.xib in Resources */,
 				AD38C75617E7AC7D00831CF8 /* MRRightBubbleCell.xib in Resources */,
@@ -1105,14 +1198,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADAA100E1826BF9C0036F14E /* MRNewOffersViewController.m in Sources */,
 				4424BBC617B956970060CD49 /* main.m in Sources */,
+				ADAA101D1826BFCC0036F14E /* MRNewCreateOfferViewController.m in Sources */,
 				4424BBCA17B956970060CD49 /* MRAppDelegate.m in Sources */,
+				ADAA10131826BFA80036F14E /* MRNewMessagesViewController.m in Sources */,
 				4424BBE717B95AB50060CD49 /* MRMapViewController.m in Sources */,
 				4424BBF017B95AFA0060CD49 /* MRMenuViewController.m in Sources */,
 				4424BBF517B95FAB0060CD49 /* MRMenuItemCell.m in Sources */,
 				4424BC4E17B96E0E0060CD49 /* MROfferAnnotationView.m in Sources */,
 				4424BC5217B96E380060CD49 /* MRPointAnnotation.m in Sources */,
 				AD06D3AC17B995DC009C880D /* MRWelcomeViewController.m in Sources */,
+				ADAA10181826BFB80036F14E /* MRNewProfileViewController.m in Sources */,
 				AD06D3D117B99DD5009C880D /* MRConfirmViewController.m in Sources */,
 				AD06D3D617B99DE3009C880D /* MRSignUpViewController.m in Sources */,
 				AD06D3DC17B99E09009C880D /* MRMessagesViewController.m in Sources */,
@@ -1120,6 +1217,7 @@
 				AD06D3E817B9EE75009C880D /* MRChatViewController.m in Sources */,
 				AD3A47F317C54F2700CA2FD9 /* MRSeparatorView.m in Sources */,
 				AD3A47FC17C5511700CA2FD9 /* MRSettingsViewController.m in Sources */,
+				ADAA10091826BD6C0036F14E /* MRNewMapViewController.m in Sources */,
 				AD3A480217C5516D00CA2FD9 /* MROffersViewController.m in Sources */,
 				AD3A480E17C557BE00CA2FD9 /* MROfferCell.m in Sources */,
 				AD3A481517C5D99E00CA2FD9 /* MROfferViewController.m in Sources */,
@@ -1183,7 +1281,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -1207,7 +1305,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

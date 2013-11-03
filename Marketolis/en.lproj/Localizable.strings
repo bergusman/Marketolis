@@ -8,6 +8,13 @@
 
 // Common
 
+// Tab Bar
+"tabbar.map" = "Map";
+"tabbar.offers" = "Offers";
+"tabbar.messages" = "Messages";
+"tabbar.profile" = "Profile";
+"tabbar.create_offer" = "Create Offer";
+
 // Sign Up
 "signup.title" = "Sign Up";
 
