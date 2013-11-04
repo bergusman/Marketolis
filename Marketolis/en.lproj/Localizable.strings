@@ -15,6 +15,11 @@
 "tabbar.profile" = "Profile";
 "tabbar.create_offer" = "Create Offer";
 
+// Offers
+"offers.type.my" = "My";
+"offers.type.favorites" = "Favorites";
+"offers.type.recent" = "Recent";
+
 // Sign Up
 "signup.title" = "Sign Up";
 

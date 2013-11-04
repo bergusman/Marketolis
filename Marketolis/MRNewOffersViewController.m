@@ -20,8 +20,7 @@
 >
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-
-@property (strong, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
+@property (strong, nonatomic) IBOutlet UISegmentedControl *offerTypesSegmentedControl;
 
 @end
 
@@ -30,12 +29,23 @@
 #pragma mark - Setups
 
 - (void)setupNavigationItem {
-    //[MRInterfaceHelper setupLeftBarButtonItemForViewController:self];
+    [self.offerTypesSegmentedControl setTitle:NSLocalizedString(@"offers.type.my", @"") forSegmentAtIndex:0];
+    [self.offerTypesSegmentedControl setTitle:NSLocalizedString(@"offers.type.favorites", @"") forSegmentAtIndex:1];
+    [self.offerTypesSegmentedControl setTitle:NSLocalizedString(@"offers.type.recent", @"") forSegmentAtIndex:2];
+    [self.offerTypesSegmentedControl sizeToFit];
+    self.navigationItem.titleView = self.offerTypesSegmentedControl;
 }
 
 - (void)setupTableView {
     UINib *nib = [UINib nibWithNibName:NSStringFromClass([MROfferCell class]) bundle:[NSBundle mainBundle]];
     [self.tableView registerNib:nib forCellReuseIdentifier:@"OfferCell"];
+}
+
+#pragma mark - Actions
+
+- (IBAction)offerTypesSegmentedControlChanged:(id)sender {
+    NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:0];
+    [self.tableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
 #pragma mark - UITableViewDataSource
@@ -75,18 +85,19 @@
 
 #pragma mark - UIViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    [self setupNavigationItem];
+    [self setupTableView];
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = NSLocalizedString(@"tabbar.offers", @"");
     }
     return self;
-}
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    self.navigationItem.titleView = self.segmentedControl;
-    [self setupTableView];
 }
 
 @end

@@ -6,7 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MRNewOffersViewController">
             <connections>
-                <outlet property="segmentedControl" destination="bT9-eq-YF1" id="jQq-a4-pW9"/>
+                <outlet property="offerTypesSegmentedControl" destination="bT9-eq-YF1" id="w29-fz-uEY"/>
                 <outlet property="tableView" destination="zFg-or-Jzv" id="blx-GK-Vb9"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
@@ -32,14 +32,17 @@
             <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
-        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="bT9-eq-YF1">
-            <rect key="frame" x="0.0" y="0.0" width="254" height="29"/>
+        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="bT9-eq-YF1" userLabel="Offer Type Segmented Control">
+            <rect key="frame" x="0.0" y="0.0" width="366" height="29"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <segments>
                 <segment title="Мои"/>
                 <segment title="Избранное"/>
                 <segment title="Просмотр."/>
             </segments>
+            <connections>
+                <action selector="offerTypesSegmentedControlChanged:" destination="-1" eventType="valueChanged" id="lsE-yr-ooG"/>
+            </connections>
         </segmentedControl>
     </objects>
 </document>
