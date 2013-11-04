@@ -480,6 +480,7 @@
 			isa = PBXGroup;
 			children = (
 				AD95BBC01827A17900E1C0E1 /* Common */,
+				AD95BBCC1827AB3200E1C0E1 /* Welcome */,
 				AD95BBC11827A19D00E1C0E1 /* Chat */,
 				ADAA10011826BCB70036F14E /* Map */,
 				ADAA10021826BCCF0036F14E /* Posts */,
@@ -947,6 +948,13 @@
 				4424BBCF17B956970060CD49 /* Default-568h@2x.png */,
 			);
 			name = Degaults;
+			sourceTree = "<group>";
+		};
+		AD95BBCC1827AB3200E1C0E1 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Welcome;
 			sourceTree = "<group>";
 		};
 		ADAA10001826BCAE0036F14E /* Old */ = {
