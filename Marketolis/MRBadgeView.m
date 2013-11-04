@@ -81,7 +81,7 @@
 #pragma mark - Sizing
 
 - (CGSize)sizeThatFits:(CGSize)size {
-    CGSize textSize = [self.text sizeWithFont:self.textFont];
+    CGSize textSize = [self.text sizeWithAttributes:@{NSFontAttributeName: self.textFont}];
     return CGSizeMake(MAX(textSize.width + self.textPadding, self.minWidth), self.height);
 }
 
@@ -95,8 +95,16 @@
     CGRect textRect = rect;
     textRect.origin.y = (rect.size.height - self.textFont.lineHeight) / 2;
     
-    [self.textColor setFill];
-    [self.text drawInRect:textRect withFont:self.textFont lineBreakMode:NSLineBreakByClipping alignment:NSTextAlignmentCenter];
+    NSMutableParagraphStyle *style = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
+    style.lineBreakMode = NSLineBreakByWordWrapping;
+    style.alignment = NSTextAlignmentCenter;
+    
+    NSDictionary *attributes = @{
+        NSFontAttributeName: self.textFont,
+        NSForegroundColorAttributeName: self.textColor,
+        NSParagraphStyleAttributeName: style
+    };
+    [self.text drawInRect:textRect withAttributes:attributes];
 }
 
 @end
