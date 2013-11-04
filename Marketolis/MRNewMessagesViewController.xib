@@ -6,7 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MRNewMessagesViewController">
             <connections>
-                <outlet property="segmentedControl" destination="2P9-Br-vYc" id="CZ7-B5-MTi"/>
+                <outlet property="messagesTypesSegmentedControl" destination="2P9-Br-vYc" id="YKn-28-dAZ"/>
                 <outlet property="tableView" destination="GN6-ub-Hd3" id="Y1B-jv-tYh"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
@@ -30,13 +30,16 @@
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
-        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="2P9-Br-vYc">
-            <rect key="frame" x="0.0" y="0.0" width="161" height="29"/>
+        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="2P9-Br-vYc" userLabel="Messages Types Segmented Control">
+            <rect key="frame" x="0.0" y="0.0" width="305" height="29"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <segments>
                 <segment title="Продаю"/>
                 <segment title="Покупаю"/>
             </segments>
+            <connections>
+                <action selector="messagesTypesSegmentedControlChanged:" destination="-1" eventType="valueChanged" id="wnr-EN-PE2"/>
+            </connections>
         </segmentedControl>
     </objects>
 </document>

@@ -20,6 +20,11 @@
 "offers.type.favorites" = "Избранное";
 "offers.type.recent" = "Просмотр.";
 
+// Messages
+"messages.title" = "Сообщения";
+"messages.type.selling" = "Продаю";
+"messages.type.buying" = "Покупаю";
+
 // Sign Up
 "signup.title" = "Регистрация";
 
@@ -45,9 +50,6 @@
 
 // My Offers
 "my_offers.title" = "Мои объявления";
-
-// Messages
-"messages.title" = "Сообщения";
 
 // Settings
 "settings.title" = "Настройки";

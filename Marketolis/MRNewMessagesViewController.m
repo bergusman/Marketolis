@@ -21,8 +21,9 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
+@property (strong, nonatomic) IBOutlet UISegmentedControl *messagesTypesSegmentedControl;
+
 @property (strong, nonatomic) NSArray *dialogs;
-@property (strong, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 
 @end
 
@@ -31,9 +32,10 @@
 #pragma mark - Setups
 
 - (void)setupNavigationItem {
-    self.navigationItem.title = NSLocalizedString(@"messages.title", @"");
-    self.navigationItem.titleView = self.segmentedControl;
-    //[MRInterfaceHelper setupLeftBarButtonItemForViewController:self];
+    [self.messagesTypesSegmentedControl setTitle:NSLocalizedString(@"messages.type.selling", @"") forSegmentAtIndex:0];
+    [self.messagesTypesSegmentedControl setTitle:NSLocalizedString(@"messages.type.buying", @"") forSegmentAtIndex:1];
+    [self.messagesTypesSegmentedControl sizeToFit];
+    self.navigationItem.titleView = self.messagesTypesSegmentedControl;
 }
 
 - (void)setupTableView {
@@ -47,6 +49,13 @@
         [dialogs addObject:@"Bingo"];
     }
     self.dialogs = dialogs;
+}
+
+#pragma mark - Actions
+
+- (IBAction)messagesTypesSegmentedControlChanged:(id)sender {
+    NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:0];
+    [self.tableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
 #pragma mark - UITableViewDataSource
@@ -90,9 +99,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setupNavigationItem];
     [self setupTableView];
     [self setupTestDialogs];
-    [self setupNavigationItem];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {

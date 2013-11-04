@@ -20,6 +20,11 @@
 "offers.type.favorites" = "Favorites";
 "offers.type.recent" = "Recent";
 
+// Messages
+"messages.title" = "Messages";
+"messages.type.selling" = "Selling";
+"messages.type.buying" = "Buying";
+
 // Sign Up
 "signup.title" = "Sign Up";
 
@@ -45,9 +50,6 @@
 
 // My Offers
 "my_offers.title" = "My Offers";
-
-// Messages
-"messages.title" = "Messages";
 
 // Settings
 "settings.title" = "Settings";
