@@ -429,7 +429,6 @@
 		4424BBC017B956970060CD49 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4424BC3617B965D10060CD49 /* Icons */,
 				4424BBC117B956970060CD49 /* Marketolis-Info.plist */,
 				4424BBC217B956970060CD49 /* InfoPlist.strings */,
 				4424BBC517B956970060CD49 /* main.m */,
@@ -599,13 +598,6 @@
 				4424BC2417B965330060CD49 /* map-search-filed@2x.png */,
 			);
 			name = Map;
-			sourceTree = "<group>";
-		};
-		4424BC3617B965D10060CD49 /* Icons */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Icons;
 			sourceTree = "<group>";
 		};
 		4424BC4B17B96DA60060CD49 /* Offer Annotation View */ = {
