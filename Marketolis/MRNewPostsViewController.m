@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Vitaly Berg. All rights reserved.
 //
 
-#import "MRNewOffersViewController.h"
+#import "MRNewPostsViewController.h"
 
 #import "MROfferViewController.h"
 
@@ -14,26 +14,26 @@
 
 #import <SDWebImage/UIImageView+WebCache.h>
 
-@interface MRNewOffersViewController ()  <
+@interface MRNewPostsViewController ()  <
     UITableViewDataSource,
     UITableViewDelegate
 >
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (strong, nonatomic) IBOutlet UISegmentedControl *offerTypesSegmentedControl;
+@property (strong, nonatomic) IBOutlet UISegmentedControl *postTypesSegmentedControl;
 
 @end
 
-@implementation MRNewOffersViewController
+@implementation MRNewPostsViewController
 
 #pragma mark - Setups
 
 - (void)setupNavigationItem {
-    [self.offerTypesSegmentedControl setTitle:NSLocalizedString(@"offers.type.my", @"") forSegmentAtIndex:0];
-    [self.offerTypesSegmentedControl setTitle:NSLocalizedString(@"offers.type.favorites", @"") forSegmentAtIndex:1];
-    [self.offerTypesSegmentedControl setTitle:NSLocalizedString(@"offers.type.recent", @"") forSegmentAtIndex:2];
-    [self.offerTypesSegmentedControl sizeToFit];
-    self.navigationItem.titleView = self.offerTypesSegmentedControl;
+    [self.postTypesSegmentedControl setTitle:NSLocalizedString(@"posts.type.my", @"") forSegmentAtIndex:0];
+    [self.postTypesSegmentedControl setTitle:NSLocalizedString(@"posts.type.favorites", @"") forSegmentAtIndex:1];
+    [self.postTypesSegmentedControl setTitle:NSLocalizedString(@"posts.type.recent", @"") forSegmentAtIndex:2];
+    [self.postTypesSegmentedControl sizeToFit];
+    self.navigationItem.titleView = self.postTypesSegmentedControl;
 }
 
 - (void)setupTableView {
@@ -95,7 +95,7 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"tabbar.offers", @"");
+        self.title = NSLocalizedString(@"tabbar.posts", @"");
     }
     return self;
 }

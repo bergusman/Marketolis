@@ -22,10 +22,10 @@
 ////////////////////////////////////////////
 
 #import "MRNewMapViewController.h"
-#import "MRNewOffersViewController.h"
+#import "MRNewPostsViewController.h"
 #import "MRNewMessagesViewController.h"
 #import "MRNewProfileViewController.h"
-#import "MRNewCreateOfferViewController.h"
+#import "MRNewCreatePostViewController.h"
 
 @interface MRAppDelegate () <IIViewDeckControllerDelegate>
 
@@ -48,7 +48,7 @@
     MRNewMapViewController *mapVC = [[MRNewMapViewController alloc] init];
     UINavigationController *mapNC = [[UINavigationController alloc] initWithRootViewController:mapVC];
     
-    MRNewOffersViewController *favoritesVC = [[MRNewOffersViewController alloc] init];
+    MRNewPostsViewController *favoritesVC = [[MRNewPostsViewController alloc] init];
     UINavigationController *favoritesNC = [[UINavigationController alloc] initWithRootViewController:favoritesVC];
     
     MRNewMessagesViewController *messagesVC = [[MRNewMessagesViewController alloc] init];
@@ -57,7 +57,7 @@
     MRNewProfileViewController *profileVC = [[MRNewProfileViewController alloc] init];
     UINavigationController *profileNC = [[UINavigationController alloc] initWithRootViewController:profileVC];
     
-    MRNewCreateOfferViewController *createOfferVC = [[MRNewCreateOfferViewController alloc] init];
+    MRNewCreatePostViewController *createOfferVC = [[MRNewCreatePostViewController alloc] init];
     UINavigationController *createOfferNC = [[UINavigationController alloc] initWithRootViewController:createOfferVC];
     
     UITabBarController *tabBarController = [[UITabBarController alloc] init];

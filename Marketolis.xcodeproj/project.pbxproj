@@ -157,14 +157,14 @@
 		AD95BBCB1827A30600E1C0E1 /* MRNewChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD95BBC91827A30600E1C0E1 /* MRNewChatViewController.xib */; };
 		ADAA10091826BD6C0036F14E /* MRNewMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA10071826BD6C0036F14E /* MRNewMapViewController.m */; };
 		ADAA100A1826BD6C0036F14E /* MRNewMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA10081826BD6C0036F14E /* MRNewMapViewController.xib */; };
-		ADAA100E1826BF9C0036F14E /* MRNewOffersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA100C1826BF9C0036F14E /* MRNewOffersViewController.m */; };
-		ADAA100F1826BF9C0036F14E /* MRNewOffersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA100D1826BF9C0036F14E /* MRNewOffersViewController.xib */; };
+		ADAA100E1826BF9C0036F14E /* MRNewPostsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA100C1826BF9C0036F14E /* MRNewPostsViewController.m */; };
+		ADAA100F1826BF9C0036F14E /* MRNewPostsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA100D1826BF9C0036F14E /* MRNewPostsViewController.xib */; };
 		ADAA10131826BFA80036F14E /* MRNewMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA10111826BFA80036F14E /* MRNewMessagesViewController.m */; };
 		ADAA10141826BFA80036F14E /* MRNewMessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA10121826BFA80036F14E /* MRNewMessagesViewController.xib */; };
 		ADAA10181826BFB80036F14E /* MRNewProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA10161826BFB80036F14E /* MRNewProfileViewController.m */; };
 		ADAA10191826BFB80036F14E /* MRNewProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA10171826BFB80036F14E /* MRNewProfileViewController.xib */; };
-		ADAA101D1826BFCC0036F14E /* MRNewCreateOfferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA101B1826BFCC0036F14E /* MRNewCreateOfferViewController.m */; };
-		ADAA101E1826BFCC0036F14E /* MRNewCreateOfferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA101C1826BFCC0036F14E /* MRNewCreateOfferViewController.xib */; };
+		ADAA101D1826BFCC0036F14E /* MRNewCreatePostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA101B1826BFCC0036F14E /* MRNewCreatePostViewController.m */; };
+		ADAA101E1826BFCC0036F14E /* MRNewCreatePostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA101C1826BFCC0036F14E /* MRNewCreatePostViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -351,18 +351,18 @@
 		ADAA10061826BD6C0036F14E /* MRNewMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNewMapViewController.h; sourceTree = "<group>"; };
 		ADAA10071826BD6C0036F14E /* MRNewMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNewMapViewController.m; sourceTree = "<group>"; };
 		ADAA10081826BD6C0036F14E /* MRNewMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRNewMapViewController.xib; sourceTree = "<group>"; };
-		ADAA100B1826BF9C0036F14E /* MRNewOffersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNewOffersViewController.h; sourceTree = "<group>"; };
-		ADAA100C1826BF9C0036F14E /* MRNewOffersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNewOffersViewController.m; sourceTree = "<group>"; };
-		ADAA100D1826BF9C0036F14E /* MRNewOffersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRNewOffersViewController.xib; sourceTree = "<group>"; };
+		ADAA100B1826BF9C0036F14E /* MRNewPostsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNewPostsViewController.h; sourceTree = "<group>"; };
+		ADAA100C1826BF9C0036F14E /* MRNewPostsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNewPostsViewController.m; sourceTree = "<group>"; };
+		ADAA100D1826BF9C0036F14E /* MRNewPostsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRNewPostsViewController.xib; sourceTree = "<group>"; };
 		ADAA10101826BFA80036F14E /* MRNewMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNewMessagesViewController.h; sourceTree = "<group>"; };
 		ADAA10111826BFA80036F14E /* MRNewMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNewMessagesViewController.m; sourceTree = "<group>"; };
 		ADAA10121826BFA80036F14E /* MRNewMessagesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRNewMessagesViewController.xib; sourceTree = "<group>"; };
 		ADAA10151826BFB80036F14E /* MRNewProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNewProfileViewController.h; sourceTree = "<group>"; };
 		ADAA10161826BFB80036F14E /* MRNewProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNewProfileViewController.m; sourceTree = "<group>"; };
 		ADAA10171826BFB80036F14E /* MRNewProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRNewProfileViewController.xib; sourceTree = "<group>"; };
-		ADAA101A1826BFCC0036F14E /* MRNewCreateOfferViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNewCreateOfferViewController.h; sourceTree = "<group>"; };
-		ADAA101B1826BFCC0036F14E /* MRNewCreateOfferViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNewCreateOfferViewController.m; sourceTree = "<group>"; };
-		ADAA101C1826BFCC0036F14E /* MRNewCreateOfferViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRNewCreateOfferViewController.xib; sourceTree = "<group>"; };
+		ADAA101A1826BFCC0036F14E /* MRNewCreatePostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNewCreatePostViewController.h; sourceTree = "<group>"; };
+		ADAA101B1826BFCC0036F14E /* MRNewCreatePostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNewCreatePostViewController.m; sourceTree = "<group>"; };
+		ADAA101C1826BFCC0036F14E /* MRNewCreatePostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRNewCreatePostViewController.xib; sourceTree = "<group>"; };
 		D03B0167DD914BCF8AE73A6F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -979,9 +979,9 @@
 		ADAA10021826BCCF0036F14E /* Posts */ = {
 			isa = PBXGroup;
 			children = (
-				ADAA100B1826BF9C0036F14E /* MRNewOffersViewController.h */,
-				ADAA100C1826BF9C0036F14E /* MRNewOffersViewController.m */,
-				ADAA100D1826BF9C0036F14E /* MRNewOffersViewController.xib */,
+				ADAA100B1826BF9C0036F14E /* MRNewPostsViewController.h */,
+				ADAA100C1826BF9C0036F14E /* MRNewPostsViewController.m */,
+				ADAA100D1826BF9C0036F14E /* MRNewPostsViewController.xib */,
 			);
 			name = Posts;
 			sourceTree = "<group>";
@@ -1009,9 +1009,9 @@
 		ADAA10051826BD260036F14E /* Create Post */ = {
 			isa = PBXGroup;
 			children = (
-				ADAA101A1826BFCC0036F14E /* MRNewCreateOfferViewController.h */,
-				ADAA101B1826BFCC0036F14E /* MRNewCreateOfferViewController.m */,
-				ADAA101C1826BFCC0036F14E /* MRNewCreateOfferViewController.xib */,
+				ADAA101A1826BFCC0036F14E /* MRNewCreatePostViewController.h */,
+				ADAA101B1826BFCC0036F14E /* MRNewCreatePostViewController.m */,
+				ADAA101C1826BFCC0036F14E /* MRNewCreatePostViewController.xib */,
 			);
 			name = "Create Post";
 			sourceTree = "<group>";
@@ -1075,7 +1075,7 @@
 				4424BBC417B956970060CD49 /* InfoPlist.strings in Resources */,
 				4424BBCC17B956970060CD49 /* Default.png in Resources */,
 				4424BBCE17B956970060CD49 /* Default@2x.png in Resources */,
-				ADAA101E1826BFCC0036F14E /* MRNewCreateOfferViewController.xib in Resources */,
+				ADAA101E1826BFCC0036F14E /* MRNewCreatePostViewController.xib in Resources */,
 				4424BBD017B956970060CD49 /* Default-568h@2x.png in Resources */,
 				4424BBE817B95AB50060CD49 /* MRMapViewController.xib in Resources */,
 				4424BBF117B95AFA0060CD49 /* MRMenuViewController.xib in Resources */,
@@ -1121,7 +1121,7 @@
 				AD06D3B217B99626009C880D /* splash-background-pattern.png in Resources */,
 				AD06D3B317B99626009C880D /* splash-background-pattern@2x.png in Resources */,
 				AD06D3B417B99626009C880D /* splash-logo.png in Resources */,
-				ADAA100F1826BF9C0036F14E /* MRNewOffersViewController.xib in Resources */,
+				ADAA100F1826BF9C0036F14E /* MRNewPostsViewController.xib in Resources */,
 				AD06D3B517B99626009C880D /* splash-logo@2x.png in Resources */,
 				AD06D3C217B997F0009C880D /* register-big-button.png in Resources */,
 				AD06D3C317B997F0009C880D /* register-big-button@2x.png in Resources */,
@@ -1244,9 +1244,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADAA100E1826BF9C0036F14E /* MRNewOffersViewController.m in Sources */,
+				ADAA100E1826BF9C0036F14E /* MRNewPostsViewController.m in Sources */,
 				4424BBC617B956970060CD49 /* main.m in Sources */,
-				ADAA101D1826BFCC0036F14E /* MRNewCreateOfferViewController.m in Sources */,
+				ADAA101D1826BFCC0036F14E /* MRNewCreatePostViewController.m in Sources */,
 				4424BBCA17B956970060CD49 /* MRAppDelegate.m in Sources */,
 				ADAA10131826BFA80036F14E /* MRNewMessagesViewController.m in Sources */,
 				4424BBE717B95AB50060CD49 /* MRMapViewController.m in Sources */,

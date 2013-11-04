@@ -6,18 +6,18 @@
 //  Copyright (c) 2013 Vitaly Berg. All rights reserved.
 //
 
-#import "MRNewCreateOfferViewController.h"
+#import "MRNewCreatePostViewController.h"
 
-@interface MRNewCreateOfferViewController ()
+@interface MRNewCreatePostViewController ()
 
 @end
 
-@implementation MRNewCreateOfferViewController
+@implementation MRNewCreatePostViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"tabbar.create_offer", @"");
+        self.title = NSLocalizedString(@"tabbar.create_post", @"");
     }
     return self;
 }

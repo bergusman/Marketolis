@@ -1,5 +1,5 @@
 //
-//  MRNewCreateOfferViewController.h
+//  MRNewFavoritesViewController.h
 //  Marketolis
 //
 //  Created by Vitaly Berg on 11/3/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MRNewCreateOfferViewController : MRViewController
+@interface MRNewPostsViewController : MRViewController
 
 @end

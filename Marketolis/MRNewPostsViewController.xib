@@ -4,9 +4,9 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MRNewOffersViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MRNewPostsViewController">
             <connections>
-                <outlet property="offerTypesSegmentedControl" destination="bT9-eq-YF1" id="w29-fz-uEY"/>
+                <outlet property="postTypesSegmentedControl" destination="bT9-eq-YF1" id="gw7-GC-HIe"/>
                 <outlet property="tableView" destination="zFg-or-Jzv" id="blx-GK-Vb9"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>

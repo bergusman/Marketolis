@@ -10,15 +10,15 @@
 
 // Tab Bar
 "tabbar.map" = "Карта";
-"tabbar.offers" = "Объявления";
+"tabbar.posts" = "Объявления";
 "tabbar.messages" = "Сообщения";
 "tabbar.profile" = "Профиль";
-"tabbar.create_offer" = "Разместить";
+"tabbar.create_post" = "Разместить";
 
-// Offers
-"offers.type.my" = "Мои";
-"offers.type.favorites" = "Избранное";
-"offers.type.recent" = "Просмотр.";
+// Posts
+"posts.type.my" = "Мои";
+"posts.type.favorites" = "Избранное";
+"posts.type.recent" = "Просмотр.";
 
 // Messages
 "messages.title" = "Сообщения";
