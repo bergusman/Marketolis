@@ -40,10 +40,26 @@
     [self.window.rootViewController presentViewController:welcomeVc animated:NO completion:nil];
 }
 
+#pragma mark - Setups
+
+- (void)setupCrashlytics {
+    [Crashlytics startWithAPIKey:@"9ca680cb0b1764352949438282f40e14139eb082"];
+}
+
+- (void)setupFlurry {
+    
+}
+
+- (void)setupGoogleAnalytics {
+    
+}
+
 #pragma mark - UIApplicationDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [Crashlytics startWithAPIKey:@"9ca680cb0b1764352949438282f40e14139eb082"];
+    [self setupCrashlytics];
+    [self setupFlurry];
+    [self setupGoogleAnalytics];
     
     MRNewMapViewController *mapVC = [[MRNewMapViewController alloc] init];
     UINavigationController *mapNC = [[UINavigationController alloc] initWithRootViewController:mapVC];
