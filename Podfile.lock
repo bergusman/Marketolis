@@ -1,4 +1,6 @@
 PODS:
+  - FlurrySDK (4.3.0)
+  - GoogleAnalytics-iOS-SDK (3.0.2)
   - HPGrowingTextView (0.0.1)
   - libwebp (0.3.0-rc7):
     - libwebp/dec
@@ -17,11 +19,15 @@ PODS:
   - ViewDeck (2.3.1)
 
 DEPENDENCIES:
+  - FlurrySDK (~> 4.3.0)
+  - GoogleAnalytics-iOS-SDK (~> 3.0.2)
   - HPGrowingTextView (~> 0.0.1)
   - SDWebImage (~> 3.3)
   - ViewDeck (~> 2.3.1)
 
 SPEC CHECKSUMS:
+  FlurrySDK: 7d91ccc3b3591fd8eb8919f2b90e271e2b0acabe
+  GoogleAnalytics-iOS-SDK: 51661781af363bdaac260df244db2539c707311d
   HPGrowingTextView: 42fee2f684a8c98e61bc19579d274d7fc12b48ca
   libwebp: 40517fa1fd3716eded73b4696c45fc0b66e4b414
   SDWebImage: 79a8bac9ccf85b269100b294f7b43684dab8bf8a
