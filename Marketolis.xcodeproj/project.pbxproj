@@ -153,6 +153,8 @@
 		AD84AA5117C9D31B000444FD /* MRInterfaceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD84AA5017C9D31B000444FD /* MRInterfaceHelper.m */; };
 		AD84AA5417C9F082000444FD /* MRBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD84AA5317C9F081000444FD /* MRBadgeView.m */; };
 		AD95BBC41827A1B800E1C0E1 /* MRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD95BBC31827A1B800E1C0E1 /* MRViewController.m */; };
+		AD95BBCA1827A30600E1C0E1 /* MRNewChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD95BBC81827A30600E1C0E1 /* MRNewChatViewController.m */; };
+		AD95BBCB1827A30600E1C0E1 /* MRNewChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD95BBC91827A30600E1C0E1 /* MRNewChatViewController.xib */; };
 		ADAA10091826BD6C0036F14E /* MRNewMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA10071826BD6C0036F14E /* MRNewMapViewController.m */; };
 		ADAA100A1826BD6C0036F14E /* MRNewMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA10081826BD6C0036F14E /* MRNewMapViewController.xib */; };
 		ADAA100E1826BF9C0036F14E /* MRNewOffersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA100C1826BF9C0036F14E /* MRNewOffersViewController.m */; };
@@ -343,6 +345,9 @@
 		AD84AA5317C9F081000444FD /* MRBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRBadgeView.m; sourceTree = "<group>"; };
 		AD95BBC21827A1B800E1C0E1 /* MRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRViewController.h; sourceTree = "<group>"; };
 		AD95BBC31827A1B800E1C0E1 /* MRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRViewController.m; sourceTree = "<group>"; };
+		AD95BBC71827A30600E1C0E1 /* MRNewChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNewChatViewController.h; sourceTree = "<group>"; };
+		AD95BBC81827A30600E1C0E1 /* MRNewChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNewChatViewController.m; sourceTree = "<group>"; };
+		AD95BBC91827A30600E1C0E1 /* MRNewChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRNewChatViewController.xib; sourceTree = "<group>"; };
 		ADAA10061826BD6C0036F14E /* MRNewMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNewMapViewController.h; sourceTree = "<group>"; };
 		ADAA10071826BD6C0036F14E /* MRNewMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNewMapViewController.m; sourceTree = "<group>"; };
 		ADAA10081826BD6C0036F14E /* MRNewMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRNewMapViewController.xib; sourceTree = "<group>"; };
@@ -912,6 +917,9 @@
 		AD95BBC11827A19D00E1C0E1 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				AD95BBC71827A30600E1C0E1 /* MRNewChatViewController.h */,
+				AD95BBC81827A30600E1C0E1 /* MRNewChatViewController.m */,
+				AD95BBC91827A30600E1C0E1 /* MRNewChatViewController.xib */,
 			);
 			name = Chat;
 			sourceTree = "<group>";
@@ -1164,6 +1172,7 @@
 				AD84AA3217C95992000444FD /* chat-bubble-sent@2x.png in Resources */,
 				AD84AA3317C95992000444FD /* chat-button-send-active.png in Resources */,
 				AD84AA3417C95992000444FD /* chat-button-send-active@2x.png in Resources */,
+				AD95BBCB1827A30600E1C0E1 /* MRNewChatViewController.xib in Resources */,
 				AD84AA3517C95992000444FD /* chat-button-send-passive.png in Resources */,
 				AD84AA3617C95992000444FD /* chat-button-send-passive@2x.png in Resources */,
 				AD84AA3717C95992000444FD /* chat-field-background.png in Resources */,
@@ -1251,6 +1260,7 @@
 				AD06D3D117B99DD5009C880D /* MRConfirmViewController.m in Sources */,
 				AD06D3D617B99DE3009C880D /* MRSignUpViewController.m in Sources */,
 				AD06D3DC17B99E09009C880D /* MRMessagesViewController.m in Sources */,
+				AD95BBCA1827A30600E1C0E1 /* MRNewChatViewController.m in Sources */,
 				AD06D3E117B99E22009C880D /* MRDialogCell.m in Sources */,
 				AD06D3E817B9EE75009C880D /* MRChatViewController.m in Sources */,
 				AD3A47F317C54F2700CA2FD9 /* MRSeparatorView.m in Sources */,

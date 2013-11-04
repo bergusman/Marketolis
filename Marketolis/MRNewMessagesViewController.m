@@ -8,7 +8,7 @@
 
 #import "MRNewMessagesViewController.h"
 
-#import "MRChatViewController.h"
+#import "MRNewChatViewController.h"
 
 #import "MRDialogCell.h"
 
@@ -90,8 +90,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    MRChatViewController *chatVc = [[MRChatViewController alloc] init];
-    [self.navigationController pushViewController:chatVc animated:YES];
+    MRNewChatViewController *chatVC = [[MRNewChatViewController alloc] init];
+    [self.navigationController pushViewController:chatVC animated:YES];
 }
 
 #pragma mark - UIViewController
