@@ -124,11 +124,14 @@
     [navBar setBackgroundImage:[UIImage imageNamed:@"register-header-background"]
                  forBarMetrics:UIBarMetricsDefault];
     
+    NSShadow *shadow = [[NSShadow alloc] init];
+    shadow.shadowColor = [UIColor clearColor];
+    shadow.shadowOffset = CGSizeMake(0, 0);
+    
     NSDictionary *navBarTitleAttrs = @{
-        UITextAttributeFont: [UIFont boldSystemFontOfSize:18],
-        UITextAttributeTextColor: [UIColor whiteColor],
-        UITextAttributeTextShadowColor: [UIColor clearColor],
-        UITextAttributeTextShadowOffset: [NSValue valueWithUIOffset:UIOffsetMake(0, 0)]
+        NSFontAttributeName: [UIFont boldSystemFontOfSize:18],
+        NSForegroundColorAttributeName: [UIColor whiteColor],
+        NSShadowAttributeName: shadow
     };
     
     [navBar setTitleTextAttributes:navBarTitleAttrs];
