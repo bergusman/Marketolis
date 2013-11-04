@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MRNewMapViewController : UIViewController
+@interface MRNewMapViewController : MRViewController
 
 @end

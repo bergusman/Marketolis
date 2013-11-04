@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MRNewProfileViewController : UIViewController
+@interface MRNewProfileViewController : MRViewController
 
 @end

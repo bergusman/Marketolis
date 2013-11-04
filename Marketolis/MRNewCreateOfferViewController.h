@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MRNewCreateOfferViewController : UIViewController
+@interface MRNewCreateOfferViewController : MRViewController
 
 @end
