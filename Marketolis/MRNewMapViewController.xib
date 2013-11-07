@@ -23,6 +23,33 @@
                         <outlet property="delegate" destination="-1" id="0XN-LJ-202"/>
                     </connections>
                 </mapView>
+                <view contentMode="scaleToFill" id="Ncx-Py-umZ">
+                    <rect key="frame" x="265" y="236" width="40" height="95"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5F6-h0-yzM">
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="map-controls-location.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="toUserLocationButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="SMx-Ut-3U8"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jkr-eo-F2C">
+                            <rect key="frame" x="0.0" y="55" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="map-controls-zoomout.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="zoomOutButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="sl0-Xc-b7x"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
@@ -37,4 +64,8 @@
             </connections>
         </searchBar>
     </objects>
+    <resources>
+        <image name="map-controls-location.png" width="40" height="40"/>
+        <image name="map-controls-zoomout.png" width="40" height="40"/>
+    </resources>
 </document>
