@@ -17,7 +17,9 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"tabbar.create_post", @"");
+        self.tabBarItem = [[UITabBarItem alloc] init];
+        self.tabBarItem.image = [UIImage imageNamed:@"tab-bar-add"];
+        self.tabBarItem.title = NSLocalizedString(@"tabbar.create_post", @"");
     }
     return self;
 }

@@ -55,13 +55,6 @@
 
 #pragma mark - Actions
 
-- (IBAction)menuButtonTouchUpInside:(id)sender {
-    //[self.viewDeckController openLeftViewAnimated:YES];
-}
-
-- (IBAction)addOfferButtonTouchUpInside:(id)sender {
-}
-
 - (IBAction)toUserLocationButtonTouchUpInside:(id)sender {
     CLLocationCoordinate2D userCoordinate = self.mapView.userLocation.coordinate;
     
@@ -147,7 +140,9 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"tabbar.map", @"");
+        self.tabBarItem = [[UITabBarItem alloc] init];
+        self.tabBarItem.image = [UIImage imageNamed:@"tab-bar-map"];
+        self.tabBarItem.title = NSLocalizedString(@"tabbar.map", @"");
     }
     return self;
 }

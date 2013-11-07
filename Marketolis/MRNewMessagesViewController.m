@@ -107,7 +107,9 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"tabbar.messages", @"");
+        self.tabBarItem = [[UITabBarItem alloc] init];
+        self.tabBarItem.image = [UIImage imageNamed:@"tab-bar-chat"];
+        self.tabBarItem.title = NSLocalizedString(@"tabbar.messages", @"");
     }
     return self;
 }
