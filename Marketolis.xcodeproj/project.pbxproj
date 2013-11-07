@@ -165,6 +165,22 @@
 		ADAA10191826BFB80036F14E /* MRNewProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA10171826BFB80036F14E /* MRNewProfileViewController.xib */; };
 		ADAA101D1826BFCC0036F14E /* MRNewCreatePostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA101B1826BFCC0036F14E /* MRNewCreatePostViewController.m */; };
 		ADAA101E1826BFCC0036F14E /* MRNewCreatePostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA101C1826BFCC0036F14E /* MRNewCreatePostViewController.xib */; };
+		ADD9929A182C200000E6F9BB /* tab-bar-add.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD99290182C200000E6F9BB /* tab-bar-add.png */; };
+		ADD9929B182C200000E6F9BB /* tab-bar-add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD99291182C200000E6F9BB /* tab-bar-add@2x.png */; };
+		ADD9929C182C200000E6F9BB /* tab-bar-chat.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD99292182C200000E6F9BB /* tab-bar-chat.png */; };
+		ADD9929D182C200000E6F9BB /* tab-bar-chat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD99293182C200000E6F9BB /* tab-bar-chat@2x.png */; };
+		ADD9929E182C200000E6F9BB /* tab-bar-list.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD99294182C200000E6F9BB /* tab-bar-list.png */; };
+		ADD9929F182C200000E6F9BB /* tab-bar-list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD99295182C200000E6F9BB /* tab-bar-list@2x.png */; };
+		ADD992A0182C200000E6F9BB /* tab-bar-map.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD99296182C200000E6F9BB /* tab-bar-map.png */; };
+		ADD992A1182C200000E6F9BB /* tab-bar-map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD99297182C200000E6F9BB /* tab-bar-map@2x.png */; };
+		ADD992A2182C200000E6F9BB /* tab-bar-profile.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD99298182C200000E6F9BB /* tab-bar-profile.png */; };
+		ADD992A3182C200000E6F9BB /* tab-bar-profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD99299182C200000E6F9BB /* tab-bar-profile@2x.png */; };
+		ADD992A8182C23FD00E6F9BB /* map-controls-location.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD992A4182C23FD00E6F9BB /* map-controls-location.png */; };
+		ADD992A9182C23FD00E6F9BB /* map-controls-location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD992A5182C23FD00E6F9BB /* map-controls-location@2x.png */; };
+		ADD992AA182C23FD00E6F9BB /* map-controls-zoomout.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD992A6182C23FD00E6F9BB /* map-controls-zoomout.png */; };
+		ADD992AB182C23FD00E6F9BB /* map-controls-zoomout@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD992A7182C23FD00E6F9BB /* map-controls-zoomout@2x.png */; };
+		ADD992AE182C240D00E6F9BB /* map-item.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD992AC182C240D00E6F9BB /* map-item.png */; };
+		ADD992AF182C240D00E6F9BB /* map-item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD992AD182C240D00E6F9BB /* map-item@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -363,6 +379,22 @@
 		ADAA101A1826BFCC0036F14E /* MRNewCreatePostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNewCreatePostViewController.h; sourceTree = "<group>"; };
 		ADAA101B1826BFCC0036F14E /* MRNewCreatePostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNewCreatePostViewController.m; sourceTree = "<group>"; };
 		ADAA101C1826BFCC0036F14E /* MRNewCreatePostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRNewCreatePostViewController.xib; sourceTree = "<group>"; };
+		ADD99290182C200000E6F9BB /* tab-bar-add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab-bar-add.png"; path = "Resources/Images/tab-bar-add.png"; sourceTree = "<group>"; };
+		ADD99291182C200000E6F9BB /* tab-bar-add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab-bar-add@2x.png"; path = "Resources/Images/tab-bar-add@2x.png"; sourceTree = "<group>"; };
+		ADD99292182C200000E6F9BB /* tab-bar-chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab-bar-chat.png"; path = "Resources/Images/tab-bar-chat.png"; sourceTree = "<group>"; };
+		ADD99293182C200000E6F9BB /* tab-bar-chat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab-bar-chat@2x.png"; path = "Resources/Images/tab-bar-chat@2x.png"; sourceTree = "<group>"; };
+		ADD99294182C200000E6F9BB /* tab-bar-list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab-bar-list.png"; path = "Resources/Images/tab-bar-list.png"; sourceTree = "<group>"; };
+		ADD99295182C200000E6F9BB /* tab-bar-list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab-bar-list@2x.png"; path = "Resources/Images/tab-bar-list@2x.png"; sourceTree = "<group>"; };
+		ADD99296182C200000E6F9BB /* tab-bar-map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab-bar-map.png"; path = "Resources/Images/tab-bar-map.png"; sourceTree = "<group>"; };
+		ADD99297182C200000E6F9BB /* tab-bar-map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab-bar-map@2x.png"; path = "Resources/Images/tab-bar-map@2x.png"; sourceTree = "<group>"; };
+		ADD99298182C200000E6F9BB /* tab-bar-profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab-bar-profile.png"; path = "Resources/Images/tab-bar-profile.png"; sourceTree = "<group>"; };
+		ADD99299182C200000E6F9BB /* tab-bar-profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab-bar-profile@2x.png"; path = "Resources/Images/tab-bar-profile@2x.png"; sourceTree = "<group>"; };
+		ADD992A4182C23FD00E6F9BB /* map-controls-location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "map-controls-location.png"; path = "Resources/Images/map-controls-location.png"; sourceTree = "<group>"; };
+		ADD992A5182C23FD00E6F9BB /* map-controls-location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "map-controls-location@2x.png"; path = "Resources/Images/map-controls-location@2x.png"; sourceTree = "<group>"; };
+		ADD992A6182C23FD00E6F9BB /* map-controls-zoomout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "map-controls-zoomout.png"; path = "Resources/Images/map-controls-zoomout.png"; sourceTree = "<group>"; };
+		ADD992A7182C23FD00E6F9BB /* map-controls-zoomout@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "map-controls-zoomout@2x.png"; path = "Resources/Images/map-controls-zoomout@2x.png"; sourceTree = "<group>"; };
+		ADD992AC182C240D00E6F9BB /* map-item.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "map-item.png"; path = "Resources/Images/map-item.png"; sourceTree = "<group>"; };
+		ADD992AD182C240D00E6F9BB /* map-item@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "map-item@2x.png"; path = "Resources/Images/map-item@2x.png"; sourceTree = "<group>"; };
 		D03B0167DD914BCF8AE73A6F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -464,6 +496,7 @@
 		4424BBE217B95A640060CD49 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				ADD9928F182C1FC900E6F9BB /* Tab Bars */,
 				AD84AA2217C9597F000444FD /* Chat */,
 				AD3A47DB17C54A7100CA2FD9 /* Content */,
 				AD3A47C617C5426C00CA2FD9 /* NavBar */,
@@ -580,6 +613,12 @@
 		4424BC1417B9651C0060CD49 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				ADD992AC182C240D00E6F9BB /* map-item.png */,
+				ADD992AD182C240D00E6F9BB /* map-item@2x.png */,
+				ADD992A4182C23FD00E6F9BB /* map-controls-location.png */,
+				ADD992A5182C23FD00E6F9BB /* map-controls-location@2x.png */,
+				ADD992A6182C23FD00E6F9BB /* map-controls-zoomout.png */,
+				ADD992A7182C23FD00E6F9BB /* map-controls-zoomout@2x.png */,
 				4424BC1517B965330060CD49 /* map-button-add-offer.png */,
 				4424BC1617B965330060CD49 /* map-button-add-offer@2x.png */,
 				4424BC1717B965330060CD49 /* map-button-location.png */,
@@ -1016,6 +1055,23 @@
 			name = "Create Post";
 			sourceTree = "<group>";
 		};
+		ADD9928F182C1FC900E6F9BB /* Tab Bars */ = {
+			isa = PBXGroup;
+			children = (
+				ADD99290182C200000E6F9BB /* tab-bar-add.png */,
+				ADD99291182C200000E6F9BB /* tab-bar-add@2x.png */,
+				ADD99292182C200000E6F9BB /* tab-bar-chat.png */,
+				ADD99293182C200000E6F9BB /* tab-bar-chat@2x.png */,
+				ADD99294182C200000E6F9BB /* tab-bar-list.png */,
+				ADD99295182C200000E6F9BB /* tab-bar-list@2x.png */,
+				ADD99296182C200000E6F9BB /* tab-bar-map.png */,
+				ADD99297182C200000E6F9BB /* tab-bar-map@2x.png */,
+				ADD99298182C200000E6F9BB /* tab-bar-profile.png */,
+				ADD99299182C200000E6F9BB /* tab-bar-profile@2x.png */,
+			);
+			name = "Tab Bars";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1090,6 +1146,8 @@
 				4424BC0E17B963510060CD49 /* menu-icon-history@2x.png in Resources */,
 				4424BC0F17B963510060CD49 /* menu-icon-messages.png in Resources */,
 				4424BC1017B963510060CD49 /* menu-icon-messages@2x.png in Resources */,
+				ADD992AE182C240D00E6F9BB /* map-item.png in Resources */,
+				ADD992A8182C23FD00E6F9BB /* map-controls-location.png in Resources */,
 				4424BC1117B963510060CD49 /* menu-icon-settings.png in Resources */,
 				4424BC1217B963510060CD49 /* menu-icon-settings@2x.png in Resources */,
 				4424BC2517B965330060CD49 /* map-button-add-offer.png in Resources */,
@@ -1101,6 +1159,7 @@
 				4424BC2B17B965330060CD49 /* map-button-menu-passive.png in Resources */,
 				4424BC2C17B965330060CD49 /* map-button-menu-passive@2x.png in Resources */,
 				4424BC2D17B965330060CD49 /* map-button-zoomout.png in Resources */,
+				ADD9929E182C200000E6F9BB /* tab-bar-list.png in Resources */,
 				4424BC2E17B965330060CD49 /* map-button-zoomout@2x.png in Resources */,
 				4424BC2F17B965330060CD49 /* map-item-offer-card.png in Resources */,
 				4424BC3017B965330060CD49 /* map-item-offer-card@2x.png in Resources */,
@@ -1113,14 +1172,17 @@
 				4424BC4017B966160060CD49 /* Icon-72@2x.png in Resources */,
 				4424BC4117B966160060CD49 /* Icon-Small-50.png in Resources */,
 				4424BC4217B966160060CD49 /* Icon-Small-50@2x.png in Resources */,
+				ADD992A3182C200000E6F9BB /* tab-bar-profile@2x.png in Resources */,
 				4424BC4317B966160060CD49 /* Icon-Small.png in Resources */,
 				4424BC4417B966160060CD49 /* Icon-Small@2x.png in Resources */,
 				4424BC4517B966160060CD49 /* Icon.png in Resources */,
 				4424BC4617B966160060CD49 /* Icon@2x.png in Resources */,
 				AD06D3AD17B995DC009C880D /* MRWelcomeViewController.xib in Resources */,
+				ADD9929A182C200000E6F9BB /* tab-bar-add.png in Resources */,
 				AD06D3B217B99626009C880D /* splash-background-pattern.png in Resources */,
 				AD06D3B317B99626009C880D /* splash-background-pattern@2x.png in Resources */,
 				AD06D3B417B99626009C880D /* splash-logo.png in Resources */,
+				ADD992AB182C23FD00E6F9BB /* map-controls-zoomout@2x.png in Resources */,
 				ADAA100F1826BF9C0036F14E /* MRNewPostsViewController.xib in Resources */,
 				AD06D3B517B99626009C880D /* splash-logo@2x.png in Resources */,
 				AD06D3C217B997F0009C880D /* register-big-button.png in Resources */,
@@ -1132,6 +1194,7 @@
 				AD06D3C817B997F0009C880D /* register-header-background.png in Resources */,
 				AD06D3C917B997F0009C880D /* register-header-background@2x.png in Resources */,
 				AD06D3CA17B997F0009C880D /* register-small-button.png in Resources */,
+				ADD992A0182C200000E6F9BB /* tab-bar-map.png in Resources */,
 				AD06D3CB17B997F0009C880D /* register-small-button@2x.png in Resources */,
 				AD06D3D217B99DD5009C880D /* MRConfirmViewController~568h.xib in Resources */,
 				AD06D3D717B99DE3009C880D /* MRSignUpViewController~568h.xib in Resources */,
@@ -1139,6 +1202,7 @@
 				AD06D3E317B9A3BC009C880D /* MRDialogCell.xib in Resources */,
 				AD06D3E917B9EE75009C880D /* MRChatViewController.xib in Resources */,
 				AD3A47D117C542F900CA2FD9 /* navbar-button-action-active.png in Resources */,
+				ADD9929C182C200000E6F9BB /* tab-bar-chat.png in Resources */,
 				AD3A47D217C542F900CA2FD9 /* navbar-button-action-active@2x.png in Resources */,
 				AD3A47D317C542F900CA2FD9 /* navbar-button-action-passive.png in Resources */,
 				AD3A47D417C542F900CA2FD9 /* navbar-button-action-passive@2x.png in Resources */,
@@ -1147,6 +1211,7 @@
 				AD3A47D717C542F900CA2FD9 /* navbar-icon-back.png in Resources */,
 				AD3A47D817C542F900CA2FD9 /* navbar-icon-back@2x.png in Resources */,
 				AD3A47D917C542F900CA2FD9 /* navbar-icon-favourites.png in Resources */,
+				ADD992A2182C200000E6F9BB /* tab-bar-profile.png in Resources */,
 				AD3A47DA17C542F900CA2FD9 /* navbar-icon-favourites@2x.png in Resources */,
 				AD3A47E617C54ADD00CA2FD9 /* content-action-button.png in Resources */,
 				AD3A47E717C54ADD00CA2FD9 /* content-action-button@2x.png in Resources */,
@@ -1155,16 +1220,21 @@
 				AD3A47EA17C54ADD00CA2FD9 /* content-button-add-post.png in Resources */,
 				AD3A47EB17C54ADD00CA2FD9 /* content-button-add-post@2x.png in Resources */,
 				AD3A47EC17C54ADD00CA2FD9 /* content-list-active.png in Resources */,
+				ADD992A9182C23FD00E6F9BB /* map-controls-location@2x.png in Resources */,
 				AD3A47ED17C54ADD00CA2FD9 /* content-list-active@2x.png in Resources */,
 				AD3A47EE17C54ADD00CA2FD9 /* content-list-passive.png in Resources */,
+				ADD9929B182C200000E6F9BB /* tab-bar-add@2x.png in Resources */,
 				AD3A47EF17C54ADD00CA2FD9 /* content-list-passive@2x.png in Resources */,
 				AD3A47F617C54F6800CA2FD9 /* menu-icon-map.png in Resources */,
 				AD3A47F717C54F6800CA2FD9 /* menu-icon-map@2x.png in Resources */,
 				AD3A47FD17C5511700CA2FD9 /* MRSettingsViewController.xib in Resources */,
 				AD3A480317C5516D00CA2FD9 /* MROffersViewController.xib in Resources */,
+				ADD9929F182C200000E6F9BB /* tab-bar-list@2x.png in Resources */,
+				ADD992AF182C240D00E6F9BB /* map-item@2x.png in Resources */,
 				AD3A480717C5525B00CA2FD9 /* Localizable.strings in Resources */,
 				AD3A481017C557CC00CA2FD9 /* MROfferCell.xib in Resources */,
 				AD3A481617C5D99E00CA2FD9 /* MROfferViewController.xib in Resources */,
+				ADD9929D182C200000E6F9BB /* tab-bar-chat@2x.png in Resources */,
 				AD3A481C17C5DEDC00CA2FD9 /* MROfferPhotoCell.xib in Resources */,
 				AD84AA2F17C95992000444FD /* chat-bubble-incoming.png in Resources */,
 				AD84AA3017C95992000444FD /* chat-bubble-incoming@2x.png in Resources */,
@@ -1173,6 +1243,7 @@
 				AD84AA3317C95992000444FD /* chat-button-send-active.png in Resources */,
 				AD84AA3417C95992000444FD /* chat-button-send-active@2x.png in Resources */,
 				AD95BBCB1827A30600E1C0E1 /* MRNewChatViewController.xib in Resources */,
+				ADD992AA182C23FD00E6F9BB /* map-controls-zoomout.png in Resources */,
 				AD84AA3517C95992000444FD /* chat-button-send-passive.png in Resources */,
 				AD84AA3617C95992000444FD /* chat-button-send-passive@2x.png in Resources */,
 				AD84AA3717C95992000444FD /* chat-field-background.png in Resources */,
@@ -1190,6 +1261,7 @@
 				AD38C75417E7AC5500831CF8 /* MRLeftBubbleCell.xib in Resources */,
 				AD38C75617E7AC7D00831CF8 /* MRRightBubbleCell.xib in Resources */,
 				AD38C75817E82B6100831CF8 /* MRInputTextBar.xib in Resources */,
+				ADD992A1182C200000E6F9BB /* tab-bar-map@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
