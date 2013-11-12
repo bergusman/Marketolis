@@ -15,6 +15,13 @@
 "tabbar.profile" = "Profile";
 "tabbar.create_post" = "Create Ad";
 
+// Profile
+"profile.title" = "Profile";
+"profile.section.notifications.title" = "Notifications";
+
+// Profile Editor
+"profile.editor.title" = "Profile";
+
 // Posts
 "posts.type.my" = "My";
 "posts.type.favorites" = "Favorites";

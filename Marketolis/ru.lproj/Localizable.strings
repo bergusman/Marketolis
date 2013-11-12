@@ -15,6 +15,13 @@
 "tabbar.profile" = "Профиль";
 "tabbar.create_post" = "Разместить";
 
+// Profile
+"profile.title" = "Профиль";
+"profile.section.notifications.title" = "Уведомления";
+
+// Profile Editor
+"profile.editor.title" = "Профиль";
+
 // Posts
 "posts.type.my" = "Мои";
 "posts.type.favorites" = "Избранное";
