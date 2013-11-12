@@ -165,6 +165,16 @@
 		ADAA10191826BFB80036F14E /* MRNewProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA10171826BFB80036F14E /* MRNewProfileViewController.xib */; };
 		ADAA101D1826BFCC0036F14E /* MRNewCreatePostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA101B1826BFCC0036F14E /* MRNewCreatePostViewController.m */; };
 		ADAA101E1826BFCC0036F14E /* MRNewCreatePostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA101C1826BFCC0036F14E /* MRNewCreatePostViewController.xib */; };
+		ADC111CB1831FF2D004202EC /* social-icon-facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC111C31831FF2D004202EC /* social-icon-facebook.png */; };
+		ADC111CC1831FF2D004202EC /* social-icon-facebook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC111C41831FF2D004202EC /* social-icon-facebook@2x.png */; };
+		ADC111CD1831FF2D004202EC /* social-icon-odnoklassniki.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC111C51831FF2D004202EC /* social-icon-odnoklassniki.png */; };
+		ADC111CE1831FF2D004202EC /* social-icon-odnoklassniki@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC111C61831FF2D004202EC /* social-icon-odnoklassniki@2x.png */; };
+		ADC111CF1831FF2D004202EC /* social-icon-twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC111C71831FF2D004202EC /* social-icon-twitter.png */; };
+		ADC111D01831FF2D004202EC /* social-icon-twitter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC111C81831FF2D004202EC /* social-icon-twitter@2x.png */; };
+		ADC111D11831FF2D004202EC /* social-icon-vkontakte.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC111C91831FF2D004202EC /* social-icon-vkontakte.png */; };
+		ADC111D21831FF2D004202EC /* social-icon-vkontakte@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC111CA1831FF2D004202EC /* social-icon-vkontakte@2x.png */; };
+		ADC111D718320059004202EC /* MRProfileEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC111D518320059004202EC /* MRProfileEditorViewController.m */; };
+		ADC111D818320059004202EC /* MRProfileEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADC111D618320059004202EC /* MRProfileEditorViewController.xib */; };
 		ADD9929A182C200000E6F9BB /* tab-bar-add.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD99290182C200000E6F9BB /* tab-bar-add.png */; };
 		ADD9929B182C200000E6F9BB /* tab-bar-add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD99291182C200000E6F9BB /* tab-bar-add@2x.png */; };
 		ADD9929C182C200000E6F9BB /* tab-bar-chat.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD99292182C200000E6F9BB /* tab-bar-chat.png */; };
@@ -379,6 +389,17 @@
 		ADAA101A1826BFCC0036F14E /* MRNewCreatePostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNewCreatePostViewController.h; sourceTree = "<group>"; };
 		ADAA101B1826BFCC0036F14E /* MRNewCreatePostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNewCreatePostViewController.m; sourceTree = "<group>"; };
 		ADAA101C1826BFCC0036F14E /* MRNewCreatePostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRNewCreatePostViewController.xib; sourceTree = "<group>"; };
+		ADC111C31831FF2D004202EC /* social-icon-facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "social-icon-facebook.png"; sourceTree = "<group>"; };
+		ADC111C41831FF2D004202EC /* social-icon-facebook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "social-icon-facebook@2x.png"; sourceTree = "<group>"; };
+		ADC111C51831FF2D004202EC /* social-icon-odnoklassniki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "social-icon-odnoklassniki.png"; sourceTree = "<group>"; };
+		ADC111C61831FF2D004202EC /* social-icon-odnoklassniki@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "social-icon-odnoklassniki@2x.png"; sourceTree = "<group>"; };
+		ADC111C71831FF2D004202EC /* social-icon-twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "social-icon-twitter.png"; sourceTree = "<group>"; };
+		ADC111C81831FF2D004202EC /* social-icon-twitter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "social-icon-twitter@2x.png"; sourceTree = "<group>"; };
+		ADC111C91831FF2D004202EC /* social-icon-vkontakte.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "social-icon-vkontakte.png"; sourceTree = "<group>"; };
+		ADC111CA1831FF2D004202EC /* social-icon-vkontakte@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "social-icon-vkontakte@2x.png"; sourceTree = "<group>"; };
+		ADC111D418320059004202EC /* MRProfileEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRProfileEditorViewController.h; sourceTree = "<group>"; };
+		ADC111D518320059004202EC /* MRProfileEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRProfileEditorViewController.m; sourceTree = "<group>"; };
+		ADC111D618320059004202EC /* MRProfileEditorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRProfileEditorViewController.xib; sourceTree = "<group>"; };
 		ADD99290182C200000E6F9BB /* tab-bar-add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab-bar-add.png"; path = "Resources/Images/tab-bar-add.png"; sourceTree = "<group>"; };
 		ADD99291182C200000E6F9BB /* tab-bar-add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab-bar-add@2x.png"; path = "Resources/Images/tab-bar-add@2x.png"; sourceTree = "<group>"; };
 		ADD99292182C200000E6F9BB /* tab-bar-chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab-bar-chat.png"; path = "Resources/Images/tab-bar-chat.png"; sourceTree = "<group>"; };
@@ -496,6 +517,7 @@
 		4424BBE217B95A640060CD49 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				ADC111C21831FF10004202EC /* Shares */,
 				ADD9928F182C1FC900E6F9BB /* Tab Bars */,
 				AD84AA2217C9597F000444FD /* Chat */,
 				AD3A47DB17C54A7100CA2FD9 /* Content */,
@@ -1028,6 +1050,7 @@
 		ADAA10031826BD1B0036F14E /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				ADC111D318320040004202EC /* Edit */,
 				ADAA10151826BFB80036F14E /* MRNewProfileViewController.h */,
 				ADAA10161826BFB80036F14E /* MRNewProfileViewController.m */,
 				ADAA10171826BFB80036F14E /* MRNewProfileViewController.xib */,
@@ -1053,6 +1076,31 @@
 				ADAA101C1826BFCC0036F14E /* MRNewCreatePostViewController.xib */,
 			);
 			name = "Create Post";
+			sourceTree = "<group>";
+		};
+		ADC111C21831FF10004202EC /* Shares */ = {
+			isa = PBXGroup;
+			children = (
+				ADC111C31831FF2D004202EC /* social-icon-facebook.png */,
+				ADC111C41831FF2D004202EC /* social-icon-facebook@2x.png */,
+				ADC111C51831FF2D004202EC /* social-icon-odnoklassniki.png */,
+				ADC111C61831FF2D004202EC /* social-icon-odnoklassniki@2x.png */,
+				ADC111C71831FF2D004202EC /* social-icon-twitter.png */,
+				ADC111C81831FF2D004202EC /* social-icon-twitter@2x.png */,
+				ADC111C91831FF2D004202EC /* social-icon-vkontakte.png */,
+				ADC111CA1831FF2D004202EC /* social-icon-vkontakte@2x.png */,
+			);
+			name = Shares;
+			sourceTree = "<group>";
+		};
+		ADC111D318320040004202EC /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				ADC111D418320059004202EC /* MRProfileEditorViewController.h */,
+				ADC111D518320059004202EC /* MRProfileEditorViewController.m */,
+				ADC111D618320059004202EC /* MRProfileEditorViewController.xib */,
+			);
+			name = Edit;
 			sourceTree = "<group>";
 		};
 		ADD9928F182C1FC900E6F9BB /* Tab Bars */ = {
@@ -1130,12 +1178,16 @@
 			files = (
 				4424BBC417B956970060CD49 /* InfoPlist.strings in Resources */,
 				4424BBCC17B956970060CD49 /* Default.png in Resources */,
+				ADC111D21831FF2D004202EC /* social-icon-vkontakte@2x.png in Resources */,
 				4424BBCE17B956970060CD49 /* Default@2x.png in Resources */,
 				ADAA101E1826BFCC0036F14E /* MRNewCreatePostViewController.xib in Resources */,
+				ADC111CF1831FF2D004202EC /* social-icon-twitter.png in Resources */,
 				4424BBD017B956970060CD49 /* Default-568h@2x.png in Resources */,
 				4424BBE817B95AB50060CD49 /* MRMapViewController.xib in Resources */,
 				4424BBF117B95AFA0060CD49 /* MRMenuViewController.xib in Resources */,
 				4424BBF917B9602E0060CD49 /* MRMenuItemCell.xib in Resources */,
+				ADC111D818320059004202EC /* MRProfileEditorViewController.xib in Resources */,
+				ADC111CC1831FF2D004202EC /* social-icon-facebook@2x.png in Resources */,
 				4424BC0717B963510060CD49 /* menu-counter.png in Resources */,
 				4424BC0817B963510060CD49 /* menu-counter@2x.png in Resources */,
 				4424BC0917B963510060CD49 /* menu-footer-logo.png in Resources */,
@@ -1165,6 +1217,7 @@
 				4424BC3017B965330060CD49 /* map-item-offer-card@2x.png in Resources */,
 				4424BC3117B965330060CD49 /* map-search-button-clear.png in Resources */,
 				4424BC3217B965330060CD49 /* map-search-button-clear@2x.png in Resources */,
+				ADC111CE1831FF2D004202EC /* social-icon-odnoklassniki@2x.png in Resources */,
 				4424BC3317B965330060CD49 /* map-search-filed.png in Resources */,
 				4424BC3417B965330060CD49 /* map-search-filed@2x.png in Resources */,
 				4424BC3F17B966160060CD49 /* Icon-72.png in Resources */,
@@ -1201,6 +1254,7 @@
 				AD06D3DD17B99E09009C880D /* MRMessagesViewController.xib in Resources */,
 				AD06D3E317B9A3BC009C880D /* MRDialogCell.xib in Resources */,
 				AD06D3E917B9EE75009C880D /* MRChatViewController.xib in Resources */,
+				ADC111CB1831FF2D004202EC /* social-icon-facebook.png in Resources */,
 				AD3A47D117C542F900CA2FD9 /* navbar-button-action-active.png in Resources */,
 				ADD9929C182C200000E6F9BB /* tab-bar-chat.png in Resources */,
 				AD3A47D217C542F900CA2FD9 /* navbar-button-action-active@2x.png in Resources */,
@@ -1224,12 +1278,14 @@
 				AD3A47ED17C54ADD00CA2FD9 /* content-list-active@2x.png in Resources */,
 				AD3A47EE17C54ADD00CA2FD9 /* content-list-passive.png in Resources */,
 				ADD9929B182C200000E6F9BB /* tab-bar-add@2x.png in Resources */,
+				ADC111D01831FF2D004202EC /* social-icon-twitter@2x.png in Resources */,
 				AD3A47EF17C54ADD00CA2FD9 /* content-list-passive@2x.png in Resources */,
 				AD3A47F617C54F6800CA2FD9 /* menu-icon-map.png in Resources */,
 				AD3A47F717C54F6800CA2FD9 /* menu-icon-map@2x.png in Resources */,
 				AD3A47FD17C5511700CA2FD9 /* MRSettingsViewController.xib in Resources */,
 				AD3A480317C5516D00CA2FD9 /* MROffersViewController.xib in Resources */,
 				ADD9929F182C200000E6F9BB /* tab-bar-list@2x.png in Resources */,
+				ADC111CD1831FF2D004202EC /* social-icon-odnoklassniki.png in Resources */,
 				ADD992AF182C240D00E6F9BB /* map-item@2x.png in Resources */,
 				AD3A480717C5525B00CA2FD9 /* Localizable.strings in Resources */,
 				AD3A481017C557CC00CA2FD9 /* MROfferCell.xib in Resources */,
@@ -1262,6 +1318,7 @@
 				AD38C75617E7AC7D00831CF8 /* MRRightBubbleCell.xib in Resources */,
 				AD38C75817E82B6100831CF8 /* MRInputTextBar.xib in Resources */,
 				ADD992A1182C200000E6F9BB /* tab-bar-map@2x.png in Resources */,
+				ADC111D11831FF2D004202EC /* social-icon-vkontakte.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1320,6 +1377,7 @@
 				4424BBC617B956970060CD49 /* main.m in Sources */,
 				ADAA101D1826BFCC0036F14E /* MRNewCreatePostViewController.m in Sources */,
 				4424BBCA17B956970060CD49 /* MRAppDelegate.m in Sources */,
+				ADC111D718320059004202EC /* MRProfileEditorViewController.m in Sources */,
 				ADAA10131826BFA80036F14E /* MRNewMessagesViewController.m in Sources */,
 				4424BBE717B95AB50060CD49 /* MRMapViewController.m in Sources */,
 				4424BBF017B95AFA0060CD49 /* MRMenuViewController.m in Sources */,
