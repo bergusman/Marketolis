@@ -25,6 +25,8 @@
 #import <FlurrySDK/Flurry.h>
 #import <GoogleAnalytics-iOS-SDK/GAI.h>
 
+#import "MRPostViewController.h"
+
 @interface MRAppDelegate ()
 
 @end
@@ -66,6 +68,12 @@
     [[UIApplication sharedApplication] registerForRemoteNotificationTypes:type];
 }
 
+- (void)showTestPost {
+    MRPostViewController *postVC = [[MRPostViewController alloc] init];
+    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:postVC];
+    self.window.rootViewController = nc;
+}
+
 #pragma mark - Setups
 
 - (void)setupCrashlytics {
@@ -94,7 +102,8 @@
     [self setupGoogleAnalytics];
     [self setupWindow];
     //[self showWelcome];
-    [self showApp];
+    //[self showApp];
+    [self showTestPost];
     [self registerForRemoteNotifications];
     return YES;
 }
