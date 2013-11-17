@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GoogleAnalytics-iOS-SDK/GAITrackedViewController.h>
 
-@interface MRViewController : UIViewController
+@interface MRViewController : GAITrackedViewController
 
 @property (strong, nonatomic) IBOutlet NSString *analyticTitle;
 

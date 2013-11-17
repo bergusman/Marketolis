@@ -14,9 +14,9 @@
 
 @implementation MRViewController
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    // Create page view
+- (void)setAnalyticTitle:(NSString *)analyticTitle {
+    _analyticTitle = analyticTitle;
+    self.screenName = analyticTitle;
 }
 
 @end
