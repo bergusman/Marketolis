@@ -167,6 +167,8 @@
 		ADAA10191826BFB80036F14E /* MRNewProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA10171826BFB80036F14E /* MRNewProfileViewController.xib */; };
 		ADAA101D1826BFCC0036F14E /* MRNewCreatePostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA101B1826BFCC0036F14E /* MRNewCreatePostViewController.m */; };
 		ADAA101E1826BFCC0036F14E /* MRNewCreatePostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA101C1826BFCC0036F14E /* MRNewCreatePostViewController.xib */; };
+		ADB0144018390FC800DE0936 /* MRProfileNotificationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB0143F18390FC800DE0936 /* MRProfileNotificationCell.m */; };
+		ADB014421839100600DE0936 /* MRProfileNotificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADB014411839100600DE0936 /* MRProfileNotificationCell.xib */; };
 		ADC111CB1831FF2D004202EC /* social-icon-facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC111C31831FF2D004202EC /* social-icon-facebook.png */; };
 		ADC111CC1831FF2D004202EC /* social-icon-facebook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC111C41831FF2D004202EC /* social-icon-facebook@2x.png */; };
 		ADC111CD1831FF2D004202EC /* social-icon-odnoklassniki.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC111C51831FF2D004202EC /* social-icon-odnoklassniki.png */; };
@@ -393,6 +395,9 @@
 		ADAA101A1826BFCC0036F14E /* MRNewCreatePostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNewCreatePostViewController.h; sourceTree = "<group>"; };
 		ADAA101B1826BFCC0036F14E /* MRNewCreatePostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNewCreatePostViewController.m; sourceTree = "<group>"; };
 		ADAA101C1826BFCC0036F14E /* MRNewCreatePostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRNewCreatePostViewController.xib; sourceTree = "<group>"; };
+		ADB0143E18390FC800DE0936 /* MRProfileNotificationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRProfileNotificationCell.h; sourceTree = "<group>"; };
+		ADB0143F18390FC800DE0936 /* MRProfileNotificationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRProfileNotificationCell.m; sourceTree = "<group>"; };
+		ADB014411839100600DE0936 /* MRProfileNotificationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRProfileNotificationCell.xib; sourceTree = "<group>"; };
 		ADC111C31831FF2D004202EC /* social-icon-facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "social-icon-facebook.png"; sourceTree = "<group>"; };
 		ADC111C41831FF2D004202EC /* social-icon-facebook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "social-icon-facebook@2x.png"; sourceTree = "<group>"; };
 		ADC111C51831FF2D004202EC /* social-icon-odnoklassniki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "social-icon-odnoklassniki.png"; sourceTree = "<group>"; };
@@ -521,7 +526,7 @@
 		4424BBE217B95A640060CD49 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				ADC111C21831FF10004202EC /* Shares */,
+				ADC111C21831FF10004202EC /* Sharing */,
 				ADD9928F182C1FC900E6F9BB /* Tab Bars */,
 				AD84AA2217C9597F000444FD /* Chat */,
 				AD3A47DB17C54A7100CA2FD9 /* Content */,
@@ -1056,6 +1061,7 @@
 		ADAA10031826BD1B0036F14E /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				ADB0143D18390FA600DE0936 /* Notification Cell */,
 				ADC111D318320040004202EC /* Edit */,
 				ADAA10151826BFB80036F14E /* MRNewProfileViewController.h */,
 				ADAA10161826BFB80036F14E /* MRNewProfileViewController.m */,
@@ -1084,7 +1090,17 @@
 			name = "Create Post";
 			sourceTree = "<group>";
 		};
-		ADC111C21831FF10004202EC /* Shares */ = {
+		ADB0143D18390FA600DE0936 /* Notification Cell */ = {
+			isa = PBXGroup;
+			children = (
+				ADB0143E18390FC800DE0936 /* MRProfileNotificationCell.h */,
+				ADB0143F18390FC800DE0936 /* MRProfileNotificationCell.m */,
+				ADB014411839100600DE0936 /* MRProfileNotificationCell.xib */,
+			);
+			name = "Notification Cell";
+			sourceTree = "<group>";
+		};
+		ADC111C21831FF10004202EC /* Sharing */ = {
 			isa = PBXGroup;
 			children = (
 				ADC111C31831FF2D004202EC /* social-icon-facebook.png */,
@@ -1096,7 +1112,7 @@
 				ADC111C91831FF2D004202EC /* social-icon-vkontakte.png */,
 				ADC111CA1831FF2D004202EC /* social-icon-vkontakte@2x.png */,
 			);
-			name = Shares;
+			name = Sharing;
 			sourceTree = "<group>";
 		};
 		ADC111D318320040004202EC /* Edit */ = {
@@ -1317,6 +1333,7 @@
 				AD84AA3D17C959EB000444FD /* menu-icon-added-by-me.png in Resources */,
 				AD09832E1839026600DB18BC /* marketolis-logo@2x.png in Resources */,
 				AD84AA3E17C959EB000444FD /* menu-icon-added-by-me@2x.png in Resources */,
+				ADB014421839100600DE0936 /* MRProfileNotificationCell.xib in Resources */,
 				AD84AA4117C95A1C000444FD /* navbar-icon-menu.png in Resources */,
 				AD84AA4217C95A1C000444FD /* navbar-icon-menu@2x.png in Resources */,
 				AD48FFB117CBEE86005E198C /* MRConfirmViewController.xib in Resources */,
@@ -1407,6 +1424,7 @@
 				AD3A480217C5516D00CA2FD9 /* MROffersViewController.m in Sources */,
 				AD3A480E17C557BE00CA2FD9 /* MROfferCell.m in Sources */,
 				AD3A481517C5D99E00CA2FD9 /* MROfferViewController.m in Sources */,
+				ADB0144018390FC800DE0936 /* MRProfileNotificationCell.m in Sources */,
 				AD3A481A17C5DEC300CA2FD9 /* MROfferPhotoCell.m in Sources */,
 				AD84AA4617C95C45000444FD /* MRMenuButton.m in Sources */,
 				AD84AA4D17C96978000444FD /* MRBackButton.m in Sources */,
