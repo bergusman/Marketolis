@@ -34,8 +34,9 @@
 #pragma mark - Content
 
 - (void)showWelcome {
-    MRWelcomeViewController *welcomeVc = [[MRWelcomeViewController alloc] init];
-    [self.window.rootViewController presentViewController:welcomeVc animated:NO completion:nil];
+    MRWelcomeViewController *welcomeVC = [[MRWelcomeViewController alloc] init];
+    self.window.rootViewController = welcomeVC;
+    //[self.window.rootViewController presentViewController:welcomeVC animated:NO completion:nil];
 }
 
 - (void)showApp {
@@ -58,6 +59,11 @@
     tabBarController.viewControllers = @[mapNC, favoritesNC, messagesNC, profileNC, createOfferNC];
     
     self.window.rootViewController = tabBarController;
+}
+
+- (void)registerForRemoteNotifications {
+    UIRemoteNotificationType type = UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert;
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:type];
 }
 
 #pragma mark - Setups
@@ -87,8 +93,22 @@
     [self setupFlurry];
     [self setupGoogleAnalytics];
     [self setupWindow];
+    //[self showWelcome];
     [self showApp];
+    [self registerForRemoteNotifications];
     return YES;
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken  {
+    
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult result))completionHandler {
+    
 }
 
 @end
