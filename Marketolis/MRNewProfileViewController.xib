@@ -5,6 +5,9 @@
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MRNewProfileViewController">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="analyticTitle" value="Profile"/>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="tableView" destination="9HZ-bZ-KZU" id="S05-7d-Gp7"/>
                 <outlet property="view" destination="1" id="3"/>
