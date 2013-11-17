@@ -15,52 +15,30 @@
 #import "MRSignUpViewController.h"
 #import "MRConfirmViewController.h"
 
-#import <ViewDeck/IIViewDeckController.h>
-#import <Crashlytics/Crashlytics.h>
-#import <QuartzCore/QuartzCore.h>
-
-////////////////////////////////////////////
-
 #import "MRNewMapViewController.h"
 #import "MRNewPostsViewController.h"
 #import "MRNewMessagesViewController.h"
 #import "MRNewProfileViewController.h"
 #import "MRNewCreatePostViewController.h"
 
-@interface MRAppDelegate () <IIViewDeckControllerDelegate>
+#import <Crashlytics/Crashlytics.h>
+#import <FlurrySDK/Flurry.h>
+#import <GoogleAnalytics-iOS-SDK/GAI.h>
+
+@interface MRAppDelegate ()
 
 @end
 
 @implementation MRAppDelegate
 
-#pragma mark - Welcome
+#pragma mark - Content
 
 - (void)showWelcome {
     MRWelcomeViewController *welcomeVc = [[MRWelcomeViewController alloc] init];
     [self.window.rootViewController presentViewController:welcomeVc animated:NO completion:nil];
 }
 
-#pragma mark - Setups
-
-- (void)setupCrashlytics {
-    [Crashlytics startWithAPIKey:@"9ca680cb0b1764352949438282f40e14139eb082"];
-}
-
-- (void)setupFlurry {
-    
-}
-
-- (void)setupGoogleAnalytics {
-    
-}
-
-#pragma mark - UIApplicationDelegate
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [self setupCrashlytics];
-    [self setupFlurry];
-    [self setupGoogleAnalytics];
-    
+- (void)showApp {
     MRNewMapViewController *mapVC = [[MRNewMapViewController alloc] init];
     UINavigationController *mapNC = [[UINavigationController alloc] initWithRootViewController:mapVC];
     
@@ -79,98 +57,38 @@
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     tabBarController.viewControllers = @[mapNC, favoritesNC, messagesNC, profileNC, createOfferNC];
     
+    self.window.rootViewController = tabBarController;
+}
+
+#pragma mark - Setups
+
+- (void)setupCrashlytics {
+    [Crashlytics startWithAPIKey:@"9ca680cb0b1764352949438282f40e14139eb082"];
+}
+
+- (void)setupFlurry {
+    [Flurry startSession:@""];
+}
+
+- (void)setupGoogleAnalytics {
+    [[GAI sharedInstance] trackerWithTrackingId:@""];
+}
+
+- (void)setupWindow {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.tintColor = [UIColor redColor];
-    self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];
-    
-    ////////////////////
-    
-    /*
-    [self setupAppearance];
-    
-    MRMenuViewController *menuVc = [[MRMenuViewController alloc] init];
-    MRMapViewController *mapVc = [[MRMapViewController alloc] init];
-    
-    UINavigationController *mapNc = [[UINavigationController alloc] initWithRootViewController:mapVc];
-    
-    IIViewDeckController *viewDeckController = [[IIViewDeckController alloc] init];
-    viewDeckController.delegate = self;
-    viewDeckController.centerController = mapNc;
-    viewDeckController.leftController = menuVc;
-    
-    viewDeckController.leftSize = 70;
-    viewDeckController.centerhiddenInteractivity = IIViewDeckCenterHiddenNotUserInteractiveWithTapToClose;
-    
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = viewDeckController;
-    [self.window makeKeyAndVisible];
-    
-    [self showWelcome];
-    */
-    
+}
+
+#pragma mark - UIApplicationDelegate
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [self setupCrashlytics];
+    [self setupFlurry];
+    [self setupGoogleAnalytics];
+    [self setupWindow];
+    [self showApp];
     return YES;
-}
-
-#pragma mark - IIViewDeckControllerDelegate
-
-- (void)viewDeckController:(IIViewDeckController*)viewDeckController applyShadow:(CALayer*)shadowLayer withBounds:(CGRect)rect {
-    shadowLayer.shadowColor = [UIColor redColor].CGColor;
-    shadowLayer.shadowOpacity = 0.8;
-    shadowLayer.shadowOffset = CGSizeMake(-1, 0);
-    shadowLayer.shadowRadius = 10;
-    shadowLayer.shadowPath = [UIBezierPath bezierPathWithRect:rect].CGPath;
-    NSLog(@"%@", shadowLayer);
-}
-
-#pragma mark - Appearance
-
-- (void)setupAppearance {
-    [self setupNavigationBarAppearance];
-}
-
-- (void)setupNavigationBarAppearance {
-    UIImage *bg;
-    
-    // Navigation Bar
-    UINavigationBar *navBar = [UINavigationBar appearance];
-    
-    navBar.tintColor = [UIColor redColor];
-    
-    [navBar setBackgroundImage:[UIImage imageNamed:@"register-header-background"]
-                 forBarMetrics:UIBarMetricsDefault];
-    
-    NSShadow *shadow = [[NSShadow alloc] init];
-    shadow.shadowColor = [UIColor clearColor];
-    shadow.shadowOffset = CGSizeMake(0, 0);
-    
-    NSDictionary *navBarTitleAttrs = @{
-        NSFontAttributeName: [UIFont boldSystemFontOfSize:18],
-        NSForegroundColorAttributeName: [UIColor whiteColor],
-        NSShadowAttributeName: shadow
-    };
-    
-    [navBar setTitleTextAttributes:navBarTitleAttrs];
-    
-    // Navigation Bar Button Item
-    UIBarButtonItem *barButtonItem = [UIBarButtonItem appearance];
-    barButtonItem.tintColor = [UIColor redColor];
-    
-    bg = [UIImage imageNamed:@"navbar-button-back-passive"];
-    //bg = [bg stretchableImageWithLeftCapWidth:18 topCapHeight:0];
-    [barButtonItem setBackButtonBackgroundImage:bg forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-    
-    bg = [UIImage imageNamed:@"navbar-button-back-active"];
-    //bg = [bg stretchableImageWithLeftCapWidth:18 topCapHeight:0];
-    [barButtonItem setBackButtonBackgroundImage:bg forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
-    
-    bg = [UIImage imageNamed:@"navbar-button-action-passive"];
-    //bg = [bg stretchableImageWithLeftCapWidth:10 topCapHeight:0];
-    [barButtonItem setBackgroundImage:bg forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-    
-    bg = [UIImage imageNamed:@"navbar-button-action-active"];
-    //bg = [bg stretchableImageWithLeftCapWidth:10 topCapHeight:0];
-    [barButtonItem setBackgroundImage:bg forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
 }
 
 @end
