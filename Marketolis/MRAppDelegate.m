@@ -77,7 +77,7 @@
 }
 
 - (void)setupGoogleAnalytics {
-    [[GAI sharedInstance] trackerWithTrackingId:@""];
+    [[GAI sharedInstance] trackerWithTrackingId:@"UA-45821710-1"];
 }
 
 - (void)setupWindow {
