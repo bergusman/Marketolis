@@ -73,7 +73,7 @@
 }
 
 - (void)setupFlurry {
-    [Flurry startSession:@""];
+    [Flurry startSession:@"N4YXTH4T6WY8WJD8JCD7"];
 }
 
 - (void)setupGoogleAnalytics {
