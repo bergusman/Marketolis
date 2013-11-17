@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MRPostViewController : UIViewController
+@interface MRPostViewController : MRViewController
 
 @end

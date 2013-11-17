@@ -8,7 +8,14 @@
 
 #import "MRPostViewController.h"
 
+#import "MRPostEditorViewController.h"
+
+#import "MRPostPhotoCell.h"
+
+#import <SDWebImage/UIImageView+WebCache.h>
+
 @interface MRPostViewController () <
+    UIScrollViewDelegate,
     UICollectionViewDataSource,
     UICollectionViewDelegate
 >
@@ -33,20 +40,30 @@
                                                                              action:@selector(editBarButtonAction:)];
 }
 
+- (void)setupPhotosCollectionView {
+    UINib *nib = [UINib nibWithNibName:NSStringFromClass([MRPostPhotoCell class]) bundle:[NSBundle mainBundle]];
+    [self.photosCollectionView registerNib:nib forCellWithReuseIdentifier:@"PhotoCell"];
+}
+
 #pragma mark - Actions
 
 - (void)editBarButtonAction:(id)sender {
-    
+    MRPostEditorViewController *editorVC = [[MRPostEditorViewController alloc] init];
+    [self.navigationController pushViewController:editorVC animated:YES];
 }
 
-#pragma mark -
+#pragma mark - UIScrollViewDelegate
+
+#pragma mark - UICollectionViewDataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 0;
+    return 10;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return nil;
+    MRPostPhotoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PhotoCell" forIndexPath:indexPath];
+    [cell.imageView setImageWithURL:[NSURL URLWithString:@"http://cs412125.vk.me/v412125123/2864/IrtSuSEGg4w.jpg"] placeholderImage:nil];
+    return cell;
 }
 
 #pragma mark - UIViewController
@@ -54,7 +71,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupNavigationItem];
-    
+    [self setupPhotosCollectionView];
     [self.scrollView addSubview:self.photosView];
 }
 
