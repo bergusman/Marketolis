@@ -183,6 +183,8 @@
 		ADC111D818320059004202EC /* MRProfileEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADC111D618320059004202EC /* MRProfileEditorViewController.xib */; };
 		ADC2E3D618392C670065BB96 /* MRPostPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC2E3D518392C670065BB96 /* MRPostPhotoCell.m */; };
 		ADC2E3D818392C780065BB96 /* MRPostPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADC2E3D718392C780065BB96 /* MRPostPhotoCell.xib */; };
+		ADC2E3DD18392FB20065BB96 /* MRPostEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC2E3DB18392FB20065BB96 /* MRPostEditorViewController.m */; };
+		ADC2E3DE18392FB20065BB96 /* MRPostEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADC2E3DC18392FB20065BB96 /* MRPostEditorViewController.xib */; };
 		ADD9929A182C200000E6F9BB /* tab-bar-add.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD99290182C200000E6F9BB /* tab-bar-add.png */; };
 		ADD9929B182C200000E6F9BB /* tab-bar-add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD99291182C200000E6F9BB /* tab-bar-add@2x.png */; };
 		ADD9929C182C200000E6F9BB /* tab-bar-chat.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD99292182C200000E6F9BB /* tab-bar-chat.png */; };
@@ -419,6 +421,9 @@
 		ADC2E3D418392C670065BB96 /* MRPostPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRPostPhotoCell.h; sourceTree = "<group>"; };
 		ADC2E3D518392C670065BB96 /* MRPostPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRPostPhotoCell.m; sourceTree = "<group>"; };
 		ADC2E3D718392C780065BB96 /* MRPostPhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRPostPhotoCell.xib; sourceTree = "<group>"; };
+		ADC2E3DA18392FB20065BB96 /* MRPostEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRPostEditorViewController.h; sourceTree = "<group>"; };
+		ADC2E3DB18392FB20065BB96 /* MRPostEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRPostEditorViewController.m; sourceTree = "<group>"; };
+		ADC2E3DC18392FB20065BB96 /* MRPostEditorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRPostEditorViewController.xib; sourceTree = "<group>"; };
 		ADD99290182C200000E6F9BB /* tab-bar-add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab-bar-add.png"; path = "Resources/Images/tab-bar-add.png"; sourceTree = "<group>"; };
 		ADD99291182C200000E6F9BB /* tab-bar-add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab-bar-add@2x.png"; path = "Resources/Images/tab-bar-add@2x.png"; sourceTree = "<group>"; };
 		ADD99292182C200000E6F9BB /* tab-bar-chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab-bar-chat.png"; path = "Resources/Images/tab-bar-chat.png"; sourceTree = "<group>"; };
@@ -1114,6 +1119,7 @@
 		ADB01443183912EB00DE0936 /* Post */ = {
 			isa = PBXGroup;
 			children = (
+				ADC2E3D918392F890065BB96 /* Post Editor */,
 				ADC2E3D318392C4E0065BB96 /* Post Photo Cell */,
 				ADB01444183912FF00DE0936 /* MRPostViewController.h */,
 				ADB01445183912FF00DE0936 /* MRPostViewController.m */,
@@ -1155,6 +1161,16 @@
 				ADC2E3D718392C780065BB96 /* MRPostPhotoCell.xib */,
 			);
 			name = "Post Photo Cell";
+			sourceTree = "<group>";
+		};
+		ADC2E3D918392F890065BB96 /* Post Editor */ = {
+			isa = PBXGroup;
+			children = (
+				ADC2E3DA18392FB20065BB96 /* MRPostEditorViewController.h */,
+				ADC2E3DB18392FB20065BB96 /* MRPostEditorViewController.m */,
+				ADC2E3DC18392FB20065BB96 /* MRPostEditorViewController.xib */,
+			);
+			name = "Post Editor";
 			sourceTree = "<group>";
 		};
 		ADD9928F182C1FC900E6F9BB /* Tab Bars */ = {
@@ -1368,6 +1384,7 @@
 				AD09832E1839026600DB18BC /* marketolis-logo@2x.png in Resources */,
 				AD84AA3E17C959EB000444FD /* menu-icon-added-by-me@2x.png in Resources */,
 				ADB014421839100600DE0936 /* MRProfileNotificationCell.xib in Resources */,
+				ADC2E3DE18392FB20065BB96 /* MRPostEditorViewController.xib in Resources */,
 				AD84AA4117C95A1C000444FD /* navbar-icon-menu.png in Resources */,
 				AD84AA4217C95A1C000444FD /* navbar-icon-menu@2x.png in Resources */,
 				AD48FFB117CBEE86005E198C /* MRConfirmViewController.xib in Resources */,
@@ -1446,6 +1463,7 @@
 				4424BC5217B96E380060CD49 /* MRPointAnnotation.m in Sources */,
 				AD06D3AC17B995DC009C880D /* MRWelcomeViewController.m in Sources */,
 				AD95BBC41827A1B800E1C0E1 /* MRViewController.m in Sources */,
+				ADC2E3DD18392FB20065BB96 /* MRPostEditorViewController.m in Sources */,
 				ADAA10181826BFB80036F14E /* MRNewProfileViewController.m in Sources */,
 				AD06D3D117B99DD5009C880D /* MRConfirmViewController.m in Sources */,
 				AD06D3D617B99DE3009C880D /* MRSignUpViewController.m in Sources */,
