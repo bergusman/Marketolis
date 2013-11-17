@@ -22,6 +22,18 @@
 // Profile Editor
 "profile.editor.title" = "Profile";
 
+"profile.editor.name" = "Name";
+
+"profile.editor.receive.title" = "RECEIVE FROM USERS:";
+"profile.editor.receive.calls" = "Calls";
+"profile.editor.receive.messages" = "Messages";
+
+"profile.editor.sharing.title" = "SHARE IN:";
+"profile.editor.sharing.facebook" = "Facebook";
+"profile.editor.sharing.twitter" = "Twitter";
+"profile.editor.sharing.vk" = "VKontakte";
+"profile.editor.sharing.ok" = "Odnoklassniki";
+
 // Posts
 "posts.type.my" = "My";
 "posts.type.favorites" = "Favorites";

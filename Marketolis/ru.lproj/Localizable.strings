@@ -22,6 +22,18 @@
 // Profile Editor
 "profile.editor.title" = "Профиль";
 
+"profile.editor.name" = "Имя";
+
+"profile.editor.receive.title" = "ПРИНИМАТЬ ОТ ПОКУПАТЕЛЕЙ:";
+"profile.editor.receive.calls" = "Звонки";
+"profile.editor.receive.messages" = "Сообщения";
+
+"profile.editor.sharing.title" = "ПУБЛИКОВАТЬ В:";
+"profile.editor.sharing.facebook" = "Facebook";
+"profile.editor.sharing.twitter" = "Twitter";
+"profile.editor.sharing.vk" = "ВКонтакте";
+"profile.editor.sharing.ok" = "Одноклассники";
+
 // Posts
 "posts.type.my" = "Мои";
 "posts.type.favorites" = "Избранное";
