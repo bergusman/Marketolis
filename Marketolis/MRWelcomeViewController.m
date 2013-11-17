@@ -17,24 +17,30 @@
 
 @implementation MRWelcomeViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"splash-background-pattern"]];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(signUpDidConfirm:) name:MRSignUpConfirmedNotification object:nil];
+#pragma mark - Content
+
+- (void)signUpDidConfirm:(NSNotification *)notification {
+    [self dismissViewControllerAnimated:NO completion:nil];
 }
 
 #pragma mark - Actions
 
 - (IBAction)signUpButtonTouchUpInside:(id)sender {
-     MRSignUpViewController *signUpVc = [[MRSignUpViewController alloc] init];
-     UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:signUpVc];
+    MRSignUpViewController *signUpVc = [[MRSignUpViewController alloc] init];
+    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:signUpVc];
     nc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     [self presentViewController:nc animated:YES completion:nil];
 }
 
-- (void)signUpDidConfirm:(NSNotification *)notification {
-    [self dismissViewControllerAnimated:NO completion:nil];
+#pragma mark - UIViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(signUpDidConfirm:)
+                                                 name:MRSignUpConfirmedNotification
+                                               object:nil];
 }
 
 @end
