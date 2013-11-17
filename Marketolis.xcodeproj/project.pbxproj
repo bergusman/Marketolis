@@ -90,6 +90,8 @@
 		AD06D3E317B9A3BC009C880D /* MRDialogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD06D3E217B9A3BC009C880D /* MRDialogCell.xib */; };
 		AD06D3E817B9EE75009C880D /* MRChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD06D3E617B9EE75009C880D /* MRChatViewController.m */; };
 		AD06D3E917B9EE75009C880D /* MRChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD06D3E717B9EE75009C880D /* MRChatViewController.xib */; };
+		AD09832D1839026600DB18BC /* marketolis-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = AD09832B1839026600DB18BC /* marketolis-logo.png */; };
+		AD09832E1839026600DB18BC /* marketolis-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD09832C1839026600DB18BC /* marketolis-logo@2x.png */; };
 		AD38C74C17E7AB8E00831CF8 /* MRRightBubbleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD38C74B17E7AB8E00831CF8 /* MRRightBubbleCell.m */; };
 		AD38C74F17E7AB9E00831CF8 /* MRLeftBubbleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD38C74E17E7AB9E00831CF8 /* MRLeftBubbleCell.m */; };
 		AD38C75217E7ABB300831CF8 /* MRInputTextBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AD38C75117E7ABB300831CF8 /* MRInputTextBar.m */; };
@@ -292,6 +294,8 @@
 		AD06D3E517B9EE75009C880D /* MRChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRChatViewController.h; sourceTree = "<group>"; };
 		AD06D3E617B9EE75009C880D /* MRChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRChatViewController.m; sourceTree = "<group>"; };
 		AD06D3E717B9EE75009C880D /* MRChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRChatViewController.xib; sourceTree = "<group>"; };
+		AD09832B1839026600DB18BC /* marketolis-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "marketolis-logo.png"; path = "Resources/Images/marketolis-logo.png"; sourceTree = "<group>"; };
+		AD09832C1839026600DB18BC /* marketolis-logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "marketolis-logo@2x.png"; path = "Resources/Images/marketolis-logo@2x.png"; sourceTree = "<group>"; };
 		AD38C74A17E7AB8E00831CF8 /* MRRightBubbleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRRightBubbleCell.h; sourceTree = "<group>"; };
 		AD38C74B17E7AB8E00831CF8 /* MRRightBubbleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRRightBubbleCell.m; sourceTree = "<group>"; };
 		AD38C74D17E7AB9E00831CF8 /* MRLeftBubbleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRLeftBubbleCell.h; sourceTree = "<group>"; };
@@ -682,9 +686,6 @@
 		AD06D3A817B995C9009C880D /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
-				AD06D3A917B995DC009C880D /* MRWelcomeViewController.h */,
-				AD06D3AA17B995DC009C880D /* MRWelcomeViewController.m */,
-				AD06D3AB17B995DC009C880D /* MRWelcomeViewController.xib */,
 			);
 			name = Welcome;
 			sourceTree = "<group>";
@@ -692,6 +693,8 @@
 		AD06D3B617B9962A009C880D /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				AD09832B1839026600DB18BC /* marketolis-logo.png */,
+				AD09832C1839026600DB18BC /* marketolis-logo@2x.png */,
 				AD06D3AE17B99626009C880D /* splash-background-pattern.png */,
 				AD06D3AF17B99626009C880D /* splash-background-pattern@2x.png */,
 				AD06D3B017B99626009C880D /* splash-logo.png */,
@@ -1006,6 +1009,9 @@
 		AD95BBCC1827AB3200E1C0E1 /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
+				AD06D3A917B995DC009C880D /* MRWelcomeViewController.h */,
+				AD06D3AA17B995DC009C880D /* MRWelcomeViewController.m */,
+				AD06D3AB17B995DC009C880D /* MRWelcomeViewController.xib */,
 			);
 			name = Welcome;
 			sourceTree = "<group>";
@@ -1271,6 +1277,7 @@
 				AD3A47E717C54ADD00CA2FD9 /* content-action-button@2x.png in Resources */,
 				AD3A47E817C54ADD00CA2FD9 /* content-button-add-photo.png in Resources */,
 				AD3A47E917C54ADD00CA2FD9 /* content-button-add-photo@2x.png in Resources */,
+				AD09832D1839026600DB18BC /* marketolis-logo.png in Resources */,
 				AD3A47EA17C54ADD00CA2FD9 /* content-button-add-post.png in Resources */,
 				AD3A47EB17C54ADD00CA2FD9 /* content-button-add-post@2x.png in Resources */,
 				AD3A47EC17C54ADD00CA2FD9 /* content-list-active.png in Resources */,
@@ -1308,6 +1315,7 @@
 				ADAA10191826BFB80036F14E /* MRNewProfileViewController.xib in Resources */,
 				AD84AA3A17C95992000444FD /* chat-field@2x.png in Resources */,
 				AD84AA3D17C959EB000444FD /* menu-icon-added-by-me.png in Resources */,
+				AD09832E1839026600DB18BC /* marketolis-logo@2x.png in Resources */,
 				AD84AA3E17C959EB000444FD /* menu-icon-added-by-me@2x.png in Resources */,
 				AD84AA4117C95A1C000444FD /* navbar-icon-menu.png in Resources */,
 				AD84AA4217C95A1C000444FD /* navbar-icon-menu@2x.png in Resources */,
