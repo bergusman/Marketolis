@@ -181,6 +181,8 @@
 		ADC111D21831FF2D004202EC /* social-icon-vkontakte@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC111CA1831FF2D004202EC /* social-icon-vkontakte@2x.png */; };
 		ADC111D718320059004202EC /* MRProfileEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC111D518320059004202EC /* MRProfileEditorViewController.m */; };
 		ADC111D818320059004202EC /* MRProfileEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADC111D618320059004202EC /* MRProfileEditorViewController.xib */; };
+		ADC2E3D618392C670065BB96 /* MRPostPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC2E3D518392C670065BB96 /* MRPostPhotoCell.m */; };
+		ADC2E3D818392C780065BB96 /* MRPostPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADC2E3D718392C780065BB96 /* MRPostPhotoCell.xib */; };
 		ADD9929A182C200000E6F9BB /* tab-bar-add.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD99290182C200000E6F9BB /* tab-bar-add.png */; };
 		ADD9929B182C200000E6F9BB /* tab-bar-add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD99291182C200000E6F9BB /* tab-bar-add@2x.png */; };
 		ADD9929C182C200000E6F9BB /* tab-bar-chat.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD99292182C200000E6F9BB /* tab-bar-chat.png */; };
@@ -414,6 +416,9 @@
 		ADC111D418320059004202EC /* MRProfileEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRProfileEditorViewController.h; sourceTree = "<group>"; };
 		ADC111D518320059004202EC /* MRProfileEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRProfileEditorViewController.m; sourceTree = "<group>"; };
 		ADC111D618320059004202EC /* MRProfileEditorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRProfileEditorViewController.xib; sourceTree = "<group>"; };
+		ADC2E3D418392C670065BB96 /* MRPostPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRPostPhotoCell.h; sourceTree = "<group>"; };
+		ADC2E3D518392C670065BB96 /* MRPostPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRPostPhotoCell.m; sourceTree = "<group>"; };
+		ADC2E3D718392C780065BB96 /* MRPostPhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRPostPhotoCell.xib; sourceTree = "<group>"; };
 		ADD99290182C200000E6F9BB /* tab-bar-add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab-bar-add.png"; path = "Resources/Images/tab-bar-add.png"; sourceTree = "<group>"; };
 		ADD99291182C200000E6F9BB /* tab-bar-add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab-bar-add@2x.png"; path = "Resources/Images/tab-bar-add@2x.png"; sourceTree = "<group>"; };
 		ADD99292182C200000E6F9BB /* tab-bar-chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab-bar-chat.png"; path = "Resources/Images/tab-bar-chat.png"; sourceTree = "<group>"; };
@@ -1109,6 +1114,7 @@
 		ADB01443183912EB00DE0936 /* Post */ = {
 			isa = PBXGroup;
 			children = (
+				ADC2E3D318392C4E0065BB96 /* Post Photo Cell */,
 				ADB01444183912FF00DE0936 /* MRPostViewController.h */,
 				ADB01445183912FF00DE0936 /* MRPostViewController.m */,
 				ADB01446183912FF00DE0936 /* MRPostViewController.xib */,
@@ -1139,6 +1145,16 @@
 				ADC111D618320059004202EC /* MRProfileEditorViewController.xib */,
 			);
 			name = Edit;
+			sourceTree = "<group>";
+		};
+		ADC2E3D318392C4E0065BB96 /* Post Photo Cell */ = {
+			isa = PBXGroup;
+			children = (
+				ADC2E3D418392C670065BB96 /* MRPostPhotoCell.h */,
+				ADC2E3D518392C670065BB96 /* MRPostPhotoCell.m */,
+				ADC2E3D718392C780065BB96 /* MRPostPhotoCell.xib */,
+			);
+			name = "Post Photo Cell";
 			sourceTree = "<group>";
 		};
 		ADD9928F182C1FC900E6F9BB /* Tab Bars */ = {
@@ -1289,6 +1305,7 @@
 				ADD992A0182C200000E6F9BB /* tab-bar-map.png in Resources */,
 				AD06D3CB17B997F0009C880D /* register-small-button@2x.png in Resources */,
 				AD06D3D217B99DD5009C880D /* MRConfirmViewController~568h.xib in Resources */,
+				ADC2E3D818392C780065BB96 /* MRPostPhotoCell.xib in Resources */,
 				AD06D3D717B99DE3009C880D /* MRSignUpViewController~568h.xib in Resources */,
 				AD06D3DD17B99E09009C880D /* MRMessagesViewController.xib in Resources */,
 				AD06D3E317B9A3BC009C880D /* MRDialogCell.xib in Resources */,
@@ -1418,6 +1435,7 @@
 				ADAA100E1826BF9C0036F14E /* MRNewPostsViewController.m in Sources */,
 				4424BBC617B956970060CD49 /* main.m in Sources */,
 				ADAA101D1826BFCC0036F14E /* MRNewCreatePostViewController.m in Sources */,
+				ADC2E3D618392C670065BB96 /* MRPostPhotoCell.m in Sources */,
 				4424BBCA17B956970060CD49 /* MRAppDelegate.m in Sources */,
 				ADC111D718320059004202EC /* MRProfileEditorViewController.m in Sources */,
 				ADAA10131826BFA80036F14E /* MRNewMessagesViewController.m in Sources */,
