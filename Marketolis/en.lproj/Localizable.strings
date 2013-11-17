@@ -72,3 +72,7 @@
 
 // Settings
 "settings.title" = "Settings";
+
+// Post
+"post.title" = "View";
+"post.edit.button" = "Edit";

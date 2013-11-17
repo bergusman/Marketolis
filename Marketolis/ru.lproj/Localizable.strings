@@ -72,3 +72,7 @@
 
 // Settings
 "settings.title" = "Настройки";
+
+// Post
+"post.title" = "Просмотр";
+"post.edit.button" = "Редакт.";
