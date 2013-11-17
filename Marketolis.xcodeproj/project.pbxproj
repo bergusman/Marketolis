@@ -169,6 +169,8 @@
 		ADAA101E1826BFCC0036F14E /* MRNewCreatePostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA101C1826BFCC0036F14E /* MRNewCreatePostViewController.xib */; };
 		ADB0144018390FC800DE0936 /* MRProfileNotificationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB0143F18390FC800DE0936 /* MRProfileNotificationCell.m */; };
 		ADB014421839100600DE0936 /* MRProfileNotificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADB014411839100600DE0936 /* MRProfileNotificationCell.xib */; };
+		ADB01447183912FF00DE0936 /* MRPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB01445183912FF00DE0936 /* MRPostViewController.m */; };
+		ADB01448183912FF00DE0936 /* MRPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADB01446183912FF00DE0936 /* MRPostViewController.xib */; };
 		ADC111CB1831FF2D004202EC /* social-icon-facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC111C31831FF2D004202EC /* social-icon-facebook.png */; };
 		ADC111CC1831FF2D004202EC /* social-icon-facebook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC111C41831FF2D004202EC /* social-icon-facebook@2x.png */; };
 		ADC111CD1831FF2D004202EC /* social-icon-odnoklassniki.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC111C51831FF2D004202EC /* social-icon-odnoklassniki.png */; };
@@ -398,6 +400,9 @@
 		ADB0143E18390FC800DE0936 /* MRProfileNotificationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRProfileNotificationCell.h; sourceTree = "<group>"; };
 		ADB0143F18390FC800DE0936 /* MRProfileNotificationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRProfileNotificationCell.m; sourceTree = "<group>"; };
 		ADB014411839100600DE0936 /* MRProfileNotificationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRProfileNotificationCell.xib; sourceTree = "<group>"; };
+		ADB01444183912FF00DE0936 /* MRPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRPostViewController.h; sourceTree = "<group>"; };
+		ADB01445183912FF00DE0936 /* MRPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRPostViewController.m; sourceTree = "<group>"; };
+		ADB01446183912FF00DE0936 /* MRPostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRPostViewController.xib; sourceTree = "<group>"; };
 		ADC111C31831FF2D004202EC /* social-icon-facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "social-icon-facebook.png"; sourceTree = "<group>"; };
 		ADC111C41831FF2D004202EC /* social-icon-facebook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "social-icon-facebook@2x.png"; sourceTree = "<group>"; };
 		ADC111C51831FF2D004202EC /* social-icon-odnoklassniki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "social-icon-odnoklassniki.png"; sourceTree = "<group>"; };
@@ -550,6 +555,7 @@
 				ADAA10041826BD200036F14E /* Messages */,
 				ADAA10031826BD1B0036F14E /* Profile */,
 				ADAA10051826BD260036F14E /* Create Post */,
+				ADB01443183912EB00DE0936 /* Post */,
 				ADAA10001826BCAE0036F14E /* Old */,
 			);
 			name = "Controllers & Views";
@@ -1100,6 +1106,16 @@
 			name = "Notification Cell";
 			sourceTree = "<group>";
 		};
+		ADB01443183912EB00DE0936 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				ADB01444183912FF00DE0936 /* MRPostViewController.h */,
+				ADB01445183912FF00DE0936 /* MRPostViewController.m */,
+				ADB01446183912FF00DE0936 /* MRPostViewController.xib */,
+			);
+			name = Post;
+			sourceTree = "<group>";
+		};
 		ADC111C21831FF10004202EC /* Sharing */ = {
 			isa = PBXGroup;
 			children = (
@@ -1259,6 +1275,7 @@
 				AD06D3B417B99626009C880D /* splash-logo.png in Resources */,
 				ADD992AB182C23FD00E6F9BB /* map-controls-zoomout@2x.png in Resources */,
 				ADAA100F1826BF9C0036F14E /* MRNewPostsViewController.xib in Resources */,
+				ADB01448183912FF00DE0936 /* MRPostViewController.xib in Resources */,
 				AD06D3B517B99626009C880D /* splash-logo@2x.png in Resources */,
 				AD06D3C217B997F0009C880D /* register-big-button.png in Resources */,
 				AD06D3C317B997F0009C880D /* register-big-button@2x.png in Resources */,
@@ -1431,6 +1448,7 @@
 				AD84AA5117C9D31B000444FD /* MRInterfaceHelper.m in Sources */,
 				AD84AA5417C9F082000444FD /* MRBadgeView.m in Sources */,
 				AD38C74C17E7AB8E00831CF8 /* MRRightBubbleCell.m in Sources */,
+				ADB01447183912FF00DE0936 /* MRPostViewController.m in Sources */,
 				AD38C74F17E7AB9E00831CF8 /* MRLeftBubbleCell.m in Sources */,
 				AD38C75217E7ABB300831CF8 /* MRInputTextBar.m in Sources */,
 			);
