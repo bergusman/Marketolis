@@ -531,7 +531,8 @@
 		4424BBE117B95A570060CD49 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				AD95BBC61827A21700E1C0E1 /* Degaults */,
+				AD8923B11849F5EB005BDAEA /* Fonts */,
+				AD95BBC61827A21700E1C0E1 /* Defaults */,
 				AD95BBC51827A20800E1C0E1 /* Icons */,
 				4424BBE217B95A640060CD49 /* Images */,
 			);
@@ -983,6 +984,13 @@
 			name = "Badge View";
 			sourceTree = "<group>";
 		};
+		AD8923B11849F5EB005BDAEA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		AD95BBC01827A17900E1C0E1 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -1017,14 +1025,14 @@
 			name = Icons;
 			sourceTree = "<group>";
 		};
-		AD95BBC61827A21700E1C0E1 /* Degaults */ = {
+		AD95BBC61827A21700E1C0E1 /* Defaults */ = {
 			isa = PBXGroup;
 			children = (
 				4424BBCB17B956970060CD49 /* Default.png */,
 				4424BBCD17B956970060CD49 /* Default@2x.png */,
 				4424BBCF17B956970060CD49 /* Default-568h@2x.png */,
 			);
-			name = Degaults;
+			name = Defaults;
 			sourceTree = "<group>";
 		};
 		AD95BBCC1827AB3200E1C0E1 /* Welcome */ = {
