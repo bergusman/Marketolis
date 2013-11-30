@@ -158,6 +158,7 @@
 		AD8923B81849F6E9005BDAEA /* RubleMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD8923B41849F6E9005BDAEA /* RubleMedium.ttf */; };
 		AD8923B91849F6E9005BDAEA /* RubleRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD8923B51849F6E9005BDAEA /* RubleRegular.ttf */; };
 		AD8923BA1849F6E9005BDAEA /* RubleUltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD8923B61849F6E9005BDAEA /* RubleUltraLight.ttf */; };
+		AD8923BE1849F73E005BDAEA /* MRRubleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8923BD1849F73E005BDAEA /* MRRubleLabel.m */; };
 		AD95BBC41827A1B800E1C0E1 /* MRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD95BBC31827A1B800E1C0E1 /* MRViewController.m */; };
 		AD95BBCA1827A30600E1C0E1 /* MRNewChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD95BBC81827A30600E1C0E1 /* MRNewChatViewController.m */; };
 		AD95BBCB1827A30600E1C0E1 /* MRNewChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD95BBC91827A30600E1C0E1 /* MRNewChatViewController.xib */; };
@@ -389,6 +390,8 @@
 		AD8923B41849F6E9005BDAEA /* RubleMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = RubleMedium.ttf; path = Resources/Fonts/RubleMedium.ttf; sourceTree = "<group>"; };
 		AD8923B51849F6E9005BDAEA /* RubleRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = RubleRegular.ttf; path = Resources/Fonts/RubleRegular.ttf; sourceTree = "<group>"; };
 		AD8923B61849F6E9005BDAEA /* RubleUltraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = RubleUltraLight.ttf; path = Resources/Fonts/RubleUltraLight.ttf; sourceTree = "<group>"; };
+		AD8923BC1849F73E005BDAEA /* MRRubleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRRubleLabel.h; sourceTree = "<group>"; };
+		AD8923BD1849F73E005BDAEA /* MRRubleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRRubleLabel.m; sourceTree = "<group>"; };
 		AD95BBC21827A1B800E1C0E1 /* MRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRViewController.h; sourceTree = "<group>"; };
 		AD95BBC31827A1B800E1C0E1 /* MRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRViewController.m; sourceTree = "<group>"; };
 		AD95BBC71827A30600E1C0E1 /* MRNewChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNewChatViewController.h; sourceTree = "<group>"; };
@@ -1011,9 +1014,19 @@
 			name = Ruble;
 			sourceTree = "<group>";
 		};
+		AD8923BB1849F72A005BDAEA /* Ruble Label */ = {
+			isa = PBXGroup;
+			children = (
+				AD8923BC1849F73E005BDAEA /* MRRubleLabel.h */,
+				AD8923BD1849F73E005BDAEA /* MRRubleLabel.m */,
+			);
+			name = "Ruble Label";
+			sourceTree = "<group>";
+		};
 		AD95BBC01827A17900E1C0E1 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				AD8923BB1849F72A005BDAEA /* Ruble Label */,
 				AD95BBC21827A1B800E1C0E1 /* MRViewController.h */,
 				AD95BBC31827A1B800E1C0E1 /* MRViewController.m */,
 			);
@@ -1513,6 +1526,7 @@
 				AD3A481A17C5DEC300CA2FD9 /* MROfferPhotoCell.m in Sources */,
 				AD84AA4617C95C45000444FD /* MRMenuButton.m in Sources */,
 				AD84AA4D17C96978000444FD /* MRBackButton.m in Sources */,
+				AD8923BE1849F73E005BDAEA /* MRRubleLabel.m in Sources */,
 				AD84AA5117C9D31B000444FD /* MRInterfaceHelper.m in Sources */,
 				AD84AA5417C9F082000444FD /* MRBadgeView.m in Sources */,
 				AD38C74C17E7AB8E00831CF8 /* MRRightBubbleCell.m in Sources */,
