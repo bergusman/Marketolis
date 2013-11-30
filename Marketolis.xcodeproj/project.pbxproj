@@ -154,6 +154,10 @@
 		AD84AA4D17C96978000444FD /* MRBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AD84AA4C17C96977000444FD /* MRBackButton.m */; };
 		AD84AA5117C9D31B000444FD /* MRInterfaceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD84AA5017C9D31B000444FD /* MRInterfaceHelper.m */; };
 		AD84AA5417C9F082000444FD /* MRBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD84AA5317C9F081000444FD /* MRBadgeView.m */; };
+		AD8923B71849F6E9005BDAEA /* RubleLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD8923B31849F6E9005BDAEA /* RubleLight.ttf */; };
+		AD8923B81849F6E9005BDAEA /* RubleMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD8923B41849F6E9005BDAEA /* RubleMedium.ttf */; };
+		AD8923B91849F6E9005BDAEA /* RubleRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD8923B51849F6E9005BDAEA /* RubleRegular.ttf */; };
+		AD8923BA1849F6E9005BDAEA /* RubleUltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD8923B61849F6E9005BDAEA /* RubleUltraLight.ttf */; };
 		AD95BBC41827A1B800E1C0E1 /* MRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD95BBC31827A1B800E1C0E1 /* MRViewController.m */; };
 		AD95BBCA1827A30600E1C0E1 /* MRNewChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD95BBC81827A30600E1C0E1 /* MRNewChatViewController.m */; };
 		AD95BBCB1827A30600E1C0E1 /* MRNewChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD95BBC91827A30600E1C0E1 /* MRNewChatViewController.xib */; };
@@ -381,6 +385,10 @@
 		AD84AA5017C9D31B000444FD /* MRInterfaceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRInterfaceHelper.m; sourceTree = "<group>"; };
 		AD84AA5217C9F081000444FD /* MRBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRBadgeView.h; sourceTree = "<group>"; };
 		AD84AA5317C9F081000444FD /* MRBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRBadgeView.m; sourceTree = "<group>"; };
+		AD8923B31849F6E9005BDAEA /* RubleLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = RubleLight.ttf; path = Resources/Fonts/RubleLight.ttf; sourceTree = "<group>"; };
+		AD8923B41849F6E9005BDAEA /* RubleMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = RubleMedium.ttf; path = Resources/Fonts/RubleMedium.ttf; sourceTree = "<group>"; };
+		AD8923B51849F6E9005BDAEA /* RubleRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = RubleRegular.ttf; path = Resources/Fonts/RubleRegular.ttf; sourceTree = "<group>"; };
+		AD8923B61849F6E9005BDAEA /* RubleUltraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = RubleUltraLight.ttf; path = Resources/Fonts/RubleUltraLight.ttf; sourceTree = "<group>"; };
 		AD95BBC21827A1B800E1C0E1 /* MRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRViewController.h; sourceTree = "<group>"; };
 		AD95BBC31827A1B800E1C0E1 /* MRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRViewController.m; sourceTree = "<group>"; };
 		AD95BBC71827A30600E1C0E1 /* MRNewChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNewChatViewController.h; sourceTree = "<group>"; };
@@ -987,8 +995,20 @@
 		AD8923B11849F5EB005BDAEA /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				AD8923B21849F6E0005BDAEA /* Ruble */,
 			);
 			name = Fonts;
+			sourceTree = "<group>";
+		};
+		AD8923B21849F6E0005BDAEA /* Ruble */ = {
+			isa = PBXGroup;
+			children = (
+				AD8923B31849F6E9005BDAEA /* RubleLight.ttf */,
+				AD8923B41849F6E9005BDAEA /* RubleMedium.ttf */,
+				AD8923B51849F6E9005BDAEA /* RubleRegular.ttf */,
+				AD8923B61849F6E9005BDAEA /* RubleUltraLight.ttf */,
+			);
+			name = Ruble;
 			sourceTree = "<group>";
 		};
 		AD95BBC01827A17900E1C0E1 /* Common */ = {
@@ -1279,6 +1299,7 @@
 				ADD992AE182C240D00E6F9BB /* map-item.png in Resources */,
 				ADD992A8182C23FD00E6F9BB /* map-controls-location.png in Resources */,
 				4424BC1117B963510060CD49 /* menu-icon-settings.png in Resources */,
+				AD8923BA1849F6E9005BDAEA /* RubleUltraLight.ttf in Resources */,
 				4424BC1217B963510060CD49 /* menu-icon-settings@2x.png in Resources */,
 				4424BC2517B965330060CD49 /* map-button-add-offer.png in Resources */,
 				4424BC2617B965330060CD49 /* map-button-add-offer@2x.png in Resources */,
@@ -1354,9 +1375,11 @@
 				AD09832D1839026600DB18BC /* marketolis-logo.png in Resources */,
 				AD3A47EA17C54ADD00CA2FD9 /* content-button-add-post.png in Resources */,
 				AD3A47EB17C54ADD00CA2FD9 /* content-button-add-post@2x.png in Resources */,
+				AD8923B71849F6E9005BDAEA /* RubleLight.ttf in Resources */,
 				AD3A47EC17C54ADD00CA2FD9 /* content-list-active.png in Resources */,
 				ADD992A9182C23FD00E6F9BB /* map-controls-location@2x.png in Resources */,
 				AD3A47ED17C54ADD00CA2FD9 /* content-list-active@2x.png in Resources */,
+				AD8923B91849F6E9005BDAEA /* RubleRegular.ttf in Resources */,
 				AD3A47EE17C54ADD00CA2FD9 /* content-list-passive.png in Resources */,
 				ADD9929B182C200000E6F9BB /* tab-bar-add@2x.png in Resources */,
 				ADC111D01831FF2D004202EC /* social-icon-twitter@2x.png in Resources */,
@@ -1397,6 +1420,7 @@
 				AD84AA4217C95A1C000444FD /* navbar-icon-menu@2x.png in Resources */,
 				AD48FFB117CBEE86005E198C /* MRConfirmViewController.xib in Resources */,
 				ADAA10141826BFA80036F14E /* MRNewMessagesViewController.xib in Resources */,
+				AD8923B81849F6E9005BDAEA /* RubleMedium.ttf in Resources */,
 				AD48FFB317CBEF93005E198C /* MRSignUpViewController.xib in Resources */,
 				AD38C75417E7AC5500831CF8 /* MRLeftBubbleCell.xib in Resources */,
 				AD38C75617E7AC7D00831CF8 /* MRRightBubbleCell.xib in Resources */,
