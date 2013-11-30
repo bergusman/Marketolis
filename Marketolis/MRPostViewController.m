@@ -38,6 +38,10 @@
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
+@property (weak, nonatomic) IBOutlet UILabel *addressLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *sellerLabel;
+
 @property (weak, nonatomic) IBOutlet UIButton *callButton;
 @property (weak, nonatomic) IBOutlet UIButton *writeButton;
 
@@ -63,7 +67,8 @@
 }
 
 - (void)setupLocalizedStrings {
-    NSLocalizedString(@"", @"");
+    [self.callButton setTitle:NSLocalizedString(@"post.call.button", @"") forState:UIControlStateNormal];
+    [self.writeButton setTitle:NSLocalizedString(@"post.write.button", @"") forState:UIControlStateNormal];
 }
 
 #pragma mark - Content
@@ -90,6 +95,7 @@
     
     y = 40;
     
+    // Title
     CGRect titleRect = [self.titleLabel.text boundingRectWithSize:CGSizeMake(300, CGFLOAT_MAX)
                                                           options:NSStringDrawingUsesLineFragmentOrigin
                                                        attributes:@{NSFontAttributeName: self.titleLabel.font}
@@ -102,11 +108,11 @@
     
     y += r.size.height + 10;
     
+    // Details
     CGRect detailsRect = [self.detailsLabel.text boundingRectWithSize:CGSizeMake(300, CGFLOAT_MAX)
                                                               options:NSStringDrawingUsesLineFragmentOrigin
                                                            attributes:@{NSFontAttributeName: self.detailsLabel.font}
                                                               context:nil];
-    
     
     r = self.detailsLabel.frame;
     r.origin.y = y;
@@ -115,9 +121,36 @@
     
     y += r.size.height + 10;
     
+    // Map
     r = self.mapView.frame;
     r.origin.y = y;
     self.mapView.frame = r;
+    
+    y += r.size.height + 10;
+    
+    // Address
+    CGRect addressRect = [self.detailsLabel.text boundingRectWithSize:CGSizeMake(300, CGFLOAT_MAX)
+                                                              options:NSStringDrawingUsesLineFragmentOrigin
+                                                           attributes:@{NSFontAttributeName: self.addressLabel.font}
+                                                              context:nil];
+    
+    r = self.addressLabel.frame;
+    r.origin.y = y;
+    r.size.height = ceil(addressRect.size.height);
+    self.addressLabel.frame = r;
+    
+    y += r.size.height + 10;
+    
+    // Seller
+    CGRect sellerRect = [self.detailsLabel.text boundingRectWithSize:CGSizeMake(300, CGFLOAT_MAX)
+                                                             options:NSStringDrawingUsesLineFragmentOrigin
+                                                          attributes:@{NSFontAttributeName: self.sellerLabel.font}
+                                                             context:nil];
+    
+    r = self.sellerLabel.frame;
+    r.origin.y = y;
+    r.size.height = ceil(sellerRect.size.height);
+    self.sellerLabel.frame = r;
     
     y += r.size.height + 10;
     
@@ -131,6 +164,11 @@
     self.titleLabel.text = @"MacBook Air mid 2013, 256 GB SSD, 2400 GHz 2-core CPU, 8 GB RAM";
     self.detailsLabel.text = @"В хорошем состоянии, яркий дисплей, хороший мягкий ход клавишь, глючноватый тачпад, вмятина с боку от падения на роликах, зарядка в коплекте";
     self.viewCountLabel.text = [NSString stringWithFormat:@"%@: %d", NSLocalizedString(@"post.views", @""), 324];
+    
+    NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:@"Адрес: Россия, город Москва, улица Тверская дом 34 квартира 43"];
+    [attrString addAttribute:NSForegroundColorAttributeName value:MR_RGB(102, 102, 102) range:NSMakeRange(0, [attrString.string length])];
+    [attrString addAttribute:NSForegroundColorAttributeName value:MR_RGB(0, 0, 0) range:NSMakeRange(0, 6)];
+    self.addressLabel.attributedText = attrString;
 }
 
 #pragma mark - Actions
@@ -186,6 +224,7 @@
     
     [self setupNavigationItem];
     [self setupPhotosCollectionView];
+    [self setupLocalizedStrings];
     
     [self.scrollView addSubview:self.photosView];
     [self.scrollView addSubview:self.detailsView];
