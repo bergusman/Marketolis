@@ -6,15 +6,15 @@
 //  Copyright (c) 2013 Vitaly Berg. All rights reserved.
 //
 
-#import "MRNewMessagesViewController.h"
+#import "MRMessagesViewController.h"
 
-#import "MRNewChatViewController.h"
+#import "MRChatViewController.h"
 
 #import "MRDialogCell.h"
 
 #import <SDWebImage/UIImageView+WebCache.h>
 
-@interface MRNewMessagesViewController () <
+@interface MRMessagesViewController () <
     UITableViewDataSource,
     UITableViewDelegate
 >
@@ -27,7 +27,7 @@
 
 @end
 
-@implementation MRNewMessagesViewController
+@implementation MRMessagesViewController
 
 #pragma mark - Setups
 
@@ -90,7 +90,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    MRNewChatViewController *chatVC = [[MRNewChatViewController alloc] init];
+    MRChatViewController *chatVC = [[MRChatViewController alloc] init];
     [self.navigationController pushViewController:chatVC animated:YES];
 }
 

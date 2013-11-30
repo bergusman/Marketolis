@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 Vitaly Berg. All rights reserved.
 //
 
-#import "MRNewProfileViewController.h"
+#import "MRProfileViewController.h"
 
 #import "MRProfileEditorViewController.h"
 
 #import "MRProfileNotificationCell.h"
 
-@interface MRNewProfileViewController () <
+@interface MRProfileViewController () <
     UITableViewDataSource,
     UITableViewDelegate
 >
@@ -21,7 +21,7 @@
 
 @end
 
-@implementation MRNewProfileViewController
+@implementation MRProfileViewController
 
 #pragma mark - Setups
 

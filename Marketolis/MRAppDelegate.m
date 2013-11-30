@@ -12,11 +12,11 @@
 #import "MRSignUpViewController.h"
 #import "MRConfirmViewController.h"
 
-#import "MRNewMapViewController.h"
+#import "MRMapViewController.h"
 #import "MRNewPostsViewController.h"
-#import "MRNewMessagesViewController.h"
-#import "MRNewProfileViewController.h"
-#import "MRNewCreatePostViewController.h"
+#import "MRMessagesViewController.h"
+#import "MRProfileViewController.h"
+#import "MRCreatePostViewController.h"
 
 #import <Crashlytics/Crashlytics.h>
 #import <FlurrySDK/Flurry.h>
@@ -39,19 +39,19 @@
 }
 
 - (void)showApp {
-    MRNewMapViewController *mapVC = [[MRNewMapViewController alloc] init];
+    MRMapViewController *mapVC = [[MRMapViewController alloc] init];
     UINavigationController *mapNC = [[UINavigationController alloc] initWithRootViewController:mapVC];
     
     MRNewPostsViewController *favoritesVC = [[MRNewPostsViewController alloc] init];
     UINavigationController *favoritesNC = [[UINavigationController alloc] initWithRootViewController:favoritesVC];
     
-    MRNewMessagesViewController *messagesVC = [[MRNewMessagesViewController alloc] init];
+    MRMessagesViewController *messagesVC = [[MRMessagesViewController alloc] init];
     UINavigationController *messagesNC = [[UINavigationController alloc] initWithRootViewController:messagesVC];
     
-    MRNewProfileViewController *profileVC = [[MRNewProfileViewController alloc] init];
+    MRProfileViewController *profileVC = [[MRProfileViewController alloc] init];
     UINavigationController *profileNC = [[UINavigationController alloc] initWithRootViewController:profileVC];
     
-    MRNewCreatePostViewController *createOfferVC = [[MRNewCreatePostViewController alloc] init];
+    MRCreatePostViewController *createOfferVC = [[MRCreatePostViewController alloc] init];
     UINavigationController *createOfferNC = [[UINavigationController alloc] initWithRootViewController:createOfferVC];
     
     UITabBarController *tabBarController = [[UITabBarController alloc] init];

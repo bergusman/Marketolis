@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MRNewChatViewController : MRViewController
+@interface MRChatViewController : MRViewController
 
 @end

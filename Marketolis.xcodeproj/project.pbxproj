@@ -146,18 +146,18 @@
 		AD8923BA1849F6E9005BDAEA /* RubleUltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD8923B61849F6E9005BDAEA /* RubleUltraLight.ttf */; };
 		AD8923BE1849F73E005BDAEA /* MRRubleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8923BD1849F73E005BDAEA /* MRRubleLabel.m */; };
 		AD95BBC41827A1B800E1C0E1 /* MRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD95BBC31827A1B800E1C0E1 /* MRViewController.m */; };
-		AD95BBCA1827A30600E1C0E1 /* MRNewChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD95BBC81827A30600E1C0E1 /* MRNewChatViewController.m */; };
-		AD95BBCB1827A30600E1C0E1 /* MRNewChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD95BBC91827A30600E1C0E1 /* MRNewChatViewController.xib */; };
-		ADAA10091826BD6C0036F14E /* MRNewMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA10071826BD6C0036F14E /* MRNewMapViewController.m */; };
-		ADAA100A1826BD6C0036F14E /* MRNewMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA10081826BD6C0036F14E /* MRNewMapViewController.xib */; };
+		AD95BBCA1827A30600E1C0E1 /* MRChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD95BBC81827A30600E1C0E1 /* MRChatViewController.m */; };
+		AD95BBCB1827A30600E1C0E1 /* MRChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD95BBC91827A30600E1C0E1 /* MRChatViewController.xib */; };
+		ADAA10091826BD6C0036F14E /* MRMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA10071826BD6C0036F14E /* MRMapViewController.m */; };
+		ADAA100A1826BD6C0036F14E /* MRMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA10081826BD6C0036F14E /* MRMapViewController.xib */; };
 		ADAA100E1826BF9C0036F14E /* MRNewPostsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA100C1826BF9C0036F14E /* MRNewPostsViewController.m */; };
 		ADAA100F1826BF9C0036F14E /* MRNewPostsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA100D1826BF9C0036F14E /* MRNewPostsViewController.xib */; };
-		ADAA10131826BFA80036F14E /* MRNewMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA10111826BFA80036F14E /* MRNewMessagesViewController.m */; };
-		ADAA10141826BFA80036F14E /* MRNewMessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA10121826BFA80036F14E /* MRNewMessagesViewController.xib */; };
-		ADAA10181826BFB80036F14E /* MRNewProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA10161826BFB80036F14E /* MRNewProfileViewController.m */; };
-		ADAA10191826BFB80036F14E /* MRNewProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA10171826BFB80036F14E /* MRNewProfileViewController.xib */; };
-		ADAA101D1826BFCC0036F14E /* MRNewCreatePostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA101B1826BFCC0036F14E /* MRNewCreatePostViewController.m */; };
-		ADAA101E1826BFCC0036F14E /* MRNewCreatePostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA101C1826BFCC0036F14E /* MRNewCreatePostViewController.xib */; };
+		ADAA10131826BFA80036F14E /* MRMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA10111826BFA80036F14E /* MRMessagesViewController.m */; };
+		ADAA10141826BFA80036F14E /* MRMessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA10121826BFA80036F14E /* MRMessagesViewController.xib */; };
+		ADAA10181826BFB80036F14E /* MRProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA10161826BFB80036F14E /* MRProfileViewController.m */; };
+		ADAA10191826BFB80036F14E /* MRProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA10171826BFB80036F14E /* MRProfileViewController.xib */; };
+		ADAA101D1826BFCC0036F14E /* MRCreatePostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA101B1826BFCC0036F14E /* MRCreatePostViewController.m */; };
+		ADAA101E1826BFCC0036F14E /* MRCreatePostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA101C1826BFCC0036F14E /* MRCreatePostViewController.xib */; };
 		ADB0144018390FC800DE0936 /* MRProfileNotificationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB0143F18390FC800DE0936 /* MRProfileNotificationCell.m */; };
 		ADB014421839100600DE0936 /* MRProfileNotificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADB014411839100600DE0936 /* MRProfileNotificationCell.xib */; };
 		ADB01447183912FF00DE0936 /* MRPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB01445183912FF00DE0936 /* MRPostViewController.m */; };
@@ -359,24 +359,24 @@
 		AD8923BD1849F73E005BDAEA /* MRRubleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRRubleLabel.m; sourceTree = "<group>"; };
 		AD95BBC21827A1B800E1C0E1 /* MRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRViewController.h; sourceTree = "<group>"; };
 		AD95BBC31827A1B800E1C0E1 /* MRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRViewController.m; sourceTree = "<group>"; };
-		AD95BBC71827A30600E1C0E1 /* MRNewChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNewChatViewController.h; sourceTree = "<group>"; };
-		AD95BBC81827A30600E1C0E1 /* MRNewChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNewChatViewController.m; sourceTree = "<group>"; };
-		AD95BBC91827A30600E1C0E1 /* MRNewChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRNewChatViewController.xib; sourceTree = "<group>"; };
-		ADAA10061826BD6C0036F14E /* MRNewMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNewMapViewController.h; sourceTree = "<group>"; };
-		ADAA10071826BD6C0036F14E /* MRNewMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNewMapViewController.m; sourceTree = "<group>"; };
-		ADAA10081826BD6C0036F14E /* MRNewMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRNewMapViewController.xib; sourceTree = "<group>"; };
+		AD95BBC71827A30600E1C0E1 /* MRChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRChatViewController.h; sourceTree = "<group>"; };
+		AD95BBC81827A30600E1C0E1 /* MRChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRChatViewController.m; sourceTree = "<group>"; };
+		AD95BBC91827A30600E1C0E1 /* MRChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRChatViewController.xib; sourceTree = "<group>"; };
+		ADAA10061826BD6C0036F14E /* MRMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMapViewController.h; sourceTree = "<group>"; };
+		ADAA10071826BD6C0036F14E /* MRMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMapViewController.m; sourceTree = "<group>"; };
+		ADAA10081826BD6C0036F14E /* MRMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRMapViewController.xib; sourceTree = "<group>"; };
 		ADAA100B1826BF9C0036F14E /* MRNewPostsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNewPostsViewController.h; sourceTree = "<group>"; };
 		ADAA100C1826BF9C0036F14E /* MRNewPostsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNewPostsViewController.m; sourceTree = "<group>"; };
 		ADAA100D1826BF9C0036F14E /* MRNewPostsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRNewPostsViewController.xib; sourceTree = "<group>"; };
-		ADAA10101826BFA80036F14E /* MRNewMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNewMessagesViewController.h; sourceTree = "<group>"; };
-		ADAA10111826BFA80036F14E /* MRNewMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNewMessagesViewController.m; sourceTree = "<group>"; };
-		ADAA10121826BFA80036F14E /* MRNewMessagesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRNewMessagesViewController.xib; sourceTree = "<group>"; };
-		ADAA10151826BFB80036F14E /* MRNewProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNewProfileViewController.h; sourceTree = "<group>"; };
-		ADAA10161826BFB80036F14E /* MRNewProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNewProfileViewController.m; sourceTree = "<group>"; };
-		ADAA10171826BFB80036F14E /* MRNewProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRNewProfileViewController.xib; sourceTree = "<group>"; };
-		ADAA101A1826BFCC0036F14E /* MRNewCreatePostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNewCreatePostViewController.h; sourceTree = "<group>"; };
-		ADAA101B1826BFCC0036F14E /* MRNewCreatePostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNewCreatePostViewController.m; sourceTree = "<group>"; };
-		ADAA101C1826BFCC0036F14E /* MRNewCreatePostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRNewCreatePostViewController.xib; sourceTree = "<group>"; };
+		ADAA10101826BFA80036F14E /* MRMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMessagesViewController.h; sourceTree = "<group>"; };
+		ADAA10111826BFA80036F14E /* MRMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMessagesViewController.m; sourceTree = "<group>"; };
+		ADAA10121826BFA80036F14E /* MRMessagesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRMessagesViewController.xib; sourceTree = "<group>"; };
+		ADAA10151826BFB80036F14E /* MRProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRProfileViewController.h; sourceTree = "<group>"; };
+		ADAA10161826BFB80036F14E /* MRProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRProfileViewController.m; sourceTree = "<group>"; };
+		ADAA10171826BFB80036F14E /* MRProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRProfileViewController.xib; sourceTree = "<group>"; };
+		ADAA101A1826BFCC0036F14E /* MRCreatePostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCreatePostViewController.h; sourceTree = "<group>"; };
+		ADAA101B1826BFCC0036F14E /* MRCreatePostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCreatePostViewController.m; sourceTree = "<group>"; };
+		ADAA101C1826BFCC0036F14E /* MRCreatePostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRCreatePostViewController.xib; sourceTree = "<group>"; };
 		ADB0143E18390FC800DE0936 /* MRProfileNotificationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRProfileNotificationCell.h; sourceTree = "<group>"; };
 		ADB0143F18390FC800DE0936 /* MRProfileNotificationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRProfileNotificationCell.m; sourceTree = "<group>"; };
 		ADB014411839100600DE0936 /* MRProfileNotificationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRProfileNotificationCell.xib; sourceTree = "<group>"; };
@@ -932,9 +932,9 @@
 		AD95BBC11827A19D00E1C0E1 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
-				AD95BBC71827A30600E1C0E1 /* MRNewChatViewController.h */,
-				AD95BBC81827A30600E1C0E1 /* MRNewChatViewController.m */,
-				AD95BBC91827A30600E1C0E1 /* MRNewChatViewController.xib */,
+				AD95BBC71827A30600E1C0E1 /* MRChatViewController.h */,
+				AD95BBC81827A30600E1C0E1 /* MRChatViewController.m */,
+				AD95BBC91827A30600E1C0E1 /* MRChatViewController.xib */,
 			);
 			name = Chat;
 			sourceTree = "<group>";
@@ -986,9 +986,9 @@
 		ADAA10011826BCB70036F14E /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				ADAA10061826BD6C0036F14E /* MRNewMapViewController.h */,
-				ADAA10071826BD6C0036F14E /* MRNewMapViewController.m */,
-				ADAA10081826BD6C0036F14E /* MRNewMapViewController.xib */,
+				ADAA10061826BD6C0036F14E /* MRMapViewController.h */,
+				ADAA10071826BD6C0036F14E /* MRMapViewController.m */,
+				ADAA10081826BD6C0036F14E /* MRMapViewController.xib */,
 			);
 			name = Map;
 			sourceTree = "<group>";
@@ -1008,9 +1008,9 @@
 			children = (
 				ADB0143D18390FA600DE0936 /* Notification Cell */,
 				ADC111D318320040004202EC /* Edit */,
-				ADAA10151826BFB80036F14E /* MRNewProfileViewController.h */,
-				ADAA10161826BFB80036F14E /* MRNewProfileViewController.m */,
-				ADAA10171826BFB80036F14E /* MRNewProfileViewController.xib */,
+				ADAA10151826BFB80036F14E /* MRProfileViewController.h */,
+				ADAA10161826BFB80036F14E /* MRProfileViewController.m */,
+				ADAA10171826BFB80036F14E /* MRProfileViewController.xib */,
 			);
 			name = Profile;
 			sourceTree = "<group>";
@@ -1018,9 +1018,9 @@
 		ADAA10041826BD200036F14E /* Messages */ = {
 			isa = PBXGroup;
 			children = (
-				ADAA10101826BFA80036F14E /* MRNewMessagesViewController.h */,
-				ADAA10111826BFA80036F14E /* MRNewMessagesViewController.m */,
-				ADAA10121826BFA80036F14E /* MRNewMessagesViewController.xib */,
+				ADAA10101826BFA80036F14E /* MRMessagesViewController.h */,
+				ADAA10111826BFA80036F14E /* MRMessagesViewController.m */,
+				ADAA10121826BFA80036F14E /* MRMessagesViewController.xib */,
 			);
 			name = Messages;
 			sourceTree = "<group>";
@@ -1028,9 +1028,9 @@
 		ADAA10051826BD260036F14E /* Create Post */ = {
 			isa = PBXGroup;
 			children = (
-				ADAA101A1826BFCC0036F14E /* MRNewCreatePostViewController.h */,
-				ADAA101B1826BFCC0036F14E /* MRNewCreatePostViewController.m */,
-				ADAA101C1826BFCC0036F14E /* MRNewCreatePostViewController.xib */,
+				ADAA101A1826BFCC0036F14E /* MRCreatePostViewController.h */,
+				ADAA101B1826BFCC0036F14E /* MRCreatePostViewController.m */,
+				ADAA101C1826BFCC0036F14E /* MRCreatePostViewController.xib */,
 			);
 			name = "Create Post";
 			sourceTree = "<group>";
@@ -1179,7 +1179,7 @@
 				4424BBCC17B956970060CD49 /* Default.png in Resources */,
 				ADC111D21831FF2D004202EC /* social-icon-vkontakte@2x.png in Resources */,
 				4424BBCE17B956970060CD49 /* Default@2x.png in Resources */,
-				ADAA101E1826BFCC0036F14E /* MRNewCreatePostViewController.xib in Resources */,
+				ADAA101E1826BFCC0036F14E /* MRCreatePostViewController.xib in Resources */,
 				ADC111CF1831FF2D004202EC /* social-icon-twitter.png in Resources */,
 				4424BBD017B956970060CD49 /* Default-568h@2x.png in Resources */,
 				4424BBF917B9602E0060CD49 /* MRMenuItemCell.xib in Resources */,
@@ -1219,7 +1219,7 @@
 				4424BC3317B965330060CD49 /* map-search-filed.png in Resources */,
 				4424BC3417B965330060CD49 /* map-search-filed@2x.png in Resources */,
 				4424BC3F17B966160060CD49 /* Icon-72.png in Resources */,
-				ADAA100A1826BD6C0036F14E /* MRNewMapViewController.xib in Resources */,
+				ADAA100A1826BD6C0036F14E /* MRMapViewController.xib in Resources */,
 				4424BC4017B966160060CD49 /* Icon-72@2x.png in Resources */,
 				4424BC4117B966160060CD49 /* Icon-Small-50.png in Resources */,
 				4424BC4217B966160060CD49 /* Icon-Small-50@2x.png in Resources */,
@@ -1296,14 +1296,14 @@
 				AD84AA3217C95992000444FD /* chat-bubble-sent@2x.png in Resources */,
 				AD84AA3317C95992000444FD /* chat-button-send-active.png in Resources */,
 				AD84AA3417C95992000444FD /* chat-button-send-active@2x.png in Resources */,
-				AD95BBCB1827A30600E1C0E1 /* MRNewChatViewController.xib in Resources */,
+				AD95BBCB1827A30600E1C0E1 /* MRChatViewController.xib in Resources */,
 				ADD992AA182C23FD00E6F9BB /* map-controls-zoomout.png in Resources */,
 				AD84AA3517C95992000444FD /* chat-button-send-passive.png in Resources */,
 				AD84AA3617C95992000444FD /* chat-button-send-passive@2x.png in Resources */,
 				AD84AA3717C95992000444FD /* chat-field-background.png in Resources */,
 				AD84AA3817C95992000444FD /* chat-field-background@2x.png in Resources */,
 				AD84AA3917C95992000444FD /* chat-field.png in Resources */,
-				ADAA10191826BFB80036F14E /* MRNewProfileViewController.xib in Resources */,
+				ADAA10191826BFB80036F14E /* MRProfileViewController.xib in Resources */,
 				AD84AA3A17C95992000444FD /* chat-field@2x.png in Resources */,
 				AD84AA3D17C959EB000444FD /* menu-icon-added-by-me.png in Resources */,
 				AD09832E1839026600DB18BC /* marketolis-logo@2x.png in Resources */,
@@ -1313,7 +1313,7 @@
 				AD84AA4117C95A1C000444FD /* navbar-icon-menu.png in Resources */,
 				AD84AA4217C95A1C000444FD /* navbar-icon-menu@2x.png in Resources */,
 				AD48FFB117CBEE86005E198C /* MRConfirmViewController.xib in Resources */,
-				ADAA10141826BFA80036F14E /* MRNewMessagesViewController.xib in Resources */,
+				ADAA10141826BFA80036F14E /* MRMessagesViewController.xib in Resources */,
 				AD8923B81849F6E9005BDAEA /* RubleMedium.ttf in Resources */,
 				AD48FFB317CBEF93005E198C /* MRSignUpViewController.xib in Resources */,
 				AD38C75417E7AC5500831CF8 /* MRLeftBubbleCell.xib in Resources */,
@@ -1377,24 +1377,24 @@
 			files = (
 				ADAA100E1826BF9C0036F14E /* MRNewPostsViewController.m in Sources */,
 				4424BBC617B956970060CD49 /* main.m in Sources */,
-				ADAA101D1826BFCC0036F14E /* MRNewCreatePostViewController.m in Sources */,
+				ADAA101D1826BFCC0036F14E /* MRCreatePostViewController.m in Sources */,
 				ADC2E3D618392C670065BB96 /* MRPostPhotoCell.m in Sources */,
 				4424BBCA17B956970060CD49 /* MRAppDelegate.m in Sources */,
 				ADC111D718320059004202EC /* MRProfileEditorViewController.m in Sources */,
-				ADAA10131826BFA80036F14E /* MRNewMessagesViewController.m in Sources */,
+				ADAA10131826BFA80036F14E /* MRMessagesViewController.m in Sources */,
 				4424BBF517B95FAB0060CD49 /* MRMenuItemCell.m in Sources */,
 				4424BC4E17B96E0E0060CD49 /* MROfferAnnotationView.m in Sources */,
 				4424BC5217B96E380060CD49 /* MRPointAnnotation.m in Sources */,
 				AD06D3AC17B995DC009C880D /* MRWelcomeViewController.m in Sources */,
 				AD95BBC41827A1B800E1C0E1 /* MRViewController.m in Sources */,
 				ADC2E3DD18392FB20065BB96 /* MRPostEditorViewController.m in Sources */,
-				ADAA10181826BFB80036F14E /* MRNewProfileViewController.m in Sources */,
+				ADAA10181826BFB80036F14E /* MRProfileViewController.m in Sources */,
 				AD06D3D117B99DD5009C880D /* MRConfirmViewController.m in Sources */,
 				AD06D3D617B99DE3009C880D /* MRSignUpViewController.m in Sources */,
-				AD95BBCA1827A30600E1C0E1 /* MRNewChatViewController.m in Sources */,
+				AD95BBCA1827A30600E1C0E1 /* MRChatViewController.m in Sources */,
 				AD06D3E117B99E22009C880D /* MRDialogCell.m in Sources */,
 				AD3A47F317C54F2700CA2FD9 /* MRSeparatorView.m in Sources */,
-				ADAA10091826BD6C0036F14E /* MRNewMapViewController.m in Sources */,
+				ADAA10091826BD6C0036F14E /* MRMapViewController.m in Sources */,
 				AD3A480E17C557BE00CA2FD9 /* MROfferCell.m in Sources */,
 				ADB0144018390FC800DE0936 /* MRProfileNotificationCell.m in Sources */,
 				AD3A481A17C5DEC300CA2FD9 /* MROfferPhotoCell.m in Sources */,

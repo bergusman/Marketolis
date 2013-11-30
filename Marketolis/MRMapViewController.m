@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Vitaly Berg. All rights reserved.
 //
 
-#import "MRNewMapViewController.h"
+#import "MRMapViewController.h"
 
 #import "MRPostViewController.h"
 
@@ -20,7 +20,7 @@
 
 #define TO_USER_LOCATION_RADIUS 1000
 
-@interface MRNewMapViewController () <
+@interface MRMapViewController () <
     MKMapViewDelegate,
     UISearchBarDelegate
 >
@@ -35,7 +35,7 @@
 
 @end
 
-@implementation MRNewMapViewController
+@implementation MRMapViewController
 
 #pragma mark - Setups
 

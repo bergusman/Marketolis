@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MRNewMessagesViewController : MRViewController
+@interface MRMessagesViewController : MRViewController
 
 @end

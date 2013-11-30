@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 Vitaly Berg. All rights reserved.
 //
 
-#import "MRNewCreatePostViewController.h"
+#import "MRCreatePostViewController.h"
 
-@interface MRNewCreatePostViewController ()
+@interface MRCreatePostViewController ()
 
 @end
 
-@implementation MRNewCreatePostViewController
+@implementation MRCreatePostViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

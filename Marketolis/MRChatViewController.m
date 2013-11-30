@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 Vitaly Berg. All rights reserved.
 //
 
-#import "MRNewChatViewController.h"
+#import "MRChatViewController.h"
 
 #import "MRLeftBubbleCell.h"
 #import "MRRightBubbleCell.h"
 #import "MRInputTextBar.h"
 
-@interface MRNewChatViewController () <
+@interface MRChatViewController () <
     UITableViewDataSource,
     UITableViewDelegate,
     MRInputTextBarDelegate
@@ -27,7 +27,7 @@
 
 @end
 
-@implementation MRNewChatViewController
+@implementation MRChatViewController
 
 #pragma mark - Setups
 
