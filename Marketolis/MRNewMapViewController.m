@@ -8,7 +8,7 @@
 
 #import "MRNewMapViewController.h"
 
-#import "MROfferViewController.h"
+#import "MRPostViewController.h"
 
 #import "MRPointAnnotation.h"
 #import "MROfferAnnotationView.h"
@@ -109,8 +109,8 @@
     [mapView deselectAnnotation:view.annotation animated:YES];
     
     if ([view.annotation isKindOfClass:[MRPointAnnotation class]]) {
-        MROfferViewController *offerVc = [[MROfferViewController alloc] init];
-        [self.navigationController pushViewController:offerVc animated:YES];
+        MRPostViewController *postVC = [[MRPostViewController alloc] init];
+        [self.navigationController pushViewController:postVC animated:YES];
     }
 }
 

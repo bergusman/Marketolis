@@ -18,10 +18,6 @@
 		4424BBD017B956970060CD49 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4424BBCF17B956970060CD49 /* Default-568h@2x.png */; };
 		4424BBDD17B95A430060CD49 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4424BBDC17B95A430060CD49 /* MapKit.framework */; };
 		4424BBDF17B95A480060CD49 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4424BBDE17B95A480060CD49 /* CoreLocation.framework */; };
-		4424BBE717B95AB50060CD49 /* MRMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4424BBE517B95AB50060CD49 /* MRMapViewController.m */; };
-		4424BBE817B95AB50060CD49 /* MRMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4424BBE617B95AB50060CD49 /* MRMapViewController.xib */; };
-		4424BBF017B95AFA0060CD49 /* MRMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4424BBEE17B95AFA0060CD49 /* MRMenuViewController.m */; };
-		4424BBF117B95AFA0060CD49 /* MRMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4424BBEF17B95AFA0060CD49 /* MRMenuViewController.xib */; };
 		4424BBF517B95FAB0060CD49 /* MRMenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4424BBF417B95FAB0060CD49 /* MRMenuItemCell.m */; };
 		4424BBF917B9602E0060CD49 /* MRMenuItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4424BBF817B9602D0060CD49 /* MRMenuItemCell.xib */; };
 		4424BC0717B963510060CD49 /* menu-counter.png in Resources */ = {isa = PBXBuildFile; fileRef = 4424BBFB17B963510060CD49 /* menu-counter.png */; };
@@ -84,12 +80,8 @@
 		AD06D3D217B99DD5009C880D /* MRConfirmViewController~568h.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD06D3D017B99DD5009C880D /* MRConfirmViewController~568h.xib */; };
 		AD06D3D617B99DE3009C880D /* MRSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD06D3D417B99DE3009C880D /* MRSignUpViewController.m */; };
 		AD06D3D717B99DE3009C880D /* MRSignUpViewController~568h.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD06D3D517B99DE3009C880D /* MRSignUpViewController~568h.xib */; };
-		AD06D3DC17B99E09009C880D /* MRMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD06D3DA17B99E09009C880D /* MRMessagesViewController.m */; };
-		AD06D3DD17B99E09009C880D /* MRMessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD06D3DB17B99E09009C880D /* MRMessagesViewController.xib */; };
 		AD06D3E117B99E22009C880D /* MRDialogCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD06D3E017B99E22009C880D /* MRDialogCell.m */; };
 		AD06D3E317B9A3BC009C880D /* MRDialogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD06D3E217B9A3BC009C880D /* MRDialogCell.xib */; };
-		AD06D3E817B9EE75009C880D /* MRChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD06D3E617B9EE75009C880D /* MRChatViewController.m */; };
-		AD06D3E917B9EE75009C880D /* MRChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD06D3E717B9EE75009C880D /* MRChatViewController.xib */; };
 		AD09832D1839026600DB18BC /* marketolis-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = AD09832B1839026600DB18BC /* marketolis-logo.png */; };
 		AD09832E1839026600DB18BC /* marketolis-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD09832C1839026600DB18BC /* marketolis-logo@2x.png */; };
 		AD38C74C17E7AB8E00831CF8 /* MRRightBubbleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD38C74B17E7AB8E00831CF8 /* MRRightBubbleCell.m */; };
@@ -121,15 +113,9 @@
 		AD3A47F317C54F2700CA2FD9 /* MRSeparatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3A47F217C54F2700CA2FD9 /* MRSeparatorView.m */; };
 		AD3A47F617C54F6800CA2FD9 /* menu-icon-map.png in Resources */ = {isa = PBXBuildFile; fileRef = AD3A47F417C54F6800CA2FD9 /* menu-icon-map.png */; };
 		AD3A47F717C54F6800CA2FD9 /* menu-icon-map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD3A47F517C54F6800CA2FD9 /* menu-icon-map@2x.png */; };
-		AD3A47FC17C5511700CA2FD9 /* MRSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3A47FA17C5511700CA2FD9 /* MRSettingsViewController.m */; };
-		AD3A47FD17C5511700CA2FD9 /* MRSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD3A47FB17C5511700CA2FD9 /* MRSettingsViewController.xib */; };
-		AD3A480217C5516D00CA2FD9 /* MROffersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3A480017C5516D00CA2FD9 /* MROffersViewController.m */; };
-		AD3A480317C5516D00CA2FD9 /* MROffersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD3A480117C5516D00CA2FD9 /* MROffersViewController.xib */; };
 		AD3A480717C5525B00CA2FD9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD3A480917C5525B00CA2FD9 /* Localizable.strings */; };
 		AD3A480E17C557BE00CA2FD9 /* MROfferCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3A480D17C557BE00CA2FD9 /* MROfferCell.m */; };
 		AD3A481017C557CC00CA2FD9 /* MROfferCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD3A480F17C557CC00CA2FD9 /* MROfferCell.xib */; };
-		AD3A481517C5D99E00CA2FD9 /* MROfferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3A481317C5D99E00CA2FD9 /* MROfferViewController.m */; };
-		AD3A481617C5D99E00CA2FD9 /* MROfferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD3A481417C5D99E00CA2FD9 /* MROfferViewController.xib */; };
 		AD3A481A17C5DEC300CA2FD9 /* MROfferPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3A481917C5DEC300CA2FD9 /* MROfferPhotoCell.m */; };
 		AD3A481C17C5DEDC00CA2FD9 /* MROfferPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD3A481B17C5DEDB00CA2FD9 /* MROfferPhotoCell.xib */; };
 		AD48FFB117CBEE86005E198C /* MRConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD48FFB017CBEE86005E198C /* MRConfirmViewController.xib */; };
@@ -224,12 +210,6 @@
 		4424BBCF17B956970060CD49 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4424BBDC17B95A430060CD49 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4424BBDE17B95A480060CD49 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		4424BBE417B95AB50060CD49 /* MRMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMapViewController.h; sourceTree = "<group>"; };
-		4424BBE517B95AB50060CD49 /* MRMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMapViewController.m; sourceTree = "<group>"; };
-		4424BBE617B95AB50060CD49 /* MRMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRMapViewController.xib; sourceTree = "<group>"; };
-		4424BBED17B95AFA0060CD49 /* MRMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMenuViewController.h; sourceTree = "<group>"; };
-		4424BBEE17B95AFA0060CD49 /* MRMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMenuViewController.m; sourceTree = "<group>"; };
-		4424BBEF17B95AFA0060CD49 /* MRMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRMenuViewController.xib; sourceTree = "<group>"; };
 		4424BBF317B95FAB0060CD49 /* MRMenuItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMenuItemCell.h; sourceTree = "<group>"; };
 		4424BBF417B95FAB0060CD49 /* MRMenuItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMenuItemCell.m; sourceTree = "<group>"; };
 		4424BBF817B9602D0060CD49 /* MRMenuItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRMenuItemCell.xib; sourceTree = "<group>"; };
@@ -298,15 +278,9 @@
 		AD06D3D317B99DE3009C880D /* MRSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRSignUpViewController.h; sourceTree = "<group>"; };
 		AD06D3D417B99DE3009C880D /* MRSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRSignUpViewController.m; sourceTree = "<group>"; };
 		AD06D3D517B99DE3009C880D /* MRSignUpViewController~568h.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MRSignUpViewController~568h.xib"; sourceTree = "<group>"; };
-		AD06D3D917B99E09009C880D /* MRMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMessagesViewController.h; sourceTree = "<group>"; };
-		AD06D3DA17B99E09009C880D /* MRMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMessagesViewController.m; sourceTree = "<group>"; };
-		AD06D3DB17B99E09009C880D /* MRMessagesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRMessagesViewController.xib; sourceTree = "<group>"; };
 		AD06D3DF17B99E22009C880D /* MRDialogCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRDialogCell.h; sourceTree = "<group>"; };
 		AD06D3E017B99E22009C880D /* MRDialogCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRDialogCell.m; sourceTree = "<group>"; };
 		AD06D3E217B9A3BC009C880D /* MRDialogCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRDialogCell.xib; sourceTree = "<group>"; };
-		AD06D3E517B9EE75009C880D /* MRChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRChatViewController.h; sourceTree = "<group>"; };
-		AD06D3E617B9EE75009C880D /* MRChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRChatViewController.m; sourceTree = "<group>"; };
-		AD06D3E717B9EE75009C880D /* MRChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRChatViewController.xib; sourceTree = "<group>"; };
 		AD09832B1839026600DB18BC /* marketolis-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "marketolis-logo.png"; path = "Resources/Images/marketolis-logo.png"; sourceTree = "<group>"; };
 		AD09832C1839026600DB18BC /* marketolis-logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "marketolis-logo@2x.png"; path = "Resources/Images/marketolis-logo@2x.png"; sourceTree = "<group>"; };
 		AD38C74A17E7AB8E00831CF8 /* MRRightBubbleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRRightBubbleCell.h; sourceTree = "<group>"; };
@@ -342,21 +316,12 @@
 		AD3A47F217C54F2700CA2FD9 /* MRSeparatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRSeparatorView.m; sourceTree = "<group>"; };
 		AD3A47F417C54F6800CA2FD9 /* menu-icon-map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu-icon-map.png"; path = "Resources/Images/menu-icon-map.png"; sourceTree = "<group>"; };
 		AD3A47F517C54F6800CA2FD9 /* menu-icon-map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu-icon-map@2x.png"; path = "Resources/Images/menu-icon-map@2x.png"; sourceTree = "<group>"; };
-		AD3A47F917C5511700CA2FD9 /* MRSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRSettingsViewController.h; sourceTree = "<group>"; };
-		AD3A47FA17C5511700CA2FD9 /* MRSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRSettingsViewController.m; sourceTree = "<group>"; };
-		AD3A47FB17C5511700CA2FD9 /* MRSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRSettingsViewController.xib; sourceTree = "<group>"; };
-		AD3A47FF17C5516D00CA2FD9 /* MROffersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MROffersViewController.h; sourceTree = "<group>"; };
-		AD3A480017C5516D00CA2FD9 /* MROffersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MROffersViewController.m; sourceTree = "<group>"; };
-		AD3A480117C5516D00CA2FD9 /* MROffersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MROffersViewController.xib; sourceTree = "<group>"; };
 		AD3A480617C5525300CA2FD9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AD3A480817C5525B00CA2FD9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AD3A480A17C5525F00CA2FD9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AD3A480C17C557BE00CA2FD9 /* MROfferCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MROfferCell.h; sourceTree = "<group>"; };
 		AD3A480D17C557BE00CA2FD9 /* MROfferCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MROfferCell.m; sourceTree = "<group>"; };
 		AD3A480F17C557CC00CA2FD9 /* MROfferCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MROfferCell.xib; sourceTree = "<group>"; };
-		AD3A481217C5D99E00CA2FD9 /* MROfferViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MROfferViewController.h; sourceTree = "<group>"; };
-		AD3A481317C5D99E00CA2FD9 /* MROfferViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MROfferViewController.m; sourceTree = "<group>"; };
-		AD3A481417C5D99E00CA2FD9 /* MROfferViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MROfferViewController.xib; sourceTree = "<group>"; };
 		AD3A481817C5DEC300CA2FD9 /* MROfferPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MROfferPhotoCell.h; sourceTree = "<group>"; };
 		AD3A481917C5DEC300CA2FD9 /* MROfferPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MROfferPhotoCell.m; sourceTree = "<group>"; };
 		AD3A481B17C5DEDB00CA2FD9 /* MROfferPhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MROfferPhotoCell.xib; sourceTree = "<group>"; };
@@ -583,26 +548,6 @@
 			name = "Controllers & Views";
 			sourceTree = "<group>";
 		};
-		4424BBE917B95ABA0060CD49 /* Map */ = {
-			isa = PBXGroup;
-			children = (
-				4424BBE417B95AB50060CD49 /* MRMapViewController.h */,
-				4424BBE517B95AB50060CD49 /* MRMapViewController.m */,
-				4424BBE617B95AB50060CD49 /* MRMapViewController.xib */,
-			);
-			name = Map;
-			sourceTree = "<group>";
-		};
-		4424BBEA17B95AC60060CD49 /* Menu */ = {
-			isa = PBXGroup;
-			children = (
-				4424BBED17B95AFA0060CD49 /* MRMenuViewController.h */,
-				4424BBEE17B95AFA0060CD49 /* MRMenuViewController.m */,
-				4424BBEF17B95AFA0060CD49 /* MRMenuViewController.xib */,
-			);
-			name = Menu;
-			sourceTree = "<group>";
-		};
 		4424BBEB17B95AD90060CD49 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -716,13 +661,6 @@
 			name = "Point Annotation";
 			sourceTree = "<group>";
 		};
-		AD06D3A817B995C9009C880D /* Welcome */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Welcome;
-			sourceTree = "<group>";
-		};
 		AD06D3B617B9962A009C880D /* Splash */ = {
 			isa = PBXGroup;
 			children = (
@@ -773,16 +711,6 @@
 			name = Confirm;
 			sourceTree = "<group>";
 		};
-		AD06D3D817B99DF4009C880D /* Messages */ = {
-			isa = PBXGroup;
-			children = (
-				AD06D3D917B99E09009C880D /* MRMessagesViewController.h */,
-				AD06D3DA17B99E09009C880D /* MRMessagesViewController.m */,
-				AD06D3DB17B99E09009C880D /* MRMessagesViewController.xib */,
-			);
-			name = Messages;
-			sourceTree = "<group>";
-		};
 		AD06D3DE17B99E0F009C880D /* Dialog Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -791,16 +719,6 @@
 				AD06D3E217B9A3BC009C880D /* MRDialogCell.xib */,
 			);
 			name = "Dialog Cell";
-			sourceTree = "<group>";
-		};
-		AD06D3E417B9EE5D009C880D /* Chat */ = {
-			isa = PBXGroup;
-			children = (
-				AD06D3E517B9EE75009C880D /* MRChatViewController.h */,
-				AD06D3E617B9EE75009C880D /* MRChatViewController.m */,
-				AD06D3E717B9EE75009C880D /* MRChatViewController.xib */,
-			);
-			name = Chat;
 			sourceTree = "<group>";
 		};
 		AD38C74617E7AB3000831CF8 /* Chat */ = {
@@ -890,26 +808,6 @@
 			name = Separator;
 			sourceTree = "<group>";
 		};
-		AD3A47F817C550FB00CA2FD9 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				AD3A47F917C5511700CA2FD9 /* MRSettingsViewController.h */,
-				AD3A47FA17C5511700CA2FD9 /* MRSettingsViewController.m */,
-				AD3A47FB17C5511700CA2FD9 /* MRSettingsViewController.xib */,
-			);
-			name = Settings;
-			sourceTree = "<group>";
-		};
-		AD3A47FE17C5515F00CA2FD9 /* Offers */ = {
-			isa = PBXGroup;
-			children = (
-				AD3A47FF17C5516D00CA2FD9 /* MROffersViewController.h */,
-				AD3A480017C5516D00CA2FD9 /* MROffersViewController.m */,
-				AD3A480117C5516D00CA2FD9 /* MROffersViewController.xib */,
-			);
-			name = Offers;
-			sourceTree = "<group>";
-		};
 		AD3A480B17C557A600CA2FD9 /* Offer Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -918,16 +816,6 @@
 				AD3A480F17C557CC00CA2FD9 /* MROfferCell.xib */,
 			);
 			name = "Offer Cell";
-			sourceTree = "<group>";
-		};
-		AD3A481117C5D98600CA2FD9 /* Offer */ = {
-			isa = PBXGroup;
-			children = (
-				AD3A481217C5D99E00CA2FD9 /* MROfferViewController.h */,
-				AD3A481317C5D99E00CA2FD9 /* MROfferViewController.m */,
-				AD3A481417C5D99E00CA2FD9 /* MROfferViewController.xib */,
-			);
-			name = Offer;
 			sourceTree = "<group>";
 		};
 		AD3A481717C5DE9300CA2FD9 /* Offer Photo Cell */ = {
@@ -1023,12 +911,20 @@
 			name = "Ruble Label";
 			sourceTree = "<group>";
 		};
+		AD8923BF184A0546005BDAEA /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AD95BBC21827A1B800E1C0E1 /* MRViewController.h */,
+				AD95BBC31827A1B800E1C0E1 /* MRViewController.m */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
 		AD95BBC01827A17900E1C0E1 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				AD8923BF184A0546005BDAEA /* View Controller */,
 				AD8923BB1849F72A005BDAEA /* Ruble Label */,
-				AD95BBC21827A1B800E1C0E1 /* MRViewController.h */,
-				AD95BBC31827A1B800E1C0E1 /* MRViewController.m */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -1081,16 +977,8 @@
 		ADAA10001826BCAE0036F14E /* Old */ = {
 			isa = PBXGroup;
 			children = (
-				AD3A481117C5D98600CA2FD9 /* Offer */,
-				AD3A47FE17C5515F00CA2FD9 /* Offers */,
-				AD3A47F817C550FB00CA2FD9 /* Settings */,
-				AD06D3E417B9EE5D009C880D /* Chat */,
-				AD06D3D817B99DF4009C880D /* Messages */,
 				AD06D3CD17B9994A009C880D /* Confirm */,
 				AD06D3CC17B99942009C880D /* Sign Up */,
-				AD06D3A817B995C9009C880D /* Welcome */,
-				4424BBEA17B95AC60060CD49 /* Menu */,
-				4424BBE917B95ABA0060CD49 /* Map */,
 			);
 			name = Old;
 			sourceTree = "<group>";
@@ -1294,8 +1182,6 @@
 				ADAA101E1826BFCC0036F14E /* MRNewCreatePostViewController.xib in Resources */,
 				ADC111CF1831FF2D004202EC /* social-icon-twitter.png in Resources */,
 				4424BBD017B956970060CD49 /* Default-568h@2x.png in Resources */,
-				4424BBE817B95AB50060CD49 /* MRMapViewController.xib in Resources */,
-				4424BBF117B95AFA0060CD49 /* MRMenuViewController.xib in Resources */,
 				4424BBF917B9602E0060CD49 /* MRMenuItemCell.xib in Resources */,
 				ADC111D818320059004202EC /* MRProfileEditorViewController.xib in Resources */,
 				ADC111CC1831FF2D004202EC /* social-icon-facebook@2x.png in Resources */,
@@ -1365,9 +1251,7 @@
 				AD06D3D217B99DD5009C880D /* MRConfirmViewController~568h.xib in Resources */,
 				ADC2E3D818392C780065BB96 /* MRPostPhotoCell.xib in Resources */,
 				AD06D3D717B99DE3009C880D /* MRSignUpViewController~568h.xib in Resources */,
-				AD06D3DD17B99E09009C880D /* MRMessagesViewController.xib in Resources */,
 				AD06D3E317B9A3BC009C880D /* MRDialogCell.xib in Resources */,
-				AD06D3E917B9EE75009C880D /* MRChatViewController.xib in Resources */,
 				ADC111CB1831FF2D004202EC /* social-icon-facebook.png in Resources */,
 				AD3A47D117C542F900CA2FD9 /* navbar-button-action-active.png in Resources */,
 				ADD9929C182C200000E6F9BB /* tab-bar-chat.png in Resources */,
@@ -1399,14 +1283,11 @@
 				AD3A47EF17C54ADD00CA2FD9 /* content-list-passive@2x.png in Resources */,
 				AD3A47F617C54F6800CA2FD9 /* menu-icon-map.png in Resources */,
 				AD3A47F717C54F6800CA2FD9 /* menu-icon-map@2x.png in Resources */,
-				AD3A47FD17C5511700CA2FD9 /* MRSettingsViewController.xib in Resources */,
-				AD3A480317C5516D00CA2FD9 /* MROffersViewController.xib in Resources */,
 				ADD9929F182C200000E6F9BB /* tab-bar-list@2x.png in Resources */,
 				ADC111CD1831FF2D004202EC /* social-icon-odnoklassniki.png in Resources */,
 				ADD992AF182C240D00E6F9BB /* map-item@2x.png in Resources */,
 				AD3A480717C5525B00CA2FD9 /* Localizable.strings in Resources */,
 				AD3A481017C557CC00CA2FD9 /* MROfferCell.xib in Resources */,
-				AD3A481617C5D99E00CA2FD9 /* MROfferViewController.xib in Resources */,
 				ADD9929D182C200000E6F9BB /* tab-bar-chat@2x.png in Resources */,
 				AD3A481C17C5DEDC00CA2FD9 /* MROfferPhotoCell.xib in Resources */,
 				AD84AA2F17C95992000444FD /* chat-bubble-incoming.png in Resources */,
@@ -1501,8 +1382,6 @@
 				4424BBCA17B956970060CD49 /* MRAppDelegate.m in Sources */,
 				ADC111D718320059004202EC /* MRProfileEditorViewController.m in Sources */,
 				ADAA10131826BFA80036F14E /* MRNewMessagesViewController.m in Sources */,
-				4424BBE717B95AB50060CD49 /* MRMapViewController.m in Sources */,
-				4424BBF017B95AFA0060CD49 /* MRMenuViewController.m in Sources */,
 				4424BBF517B95FAB0060CD49 /* MRMenuItemCell.m in Sources */,
 				4424BC4E17B96E0E0060CD49 /* MROfferAnnotationView.m in Sources */,
 				4424BC5217B96E380060CD49 /* MRPointAnnotation.m in Sources */,
@@ -1512,16 +1391,11 @@
 				ADAA10181826BFB80036F14E /* MRNewProfileViewController.m in Sources */,
 				AD06D3D117B99DD5009C880D /* MRConfirmViewController.m in Sources */,
 				AD06D3D617B99DE3009C880D /* MRSignUpViewController.m in Sources */,
-				AD06D3DC17B99E09009C880D /* MRMessagesViewController.m in Sources */,
 				AD95BBCA1827A30600E1C0E1 /* MRNewChatViewController.m in Sources */,
 				AD06D3E117B99E22009C880D /* MRDialogCell.m in Sources */,
-				AD06D3E817B9EE75009C880D /* MRChatViewController.m in Sources */,
 				AD3A47F317C54F2700CA2FD9 /* MRSeparatorView.m in Sources */,
-				AD3A47FC17C5511700CA2FD9 /* MRSettingsViewController.m in Sources */,
 				ADAA10091826BD6C0036F14E /* MRNewMapViewController.m in Sources */,
-				AD3A480217C5516D00CA2FD9 /* MROffersViewController.m in Sources */,
 				AD3A480E17C557BE00CA2FD9 /* MROfferCell.m in Sources */,
-				AD3A481517C5D99E00CA2FD9 /* MROfferViewController.m in Sources */,
 				ADB0144018390FC800DE0936 /* MRProfileNotificationCell.m in Sources */,
 				AD3A481A17C5DEC300CA2FD9 /* MROfferPhotoCell.m in Sources */,
 				AD84AA4617C95C45000444FD /* MRMenuButton.m in Sources */,

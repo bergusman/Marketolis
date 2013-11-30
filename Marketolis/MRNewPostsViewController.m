@@ -8,7 +8,7 @@
 
 #import "MRNewPostsViewController.h"
 
-#import "MROfferViewController.h"
+#import "MRPostViewController.h"
 
 #import "MROfferCell.h"
 
@@ -75,8 +75,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    MROfferViewController *offerVC = [[MROfferViewController alloc] init];
-    [self.navigationController pushViewController:offerVC animated:YES];
+    MRPostViewController *postVC = [[MRPostViewController alloc] init];
+    [self.navigationController pushViewController:postVC animated:YES];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

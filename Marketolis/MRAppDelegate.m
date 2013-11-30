@@ -8,9 +8,6 @@
 
 #import "MRAppDelegate.h"
 
-#import "MRMenuViewController.h"
-#import "MRMapViewController.h"
-
 #import "MRWelcomeViewController.h"
 #import "MRSignUpViewController.h"
 #import "MRConfirmViewController.h"
@@ -102,8 +99,8 @@
     [self setupGoogleAnalytics];
     [self setupWindow];
     //[self showWelcome];
-    //[self showApp];
-    [self showTestPost];
+    [self showApp];
+    //[self showTestPost];
     [self registerForRemoteNotifications];
     return YES;
 }
