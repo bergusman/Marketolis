@@ -76,6 +76,8 @@
 // Post
 "post.title" = "Просмотр";
 "post.edit.button" = "Редакт.";
+"post.address.title" = "Адрес";
+"post.seller.title" = "Продавец";
 "post.call.button" = "Позвонить";
 "post.write.button" = "Написать";
 "post.views" = "Просмотров";

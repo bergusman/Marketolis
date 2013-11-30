@@ -76,6 +76,8 @@
 // Post
 "post.title" = "View";
 "post.edit.button" = "Edit";
+"post.address.title" = "Address";
+"post.seller.title" = "Seller";
 "post.call.button" = "Call";
 "post.write.button" = "Write";
 "post.views" = "Views";
