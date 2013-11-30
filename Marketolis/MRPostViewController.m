@@ -19,7 +19,8 @@
 @interface MRPostViewController () <
     UIScrollViewDelegate,
     UICollectionViewDataSource,
-    UICollectionViewDelegate
+    UICollectionViewDelegate,
+    MKMapViewDelegate
 >
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -79,6 +80,8 @@
     [self.photosCollectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionLeft animated:YES];
 }
 
+#pragma mark - Layouting
+
 - (void)layoutContent {
     [self layoutDetails];
     
@@ -129,10 +132,10 @@
     y += r.size.height + 10;
     
     // Address
-    CGRect addressRect = [self.detailsLabel.text boundingRectWithSize:CGSizeMake(300, CGFLOAT_MAX)
-                                                              options:NSStringDrawingUsesLineFragmentOrigin
-                                                           attributes:@{NSFontAttributeName: self.addressLabel.font}
-                                                              context:nil];
+    CGRect addressRect = [self.addressLabel.attributedText.string boundingRectWithSize:CGSizeMake(300, CGFLOAT_MAX)
+                                                                               options:NSStringDrawingUsesLineFragmentOrigin
+                                                                            attributes:@{NSFontAttributeName: self.addressLabel.font}
+                                                                               context:nil];
     
     r = self.addressLabel.frame;
     r.origin.y = y;
@@ -142,10 +145,10 @@
     y += r.size.height + 10;
     
     // Seller
-    CGRect sellerRect = [self.detailsLabel.text boundingRectWithSize:CGSizeMake(300, CGFLOAT_MAX)
-                                                             options:NSStringDrawingUsesLineFragmentOrigin
-                                                          attributes:@{NSFontAttributeName: self.sellerLabel.font}
-                                                             context:nil];
+    CGRect sellerRect = [self.sellerLabel.attributedText.string boundingRectWithSize:CGSizeMake(300, CGFLOAT_MAX)
+                                                                             options:NSStringDrawingUsesLineFragmentOrigin
+                                                                          attributes:@{NSFontAttributeName: self.sellerLabel.font}
+                                                                             context:nil];
     
     r = self.sellerLabel.frame;
     r.origin.y = y;
@@ -154,10 +157,31 @@
     
     y += r.size.height + 10;
     
+    // Buttons
+    r = self.callButton.frame;
+    r.origin.y = y;
+    self.callButton.frame = r;
+    
+    r = self.writeButton.frame;
+    r.origin.y = y;
+    self.writeButton.frame = r;
+    
+    y += r.size.height + 10;
+    
+    // View Count
+    r = self.viewCountLabel.frame;
+    r.origin.y = y;
+    self.viewCountLabel.frame = r;
+    
+    y += r.size.height + 10;
+    
+    // Details Panel
     r = self.detailsView.frame;
-    r.size.height = y + 300;
+    r.size.height = y;
     self.detailsView.frame = r;
 }
+
+#pragma mark - Filling
 
 - (void)fillDetails {
     self.dateLabel.text = @"17 августа 2013";
@@ -165,10 +189,35 @@
     self.detailsLabel.text = @"В хорошем состоянии, яркий дисплей, хороший мягкий ход клавишь, глючноватый тачпад, вмятина с боку от падения на роликах, зарядка в коплекте";
     self.viewCountLabel.text = [NSString stringWithFormat:@"%@: %d", NSLocalizedString(@"post.views", @""), 324];
     
-    NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:@"Адрес: Россия, город Москва, улица Тверская дом 34 квартира 43"];
-    [attrString addAttribute:NSForegroundColorAttributeName value:MR_RGB(102, 102, 102) range:NSMakeRange(0, [attrString.string length])];
-    [attrString addAttribute:NSForegroundColorAttributeName value:MR_RGB(0, 0, 0) range:NSMakeRange(0, 6)];
-    self.addressLabel.attributedText = attrString;
+    [self fillAddress];
+    [self fillSeller];
+}
+
+- (void)fillAddress {
+    NSString *title = [NSString stringWithFormat:@"%@: ", NSLocalizedString(@"post.address.title", @"")];
+    NSString *text = @"Адрес: Россия, город Москва, улица Тверская дом 34 квартира 43";
+    self.addressLabel.attributedText = [self attributedTextWithTitle:title text:text];
+}
+
+- (void)fillSeller {
+    NSString *title = [NSString stringWithFormat:@"%@: ", NSLocalizedString(@"post.seller.title", @"")];
+    NSString *text = @"Василий Иванович";
+    self.sellerLabel.attributedText = [self attributedTextWithTitle:title text:text];
+}
+
+- (NSAttributedString *)attributedTextWithTitle:(NSString *)title text:(NSString *)text {
+    NSString *string = [title stringByAppendingString:text];
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:string];
+    
+    [attributedString addAttribute:NSForegroundColorAttributeName
+                             value:MR_RGB(102, 102, 102)
+                             range:NSMakeRange(0, [string length])];
+    
+    [attributedString addAttribute:NSForegroundColorAttributeName
+                             value:MR_RGB(0, 0, 0)
+                             range:NSMakeRange(0, [title length])];
+    
+    return attributedString;
 }
 
 #pragma mark - Actions
@@ -217,6 +266,12 @@
     // TODO: show photo in photo viewer
 }
 
+#pragma mark - MKMapViewDelegate
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
+    return nil;
+}
+
 #pragma mark - UIViewController
 
 - (void)viewDidLoad {
@@ -235,6 +290,14 @@
     
     [self fillDetails];
     [self layoutContent];
+    
+    self.mapView.userInteractionEnabled = NO;
+    
+    MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
+    annotation.coordinate = CLLocationCoordinate2DMake(55.758998, 37.623661);
+    [self.mapView addAnnotation:annotation];
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(annotation.coordinate, 1000, 1000);
+    [self.mapView setRegion:region];
 }
 
 @end
