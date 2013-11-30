@@ -57,5 +57,12 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>RubleLight.ttf</string>
+		<string>RubleMedium.ttf</string>
+		<string>RubleRegular.ttf</string>
+		<string>RubleUltraLight.ttf</string>
+	</array>
 </dict>
 </plist>
