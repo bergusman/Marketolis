@@ -9,5 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface MRProfileNotificationCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *statusLabel;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+
+
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+
+
++ (CGFloat)height;
 
 @end
