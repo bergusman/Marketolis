@@ -13,7 +13,7 @@
 #import "MRConfirmViewController.h"
 
 #import "MRMapViewController.h"
-#import "MRNewPostsViewController.h"
+#import "MRPostsViewController.h"
 #import "MRMessagesViewController.h"
 #import "MRProfileViewController.h"
 #import "MRCreatePostViewController.h"
@@ -42,7 +42,7 @@
     MRMapViewController *mapVC = [[MRMapViewController alloc] init];
     UINavigationController *mapNC = [[UINavigationController alloc] initWithRootViewController:mapVC];
     
-    MRNewPostsViewController *favoritesVC = [[MRNewPostsViewController alloc] init];
+    MRPostsViewController *favoritesVC = [[MRPostsViewController alloc] init];
     UINavigationController *favoritesNC = [[UINavigationController alloc] initWithRootViewController:favoritesVC];
     
     MRMessagesViewController *messagesVC = [[MRMessagesViewController alloc] init];

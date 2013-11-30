@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Vitaly Berg. All rights reserved.
 //
 
-#import "MRNewPostsViewController.h"
+#import "MRPostsViewController.h"
 
 #import "MRPostViewController.h"
 
@@ -14,7 +14,7 @@
 
 #import <SDWebImage/UIImageView+WebCache.h>
 
-@interface MRNewPostsViewController ()  <
+@interface MRPostsViewController ()  <
     UITableViewDataSource,
     UITableViewDelegate
 >
@@ -24,7 +24,7 @@
 
 @end
 
-@implementation MRNewPostsViewController
+@implementation MRPostsViewController
 
 #pragma mark - Setups
 

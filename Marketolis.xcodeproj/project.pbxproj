@@ -150,8 +150,8 @@
 		AD95BBCB1827A30600E1C0E1 /* MRChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD95BBC91827A30600E1C0E1 /* MRChatViewController.xib */; };
 		ADAA10091826BD6C0036F14E /* MRMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA10071826BD6C0036F14E /* MRMapViewController.m */; };
 		ADAA100A1826BD6C0036F14E /* MRMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA10081826BD6C0036F14E /* MRMapViewController.xib */; };
-		ADAA100E1826BF9C0036F14E /* MRNewPostsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA100C1826BF9C0036F14E /* MRNewPostsViewController.m */; };
-		ADAA100F1826BF9C0036F14E /* MRNewPostsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA100D1826BF9C0036F14E /* MRNewPostsViewController.xib */; };
+		ADAA100E1826BF9C0036F14E /* MRPostsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA100C1826BF9C0036F14E /* MRPostsViewController.m */; };
+		ADAA100F1826BF9C0036F14E /* MRPostsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA100D1826BF9C0036F14E /* MRPostsViewController.xib */; };
 		ADAA10131826BFA80036F14E /* MRMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA10111826BFA80036F14E /* MRMessagesViewController.m */; };
 		ADAA10141826BFA80036F14E /* MRMessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA10121826BFA80036F14E /* MRMessagesViewController.xib */; };
 		ADAA10181826BFB80036F14E /* MRProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA10161826BFB80036F14E /* MRProfileViewController.m */; };
@@ -365,9 +365,9 @@
 		ADAA10061826BD6C0036F14E /* MRMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMapViewController.h; sourceTree = "<group>"; };
 		ADAA10071826BD6C0036F14E /* MRMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMapViewController.m; sourceTree = "<group>"; };
 		ADAA10081826BD6C0036F14E /* MRMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRMapViewController.xib; sourceTree = "<group>"; };
-		ADAA100B1826BF9C0036F14E /* MRNewPostsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNewPostsViewController.h; sourceTree = "<group>"; };
-		ADAA100C1826BF9C0036F14E /* MRNewPostsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNewPostsViewController.m; sourceTree = "<group>"; };
-		ADAA100D1826BF9C0036F14E /* MRNewPostsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRNewPostsViewController.xib; sourceTree = "<group>"; };
+		ADAA100B1826BF9C0036F14E /* MRPostsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRPostsViewController.h; sourceTree = "<group>"; };
+		ADAA100C1826BF9C0036F14E /* MRPostsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRPostsViewController.m; sourceTree = "<group>"; };
+		ADAA100D1826BF9C0036F14E /* MRPostsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRPostsViewController.xib; sourceTree = "<group>"; };
 		ADAA10101826BFA80036F14E /* MRMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMessagesViewController.h; sourceTree = "<group>"; };
 		ADAA10111826BFA80036F14E /* MRMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMessagesViewController.m; sourceTree = "<group>"; };
 		ADAA10121826BFA80036F14E /* MRMessagesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRMessagesViewController.xib; sourceTree = "<group>"; };
@@ -996,9 +996,9 @@
 		ADAA10021826BCCF0036F14E /* Posts */ = {
 			isa = PBXGroup;
 			children = (
-				ADAA100B1826BF9C0036F14E /* MRNewPostsViewController.h */,
-				ADAA100C1826BF9C0036F14E /* MRNewPostsViewController.m */,
-				ADAA100D1826BF9C0036F14E /* MRNewPostsViewController.xib */,
+				ADAA100B1826BF9C0036F14E /* MRPostsViewController.h */,
+				ADAA100C1826BF9C0036F14E /* MRPostsViewController.m */,
+				ADAA100D1826BF9C0036F14E /* MRPostsViewController.xib */,
 			);
 			name = Posts;
 			sourceTree = "<group>";
@@ -1234,7 +1234,7 @@
 				AD06D3B317B99626009C880D /* splash-background-pattern@2x.png in Resources */,
 				AD06D3B417B99626009C880D /* splash-logo.png in Resources */,
 				ADD992AB182C23FD00E6F9BB /* map-controls-zoomout@2x.png in Resources */,
-				ADAA100F1826BF9C0036F14E /* MRNewPostsViewController.xib in Resources */,
+				ADAA100F1826BF9C0036F14E /* MRPostsViewController.xib in Resources */,
 				ADB01448183912FF00DE0936 /* MRPostViewController.xib in Resources */,
 				AD06D3B517B99626009C880D /* splash-logo@2x.png in Resources */,
 				AD06D3C217B997F0009C880D /* register-big-button.png in Resources */,
@@ -1375,7 +1375,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADAA100E1826BF9C0036F14E /* MRNewPostsViewController.m in Sources */,
+				ADAA100E1826BF9C0036F14E /* MRPostsViewController.m in Sources */,
 				4424BBC617B956970060CD49 /* main.m in Sources */,
 				ADAA101D1826BFCC0036F14E /* MRCreatePostViewController.m in Sources */,
 				ADC2E3D618392C670065BB96 /* MRPostPhotoCell.m in Sources */,
