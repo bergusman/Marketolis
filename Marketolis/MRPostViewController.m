@@ -9,6 +9,7 @@
 #import "MRPostViewController.h"
 
 #import "MRPostEditorViewController.h"
+#import "MRChatViewController.h"
 
 #import "MRPostPhotoCell.h"
 
@@ -235,6 +236,8 @@
 }
 
 - (IBAction)writeButtonTouchUpInside:(id)sender {
+    MRChatViewController *chatVC = [[MRChatViewController alloc] init];
+    [self.navigationController pushViewController:chatVC animated:YES];
 }
 
 #pragma mark - UIScrollViewDelegate

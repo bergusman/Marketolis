@@ -32,6 +32,7 @@
 #pragma mark - Setups
 
 - (void)setupNavigationItem {
+    self.navigationItem.title = @"Chat";
 }
 
 - (void)setupTableView {

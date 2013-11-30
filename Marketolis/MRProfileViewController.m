@@ -9,6 +9,7 @@
 #import "MRProfileViewController.h"
 
 #import "MRProfileEditorViewController.h"
+#import "MRPostViewController.h"
 
 #import "MRProfileNotificationCell.h"
 
@@ -68,6 +69,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    MRPostViewController *postVC = [[MRPostViewController alloc] init];
+    [self.navigationController pushViewController:postVC animated:YES];
 }
 
 #pragma mark - UIViewController
