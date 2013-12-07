@@ -237,6 +237,7 @@
 
 - (IBAction)writeButtonTouchUpInside:(id)sender {
     MRChatViewController *chatVC = [[MRChatViewController alloc] init];
+    chatVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:chatVC animated:YES];
 }
 

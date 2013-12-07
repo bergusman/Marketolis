@@ -90,7 +90,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
     MRChatViewController *chatVC = [[MRChatViewController alloc] init];
+    chatVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:chatVC animated:YES];
 }
 
