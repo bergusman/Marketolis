@@ -1,36 +1,44 @@
 PODS:
+  - AFNetworking (2.0.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
+  - AFNetworking/NSURLConnection (2.0.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.0.3):
+    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (2.0.3)
+  - AFNetworking/Security (2.0.3)
+  - AFNetworking/Serialization (2.0.3)
+  - AFNetworking/UIKit (2.0.3):
+    - AFNetworking/NSURLConnection
   - FlurrySDK (4.3.0)
   - GoogleAnalytics-iOS-SDK (3.0.2)
-  - HPGrowingTextView (0.0.1)
-  - libwebp (0.3.0-rc7):
-    - libwebp/dec
-    - libwebp/dsp
-    - libwebp/utils
-    - libwebp/webp
-  - libwebp/dec (0.3.0-rc7)
-  - libwebp/dsp (0.3.0-rc7)
-  - libwebp/utils (0.3.0-rc7)
-  - libwebp/webp (0.3.0-rc7)
-  - SDWebImage (3.3):
-    - libwebp
-    - SDWebImage/MapKit
-  - SDWebImage/MapKit (3.3):
-    - libwebp
-  - ViewDeck (2.3.1)
+  - HPGrowingTextView (1.0.1)
+  - Pdef (1.0.0):
+    - AFNetworking (~> 2.0)
+  - SDWebImage (3.5.1):
+    - SDWebImage/Core
+  - SDWebImage/Core (3.5.1)
 
 DEPENDENCIES:
   - FlurrySDK (~> 4.3.0)
   - GoogleAnalytics-iOS-SDK (~> 3.0.2)
-  - HPGrowingTextView (~> 0.0.1)
-  - SDWebImage (~> 3.3)
-  - ViewDeck (~> 2.3.1)
+  - HPGrowingTextView (~> 1.0.1)
+  - Pdef (~> 1.0.0)
+  - SDWebImage (~> 3.5.1)
 
 SPEC CHECKSUMS:
+  AFNetworking: e499052cbf3d743e9bb727bb37adb9dc2547ba15
   FlurrySDK: 7d91ccc3b3591fd8eb8919f2b90e271e2b0acabe
-  GoogleAnalytics-iOS-SDK: 51661781af363bdaac260df244db2539c707311d
-  HPGrowingTextView: 42fee2f684a8c98e61bc19579d274d7fc12b48ca
-  libwebp: 40517fa1fd3716eded73b4696c45fc0b66e4b414
-  SDWebImage: 79a8bac9ccf85b269100b294f7b43684dab8bf8a
-  ViewDeck: 2cdc67c4b41a10cafc7556b982f028409e33604d
+  GoogleAnalytics-iOS-SDK: 86393b99f7328ae8d8e975fcaa8632a39dafafe8
+  HPGrowingTextView: fd77b93b9096dd1493a312c8856810b652b04dcc
+  Pdef: 0b58bec3c62d9a56ff519d76e32db19f158d6797
+  SDWebImage: a408b548a634b792372e07e753fc1079aff5032a
 
 COCOAPODS: 0.27.1
