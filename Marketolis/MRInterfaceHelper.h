@@ -12,4 +12,6 @@
 
 + (void)setupLeftBarButtonItemForViewController:(UIViewController *)viewController;
 
++ (UIFont *)rubleHelveticaLightWithSize:(CGFloat)size;
+
 @end

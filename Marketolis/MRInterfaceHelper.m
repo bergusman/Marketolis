@@ -35,4 +35,8 @@
     }
 }
 
++ (UIFont *)rubleHelveticaLightWithSize:(CGFloat)size {
+    return [UIFont fontWithName:@"RocketBank-Light" size:size];
+}
+
 @end
