@@ -196,7 +196,7 @@
 
 - (void)fillAddress {
     NSString *title = [NSString stringWithFormat:@"%@: ", NSLocalizedString(@"post.address.title", @"")];
-    NSString *text = @"Адрес: Россия, город Москва, улица Тверская дом 34 квартира 43";
+    NSString *text = @"Россия, город Москва, улица Тверская дом 34 квартира 43";
     self.addressLabel.attributedText = [self attributedTextWithTitle:title text:text];
 }
 
@@ -259,7 +259,7 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     MRPostPhotoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PhotoCell" forIndexPath:indexPath];
-    [cell.imageView setImageWithURL:[NSURL URLWithString:@"http://cs412125.vk.me/v412125123/2864/IrtSuSEGg4w.jpg"] placeholderImage:nil];
+    //[cell.imageView setImageWithURL:[NSURL URLWithString:@"http://cs412125.vk.me/v412125123/2864/IrtSuSEGg4w.jpg"] placeholderImage:nil];
     return cell;
 }
 
