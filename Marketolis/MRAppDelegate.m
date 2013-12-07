@@ -57,6 +57,9 @@
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     tabBarController.viewControllers = @[mapNC, favoritesNC, messagesNC, profileNC, createOfferNC];
     
+    messagesNC.tabBarItem.badgeValue = @"3";
+    profileNC.tabBarItem.badgeValue = @"5";
+    
     self.window.rootViewController = tabBarController;
 }
 
