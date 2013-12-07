@@ -10,4 +10,9 @@
 
 @interface MRRightBubbleCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *messageLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+
++ (CGFloat)heightWithMessage:(NSString *)message;
+
 @end

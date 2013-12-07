@@ -81,20 +81,26 @@
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return 40;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    {
-        static NSString *cellId = @"LeftCell";
-        MRLeftBubbleCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
-        return cell;
-    }
-    
-    {
-        static NSString *cellId = @"RightCell";
-        MRRightBubbleCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
-        return cell;
+    if (indexPath.row % 2) {
+        {
+            static NSString *cellId = @"LeftCell";
+            MRLeftBubbleCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
+            cell.messageLabel.text = @"Привет, мой дорогой друг, хочу я тебе толкнуть, этот божественный ЭВМ";
+            cell.dateLabel.text = @"13:43";
+            return cell;
+        }
+    } else {
+        {
+            static NSString *cellId = @"RightCell";
+            MRRightBubbleCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
+            cell.messageLabel.text = @"Привет, мой дорогой друг, хочу я тебе толкнуть, этот божественный ЭВМ";
+            cell.dateLabel.text = @"13:43";
+            return cell;
+        }
     }
     
     return nil;
@@ -103,7 +109,7 @@
 #pragma mark - UITableViewDelegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 40;
+    return [MRLeftBubbleCell heightWithMessage:@"Привет, мой дорогой друг, хочу я тебе толкнуть, этот божественный ЭВМ"];
 }
 
 #pragma mark - UIViewController
