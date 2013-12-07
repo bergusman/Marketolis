@@ -12,6 +12,7 @@
 
 // TODO: add post status (selled, deleted)
 // TODO: move views into content view
+// TODO: add status localization
 
 @interface MRDialogCell : UITableViewCell
 
