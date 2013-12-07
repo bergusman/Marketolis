@@ -15,7 +15,6 @@
 
 #import <SDWebImage/UIImageView+WebCache.h>
 
-#import <ViewDeck/IIViewDeckController.h>
 #import <MapKit/MapKit.h>
 
 #define TO_USER_LOCATION_RADIUS 1000
