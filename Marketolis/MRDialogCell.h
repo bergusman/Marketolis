@@ -10,6 +10,9 @@
 
 #import "MRBadgeView.h"
 
+// TODO: add post status (selled, deleted)
+// TODO: move views into content view
+
 @interface MRDialogCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *photoImageView;

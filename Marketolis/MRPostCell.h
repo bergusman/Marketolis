@@ -11,6 +11,7 @@
 #import "MRBadgeView.h"
 
 // TODO: add post status (selled, deleted)
+// TODO: move views into content view
 
 @interface MRPostCell : UITableViewCell
 

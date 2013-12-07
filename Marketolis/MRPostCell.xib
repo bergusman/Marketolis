@@ -41,14 +41,14 @@
                         <color key="highlightedColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                     </label>
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Mac Book Air" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="17" userLabel="Title Label">
-                        <rect key="frame" x="100" y="4" width="214" height="48"/>
+                        <rect key="frame" x="100" y="4" width="215" height="48"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
                         <color key="textColor" red="0.015686274510000001" green="0.1843137255" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="highlightedColor" red="0.015686274510000001" green="0.1843137255" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                     </label>
                     <view contentMode="scaleToFill" id="25" customClass="MRBadgeView">
-                        <rect key="frame" x="240" y="70" width="74" height="20"/>
+                        <rect key="frame" x="241" y="70" width="74" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <userDefinedRuntimeAttributes>

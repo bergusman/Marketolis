@@ -8,7 +8,21 @@
 
 #import "MRDialogCell.h"
 
+#import "MRInterfaceHelper.h"
+
 @implementation MRDialogCell
+
+- (void)setupBackgroundViews {
+    self.backgroundView = [[UIView alloc] init];
+    UIView *sbv = [[UIView alloc] init];
+    sbv.backgroundColor = MR_RGB(228, 232, 233);
+    self.selectedBackgroundView = sbv;
+}
+
+- (void)setupBadgeView {
+    self.badgeView.textFont = [MRInterfaceHelper rubleHelveticaLightWithSize:12];
+    self.badgeView.cornerRadius = 4;
+}
 
 - (void)layoutSubviews {
     [super layoutSubviews];
@@ -24,21 +38,16 @@
 }
 
 + (CGFloat)height {
-    return 82;
+    return 100;
 }
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     
-    self.backgroundView = [[UIView alloc] init];
-    UIView *sbv = [[UIView alloc] init];
-    sbv.backgroundColor = MR_RGB(228, 232, 233);
-    self.selectedBackgroundView = sbv;
+    [self setupBackgroundViews];
+    [self setupBadgeView];
     
     [self setRead:YES];
-    
-    self.badgeView.textFont = [UIFont boldSystemFontOfSize:12];
-    self.badgeView.cornerRadius = 4;
 }
 
 @end
