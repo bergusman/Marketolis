@@ -10,7 +10,7 @@
 
 #import "MRPostViewController.h"
 
-#import "MROfferCell.h"
+#import "MRPostCell.h"
 
 #import <SDWebImage/UIImageView+WebCache.h>
 
@@ -37,7 +37,7 @@
 }
 
 - (void)setupTableView {
-    UINib *nib = [UINib nibWithNibName:NSStringFromClass([MROfferCell class]) bundle:[NSBundle mainBundle]];
+    UINib *nib = [UINib nibWithNibName:NSStringFromClass([MRPostCell class]) bundle:[NSBundle mainBundle]];
     [self.tableView registerNib:nib forCellReuseIdentifier:@"OfferCell"];
 }
 
@@ -56,11 +56,11 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *cellId = @"OfferCell";
-    MROfferCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
+    MRPostCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
     
     [cell.photoImageView setImageWithURL:[NSURL URLWithString:@"http://cs7004.vk.me/c540104/v540104123/10369/yWYN-dipi_Q.jpg"] placeholderImage:nil];
     
-    cell.badgeView.text = @"32,000 руб.";
+    cell.badgeView.text = @"32,000 ђ";
     
     if (indexPath.row % 2) {
         cell.titleLabel.text = @"Bingo bongo\nSpecial Huecial";
@@ -80,7 +80,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return [MROfferCell height];
+    return [MRPostCell height];
 }
 
 #pragma mark - UIViewController

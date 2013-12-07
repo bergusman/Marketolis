@@ -10,12 +10,15 @@
 
 #import "MRBadgeView.h"
 
-@interface MROfferCell : UITableViewCell
+// TODO: add post status (selled, deleted)
+
+@interface MRPostCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *photoImageView;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @property (weak, nonatomic) IBOutlet MRBadgeView *badgeView;
+@property (weak, nonatomic) IBOutlet UILabel *statusLabel;
 
 + (CGFloat)height;
 
