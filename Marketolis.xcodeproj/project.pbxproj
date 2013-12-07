@@ -104,10 +104,6 @@
 		AD84AA3017C95992000444FD /* chat-bubble-incoming@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD84AA2417C95992000444FD /* chat-bubble-incoming@2x.png */; };
 		AD84AA3117C95992000444FD /* chat-bubble-sent.png in Resources */ = {isa = PBXBuildFile; fileRef = AD84AA2517C95992000444FD /* chat-bubble-sent.png */; };
 		AD84AA3217C95992000444FD /* chat-bubble-sent@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD84AA2617C95992000444FD /* chat-bubble-sent@2x.png */; };
-		AD84AA3317C95992000444FD /* chat-button-send-active.png in Resources */ = {isa = PBXBuildFile; fileRef = AD84AA2717C95992000444FD /* chat-button-send-active.png */; };
-		AD84AA3417C95992000444FD /* chat-button-send-active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD84AA2817C95992000444FD /* chat-button-send-active@2x.png */; };
-		AD84AA3517C95992000444FD /* chat-button-send-passive.png in Resources */ = {isa = PBXBuildFile; fileRef = AD84AA2917C95992000444FD /* chat-button-send-passive.png */; };
-		AD84AA3617C95992000444FD /* chat-button-send-passive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD84AA2A17C95992000444FD /* chat-button-send-passive@2x.png */; };
 		AD84AA3717C95992000444FD /* chat-field-background.png in Resources */ = {isa = PBXBuildFile; fileRef = AD84AA2B17C95992000444FD /* chat-field-background.png */; };
 		AD84AA3817C95992000444FD /* chat-field-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD84AA2C17C95992000444FD /* chat-field-background@2x.png */; };
 		AD84AA3917C95992000444FD /* chat-field.png in Resources */ = {isa = PBXBuildFile; fileRef = AD84AA2D17C95992000444FD /* chat-field.png */; };
@@ -287,10 +283,6 @@
 		AD84AA2417C95992000444FD /* chat-bubble-incoming@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chat-bubble-incoming@2x.png"; path = "Resources/Images/chat-bubble-incoming@2x.png"; sourceTree = "<group>"; };
 		AD84AA2517C95992000444FD /* chat-bubble-sent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chat-bubble-sent.png"; path = "Resources/Images/chat-bubble-sent.png"; sourceTree = "<group>"; };
 		AD84AA2617C95992000444FD /* chat-bubble-sent@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chat-bubble-sent@2x.png"; path = "Resources/Images/chat-bubble-sent@2x.png"; sourceTree = "<group>"; };
-		AD84AA2717C95992000444FD /* chat-button-send-active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chat-button-send-active.png"; path = "Resources/Images/chat-button-send-active.png"; sourceTree = "<group>"; };
-		AD84AA2817C95992000444FD /* chat-button-send-active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chat-button-send-active@2x.png"; path = "Resources/Images/chat-button-send-active@2x.png"; sourceTree = "<group>"; };
-		AD84AA2917C95992000444FD /* chat-button-send-passive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chat-button-send-passive.png"; path = "Resources/Images/chat-button-send-passive.png"; sourceTree = "<group>"; };
-		AD84AA2A17C95992000444FD /* chat-button-send-passive@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chat-button-send-passive@2x.png"; path = "Resources/Images/chat-button-send-passive@2x.png"; sourceTree = "<group>"; };
 		AD84AA2B17C95992000444FD /* chat-field-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chat-field-background.png"; path = "Resources/Images/chat-field-background.png"; sourceTree = "<group>"; };
 		AD84AA2C17C95992000444FD /* chat-field-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chat-field-background@2x.png"; path = "Resources/Images/chat-field-background@2x.png"; sourceTree = "<group>"; };
 		AD84AA2D17C95992000444FD /* chat-field.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chat-field.png"; path = "Resources/Images/chat-field.png"; sourceTree = "<group>"; };
@@ -723,10 +715,6 @@
 				AD84AA2417C95992000444FD /* chat-bubble-incoming@2x.png */,
 				AD84AA2517C95992000444FD /* chat-bubble-sent.png */,
 				AD84AA2617C95992000444FD /* chat-bubble-sent@2x.png */,
-				AD84AA2717C95992000444FD /* chat-button-send-active.png */,
-				AD84AA2817C95992000444FD /* chat-button-send-active@2x.png */,
-				AD84AA2917C95992000444FD /* chat-button-send-passive.png */,
-				AD84AA2A17C95992000444FD /* chat-button-send-passive@2x.png */,
 				AD84AA2B17C95992000444FD /* chat-field-background.png */,
 				AD84AA2C17C95992000444FD /* chat-field-background@2x.png */,
 				AD84AA2D17C95992000444FD /* chat-field.png */,
@@ -1154,12 +1142,8 @@
 				AD84AA3017C95992000444FD /* chat-bubble-incoming@2x.png in Resources */,
 				AD84AA3117C95992000444FD /* chat-bubble-sent.png in Resources */,
 				AD84AA3217C95992000444FD /* chat-bubble-sent@2x.png in Resources */,
-				AD84AA3317C95992000444FD /* chat-button-send-active.png in Resources */,
-				AD84AA3417C95992000444FD /* chat-button-send-active@2x.png in Resources */,
 				AD95BBCB1827A30600E1C0E1 /* MRChatViewController.xib in Resources */,
 				ADD992AA182C23FD00E6F9BB /* map-controls-zoomout.png in Resources */,
-				AD84AA3517C95992000444FD /* chat-button-send-passive.png in Resources */,
-				AD84AA3617C95992000444FD /* chat-button-send-passive@2x.png in Resources */,
 				AD84AA3717C95992000444FD /* chat-field-background.png in Resources */,
 				AD84AA3817C95992000444FD /* chat-field-background@2x.png in Resources */,
 				AD84AA3917C95992000444FD /* chat-field.png in Resources */,
