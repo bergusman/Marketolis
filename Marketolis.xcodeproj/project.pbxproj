@@ -98,8 +98,6 @@
 		AD3A480717C5525B00CA2FD9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD3A480917C5525B00CA2FD9 /* Localizable.strings */; };
 		AD3A480E17C557BE00CA2FD9 /* MRPostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3A480D17C557BE00CA2FD9 /* MRPostCell.m */; };
 		AD3A481017C557CC00CA2FD9 /* MRPostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD3A480F17C557CC00CA2FD9 /* MRPostCell.xib */; };
-		AD3A481A17C5DEC300CA2FD9 /* MROfferPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3A481917C5DEC300CA2FD9 /* MROfferPhotoCell.m */; };
-		AD3A481C17C5DEDC00CA2FD9 /* MROfferPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD3A481B17C5DEDB00CA2FD9 /* MROfferPhotoCell.xib */; };
 		AD48FFB117CBEE86005E198C /* MRConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD48FFB017CBEE86005E198C /* MRConfirmViewController.xib */; };
 		AD48FFB317CBEF93005E198C /* MRSignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD48FFB217CBEF93005E198C /* MRSignUpViewController.xib */; };
 		AD84AA2F17C95992000444FD /* chat-bubble-incoming.png in Resources */ = {isa = PBXBuildFile; fileRef = AD84AA2317C95992000444FD /* chat-bubble-incoming.png */; };
@@ -283,9 +281,6 @@
 		AD3A480C17C557BE00CA2FD9 /* MRPostCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRPostCell.h; sourceTree = "<group>"; };
 		AD3A480D17C557BE00CA2FD9 /* MRPostCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRPostCell.m; sourceTree = "<group>"; };
 		AD3A480F17C557CC00CA2FD9 /* MRPostCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRPostCell.xib; sourceTree = "<group>"; };
-		AD3A481817C5DEC300CA2FD9 /* MROfferPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MROfferPhotoCell.h; sourceTree = "<group>"; };
-		AD3A481917C5DEC300CA2FD9 /* MROfferPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MROfferPhotoCell.m; sourceTree = "<group>"; };
-		AD3A481B17C5DEDB00CA2FD9 /* MROfferPhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MROfferPhotoCell.xib; sourceTree = "<group>"; };
 		AD48FFB017CBEE86005E198C /* MRConfirmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRConfirmViewController.xib; sourceTree = "<group>"; };
 		AD48FFB217CBEF93005E198C /* MRSignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRSignUpViewController.xib; sourceTree = "<group>"; };
 		AD84AA2317C95992000444FD /* chat-bubble-incoming.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chat-bubble-incoming.png"; path = "Resources/Images/chat-bubble-incoming.png"; sourceTree = "<group>"; };
@@ -453,7 +448,6 @@
 			children = (
 				AD84AA4E17C9D2FF000444FD /* Utilities */,
 				4424BBEC17B95ADE0060CD49 /* Models */,
-				4424BBEB17B95AD90060CD49 /* Views */,
 				4424BBE317B95AA30060CD49 /* Controllers & Views */,
 				4424BBC817B956970060CD49 /* MRAppDelegate.h */,
 				4424BBC917B956970060CD49 /* MRAppDelegate.m */,
@@ -503,16 +497,6 @@
 				ADAA10001826BCAE0036F14E /* Old */,
 			);
 			name = "Controllers & Views";
-			sourceTree = "<group>";
-		};
-		4424BBEB17B95AD90060CD49 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				AD3A481717C5DE9300CA2FD9 /* Offer Photo Cell */,
-				AD3A47F017C54F1200CA2FD9 /* Separator */,
-				4424BC4B17B96DA60060CD49 /* Post Annotation View */,
-			);
-			name = Views;
 			sourceTree = "<group>";
 		};
 		4424BBEC17B95ADE0060CD49 /* Models */ = {
@@ -732,16 +716,6 @@
 			name = "Post Cell";
 			sourceTree = "<group>";
 		};
-		AD3A481717C5DE9300CA2FD9 /* Offer Photo Cell */ = {
-			isa = PBXGroup;
-			children = (
-				AD3A481817C5DEC300CA2FD9 /* MROfferPhotoCell.h */,
-				AD3A481917C5DEC300CA2FD9 /* MROfferPhotoCell.m */,
-				AD3A481B17C5DEDB00CA2FD9 /* MROfferPhotoCell.xib */,
-			);
-			name = "Offer Photo Cell";
-			sourceTree = "<group>";
-		};
 		AD84AA2217C9597F000444FD /* Chat */ = {
 			isa = PBXGroup;
 			children = (
@@ -819,6 +793,7 @@
 		AD95BBC01827A17900E1C0E1 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				AD3A47F017C54F1200CA2FD9 /* Separator */,
 				AD8923BF184A0546005BDAEA /* View Controller */,
 				AD8923BB1849F72A005BDAEA /* Ruble Label */,
 				AD84AA5517C9F087000444FD /* Badge View */,
@@ -886,6 +861,7 @@
 		ADAA10011826BCB70036F14E /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				4424BC4B17B96DA60060CD49 /* Post Annotation View */,
 				ADAA10061826BD6C0036F14E /* MRMapViewController.h */,
 				ADAA10071826BD6C0036F14E /* MRMapViewController.m */,
 				ADAA10081826BD6C0036F14E /* MRMapViewController.xib */,
@@ -1174,7 +1150,6 @@
 				AD3A480717C5525B00CA2FD9 /* Localizable.strings in Resources */,
 				AD3A481017C557CC00CA2FD9 /* MRPostCell.xib in Resources */,
 				ADD9929D182C200000E6F9BB /* tab-bar-chat@2x.png in Resources */,
-				AD3A481C17C5DEDC00CA2FD9 /* MROfferPhotoCell.xib in Resources */,
 				AD84AA2F17C95992000444FD /* chat-bubble-incoming.png in Resources */,
 				AD84AA3017C95992000444FD /* chat-bubble-incoming@2x.png in Resources */,
 				AD84AA3117C95992000444FD /* chat-bubble-sent.png in Resources */,
@@ -1281,7 +1256,6 @@
 				ADAA10091826BD6C0036F14E /* MRMapViewController.m in Sources */,
 				AD3A480E17C557BE00CA2FD9 /* MRPostCell.m in Sources */,
 				ADB0144018390FC800DE0936 /* MRProfileNotificationCell.m in Sources */,
-				AD3A481A17C5DEC300CA2FD9 /* MROfferPhotoCell.m in Sources */,
 				AD8923BE1849F73E005BDAEA /* MRRubleLabel.m in Sources */,
 				AD84AA5117C9D31B000444FD /* MRInterfaceHelper.m in Sources */,
 				AD84AA5417C9F082000444FD /* MRBadgeView.m in Sources */,
