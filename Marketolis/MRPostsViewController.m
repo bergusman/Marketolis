@@ -22,6 +22,8 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) IBOutlet UISegmentedControl *postTypesSegmentedControl;
 
+@property (strong, nonatomic) NSMutableArray *posts;
+
 @end
 
 @implementation MRPostsViewController
@@ -38,7 +40,17 @@
 
 - (void)setupTableView {
     UINib *nib = [UINib nibWithNibName:NSStringFromClass([MRPostCell class]) bundle:[NSBundle mainBundle]];
-    [self.tableView registerNib:nib forCellReuseIdentifier:@"OfferCell"];
+    [self.tableView registerNib:nib forCellReuseIdentifier:@"PostCell"];
+}
+
+#pragma mark - Content
+
+- (void)generateTestPosts {
+    NSMutableArray *posts = [NSMutableArray array];
+    for (int i = 0; i < 50; i++) {
+        [posts addObject:@"123"];
+    }
+    self.posts = posts;
 }
 
 #pragma mark - Actions
@@ -51,11 +63,11 @@
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 40;
+    return [self.posts count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *cellId = @"OfferCell";
+    static NSString *cellId = @"PostCell";
     MRPostCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
     
     [cell.photoImageView setImageWithURL:[NSURL URLWithString:@"http://cs7004.vk.me/c540104/v540104123/10369/yWYN-dipi_Q.jpg"] placeholderImage:nil];
@@ -69,6 +81,13 @@
     }
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        [self.posts removeObjectAtIndex:indexPath.row];
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    }
 }
 
 #pragma mark - UITableViewDelegate
@@ -90,6 +109,8 @@
     
     [self setupNavigationItem];
     [self setupTableView];
+    
+    [self generateTestPosts];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
