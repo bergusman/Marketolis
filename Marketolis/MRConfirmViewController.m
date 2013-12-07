@@ -42,7 +42,6 @@ NSString * const MRSignUpConfirmedNotification = @"MRSignUpConfirmedNotification
 
 - (void)setupNavigationItem {
     self.navigationItem.title = NSLocalizedString(@"confirm.title", @"");
-    [MRInterfaceHelper setupLeftBarButtonItemForViewController:self];
 }
 
 #pragma mark - Actions
