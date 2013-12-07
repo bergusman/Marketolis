@@ -88,7 +88,7 @@
         return nil;
     }
     
-    static NSString *annotationId = @"OfferAnnotation";
+    static NSString *annotationId = @"PostAnnotation";
     MRPostAnnotationView *annotationView = (MRPostAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:annotationId];
     if (!annotationView) {
         annotationView = [[MRPostAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:annotationId];
