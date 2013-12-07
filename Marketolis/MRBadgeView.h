@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+// TODO: add text offset
+
 @interface MRBadgeView : UIView
 
 @property (assign, nonatomic) CGFloat height;
