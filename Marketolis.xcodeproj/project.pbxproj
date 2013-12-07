@@ -514,15 +514,11 @@
 		4424BBEB17B95AD90060CD49 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AD38C74617E7AB3000831CF8 /* Chat */,
-				AD84AA5517C9F087000444FD /* Badge View */,
 				AD84AA4717C961CE000444FD /* Back Button */,
 				AD84AA4317C95C31000444FD /* Menu Button */,
 				AD3A481717C5DE9300CA2FD9 /* Offer Photo Cell */,
-				AD3A480B17C557A600CA2FD9 /* Post Cell */,
 				AD3A47F017C54F1200CA2FD9 /* Separator */,
-				AD06D3DE17B99E0F009C880D /* Dialog Cell */,
-				4424BC4B17B96DA60060CD49 /* Offer Annotation View */,
+				4424BC4B17B96DA60060CD49 /* Post Annotation View */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -579,13 +575,13 @@
 			name = Map;
 			sourceTree = "<group>";
 		};
-		4424BC4B17B96DA60060CD49 /* Offer Annotation View */ = {
+		4424BC4B17B96DA60060CD49 /* Post Annotation View */ = {
 			isa = PBXGroup;
 			children = (
 				4424BC4C17B96E0E0060CD49 /* MRPostAnnotationView.h */,
 				4424BC4D17B96E0E0060CD49 /* MRPostAnnotationView.m */,
 			);
-			name = "Offer Annotation View";
+			name = "Post Annotation View";
 			sourceTree = "<group>";
 		};
 		4424BC4F17B96E170060CD49 /* Point Annotation */ = {
@@ -655,16 +651,6 @@
 				AD06D3E217B9A3BC009C880D /* MRDialogCell.xib */,
 			);
 			name = "Dialog Cell";
-			sourceTree = "<group>";
-		};
-		AD38C74617E7AB3000831CF8 /* Chat */ = {
-			isa = PBXGroup;
-			children = (
-				AD38C74917E7AB7700831CF8 /* Input Text Bar */,
-				AD38C74817E7AB4400831CF8 /* Right Bubble */,
-				AD38C74717E7AB3D00831CF8 /* Left Bubble */,
-			);
-			name = Chat;
 			sourceTree = "<group>";
 		};
 		AD38C74717E7AB3D00831CF8 /* Left Bubble */ = {
@@ -861,6 +847,7 @@
 			children = (
 				AD8923BF184A0546005BDAEA /* View Controller */,
 				AD8923BB1849F72A005BDAEA /* Ruble Label */,
+				AD84AA5517C9F087000444FD /* Badge View */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -868,6 +855,9 @@
 		AD95BBC11827A19D00E1C0E1 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				AD38C74917E7AB7700831CF8 /* Input Text Bar */,
+				AD38C74817E7AB4400831CF8 /* Right Bubble */,
+				AD38C74717E7AB3D00831CF8 /* Left Bubble */,
 				AD95BBC71827A30600E1C0E1 /* MRChatViewController.h */,
 				AD95BBC81827A30600E1C0E1 /* MRChatViewController.m */,
 				AD95BBC91827A30600E1C0E1 /* MRChatViewController.xib */,
@@ -932,6 +922,7 @@
 		ADAA10021826BCCF0036F14E /* Posts */ = {
 			isa = PBXGroup;
 			children = (
+				AD3A480B17C557A600CA2FD9 /* Post Cell */,
 				ADAA100B1826BF9C0036F14E /* MRPostsViewController.h */,
 				ADAA100C1826BF9C0036F14E /* MRPostsViewController.m */,
 				ADAA100D1826BF9C0036F14E /* MRPostsViewController.xib */,
@@ -954,6 +945,7 @@
 		ADAA10041826BD200036F14E /* Messages */ = {
 			isa = PBXGroup;
 			children = (
+				AD06D3DE17B99E0F009C880D /* Dialog Cell */,
 				ADAA10101826BFA80036F14E /* MRMessagesViewController.h */,
 				ADAA10111826BFA80036F14E /* MRMessagesViewController.m */,
 				ADAA10121826BFA80036F14E /* MRMessagesViewController.xib */,
