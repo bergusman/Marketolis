@@ -118,8 +118,6 @@
 		AD84AA3E17C959EB000444FD /* menu-icon-added-by-me@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD84AA3C17C959EB000444FD /* menu-icon-added-by-me@2x.png */; };
 		AD84AA4117C95A1C000444FD /* navbar-icon-menu.png in Resources */ = {isa = PBXBuildFile; fileRef = AD84AA3F17C95A1C000444FD /* navbar-icon-menu.png */; };
 		AD84AA4217C95A1C000444FD /* navbar-icon-menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD84AA4017C95A1C000444FD /* navbar-icon-menu@2x.png */; };
-		AD84AA4617C95C45000444FD /* MRMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AD84AA4517C95C45000444FD /* MRMenuButton.m */; };
-		AD84AA4D17C96978000444FD /* MRBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AD84AA4C17C96977000444FD /* MRBackButton.m */; };
 		AD84AA5117C9D31B000444FD /* MRInterfaceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD84AA5017C9D31B000444FD /* MRInterfaceHelper.m */; };
 		AD84AA5417C9F082000444FD /* MRBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD84AA5317C9F081000444FD /* MRBadgeView.m */; };
 		AD8923B71849F6E9005BDAEA /* RubleLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD8923B31849F6E9005BDAEA /* RubleLight.ttf */; };
@@ -306,10 +304,6 @@
 		AD84AA3C17C959EB000444FD /* menu-icon-added-by-me@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu-icon-added-by-me@2x.png"; path = "Resources/Images/menu-icon-added-by-me@2x.png"; sourceTree = "<group>"; };
 		AD84AA3F17C95A1C000444FD /* navbar-icon-menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navbar-icon-menu.png"; path = "Resources/Images/navbar-icon-menu.png"; sourceTree = "<group>"; };
 		AD84AA4017C95A1C000444FD /* navbar-icon-menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navbar-icon-menu@2x.png"; path = "Resources/Images/navbar-icon-menu@2x.png"; sourceTree = "<group>"; };
-		AD84AA4417C95C45000444FD /* MRMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMenuButton.h; sourceTree = "<group>"; };
-		AD84AA4517C95C45000444FD /* MRMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMenuButton.m; sourceTree = "<group>"; };
-		AD84AA4B17C96977000444FD /* MRBackButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRBackButton.h; sourceTree = "<group>"; };
-		AD84AA4C17C96977000444FD /* MRBackButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRBackButton.m; sourceTree = "<group>"; };
 		AD84AA4F17C9D31B000444FD /* MRInterfaceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRInterfaceHelper.h; sourceTree = "<group>"; };
 		AD84AA5017C9D31B000444FD /* MRInterfaceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRInterfaceHelper.m; sourceTree = "<group>"; };
 		AD84AA5217C9F081000444FD /* MRBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRBadgeView.h; sourceTree = "<group>"; };
@@ -514,8 +508,6 @@
 		4424BBEB17B95AD90060CD49 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AD84AA4717C961CE000444FD /* Back Button */,
-				AD84AA4317C95C31000444FD /* Menu Button */,
 				AD3A481717C5DE9300CA2FD9 /* Offer Photo Cell */,
 				AD3A47F017C54F1200CA2FD9 /* Separator */,
 				4424BC4B17B96DA60060CD49 /* Post Annotation View */,
@@ -767,24 +759,6 @@
 				AD84AA2E17C95992000444FD /* chat-field@2x.png */,
 			);
 			name = Chat;
-			sourceTree = "<group>";
-		};
-		AD84AA4317C95C31000444FD /* Menu Button */ = {
-			isa = PBXGroup;
-			children = (
-				AD84AA4417C95C45000444FD /* MRMenuButton.h */,
-				AD84AA4517C95C45000444FD /* MRMenuButton.m */,
-			);
-			name = "Menu Button";
-			sourceTree = "<group>";
-		};
-		AD84AA4717C961CE000444FD /* Back Button */ = {
-			isa = PBXGroup;
-			children = (
-				AD84AA4B17C96977000444FD /* MRBackButton.h */,
-				AD84AA4C17C96977000444FD /* MRBackButton.m */,
-			);
-			name = "Back Button";
 			sourceTree = "<group>";
 		};
 		AD84AA4E17C9D2FF000444FD /* Utilities */ = {
@@ -1308,8 +1282,6 @@
 				AD3A480E17C557BE00CA2FD9 /* MRPostCell.m in Sources */,
 				ADB0144018390FC800DE0936 /* MRProfileNotificationCell.m in Sources */,
 				AD3A481A17C5DEC300CA2FD9 /* MROfferPhotoCell.m in Sources */,
-				AD84AA4617C95C45000444FD /* MRMenuButton.m in Sources */,
-				AD84AA4D17C96978000444FD /* MRBackButton.m in Sources */,
 				AD8923BE1849F73E005BDAEA /* MRRubleLabel.m in Sources */,
 				AD84AA5117C9D31B000444FD /* MRInterfaceHelper.m in Sources */,
 				AD84AA5417C9F082000444FD /* MRBadgeView.m in Sources */,
