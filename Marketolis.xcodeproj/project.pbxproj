@@ -40,7 +40,7 @@
 		4424BC4417B966160060CD49 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4424BC3C17B966160060CD49 /* Icon-Small@2x.png */; };
 		4424BC4517B966160060CD49 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4424BC3D17B966160060CD49 /* Icon.png */; };
 		4424BC4617B966160060CD49 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4424BC3E17B966160060CD49 /* Icon@2x.png */; };
-		4424BC4E17B96E0E0060CD49 /* MROfferAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4424BC4D17B96E0E0060CD49 /* MROfferAnnotationView.m */; };
+		4424BC4E17B96E0E0060CD49 /* MRPostAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4424BC4D17B96E0E0060CD49 /* MRPostAnnotationView.m */; };
 		4424BC5217B96E380060CD49 /* MRPointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4424BC5117B96E380060CD49 /* MRPointAnnotation.m */; };
 		4426402B17B97205009EF58B /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4426402A17B97205009EF58B /* Crashlytics.framework */; };
 		A09596A45C364A658D48F0E0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CEA741938BC43D3AE977872 /* libPods.a */; };
@@ -217,8 +217,8 @@
 		4424BC3C17B966160060CD49 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "Resources/Icons/Icon-Small@2x.png"; sourceTree = "<group>"; };
 		4424BC3D17B966160060CD49 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Resources/Icons/Icon.png; sourceTree = "<group>"; };
 		4424BC3E17B966160060CD49 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Resources/Icons/Icon@2x.png"; sourceTree = "<group>"; };
-		4424BC4C17B96E0E0060CD49 /* MROfferAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MROfferAnnotationView.h; sourceTree = "<group>"; };
-		4424BC4D17B96E0E0060CD49 /* MROfferAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MROfferAnnotationView.m; sourceTree = "<group>"; };
+		4424BC4C17B96E0E0060CD49 /* MRPostAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRPostAnnotationView.h; sourceTree = "<group>"; };
+		4424BC4D17B96E0E0060CD49 /* MRPostAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRPostAnnotationView.m; sourceTree = "<group>"; };
 		4424BC5017B96E380060CD49 /* MRPointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRPointAnnotation.h; sourceTree = "<group>"; };
 		4424BC5117B96E380060CD49 /* MRPointAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRPointAnnotation.m; sourceTree = "<group>"; };
 		4426402A17B97205009EF58B /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
@@ -598,8 +598,8 @@
 		4424BC4B17B96DA60060CD49 /* Offer Annotation View */ = {
 			isa = PBXGroup;
 			children = (
-				4424BC4C17B96E0E0060CD49 /* MROfferAnnotationView.h */,
-				4424BC4D17B96E0E0060CD49 /* MROfferAnnotationView.m */,
+				4424BC4C17B96E0E0060CD49 /* MRPostAnnotationView.h */,
+				4424BC4D17B96E0E0060CD49 /* MRPostAnnotationView.m */,
 			);
 			name = "Offer Annotation View";
 			sourceTree = "<group>";
@@ -1319,7 +1319,7 @@
 				ADC111D718320059004202EC /* MRProfileEditorViewController.m in Sources */,
 				ADAA10131826BFA80036F14E /* MRMessagesViewController.m in Sources */,
 				4424BBF517B95FAB0060CD49 /* MRMenuItemCell.m in Sources */,
-				4424BC4E17B96E0E0060CD49 /* MROfferAnnotationView.m in Sources */,
+				4424BC4E17B96E0E0060CD49 /* MRPostAnnotationView.m in Sources */,
 				4424BC5217B96E380060CD49 /* MRPointAnnotation.m in Sources */,
 				AD06D3AC17B995DC009C880D /* MRWelcomeViewController.m in Sources */,
 				AD95BBC41827A1B800E1C0E1 /* MRViewController.m in Sources */,

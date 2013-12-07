@@ -1,37 +1,40 @@
 //
-//  MROfferAnnotationView.m
+//  MRPostAnnotationView.h
 //  Marketolis
 //
 //  Created by Vitaly Berg on 12.08.13.
 //  Copyright (c) 2013 Vitaly Berg. All rights reserved.
 //
 
-#import "MROfferAnnotationView.h"
+#import "MRPostAnnotationView.h"
 
-@interface MROfferAnnotationView ()
+#import "MRRubleLabel.h"
+
+@interface MRPostAnnotationView ()
 
 @end
 
-@implementation MROfferAnnotationView
+@implementation MRPostAnnotationView
 
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        self.image = [UIImage imageNamed:@"map-item-offer-card"];
+        self.image = [UIImage imageNamed:@"map-item"];
         
-        self.centerOffset = CGPointMake(0, -41);
+        // TODO: Determine center offset for pin
+        self.centerOffset = CGPointMake(0, -48);
         
         _photoImageView = [[UIImageView alloc] init];
-        _photoImageView.frame = CGRectMake(4, 4, 59, 54);
+        _photoImageView.frame = CGRectMake(2, 2, 60, 60);
         _photoImageView.contentMode = UIViewContentModeScaleAspectFill;
         _photoImageView.clipsToBounds = YES;
         [self addSubview:_photoImageView];
         
-        _priceLabel = [[UILabel alloc] init];
-        _priceLabel.frame = CGRectMake(2, 58, 64, 16);
+        _priceLabel = [[MRRubleLabel alloc] init];
+        _priceLabel.frame = CGRectMake(2, 62, 61, 18);
         _priceLabel.backgroundColor = [UIColor clearColor];
-        _priceLabel.textColor = [UIColor colorWithRed:102/255.f green:102/255.f blue:102/255.f alpha:1];
-        _priceLabel.font = [UIFont boldSystemFontOfSize:10];
+        _priceLabel.textColor = MR_RGB(102, 102, 102);
+        _priceLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:10];
         _priceLabel.textAlignment = NSTextAlignmentCenter;
         [self addSubview:_priceLabel];
     }
@@ -39,6 +42,6 @@
 }
 
 - (CGSize)sizeThatFits:(CGSize)size {
-    return CGSizeMake(68, 85);
+    return CGSizeMake(65, 89);
 }
 @end

@@ -11,7 +11,7 @@
 #import "MRPostViewController.h"
 
 #import "MRPointAnnotation.h"
-#import "MROfferAnnotationView.h"
+#import "MRPostAnnotationView.h"
 
 #import <SDWebImage/UIImageView+WebCache.h>
 
@@ -89,14 +89,14 @@
     }
     
     static NSString *annotationId = @"OfferAnnotation";
-    MROfferAnnotationView *annotationView = (MROfferAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:annotationId];
+    MRPostAnnotationView *annotationView = (MRPostAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:annotationId];
     if (!annotationView) {
-        annotationView = [[MROfferAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:annotationId];
+        annotationView = [[MRPostAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:annotationId];
         [annotationView sizeToFit];
     }
     
     [annotationView.photoImageView setImageWithURL:[NSURL URLWithString:@"http://cs7004.vk.me/c540104/v540104123/10369/yWYN-dipi_Q.jpg"] placeholderImage:nil];
-    annotationView.priceLabel.text = @"2,500 руб.";
+    annotationView.priceLabel.text = @"23 000 ђ";
     
     return annotationView;
 }
