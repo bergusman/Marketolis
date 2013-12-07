@@ -58,6 +58,15 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     MRProfileNotificationCell *cell = [tableView dequeueReusableCellWithIdentifier:@"NotificationCell" forIndexPath:indexPath];
+    cell.separatorInset = UIEdgeInsetsZero;
+    
+    cell.statusLabel.text = @"ИЗМЕНЕНО";
+    cell.dateLabel.text = @"17 августа 2013г.";
+    cell.titleLabel.text = @"Super puper mega Mac Book Air 13\"";
+    
+    cell.statusLabel.textColor = MR_RGB(0, 153, 14);
+    //cell.statusLabel.textColor = MR_RGB(255, 0, 0);
+    
     return cell;
 }
 
@@ -71,6 +80,10 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     MRPostViewController *postVC = [[MRPostViewController alloc] init];
     [self.navigationController pushViewController:postVC animated:YES];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return [MRProfileNotificationCell height];
 }
 
 #pragma mark - UIViewController

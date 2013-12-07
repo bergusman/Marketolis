@@ -22,6 +22,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="ikR-Lh-KGl"/>
                         <outlet property="delegate" destination="-1" id="7Ga-mV-e4W"/>
