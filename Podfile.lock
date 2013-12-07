@@ -27,6 +27,7 @@ PODS:
   - SDWebImage/Core (3.5.1)
 
 DEPENDENCIES:
+  - AFNetworking (~> 2.0.3)
   - FlurrySDK (~> 4.3.0)
   - GoogleAnalytics-iOS-SDK (~> 3.0.2)
   - HPGrowingTextView (~> 1.0.1)
