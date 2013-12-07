@@ -8,8 +8,6 @@
 
 #import "MRDialogCell.h"
 
-#import "MRInterfaceHelper.h"
-
 @implementation MRDialogCell
 
 - (void)setupBackgroundViews {

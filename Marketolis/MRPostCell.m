@@ -8,8 +8,6 @@
 
 #import "MRPostCell.h"
 
-#import "MRInterfaceHelper.h"
-
 @interface MRPostCell ()
 
 @property (weak, nonatomic) IBOutlet UIView *photoDimView;

@@ -8,8 +8,6 @@
 
 #import "MRConfirmViewController.h"
 
-#import "MRInterfaceHelper.h"
-
 NSString * const MRSignUpConfirmedNotification = @"MRSignUpConfirmedNotification";
 
 @interface MRConfirmViewController ()
