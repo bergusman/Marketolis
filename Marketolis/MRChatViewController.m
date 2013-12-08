@@ -46,9 +46,11 @@
 }
 
 - (void)setupInputTextBar {
-    //self.inputTextBar = [MRInputTextBar inputTextBarFromNib];
-    //self.inputTextBar.delegate = self;
-    //[self.view addSubview:self.inputTextBar];
+    self.inputTextBar = [MRInputTextBar inputTextBarFromNib];
+    self.inputTextBar.delegate = self;
+    [self.view addSubview:self.inputTextBar];
+    
+    self.inputTextBar.frame = CGRectMake(0, 200, 320, 56);
 }
 
 - (void)addKeyboardObserver {

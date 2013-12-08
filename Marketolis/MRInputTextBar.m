@@ -8,14 +8,12 @@
 
 #import "MRInputTextBar.h"
 
-@interface MRInputTextBar ()
+@interface MRInputTextBar () <HPGrowingTextViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *textFieldMaskImageView;
 
 @property (weak, nonatomic) IBOutlet UIButton *sendButton;
-
-@property (weak, nonatomic) IBOutlet UILabel *placeholderLabel;
 
 @end
 
@@ -25,38 +23,55 @@
 
 - (void)setupBackground {
     UIImage *bg = [UIImage imageNamed:@"chat-field-background"];
-    bg = [bg stretchableImageWithLeftCapWidth:5 topCapHeight:28];
+    bg = [bg resizableImageWithCapInsets:UIEdgeInsetsMake(20, 0, 20, 0) resizingMode:UIImageResizingModeStretch];
     self.backgroundImageView.image = bg;
-}
-
-- (void)setupSendButton {
-    UIImage *bg = [UIImage imageNamed:@"chat-button-send-passive"];
-    bg = [bg stretchableImageWithLeftCapWidth:8 topCapHeight:0];
-    [self.sendButton setBackgroundImage:bg forState:UIControlStateNormal];
-    
-    bg = [UIImage imageNamed:@"chat-button-send-active"];
-    bg = [bg stretchableImageWithLeftCapWidth:8 topCapHeight:0];
-    [self.sendButton setBackgroundImage:bg forState:UIControlStateHighlighted];
 }
 
 - (void)setupTextFieldMask {
     UIImage *bg = [UIImage imageNamed:@"chat-field"];
-    bg = [bg stretchableImageWithLeftCapWidth:20 topCapHeight:28];
+    bg = [bg resizableImageWithCapInsets:UIEdgeInsetsMake(18, 18, 18, 18) resizingMode:UIImageResizingModeStretch];
     self.textFieldMaskImageView.image = bg;
 }
 
 - (void)setupTextField {
+    self.growingTextView = [[HPGrowingTextView alloc] initWithFrame:CGRectMake(47, 5, 202, 34)];
+    self.growingTextView.backgroundColor = [UIColor whiteColor];
+    self.growingTextView.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:14];
+    self.growingTextView.minNumberOfLines = 1;
+    self.growingTextView.maxNumberOfLines = 6;
+    self.growingTextView.delegate = self;
+    self.growingTextView.internalTextView.scrollIndicatorInsets = UIEdgeInsetsMake(1, 0, 1, -1);
+    self.growingTextView.backgroundColor = [UIColor clearColor];
     
+    self.growingTextView.backgroundColor = [UIColor greenColor];
+    
+    [self insertSubview:self.growingTextView atIndex:2];
+    
+    /*
+    
+    self.growingTextView = [[HPGrowingTextView alloc] initWithFrame:CGRectMake(10, 5, 200, 100)];
+    self.growingTextView.delegate = self;
+    
+    self.growingTextView.placeholder = @"Текст";
+    [self addSubview:self.growingTextView];
+    //[self insertSubview:self.growingTextView belowSubview:self.textFieldMaskImageView];
+    [self.growingTextView sizeToFit];
+    
+    self.growingTextView.backgroundColor = [UIColor greenColor];
+    
+    NSLog(@"%@", NSStringFromCGRect(self.growingTextView.frame));
+     
+     */
 }
 
 #pragma mark - Content
 
 - (NSString *)placeholder {
-    return self.placeholderLabel.text;
+    return self.growingTextView.placeholder;
 }
 
 - (void)setPlaceholder:(NSString *)placeholder {
-    self.placeholderLabel.text = placeholder;
+    self.growingTextView.placeholder = placeholder;
 }
 
 - (NSString *)text {
@@ -101,8 +116,6 @@
 - (void)growingTextViewDidChange:(HPGrowingTextView *)growingTextView {
     NSString *text = growingTextView.text;
     
-    self.placeholderLabel.hidden = [text length] > 0;
-    
     text = [text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     self.sendButton.enabled = [text length] > 0;
 }
@@ -115,9 +128,8 @@
     [self setupBackground];
     [self setupTextField];
     [self setupTextFieldMask];
-    [self setupSendButton];
     
-    self.growingTextView.text = nil;
+    //self.growingTextView.text = @"234";
 }
 
 #pragma mark - Nibbing
@@ -125,7 +137,7 @@
 + (MRInputTextBar *)inputTextBarFromNib {
     UINib *nib = [UINib nibWithNibName:NSStringFromClass([MRInputTextBar class]) bundle:[NSBundle mainBundle]];
     NSArray *views = [nib instantiateWithOwner:nil options:nil];
-    return views[0];
+    return [views firstObject];
 }
 
 @end
