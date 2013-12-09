@@ -48,9 +48,11 @@
 - (void)setupInputTextBar {
     self.inputTextBar = [MRInputTextBar inputTextBarFromNib];
     self.inputTextBar.delegate = self;
+    self.inputTextBar.action = NSLocalizedString(@"chat.input.send", @"");
+    self.inputTextBar.placeholder = NSLocalizedString(@"chat.input.placeholder", @"");
     [self.view addSubview:self.inputTextBar];
     
-    self.inputTextBar.frame = CGRectMake(0, 200, 320, 56);
+    self.inputTextBar.frame = CGRectMake(0, self.view.frame.size.height - 56, 320, 56);
 }
 
 - (void)addKeyboardObserver {
