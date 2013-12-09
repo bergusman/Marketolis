@@ -20,8 +20,8 @@
 #pragma mark - Setups
 
 - (void)setupBubbleBackground {
-    UIImage *bubbleImage = [UIImage imageNamed:@"chat-bubble-sent"];
-    bubbleImage = [bubbleImage resizableImageWithCapInsets:UIEdgeInsetsMake(8, 10, 22, 18) resizingMode:UIImageResizingModeStretch];
+    UIImage *bubbleImage = [UIImage imageNamed:@"chat-bubble-incoming"];
+    bubbleImage = [bubbleImage resizableImageWithCapInsets:UIEdgeInsetsMake(8, 18, 22, 10) resizingMode:UIImageResizingModeStretch];
     self.bubbleImageView.image = bubbleImage;
 }
 
@@ -29,8 +29,6 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    
-    CGSize contentSize = self.contentView.bounds.size;
     
     CGRect messageRect = [self.messageLabel.text boundingRectWithSize:CGSizeMake(256, CGFLOAT_MAX)
                                                               options:NSStringDrawingUsesLineFragmentOrigin
@@ -40,14 +38,14 @@
     messageRect.size.width = ceil(messageRect.size.width);
     messageRect.size.height = ceil(messageRect.size.height);
     
-    self.messageLabel.frame = CGRectMake(10, 10, messageRect.size.width, messageRect.size.height);
+    self.messageLabel.frame = CGRectMake(20, 10, messageRect.size.width, messageRect.size.height);
     
-    CGFloat bubbleWidth = 10 + messageRect.size.width + 20;
+    CGFloat bubbleWidth = 20 + messageRect.size.width + 10;
     CGFloat bubbleHeight = 10 + messageRect.size.height + 10;
     
-    self.bubbleView.frame = CGRectMake(contentSize.width - bubbleWidth - 10, 5, bubbleWidth, bubbleHeight);
+    self.bubbleView.frame = CGRectMake(10, 5, bubbleWidth, bubbleHeight);
     
-    self.dateLabel.frame = CGRectMake(contentSize.width - 200 - 10, CGRectGetMaxY(self.bubbleView.frame), 200, 20);
+    self.dateLabel.frame = CGRectMake(20, CGRectGetMaxY(self.bubbleView.frame), 200, 20);
 }
 
 + (CGFloat)heightWithMessage:(NSString *)message {
