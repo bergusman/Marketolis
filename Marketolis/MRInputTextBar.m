@@ -34,7 +34,7 @@
 }
 
 - (void)setupTextField {
-    self.growingTextView = [[HPGrowingTextView alloc] initWithFrame:CGRectMake(47, 5, 202, 34)];
+    self.growingTextView = [[HPGrowingTextView alloc] initWithFrame:CGRectMake(12, 12, 202, 34)];
     self.growingTextView.backgroundColor = [UIColor whiteColor];
     self.growingTextView.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:14];
     self.growingTextView.minNumberOfLines = 1;
@@ -43,9 +43,10 @@
     self.growingTextView.internalTextView.scrollIndicatorInsets = UIEdgeInsetsMake(1, 0, 1, -1);
     self.growingTextView.backgroundColor = [UIColor clearColor];
     
-    self.growingTextView.backgroundColor = [UIColor greenColor];
+    //self.growingTextView.backgroundColor = [UIColor greenColor];
     
-    [self insertSubview:self.growingTextView atIndex:2];
+    [self insertSubview:self.growingTextView belowSubview:self.textFieldMaskImageView];
+    //[self insertSubview:self.growingTextView atIndex:2];
     
     /*
     
