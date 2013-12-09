@@ -32,10 +32,6 @@
 		A09596A45C364A658D48F0E0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CEA741938BC43D3AE977872 /* libPods.a */; };
 		AD06D3AC17B995DC009C880D /* MRWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD06D3AA17B995DC009C880D /* MRWelcomeViewController.m */; };
 		AD06D3AD17B995DC009C880D /* MRWelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD06D3AB17B995DC009C880D /* MRWelcomeViewController.xib */; };
-		AD06D3D117B99DD5009C880D /* MRConfirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD06D3CF17B99DD5009C880D /* MRConfirmViewController.m */; };
-		AD06D3D217B99DD5009C880D /* MRConfirmViewController~568h.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD06D3D017B99DD5009C880D /* MRConfirmViewController~568h.xib */; };
-		AD06D3D617B99DE3009C880D /* MRSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD06D3D417B99DE3009C880D /* MRSignUpViewController.m */; };
-		AD06D3D717B99DE3009C880D /* MRSignUpViewController~568h.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD06D3D517B99DE3009C880D /* MRSignUpViewController~568h.xib */; };
 		AD06D3E117B99E22009C880D /* MRDialogCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD06D3E017B99E22009C880D /* MRDialogCell.m */; };
 		AD06D3E317B9A3BC009C880D /* MRDialogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD06D3E217B9A3BC009C880D /* MRDialogCell.xib */; };
 		AD09832D1839026600DB18BC /* marketolis-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = AD09832B1839026600DB18BC /* marketolis-logo.png */; };
@@ -52,8 +48,10 @@
 		AD3A481017C557CC00CA2FD9 /* MRPostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD3A480F17C557CC00CA2FD9 /* MRPostCell.xib */; };
 		AD4110311856327400593D71 /* login-button.png in Resources */ = {isa = PBXBuildFile; fileRef = AD41102F1856327400593D71 /* login-button.png */; };
 		AD4110321856327400593D71 /* login-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD4110301856327400593D71 /* login-button@2x.png */; };
-		AD48FFB117CBEE86005E198C /* MRConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD48FFB017CBEE86005E198C /* MRConfirmViewController.xib */; };
-		AD48FFB317CBEF93005E198C /* MRSignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD48FFB217CBEF93005E198C /* MRSignUpViewController.xib */; };
+		AD411039185635F200593D71 /* MREnterPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD411037185635F200593D71 /* MREnterPhoneViewController.m */; };
+		AD41103A185635F200593D71 /* MREnterPhoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD411038185635F200593D71 /* MREnterPhoneViewController.xib */; };
+		AD41103E1856361200593D71 /* MREnterConfirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD41103C1856361200593D71 /* MREnterConfirmViewController.m */; };
+		AD41103F1856361200593D71 /* MREnterConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD41103D1856361200593D71 /* MREnterConfirmViewController.xib */; };
 		AD84AA2F17C95992000444FD /* chat-bubble-incoming.png in Resources */ = {isa = PBXBuildFile; fileRef = AD84AA2317C95992000444FD /* chat-bubble-incoming.png */; };
 		AD84AA3017C95992000444FD /* chat-bubble-incoming@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD84AA2417C95992000444FD /* chat-bubble-incoming@2x.png */; };
 		AD84AA3117C95992000444FD /* chat-bubble-sent.png in Resources */ = {isa = PBXBuildFile; fileRef = AD84AA2517C95992000444FD /* chat-bubble-sent.png */; };
@@ -151,12 +149,6 @@
 		AD06D3A917B995DC009C880D /* MRWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRWelcomeViewController.h; sourceTree = "<group>"; };
 		AD06D3AA17B995DC009C880D /* MRWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRWelcomeViewController.m; sourceTree = "<group>"; };
 		AD06D3AB17B995DC009C880D /* MRWelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRWelcomeViewController.xib; sourceTree = "<group>"; };
-		AD06D3CE17B99DD5009C880D /* MRConfirmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRConfirmViewController.h; sourceTree = "<group>"; };
-		AD06D3CF17B99DD5009C880D /* MRConfirmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRConfirmViewController.m; sourceTree = "<group>"; };
-		AD06D3D017B99DD5009C880D /* MRConfirmViewController~568h.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MRConfirmViewController~568h.xib"; sourceTree = "<group>"; };
-		AD06D3D317B99DE3009C880D /* MRSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRSignUpViewController.h; sourceTree = "<group>"; };
-		AD06D3D417B99DE3009C880D /* MRSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRSignUpViewController.m; sourceTree = "<group>"; };
-		AD06D3D517B99DE3009C880D /* MRSignUpViewController~568h.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MRSignUpViewController~568h.xib"; sourceTree = "<group>"; };
 		AD06D3DF17B99E22009C880D /* MRDialogCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRDialogCell.h; sourceTree = "<group>"; };
 		AD06D3E017B99E22009C880D /* MRDialogCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRDialogCell.m; sourceTree = "<group>"; };
 		AD06D3E217B9A3BC009C880D /* MRDialogCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRDialogCell.xib; sourceTree = "<group>"; };
@@ -181,8 +173,12 @@
 		AD3A480F17C557CC00CA2FD9 /* MRPostCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRPostCell.xib; sourceTree = "<group>"; };
 		AD41102F1856327400593D71 /* login-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "login-button.png"; path = "Resources/Images/login-button.png"; sourceTree = "<group>"; };
 		AD4110301856327400593D71 /* login-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "login-button@2x.png"; path = "Resources/Images/login-button@2x.png"; sourceTree = "<group>"; };
-		AD48FFB017CBEE86005E198C /* MRConfirmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRConfirmViewController.xib; sourceTree = "<group>"; };
-		AD48FFB217CBEF93005E198C /* MRSignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRSignUpViewController.xib; sourceTree = "<group>"; };
+		AD411036185635F200593D71 /* MREnterPhoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MREnterPhoneViewController.h; sourceTree = "<group>"; };
+		AD411037185635F200593D71 /* MREnterPhoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MREnterPhoneViewController.m; sourceTree = "<group>"; };
+		AD411038185635F200593D71 /* MREnterPhoneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MREnterPhoneViewController.xib; sourceTree = "<group>"; };
+		AD41103B1856361200593D71 /* MREnterConfirmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MREnterConfirmViewController.h; sourceTree = "<group>"; };
+		AD41103C1856361200593D71 /* MREnterConfirmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MREnterConfirmViewController.m; sourceTree = "<group>"; };
+		AD41103D1856361200593D71 /* MREnterConfirmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MREnterConfirmViewController.xib; sourceTree = "<group>"; };
 		AD84AA2317C95992000444FD /* chat-bubble-incoming.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chat-bubble-incoming.png"; path = "Resources/Images/chat-bubble-incoming.png"; sourceTree = "<group>"; };
 		AD84AA2417C95992000444FD /* chat-bubble-incoming@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chat-bubble-incoming@2x.png"; path = "Resources/Images/chat-bubble-incoming@2x.png"; sourceTree = "<group>"; };
 		AD84AA2517C95992000444FD /* chat-bubble-sent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chat-bubble-sent.png"; path = "Resources/Images/chat-bubble-sent.png"; sourceTree = "<group>"; };
@@ -375,6 +371,7 @@
 			children = (
 				AD95BBC01827A17900E1C0E1 /* Common */,
 				AD95BBCC1827AB3200E1C0E1 /* Welcome */,
+				AD411033185635A400593D71 /* Enter */,
 				AD95BBC11827A19D00E1C0E1 /* Chat */,
 				ADAA10011826BCB70036F14E /* Map */,
 				ADAA10021826BCCF0036F14E /* Posts */,
@@ -382,7 +379,6 @@
 				ADAA10031826BD1B0036F14E /* Profile */,
 				ADAA10051826BD260036F14E /* Create Post */,
 				ADB01443183912EB00DE0936 /* Post */,
-				ADAA10001826BCAE0036F14E /* Old */,
 			);
 			name = "Controllers & Views";
 			sourceTree = "<group>";
@@ -435,28 +431,6 @@
 				AD09832C1839026600DB18BC /* marketolis-logo@2x.png */,
 			);
 			name = Splash;
-			sourceTree = "<group>";
-		};
-		AD06D3CC17B99942009C880D /* Sign Up */ = {
-			isa = PBXGroup;
-			children = (
-				AD06D3D317B99DE3009C880D /* MRSignUpViewController.h */,
-				AD06D3D417B99DE3009C880D /* MRSignUpViewController.m */,
-				AD06D3D517B99DE3009C880D /* MRSignUpViewController~568h.xib */,
-				AD48FFB217CBEF93005E198C /* MRSignUpViewController.xib */,
-			);
-			name = "Sign Up";
-			sourceTree = "<group>";
-		};
-		AD06D3CD17B9994A009C880D /* Confirm */ = {
-			isa = PBXGroup;
-			children = (
-				AD06D3CE17B99DD5009C880D /* MRConfirmViewController.h */,
-				AD06D3CF17B99DD5009C880D /* MRConfirmViewController.m */,
-				AD06D3D017B99DD5009C880D /* MRConfirmViewController~568h.xib */,
-				AD48FFB017CBEE86005E198C /* MRConfirmViewController.xib */,
-			);
-			name = Confirm;
 			sourceTree = "<group>";
 		};
 		AD06D3DE17B99E0F009C880D /* Dialog Cell */ = {
@@ -516,6 +490,35 @@
 				AD3A480F17C557CC00CA2FD9 /* MRPostCell.xib */,
 			);
 			name = "Post Cell";
+			sourceTree = "<group>";
+		};
+		AD411033185635A400593D71 /* Enter */ = {
+			isa = PBXGroup;
+			children = (
+				AD411034185635BF00593D71 /* Phone */,
+				AD411035185635CD00593D71 /* Confirm Phone */,
+			);
+			name = Enter;
+			sourceTree = "<group>";
+		};
+		AD411034185635BF00593D71 /* Phone */ = {
+			isa = PBXGroup;
+			children = (
+				AD411036185635F200593D71 /* MREnterPhoneViewController.h */,
+				AD411037185635F200593D71 /* MREnterPhoneViewController.m */,
+				AD411038185635F200593D71 /* MREnterPhoneViewController.xib */,
+			);
+			name = Phone;
+			sourceTree = "<group>";
+		};
+		AD411035185635CD00593D71 /* Confirm Phone */ = {
+			isa = PBXGroup;
+			children = (
+				AD41103B1856361200593D71 /* MREnterConfirmViewController.h */,
+				AD41103C1856361200593D71 /* MREnterConfirmViewController.m */,
+				AD41103D1856361200593D71 /* MREnterConfirmViewController.xib */,
+			);
+			name = "Confirm Phone";
 			sourceTree = "<group>";
 		};
 		AD84AA2217C9597F000444FD /* Chat */ = {
@@ -645,15 +648,6 @@
 				AD06D3AB17B995DC009C880D /* MRWelcomeViewController.xib */,
 			);
 			name = Welcome;
-			sourceTree = "<group>";
-		};
-		ADAA10001826BCAE0036F14E /* Old */ = {
-			isa = PBXGroup;
-			children = (
-				AD06D3CD17B9994A009C880D /* Confirm */,
-				AD06D3CC17B99942009C880D /* Sign Up */,
-			);
-			name = Old;
 			sourceTree = "<group>";
 		};
 		ADAA10011826BCB70036F14E /* Map */ = {
@@ -882,11 +876,10 @@
 				ADD992AB182C23FD00E6F9BB /* map-controls-zoomout@2x.png in Resources */,
 				ADAA100F1826BF9C0036F14E /* MRPostsViewController.xib in Resources */,
 				ADB01448183912FF00DE0936 /* MRPostViewController.xib in Resources */,
+				AD41103A185635F200593D71 /* MREnterPhoneViewController.xib in Resources */,
 				AD9743181854D55E007F462A /* social-icon-twitter.png in Resources */,
 				ADD992A0182C200000E6F9BB /* tab-bar-map.png in Resources */,
-				AD06D3D217B99DD5009C880D /* MRConfirmViewController~568h.xib in Resources */,
 				ADC2E3D818392C780065BB96 /* MRPostPhotoCell.xib in Resources */,
-				AD06D3D717B99DE3009C880D /* MRSignUpViewController~568h.xib in Resources */,
 				AD06D3E317B9A3BC009C880D /* MRDialogCell.xib in Resources */,
 				ADD9929C182C200000E6F9BB /* tab-bar-chat.png in Resources */,
 				AD9743191854D55E007F462A /* social-icon-twitter@2x.png in Resources */,
@@ -906,6 +899,7 @@
 				AD84AA2F17C95992000444FD /* chat-bubble-incoming.png in Resources */,
 				AD84AA3017C95992000444FD /* chat-bubble-incoming@2x.png in Resources */,
 				AD84AA3117C95992000444FD /* chat-bubble-sent.png in Resources */,
+				AD41103F1856361200593D71 /* MREnterConfirmViewController.xib in Resources */,
 				AD84AA3217C95992000444FD /* chat-bubble-sent@2x.png in Resources */,
 				AD95BBCB1827A30600E1C0E1 /* MRChatViewController.xib in Resources */,
 				ADD992AA182C23FD00E6F9BB /* map-controls-zoomout.png in Resources */,
@@ -917,10 +911,8 @@
 				AD09832E1839026600DB18BC /* marketolis-logo@2x.png in Resources */,
 				ADB014421839100600DE0936 /* MRProfileNotificationCell.xib in Resources */,
 				ADC2E3DE18392FB20065BB96 /* MRPostEditorViewController.xib in Resources */,
-				AD48FFB117CBEE86005E198C /* MRConfirmViewController.xib in Resources */,
 				ADAA10141826BFA80036F14E /* MRMessagesViewController.xib in Resources */,
 				AD8923B81849F6E9005BDAEA /* RubleMedium.ttf in Resources */,
-				AD48FFB317CBEF93005E198C /* MRSignUpViewController.xib in Resources */,
 				AD38C75417E7AC5500831CF8 /* MRLeftBubbleCell.xib in Resources */,
 				AD38C75617E7AC7D00831CF8 /* MRRightBubbleCell.xib in Resources */,
 				AD38C75817E82B6100831CF8 /* MRInputTextBar.xib in Resources */,
@@ -980,7 +972,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADAA100E1826BF9C0036F14E /* MRPostsViewController.m in Sources */,
+				AD411039185635F200593D71 /* MREnterPhoneViewController.m in Sources */,
 				4424BBC617B956970060CD49 /* main.m in Sources */,
+				AD41103E1856361200593D71 /* MREnterConfirmViewController.m in Sources */,
 				ADAA101D1826BFCC0036F14E /* MRCreatePostViewController.m in Sources */,
 				ADC2E3D618392C670065BB96 /* MRPostPhotoCell.m in Sources */,
 				4424BBCA17B956970060CD49 /* MRAppDelegate.m in Sources */,
@@ -992,8 +986,6 @@
 				AD95BBC41827A1B800E1C0E1 /* MRViewController.m in Sources */,
 				ADC2E3DD18392FB20065BB96 /* MRPostEditorViewController.m in Sources */,
 				ADAA10181826BFB80036F14E /* MRProfileViewController.m in Sources */,
-				AD06D3D117B99DD5009C880D /* MRConfirmViewController.m in Sources */,
-				AD06D3D617B99DE3009C880D /* MRSignUpViewController.m in Sources */,
 				AD95BBCA1827A30600E1C0E1 /* MRChatViewController.m in Sources */,
 				AD06D3E117B99E22009C880D /* MRDialogCell.m in Sources */,
 				AD3A47F317C54F2700CA2FD9 /* MRSeparatorView.m in Sources */,
