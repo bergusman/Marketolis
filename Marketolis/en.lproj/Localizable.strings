@@ -81,3 +81,7 @@
 "post.call.button" = "Call";
 "post.write.button" = "Write";
 "post.views" = "Views";
+
+// Chat
+"chat.input.send" = "Send";
+"chat.input.placeholder" = "Write a message";

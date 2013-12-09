@@ -81,3 +81,7 @@
 "post.call.button" = "Позвонить";
 "post.write.button" = "Написать";
 "post.views" = "Просмотров";
+
+// Chat
+"chat.input.send" = "Отпр.";
+"chat.input.placeholder" = "Напишите сообщение";
