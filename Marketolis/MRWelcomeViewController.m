@@ -13,9 +13,17 @@
 
 @interface MRWelcomeViewController ()
 
+@property (weak, nonatomic) IBOutlet UIButton *enterButton;
+
 @end
 
 @implementation MRWelcomeViewController
+
+#pragma mark - Setups
+
+- (void)setupEnterButton {
+    [self.enterButton setTitle:NSLocalizedString(@"welcome.enter", @"") forState:UIControlStateNormal];
+}
 
 #pragma mark - Content
 
@@ -25,7 +33,7 @@
 
 #pragma mark - Actions
 
-- (IBAction)signUpButtonTouchUpInside:(id)sender {
+- (IBAction)enterButtonTouchUpInside:(id)sender {
     MRSignUpViewController *signUpVc = [[MRSignUpViewController alloc] init];
     UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:signUpVc];
     nc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
@@ -36,6 +44,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self setupEnterButton];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(signUpDidConfirm:)

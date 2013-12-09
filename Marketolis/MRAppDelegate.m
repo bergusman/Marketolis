@@ -101,10 +101,13 @@
     [self setupFlurry];
     [self setupGoogleAnalytics];
     [self setupWindow];
-    //[self showWelcome];
-    [self showApp];
-    //[self showTestPost];
+    
     [self registerForRemoteNotifications];
+    
+    [self showWelcome];
+    //[self showApp];
+    //[self showTestPost];
+    
     return YES;
 }
 

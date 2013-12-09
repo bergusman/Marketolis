@@ -85,3 +85,6 @@
 // Chat
 "chat.input.send" = "Send";
 "chat.input.placeholder" = "Write a message";
+
+// Welcome
+"welcome.enter" = "Enter";

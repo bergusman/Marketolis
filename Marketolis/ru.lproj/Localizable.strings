@@ -85,3 +85,6 @@
 // Chat
 "chat.input.send" = "Отпр.";
 "chat.input.placeholder" = "Напишите сообщение";
+
+// Welcome
+"welcome.enter" = "Войти";

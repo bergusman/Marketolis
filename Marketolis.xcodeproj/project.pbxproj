@@ -50,6 +50,8 @@
 		AD3A480717C5525B00CA2FD9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD3A480917C5525B00CA2FD9 /* Localizable.strings */; };
 		AD3A480E17C557BE00CA2FD9 /* MRPostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3A480D17C557BE00CA2FD9 /* MRPostCell.m */; };
 		AD3A481017C557CC00CA2FD9 /* MRPostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD3A480F17C557CC00CA2FD9 /* MRPostCell.xib */; };
+		AD4110311856327400593D71 /* login-button.png in Resources */ = {isa = PBXBuildFile; fileRef = AD41102F1856327400593D71 /* login-button.png */; };
+		AD4110321856327400593D71 /* login-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD4110301856327400593D71 /* login-button@2x.png */; };
 		AD48FFB117CBEE86005E198C /* MRConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD48FFB017CBEE86005E198C /* MRConfirmViewController.xib */; };
 		AD48FFB317CBEF93005E198C /* MRSignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD48FFB217CBEF93005E198C /* MRSignUpViewController.xib */; };
 		AD84AA2F17C95992000444FD /* chat-bubble-incoming.png in Resources */ = {isa = PBXBuildFile; fileRef = AD84AA2317C95992000444FD /* chat-bubble-incoming.png */; };
@@ -177,6 +179,8 @@
 		AD3A480C17C557BE00CA2FD9 /* MRPostCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRPostCell.h; sourceTree = "<group>"; };
 		AD3A480D17C557BE00CA2FD9 /* MRPostCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRPostCell.m; sourceTree = "<group>"; };
 		AD3A480F17C557CC00CA2FD9 /* MRPostCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRPostCell.xib; sourceTree = "<group>"; };
+		AD41102F1856327400593D71 /* login-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "login-button.png"; path = "Resources/Images/login-button.png"; sourceTree = "<group>"; };
+		AD4110301856327400593D71 /* login-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "login-button@2x.png"; path = "Resources/Images/login-button@2x.png"; sourceTree = "<group>"; };
 		AD48FFB017CBEE86005E198C /* MRConfirmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRConfirmViewController.xib; sourceTree = "<group>"; };
 		AD48FFB217CBEF93005E198C /* MRSignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRSignUpViewController.xib; sourceTree = "<group>"; };
 		AD84AA2317C95992000444FD /* chat-bubble-incoming.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chat-bubble-incoming.png"; path = "Resources/Images/chat-bubble-incoming.png"; sourceTree = "<group>"; };
@@ -425,6 +429,8 @@
 		AD06D3B617B9962A009C880D /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				AD41102F1856327400593D71 /* login-button.png */,
+				AD4110301856327400593D71 /* login-button@2x.png */,
 				AD09832B1839026600DB18BC /* marketolis-logo.png */,
 				AD09832C1839026600DB18BC /* marketolis-logo@2x.png */,
 			);
@@ -848,6 +854,7 @@
 				4424BBC417B956970060CD49 /* InfoPlist.strings in Resources */,
 				4424BBCC17B956970060CD49 /* Default.png in Resources */,
 				4424BBCE17B956970060CD49 /* Default@2x.png in Resources */,
+				AD4110311856327400593D71 /* login-button.png in Resources */,
 				ADAA101E1826BFCC0036F14E /* MRCreatePostViewController.xib in Resources */,
 				AD97431A1854D55E007F462A /* social-icon-vkontakte.png in Resources */,
 				4424BBD017B956970060CD49 /* Default-568h@2x.png in Resources */,
@@ -856,6 +863,7 @@
 				AD97431B1854D55E007F462A /* social-icon-vkontakte@2x.png in Resources */,
 				AD9743171854D55E007F462A /* social-icon-odnoklassniki@2x.png in Resources */,
 				ADD992AE182C240D00E6F9BB /* map-item.png in Resources */,
+				AD4110321856327400593D71 /* login-button@2x.png in Resources */,
 				ADD992A8182C23FD00E6F9BB /* map-controls-location.png in Resources */,
 				AD8923BA1849F6E9005BDAEA /* RubleUltraLight.ttf in Resources */,
 				ADD9929E182C200000E6F9BB /* tab-bar-list.png in Resources */,

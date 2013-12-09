@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MRWelcomeViewController">
             <connections>
+                <outlet property="enterButton" destination="Elc-2a-hLU" id="IGy-dN-fTT"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -18,15 +19,16 @@
                     <rect key="frame" x="52" y="202" width="216" height="125"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="31d-Pw-TDb" userLabel="Sign Up">
-                    <rect key="frame" x="60" y="373" width="200" height="44"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Elc-2a-hLU" userLabel="Enter Button">
+                    <rect key="frame" x="43" y="453" width="235" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <state key="normal" title="Зарегистрироваться">
+                    <state key="normal" title="Зарегистрироваться" backgroundImage="login-button.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="signUpButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="fb6-k3-Cuv"/>
+                        <action selector="enterButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="9Wa-Rs-uT4"/>
                     </connections>
                 </button>
             </subviews>
@@ -36,6 +38,7 @@
         </view>
     </objects>
     <resources>
+        <image name="login-button.png" width="235" height="50"/>
         <image name="marketolis-logo.png" width="216" height="125"/>
     </resources>
 </document>
