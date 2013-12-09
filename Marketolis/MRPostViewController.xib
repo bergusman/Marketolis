@@ -5,6 +5,9 @@
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MRPostViewController">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="analyticTitle" value="Post"/>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="addressLabel" destination="4lB-Tt-Ivr" id="oqO-Un-XLv"/>
                 <outlet property="callButton" destination="EZU-Zu-mnx" id="Anl-By-Rsb"/>

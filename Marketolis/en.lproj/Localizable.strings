@@ -7,6 +7,8 @@
 */
 
 // Common
+"cancel" = "Cancel";
+"done" = "Done";
 
 // Tab Bar
 "tabbar.map" = "Map";
@@ -88,3 +90,9 @@
 
 // Welcome
 "welcome.enter" = "Enter";
+
+// Enter
+"enter.phone.title" = "Enter";
+"enter.confirm.title" = "Confirm";
+
+"enter.next" = "Next";

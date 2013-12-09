@@ -9,8 +9,6 @@
 #import "MRAppDelegate.h"
 
 #import "MRWelcomeViewController.h"
-#import "MRSignUpViewController.h"
-#import "MRConfirmViewController.h"
 
 #import "MRMapViewController.h"
 #import "MRPostsViewController.h"
@@ -21,8 +19,6 @@
 #import <Crashlytics/Crashlytics.h>
 #import <FlurrySDK/Flurry.h>
 #import <GoogleAnalytics-iOS-SDK/GAI.h>
-
-#import "MRPostViewController.h"
 
 @interface MRAppDelegate ()
 
@@ -66,12 +62,6 @@
 - (void)registerForRemoteNotifications {
     UIRemoteNotificationType type = UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert;
     [[UIApplication sharedApplication] registerForRemoteNotificationTypes:type];
-}
-
-- (void)showTestPost {
-    MRPostViewController *postVC = [[MRPostViewController alloc] init];
-    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:postVC];
-    self.window.rootViewController = nc;
 }
 
 #pragma mark - Setups

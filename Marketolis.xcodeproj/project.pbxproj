@@ -52,6 +52,8 @@
 		AD41103A185635F200593D71 /* MREnterPhoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD411038185635F200593D71 /* MREnterPhoneViewController.xib */; };
 		AD41103E1856361200593D71 /* MREnterConfirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD41103C1856361200593D71 /* MREnterConfirmViewController.m */; };
 		AD41103F1856361200593D71 /* MREnterConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD41103D1856361200593D71 /* MREnterConfirmViewController.xib */; };
+		AD411044185644CD00593D71 /* MREnterNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD411042185644CD00593D71 /* MREnterNameViewController.m */; };
+		AD411045185644CD00593D71 /* MREnterNameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD411043185644CD00593D71 /* MREnterNameViewController.xib */; };
 		AD84AA2F17C95992000444FD /* chat-bubble-incoming.png in Resources */ = {isa = PBXBuildFile; fileRef = AD84AA2317C95992000444FD /* chat-bubble-incoming.png */; };
 		AD84AA3017C95992000444FD /* chat-bubble-incoming@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD84AA2417C95992000444FD /* chat-bubble-incoming@2x.png */; };
 		AD84AA3117C95992000444FD /* chat-bubble-sent.png in Resources */ = {isa = PBXBuildFile; fileRef = AD84AA2517C95992000444FD /* chat-bubble-sent.png */; };
@@ -179,6 +181,9 @@
 		AD41103B1856361200593D71 /* MREnterConfirmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MREnterConfirmViewController.h; sourceTree = "<group>"; };
 		AD41103C1856361200593D71 /* MREnterConfirmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MREnterConfirmViewController.m; sourceTree = "<group>"; };
 		AD41103D1856361200593D71 /* MREnterConfirmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MREnterConfirmViewController.xib; sourceTree = "<group>"; };
+		AD411041185644CD00593D71 /* MREnterNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MREnterNameViewController.h; sourceTree = "<group>"; };
+		AD411042185644CD00593D71 /* MREnterNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MREnterNameViewController.m; sourceTree = "<group>"; };
+		AD411043185644CD00593D71 /* MREnterNameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MREnterNameViewController.xib; sourceTree = "<group>"; };
 		AD84AA2317C95992000444FD /* chat-bubble-incoming.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chat-bubble-incoming.png"; path = "Resources/Images/chat-bubble-incoming.png"; sourceTree = "<group>"; };
 		AD84AA2417C95992000444FD /* chat-bubble-incoming@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chat-bubble-incoming@2x.png"; path = "Resources/Images/chat-bubble-incoming@2x.png"; sourceTree = "<group>"; };
 		AD84AA2517C95992000444FD /* chat-bubble-sent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chat-bubble-sent.png"; path = "Resources/Images/chat-bubble-sent.png"; sourceTree = "<group>"; };
@@ -497,6 +502,7 @@
 			children = (
 				AD411034185635BF00593D71 /* Phone */,
 				AD411035185635CD00593D71 /* Confirm Phone */,
+				AD411040185644B900593D71 /* Name */,
 			);
 			name = Enter;
 			sourceTree = "<group>";
@@ -519,6 +525,16 @@
 				AD41103D1856361200593D71 /* MREnterConfirmViewController.xib */,
 			);
 			name = "Confirm Phone";
+			sourceTree = "<group>";
+		};
+		AD411040185644B900593D71 /* Name */ = {
+			isa = PBXGroup;
+			children = (
+				AD411041185644CD00593D71 /* MREnterNameViewController.h */,
+				AD411042185644CD00593D71 /* MREnterNameViewController.m */,
+				AD411043185644CD00593D71 /* MREnterNameViewController.xib */,
+			);
+			name = Name;
 			sourceTree = "<group>";
 		};
 		AD84AA2217C9597F000444FD /* Chat */ = {
@@ -860,6 +876,7 @@
 				AD4110321856327400593D71 /* login-button@2x.png in Resources */,
 				ADD992A8182C23FD00E6F9BB /* map-controls-location.png in Resources */,
 				AD8923BA1849F6E9005BDAEA /* RubleUltraLight.ttf in Resources */,
+				AD411045185644CD00593D71 /* MREnterNameViewController.xib in Resources */,
 				ADD9929E182C200000E6F9BB /* tab-bar-list.png in Resources */,
 				4424BC3F17B966160060CD49 /* Icon-72.png in Resources */,
 				ADAA100A1826BD6C0036F14E /* MRMapViewController.xib in Resources */,
@@ -998,6 +1015,7 @@
 				AD38C74C17E7AB8E00831CF8 /* MRRightBubbleCell.m in Sources */,
 				ADB01447183912FF00DE0936 /* MRPostViewController.m in Sources */,
 				AD38C74F17E7AB9E00831CF8 /* MRLeftBubbleCell.m in Sources */,
+				AD411044185644CD00593D71 /* MREnterNameViewController.m in Sources */,
 				AD38C75217E7ABB300831CF8 /* MRInputTextBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MRWelcomeViewController : UIViewController
+@interface MRWelcomeViewController : MRViewController
 
 @end

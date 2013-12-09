@@ -5,6 +5,9 @@
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MRWelcomeViewController">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="analyticTitle" value="Welcome"/>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="enterButton" destination="Elc-2a-hLU" id="IGy-dN-fTT"/>
                 <outlet property="view" destination="1" id="3"/>

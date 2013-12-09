@@ -8,8 +8,7 @@
 
 #import "MRWelcomeViewController.h"
 
-#import "MRSignUpViewController.h"
-#import "MRConfirmViewController.h"
+#import "MREnterPhoneViewController.h"
 
 @interface MRWelcomeViewController ()
 
@@ -27,30 +26,23 @@
 
 #pragma mark - Content
 
-- (void)signUpDidConfirm:(NSNotification *)notification {
-    [self dismissViewControllerAnimated:NO completion:nil];
+- (void)showPhoneEntering {
+    MREnterPhoneViewController *phoneVC = [[MREnterPhoneViewController alloc] init];
+    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:phoneVC];
+    [self presentViewController:nc animated:YES completion:nil];
 }
 
 #pragma mark - Actions
 
 - (IBAction)enterButtonTouchUpInside:(id)sender {
-    MRSignUpViewController *signUpVc = [[MRSignUpViewController alloc] init];
-    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:signUpVc];
-    nc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-    [self presentViewController:nc animated:YES completion:nil];
+    [self showPhoneEntering];
 }
 
 #pragma mark - UIViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     [self setupEnterButton];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(signUpDidConfirm:)
-                                                 name:MRSignUpConfirmedNotification
-                                               object:nil];
 }
 
 @end

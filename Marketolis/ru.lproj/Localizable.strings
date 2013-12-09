@@ -7,6 +7,8 @@
 */
 
 // Common
+"cancel" = "Отменить";
+"done" = "Готово";
 
 // Tab Bar
 "tabbar.map" = "Карта";
@@ -88,3 +90,9 @@
 
 // Welcome
 "welcome.enter" = "Войти";
+
+// Enter
+"enter.phone.title" = "Вход";
+"enter.confirm.title" = "Подтверждение";
+
+"enter.next" = "Далее";
