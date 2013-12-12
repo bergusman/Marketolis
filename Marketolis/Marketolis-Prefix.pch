@@ -18,6 +18,7 @@
 
     #import "Marketolis.h"
     #import "MRMarketolisManager.h"
+    #import "MRUserDefaults.h"
 
     #import "MRViewController.h"
     #import "MRTableViewController.h"
