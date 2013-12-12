@@ -10,4 +10,6 @@
 
 @interface MREnterConfirmViewController : MRViewController
 
+@property (assign, nonatomic) int64_t phone;
+
 @end

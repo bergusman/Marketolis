@@ -39,7 +39,6 @@
                                                                                           action:@selector(cancelAction:)];
     
     UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc] init];
-    spinner.color = [UIColor redColor];
     [spinner sizeToFit];
     [spinner startAnimating];
     self.spinnerBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:spinner];
@@ -49,12 +48,11 @@
 
 - (void)sendPhone {
     [self.navigationItem setRightBarButtonItem:self.spinnerBarButtonItem animated:YES];
-    double delayInSeconds = 2.0;
-    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+    
+    [[MRMarketolisManager sharedManager]  loginByPhoneNumber:0 callback:^(id result, NSError *error) {
         [self.navigationItem setRightBarButtonItem:self.nextBarButtonItem animated:YES];
         [self showConfirmation];
-    });
+    }];
 }
 
 - (void)showConfirmation {
