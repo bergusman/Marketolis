@@ -153,6 +153,7 @@
 		ADDA2EDF185A298600635947 /* MRUsers.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2EBD185A298600635947 /* MRUsers.m */; };
 		ADDA2EE3185A2D0300635947 /* MRMarketolisManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2EE2185A2D0300635947 /* MRMarketolisManager.m */; };
 		ADDA2EE6185A47A300635947 /* MRPhoneHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2EE5185A47A300635947 /* MRPhoneHelper.m */; };
+		ADDA2EEA185A573500635947 /* MRUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2EE9185A573500635947 /* MRUserDefaults.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -373,6 +374,8 @@
 		ADDA2EE2185A2D0300635947 /* MRMarketolisManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMarketolisManager.m; sourceTree = "<group>"; };
 		ADDA2EE4185A47A300635947 /* MRPhoneHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRPhoneHelper.h; sourceTree = "<group>"; };
 		ADDA2EE5185A47A300635947 /* MRPhoneHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRPhoneHelper.m; sourceTree = "<group>"; };
+		ADDA2EE8185A573500635947 /* MRUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRUserDefaults.h; sourceTree = "<group>"; };
+		ADDA2EE9185A573500635947 /* MRUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRUserDefaults.m; sourceTree = "<group>"; };
 		D03B0167DD914BCF8AE73A6F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -504,6 +507,7 @@
 		4424BBEC17B95ADE0060CD49 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				ADDA2EE7185A565800635947 /* User Defaults */,
 				ADDA2EE0185A2CEB00635947 /* Marketolis Manager */,
 				4424BC4F17B96E170060CD49 /* Point Annotation */,
 			);
@@ -1008,6 +1012,15 @@
 			name = "Marketolis Manager";
 			sourceTree = "<group>";
 		};
+		ADDA2EE7185A565800635947 /* User Defaults */ = {
+			isa = PBXGroup;
+			children = (
+				ADDA2EE8185A573500635947 /* MRUserDefaults.h */,
+				ADDA2EE9185A573500635947 /* MRUserDefaults.m */,
+			);
+			name = "User Defaults";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1247,6 +1260,7 @@
 				ADDA2ED0185A298600635947 /* MRMarketolisException.m in Sources */,
 				AD84AA5417C9F082000444FD /* MRBadgeView.m in Sources */,
 				ADDA2ED6185A298600635947 /* MRNotification.m in Sources */,
+				ADDA2EEA185A573500635947 /* MRUserDefaults.m in Sources */,
 				AD38C74C17E7AB8E00831CF8 /* MRRightBubbleCell.m in Sources */,
 				ADDA2EE6185A47A300635947 /* MRPhoneHelper.m in Sources */,
 				ADDA2ED2185A298600635947 /* MRMessageData.m in Sources */,
