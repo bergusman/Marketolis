@@ -86,29 +86,31 @@
 
 - (void)setupAppearance {
     [UIRefreshControl appearance].tintColor = [UIColor redColor];
-    [UIActivityIndicatorView appearance].tintColor = [UIColor redColor];
+    [UIActivityIndicatorView appearance].color = [UIColor redColor];
 }
 
 #pragma mark - UIApplicationDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self setupCrashlytics];
-    [self setupFlurry];
-    [self setupGoogleAnalytics];
+    //[self setupFlurry];
+    //[self setupGoogleAnalytics];
     [self setupAppearance];
     [self setupWindow];
     
     [self registerForRemoteNotifications];
     
-    //[self showWelcome];
-    [self showApp];
-    //[self showTestPost];
+    if ([MRMarketolisManager sharedManager].state == MRMarketolisManagerStateWork) {
+        [self showApp];
+    } else {
+        [self showWelcome];
+    }
     
     return YES;
 }
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken  {
-    
+    //[MRMarketolisManager sharedManager].pushToken =
 }
 
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
