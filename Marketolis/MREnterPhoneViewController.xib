@@ -25,14 +25,16 @@
                     <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="1234567890" textAlignment="right" minimumFontSize="17" id="9HP-yN-b4V" userLabel="Phone Text Field">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="(000) 000-00-00" textAlignment="right" minimumFontSize="17" id="9HP-yN-b4V" userLabel="Phone Text Field">
                     <rect key="frame" x="139" y="88" width="167" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="textColor" red="0.14509803921568626" green="0.14509803921568626" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                    <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
                     <connections>
+                        <action selector="bingo:" destination="-1" eventType="valueChanged" id="lFG-NG-a5j"/>
                         <action selector="phoneTextFieldEditingChanged:" destination="-1" eventType="editingChanged" id="NZq-ZG-grc"/>
+                        <outlet property="delegate" destination="-1" id="SNP-zk-DJd"/>
                     </connections>
                 </textField>
                 <view contentMode="scaleToFill" id="GiG-cL-gwL" customClass="MRSeparatorView">

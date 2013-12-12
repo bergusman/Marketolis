@@ -10,12 +10,16 @@
 
 #import "MREnterConfirmViewController.h"
 
+#import "MRPhoneHelper.h"
+
 @interface MREnterPhoneViewController () <UITextFieldDelegate>
 
 @property (strong, nonatomic) UIBarButtonItem *nextBarButtonItem;
 @property (strong, nonatomic) UIBarButtonItem *spinnerBarButtonItem;
 
 @property (weak, nonatomic) IBOutlet UITextField *phoneTextField;
+
+@property (strong ,nonatomic) NSOperation *loginOperation;
 
 @end
 
@@ -27,7 +31,7 @@
     self.navigationItem.title = NSLocalizedString(@"enter.phone.title", @"");
     
     self.nextBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"enter.next", @"")
-                                                              style:UIBarButtonItemStyleBordered
+                                                              style:UIBarButtonItemStyleDone
                                                              target:self
                                                              action:@selector(nextAction:)];
     
@@ -46,18 +50,32 @@
 
 #pragma mark - Content
 
+- (int64_t)phone {
+    NSString *phone = self.phoneTextField.text;
+    phone = [NSString stringWithFormat:@"7%@", phone];
+    return [phone longLongValue];
+}
+
 - (void)sendPhone {
     [self.navigationItem setRightBarButtonItem:self.spinnerBarButtonItem animated:YES];
     
-    [[MRMarketolisManager sharedManager]  loginByPhoneNumber:0 callback:^(id result, NSError *error) {
+    self.loginOperation = [[MRMarketolisManager sharedManager] loginByPhoneNumber:[self phone] callback:^(id result, NSError *error) {
         [self.navigationItem setRightBarButtonItem:self.nextBarButtonItem animated:YES];
-        [self showConfirmation];
+        if (error) {
+            // TODO: parse and show error
+        } else {
+            [self showConfirmation];
+        }
     }];
 }
 
 - (void)showConfirmation {
     MREnterConfirmViewController *confirmVC = [[MREnterConfirmViewController alloc] init];
     [self.navigationController pushViewController:confirmVC animated:YES];
+}
+
+- (void)tryShowNext {
+    self.nextBarButtonItem.enabled = [MRPhoneHelper isValidPhone:self.phoneTextField.text];
 }
 
 #pragma mark - Actions
@@ -67,11 +85,8 @@
 }
 
 - (void)cancelAction:(id)sender {
+    [self.loginOperation cancel];
     [self dismissViewControllerAnimated:YES completion:nil];
-}
-
-- (IBAction)phoneTextFieldEditingChanged:(id)sender {
-    self.nextBarButtonItem.enabled = ([self.phoneTextField.text length] > 0);
 }
 
 #pragma mark - UITextFieldDelegate
@@ -79,6 +94,25 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [self sendPhone];
     return YES;
+}
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    if ([string length] > 0) {
+        string = [MRPhoneHelper digitizeString:string];
+        if ([string length] == 0) {
+            [self tryShowNext];
+            return NO;
+        }
+    }
+    
+    NSString *text = textField.text;
+    text = [text stringByReplacingCharactersInRange:range withString:string];
+    text = [MRPhoneHelper formattedPhone:text];
+    
+    textField.text = text;
+    
+    [self tryShowNext];
+    return NO;
 }
 
 #pragma mark - UIViewController
