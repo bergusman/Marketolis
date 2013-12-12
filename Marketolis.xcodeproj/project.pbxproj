@@ -152,6 +152,7 @@
 		ADDA2EDE185A298600635947 /* MRUserData.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2EBB185A298600635947 /* MRUserData.m */; };
 		ADDA2EDF185A298600635947 /* MRUsers.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2EBD185A298600635947 /* MRUsers.m */; };
 		ADDA2EE3185A2D0300635947 /* MRMarketolisManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2EE2185A2D0300635947 /* MRMarketolisManager.m */; };
+		ADDA2EE6185A47A300635947 /* MRPhoneHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2EE5185A47A300635947 /* MRPhoneHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -370,6 +371,8 @@
 		ADDA2EBD185A298600635947 /* MRUsers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRUsers.m; sourceTree = "<group>"; };
 		ADDA2EE1185A2D0300635947 /* MRMarketolisManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMarketolisManager.h; sourceTree = "<group>"; };
 		ADDA2EE2185A2D0300635947 /* MRMarketolisManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMarketolisManager.m; sourceTree = "<group>"; };
+		ADDA2EE4185A47A300635947 /* MRPhoneHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRPhoneHelper.h; sourceTree = "<group>"; };
+		ADDA2EE5185A47A300635947 /* MRPhoneHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRPhoneHelper.m; sourceTree = "<group>"; };
 		D03B0167DD914BCF8AE73A6F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -744,6 +747,8 @@
 			children = (
 				AD84AA4F17C9D31B000444FD /* MRInterfaceHelper.h */,
 				AD84AA5017C9D31B000444FD /* MRInterfaceHelper.m */,
+				ADDA2EE4185A47A300635947 /* MRPhoneHelper.h */,
+				ADDA2EE5185A47A300635947 /* MRPhoneHelper.m */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -1243,6 +1248,7 @@
 				AD84AA5417C9F082000444FD /* MRBadgeView.m in Sources */,
 				ADDA2ED6185A298600635947 /* MRNotification.m in Sources */,
 				AD38C74C17E7AB8E00831CF8 /* MRRightBubbleCell.m in Sources */,
+				ADDA2EE6185A47A300635947 /* MRPhoneHelper.m in Sources */,
 				ADDA2ED2185A298600635947 /* MRMessageData.m in Sources */,
 				ADB01447183912FF00DE0936 /* MRPostViewController.m in Sources */,
 				AD38C74F17E7AB9E00831CF8 /* MRLeftBubbleCell.m in Sources */,
