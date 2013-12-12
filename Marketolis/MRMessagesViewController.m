@@ -14,12 +14,7 @@
 
 #import <SDWebImage/UIImageView+WebCache.h>
 
-@interface MRMessagesViewController () <
-    UITableViewDataSource,
-    UITableViewDelegate
->
-
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@interface MRMessagesViewController ()
 
 @property (strong, nonatomic) IBOutlet UISegmentedControl *messagesTypesSegmentedControl;
 
@@ -43,6 +38,11 @@
     [self.tableView registerNib:nib forCellReuseIdentifier:@"DialogCell"];
 }
 
+- (void)setupPullToRefresh {
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    [self.refreshControl addTarget:self action:@selector(refreshControlValueChanged:) forControlEvents:UIControlEventValueChanged];
+}
+
 - (void)setupTestDialogs {
     NSMutableArray *dialogs = [NSMutableArray array];
     for (int i = 0; i < 10; i++) {
@@ -56,6 +56,14 @@
 - (IBAction)messagesTypesSegmentedControlChanged:(id)sender {
     NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:0];
     [self.tableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
+}
+
+- (void)refreshControlValueChanged:(id)sender {
+    double delayInSeconds = 2.0;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        [self.refreshControl endRefreshing];
+    });
 }
 
 #pragma mark - UITableViewDataSource
@@ -102,6 +110,7 @@
     [super viewDidLoad];
     
     [self setupNavigationItem];
+    [self setupPullToRefresh];
     [self setupTableView];
     [self setupTestDialogs];
 }

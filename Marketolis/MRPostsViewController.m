@@ -14,12 +14,8 @@
 
 #import <SDWebImage/UIImageView+WebCache.h>
 
-@interface MRPostsViewController ()  <
-    UITableViewDataSource,
-    UITableViewDelegate
->
+@interface MRPostsViewController ()
 
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) IBOutlet UISegmentedControl *postTypesSegmentedControl;
 
 @property (strong, nonatomic) NSMutableArray *posts;
@@ -43,6 +39,11 @@
     [self.tableView registerNib:nib forCellReuseIdentifier:@"PostCell"];
 }
 
+- (void)setupPullToRefresh {
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    [self.refreshControl addTarget:self action:@selector(refreshControlValueChanged:) forControlEvents:UIControlEventValueChanged];
+}
+
 #pragma mark - Content
 
 - (void)generateTestPosts {
@@ -55,9 +56,17 @@
 
 #pragma mark - Actions
 
-- (IBAction)offerTypesSegmentedControlChanged:(id)sender {
+- (IBAction)postTypesSegmentedControlChanged:(id)sender {
     NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:0];
     [self.tableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
+}
+
+- (void)refreshControlValueChanged:(id)sender {
+    double delayInSeconds = 2.0;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        [self.refreshControl endRefreshing];
+    });
 }
 
 #pragma mark - UITableViewDataSource
@@ -108,6 +117,7 @@
     [super viewDidLoad];
     
     [self setupNavigationItem];
+    [self setupPullToRefresh];
     [self setupTableView];
     
     [self generateTestPosts];
