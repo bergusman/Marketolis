@@ -12,10 +12,14 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 
-    #import "MRViewController.h"
-    #import "MRInterfaceHelper.h"
-
     #define MR_IS_IPHONE_5 (fabs((double)[UIScreen mainScreen].bounds.size.height - (double)568) < DBL_EPSILON)
     #define MR_RGB(r, g, b) [UIColor colorWithRed:(r)/255.f green:(g)/255.f blue:(b)/255.f alpha:1.f]
     #define MR_RGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.f green:(g)/255.f blue:(b)/255.f alpha:(a)]
+
+    #import "Marketolis.h"
+    #import "MRMarketolisManager.h"
+
+    #import "MRViewController.h"
+    #import "MRTableViewController.h"
+    #import "MRInterfaceHelper.h"
 #endif
