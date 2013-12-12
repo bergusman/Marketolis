@@ -8,12 +8,16 @@
 
 #import "MREnterConfirmViewController.h"
 
+#import "MREnterNameViewController.h"
+
 @interface MREnterConfirmViewController ()
 
 @property (strong, nonatomic) UIBarButtonItem *doneBarButtonItem;
 @property (strong, nonatomic) UIBarButtonItem *spinnerBarButtonItem;
 
 @property (weak, nonatomic) IBOutlet UITextField *codeTextField;
+
+@property (strong, nonatomic) NSOperation *operation;
 
 @end
 
@@ -41,8 +45,16 @@
 
 - (void)confirm {
     [self.navigationItem setRightBarButtonItem:self.spinnerBarButtonItem animated:YES];
-    [[MRMarketolisManager sharedManager] confirmPhoneNumber:self.phone code:@"" callback:^(id result, NSError *error) {
+    self.operation = [[MRMarketolisManager sharedManager] confirmByCode:self.codeTextField.text callback:^(id result, NSError *error) {
         [self.navigationItem setRightBarButtonItem:self.doneBarButtonItem animated:YES];
+        
+        if (error) {
+            // TODO: parse and show error
+        } else {
+            
+    
+            
+        }
     }];
 }
 
@@ -62,6 +74,11 @@
     [super viewDidLoad];
     [self setupNavigationItem];
     [self.codeTextField becomeFirstResponder];
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    [self.operation cancel];
 }
 
 @end

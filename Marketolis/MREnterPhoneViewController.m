@@ -51,7 +51,7 @@
 #pragma mark - Content
 
 - (int64_t)phone {
-    NSString *phone = self.phoneTextField.text;
+    NSString *phone = [MRPhoneHelper digitizeString:self.phoneTextField.text];
     phone = [NSString stringWithFormat:@"7%@", phone];
     return [phone longLongValue];
 }
