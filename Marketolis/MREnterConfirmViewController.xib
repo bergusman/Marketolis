@@ -10,6 +10,9 @@
             </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="codeTextField" destination="xck-Nq-ryZ" id="EVD-da-swe"/>
+                <outlet property="codeTitleLabel" destination="8tv-8n-Ks8" id="DI1-Tq-g5r"/>
+                <outlet property="detailsLabel" destination="13m-pi-Qie" id="P0o-IY-cjd"/>
+                <outlet property="resendButton" destination="q3t-ZY-g3C" id="IvE-2n-R1X"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -19,14 +22,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Код доступа" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8tv-8n-Ks8" userLabel="Code Title Label">
-                    <rect key="frame" x="15" y="87" width="99" height="21"/>
+                    <rect key="frame" x="15" y="84" width="100" height="36"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="123456" textAlignment="right" minimumFontSize="17" id="xck-Nq-ryZ" userLabel="Code Text Field">
-                    <rect key="frame" x="139" y="83" width="167" height="30"/>
+                    <rect key="frame" x="143" y="84" width="170" height="36"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="textColor" red="0.1450980392" green="0.1450980392" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
@@ -36,24 +39,28 @@
                     </connections>
                 </textField>
                 <view contentMode="scaleToFill" id="fdo-be-5Wg" customClass="MRSeparatorView">
-                    <rect key="frame" x="15" y="127" width="305" height="1"/>
+                    <rect key="frame" x="15" y="120" width="305" height="1"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.80784313730000001" green="0.80784313730000001" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="13m-pi-Qie" userLabel="Details Label">
                     <rect key="frame" x="10" y="198" width="300" height="51"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <string key="text">Если вы не получили код в течение 60 секунд, нажмите кнопку “Повторить”</string>
+                    <string key="text">Если вы не получили код в течение 
+60 секунд, нажмите кнопку “Повторить”</string>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                     <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="q3t-ZY-g3C">
-                    <rect key="frame" x="100" y="269" width="120" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="q3t-ZY-g3C" userLabel="Resend Button">
+                    <rect key="frame" x="100" y="269" width="120" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Resend">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="resendButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="MSj-CF-buI"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

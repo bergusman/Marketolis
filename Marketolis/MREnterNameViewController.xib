@@ -6,6 +6,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MREnterNameViewController">
             <connections>
+                <outlet property="nameTextField" destination="HQ3-hg-WpE" id="t0I-cB-7qY"/>
+                <outlet property="nameTitleLabel" destination="nGb-S1-xXL" id="bnT-Cj-io5"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -14,22 +16,26 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Код доступа" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nGb-S1-xXL" userLabel="Code Title Label">
-                    <rect key="frame" x="15" y="91" width="99" height="21"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nGb-S1-xXL" userLabel="Name Title Label">
+                    <rect key="frame" x="15" y="84" width="100" height="36"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="123456" textAlignment="right" minimumFontSize="17" id="HQ3-hg-WpE" userLabel="Code Text Field">
-                    <rect key="frame" x="139" y="87" width="167" height="30"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" id="HQ3-hg-WpE" userLabel="Name Text Field">
+                    <rect key="frame" x="143" y="84" width="167" height="36"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="textColor" red="0.1450980392" green="0.1450980392" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                    <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" returnKeyType="done"/>
+                    <connections>
+                        <action selector="nameTextFieldEditingChanged:" destination="-1" eventType="editingChanged" id="Mua-oK-6B0"/>
+                        <outlet property="delegate" destination="-1" id="N3H-ed-Fai"/>
+                    </connections>
                 </textField>
                 <view contentMode="scaleToFill" id="XWH-n3-azm" customClass="MRSeparatorView">
-                    <rect key="frame" x="15" y="131" width="305" height="1"/>
+                    <rect key="frame" x="15" y="120" width="305" height="1"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.80784313730000001" green="0.80784313730000001" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                 </view>

@@ -9,7 +9,9 @@
                 <userDefinedRuntimeAttribute type="string" keyPath="analyticTitle" value="Phone"/>
             </userDefinedRuntimeAttributes>
             <connections>
+                <outlet property="detailsLabel" destination="fSD-Sk-EGY" id="cPz-SL-TTZ"/>
                 <outlet property="phoneTextField" destination="9HP-yN-b4V" id="cj5-5h-OOd"/>
+                <outlet property="phoneTitleLabel" destination="RBk-7r-wsn" id="I56-M8-OcL"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -19,15 +21,15 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Россия (+7)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RBk-7r-wsn" userLabel="Country Code Label">
-                    <rect key="frame" x="15" y="92" width="99" height="21"/>
+                    <rect key="frame" x="15" y="84" width="100" height="36"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="(000) 000-00-00" textAlignment="right" minimumFontSize="17" id="9HP-yN-b4V" userLabel="Phone Text Field">
-                    <rect key="frame" x="139" y="88" width="167" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <rect key="frame" x="140" y="84" width="170" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                     <color key="textColor" red="0.14509803921568626" green="0.14509803921568626" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                     <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
@@ -38,7 +40,7 @@
                     </connections>
                 </textField>
                 <view contentMode="scaleToFill" id="GiG-cL-gwL" customClass="MRSeparatorView">
-                    <rect key="frame" x="15" y="132" width="305" height="1"/>
+                    <rect key="frame" x="15" y="120" width="305" height="1"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.80784313725490198" green="0.80784313725490198" blue="0.80784313725490198" alpha="1" colorSpace="calibratedRGB"/>
                 </view>

@@ -29,6 +29,8 @@ typedef NS_ENUM(NSInteger, MRMarketolisManagerState) {
 
 - (NSOperation *)loginByPhoneNumber:(int64_t )number callback:(MRManagerCallback)callback;
 - (NSOperation *)confirmByCode:(NSString *)code callback:(MRManagerCallback)callback;
+- (NSOperation *)resendCodeCallback:(MRManagerCallback)callback;
+- (NSOperation *)completeWithName:(NSString *)name callback:(MRManagerCallback)callback;
 - (void)logout;
 
 + (MRMarketolisManager *)sharedManager;

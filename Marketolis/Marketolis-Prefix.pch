@@ -13,12 +13,23 @@
     #import <Foundation/Foundation.h>
 
     #define MR_IS_IPHONE_5 (fabs((double)[UIScreen mainScreen].bounds.size.height - (double)568) < DBL_EPSILON)
+
     #define MR_RGB(r, g, b) [UIColor colorWithRed:(r)/255.f green:(g)/255.f blue:(b)/255.f alpha:1.f]
     #define MR_RGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.f green:(g)/255.f blue:(b)/255.f alpha:(a)]
+
+    #define MR_SET_FRAME_X(v, ox) {CGRect frame = [(v) frame]; frame.origin.x = (ox); [(v) setFrame:frame];}
+    #define MR_SET_FRAME_Y(v, oy) {CGRect frame = [(v) frame]; frame.origin.y = (oy); [(v) setFrame:frame];}
+    #define MR_SET_FRAME_WIDTH(v, w) {CGRect frame = [(v) frame]; frame.size.width = (w); [(v) setFrame:frame];}
+    #define MR_SET_FRAME_HEIGHT(v, h) {CGRect frame = [(v) frame]; frame.size.height = (h); [(v) setFrame:frame];}
+    #define MR_SET_FRAME_ORIGIN(v, or) {CGRect frame = [(v) frame]; frame.origin = (or); [(v) setFrame:frame];}
+    #define MR_SET_FRAME_SIZE(v, si) {CGRect frame = [(v) frame]; frame.size = (si); [(v) setFrame:frame];}
+    #define MR_SET_CENTER_X(v, cx) {CGPoint center = [(v) center]; center.x = (cx); [(v) setCenter:center];}
+    #define MR_SET_CENTER_Y(v, cy) {CGPoint center = [(v) center]; center.y = (cy); [(v) setCenter:center];}
 
     #import "Marketolis.h"
     #import "MRMarketolisManager.h"
     #import "MRUserDefaults.h"
+    #import "MRAppDelegate.h"
 
     #import "MRViewController.h"
     #import "MRTableViewController.h"

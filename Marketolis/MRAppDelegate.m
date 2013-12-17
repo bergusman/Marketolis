@@ -110,15 +110,21 @@
 }
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken  {
-    //[MRMarketolisManager sharedManager].pushToken =
+    NSString *deviceTokenString = [[[deviceToken description] componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"< >"]] componentsJoinedByString:@""];
+    [MRMarketolisManager sharedManager].pushToken = deviceTokenString;
 }
 
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
-    
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult result))completionHandler {
     
+}
+
+#pragma mark - Singleton
+
++ (MRAppDelegate *)sharedDelegate {
+    return (MRAppDelegate *)[UIApplication sharedApplication].delegate;
 }
 
 @end

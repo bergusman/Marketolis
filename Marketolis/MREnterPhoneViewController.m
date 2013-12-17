@@ -17,7 +17,10 @@
 @property (strong, nonatomic) UIBarButtonItem *nextBarButtonItem;
 @property (strong, nonatomic) UIBarButtonItem *spinnerBarButtonItem;
 
+@property (weak, nonatomic) IBOutlet UILabel *phoneTitleLabel;
 @property (weak, nonatomic) IBOutlet UITextField *phoneTextField;
+
+@property (weak, nonatomic) IBOutlet UILabel *detailsLabel;
 
 @property (strong ,nonatomic) NSOperation *loginOperation;
 
@@ -46,6 +49,19 @@
     [spinner sizeToFit];
     [spinner startAnimating];
     self.spinnerBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:spinner];
+}
+
+- (void)setupLocalizedText {
+    self.phoneTitleLabel.text = NSLocalizedString(@"enter.phone.phone.title", @"");
+    self.detailsLabel.text = NSLocalizedString(@"enter.phone.details", @"");
+}
+
+- (void)setupDetails {
+    if (MR_IS_IPHONE_5) {
+        MR_SET_FRAME_Y(self.detailsLabel, 220);
+    } else {
+        MR_SET_FRAME_Y(self.detailsLabel, 180);
+    }
 }
 
 #pragma mark - Content
@@ -120,6 +136,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupNavigationItem];
+    [self setupLocalizedText];
+    [self setupDetails];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

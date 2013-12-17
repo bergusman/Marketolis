@@ -36,6 +36,7 @@
 		AD06D3E317B9A3BC009C880D /* MRDialogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD06D3E217B9A3BC009C880D /* MRDialogCell.xib */; };
 		AD09832D1839026600DB18BC /* marketolis-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = AD09832B1839026600DB18BC /* marketolis-logo.png */; };
 		AD09832E1839026600DB18BC /* marketolis-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD09832C1839026600DB18BC /* marketolis-logo@2x.png */; };
+		AD258E00185DC02900125527 /* MRRPCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AD258DFF185DC02900125527 /* MRRPCClient.m */; };
 		AD38C74C17E7AB8E00831CF8 /* MRRightBubbleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD38C74B17E7AB8E00831CF8 /* MRRightBubbleCell.m */; };
 		AD38C74F17E7AB9E00831CF8 /* MRLeftBubbleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD38C74E17E7AB9E00831CF8 /* MRLeftBubbleCell.m */; };
 		AD38C75217E7ABB300831CF8 /* MRInputTextBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AD38C75117E7ABB300831CF8 /* MRInputTextBar.m */; };
@@ -194,6 +195,8 @@
 		AD06D3E217B9A3BC009C880D /* MRDialogCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRDialogCell.xib; sourceTree = "<group>"; };
 		AD09832B1839026600DB18BC /* marketolis-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "marketolis-logo.png"; path = "Resources/Images/marketolis-logo.png"; sourceTree = "<group>"; };
 		AD09832C1839026600DB18BC /* marketolis-logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "marketolis-logo@2x.png"; path = "Resources/Images/marketolis-logo@2x.png"; sourceTree = "<group>"; };
+		AD258DFE185DC02900125527 /* MRRPCClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRRPCClient.h; sourceTree = "<group>"; };
+		AD258DFF185DC02900125527 /* MRRPCClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRRPCClient.m; sourceTree = "<group>"; };
 		AD38C74A17E7AB8E00831CF8 /* MRRightBubbleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRRightBubbleCell.h; sourceTree = "<group>"; };
 		AD38C74B17E7AB8E00831CF8 /* MRRightBubbleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRRightBubbleCell.m; sourceTree = "<group>"; };
 		AD38C74D17E7AB9E00831CF8 /* MRLeftBubbleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRLeftBubbleCell.h; sourceTree = "<group>"; };
@@ -564,6 +567,15 @@
 				AD06D3E217B9A3BC009C880D /* MRDialogCell.xib */,
 			);
 			name = "Dialog Cell";
+			sourceTree = "<group>";
+		};
+		AD258DFD185DBFCA00125527 /* RPC Client */ = {
+			isa = PBXGroup;
+			children = (
+				AD258DFE185DC02900125527 /* MRRPCClient.h */,
+				AD258DFF185DC02900125527 /* MRRPCClient.m */,
+			);
+			name = "RPC Client";
 			sourceTree = "<group>";
 		};
 		AD38C74717E7AB3D00831CF8 /* Left Bubble */ = {
@@ -1006,6 +1018,7 @@
 		ADDA2EE0185A2CEB00635947 /* Marketolis Manager */ = {
 			isa = PBXGroup;
 			children = (
+				AD258DFD185DBFCA00125527 /* RPC Client */,
 				ADDA2EE1185A2D0300635947 /* MRMarketolisManager.h */,
 				ADDA2EE2185A2D0300635947 /* MRMarketolisManager.m */,
 			);
@@ -1211,6 +1224,7 @@
 				ADDA2ED9185A298600635947 /* MRPostData.m in Sources */,
 				ADDA2ED8185A298600635947 /* MRPageQuery.m in Sources */,
 				ADDA2ECA185A298600635947 /* MRImageData.m in Sources */,
+				AD258E00185DC02900125527 /* MRRPCClient.m in Sources */,
 				AD411039185635F200593D71 /* MREnterPhoneViewController.m in Sources */,
 				ADDA2EC2185A298600635947 /* MRBusinessErrorCode.m in Sources */,
 				4424BBC617B956970060CD49 /* main.m in Sources */,

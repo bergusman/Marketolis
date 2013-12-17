@@ -8,6 +8,9 @@
 
 #import "MRMarketolisManager.h"
 
+#import "MRRPCClient.h"
+#import <AFNetworking/AFNetworking.h>
+
 @interface MRMarketolisManager ()
 
 @property (readwrite, assign, nonatomic) MRMarketolisManagerState state;
@@ -18,22 +21,36 @@
 
 @property (assign, nonatomic) int64_t confirmationPhone;
 
+@property (strong, nonatomic) MRRPCClient *rpcClient;
+
 @end
 
 @implementation MRMarketolisManager
 
-- (id)init {
-    self = [super init];
+#pragma mark - Initing
+
++ (MRMarketolisManager *)marketolisManager {
+    MRRPCClient *rpcClient = [[MRRPCClient alloc] initWithDescriptor:MRMarketolisDescriptor() baseUrl:@"http://54.220.36.48/api"];
+    MRMarketolisManager *manager = [[MRMarketolisManager alloc] initWithHandler:rpcClient];
+    manager.rpcClient = rpcClient;
+    if (manager.state == MRMarketolisManagerStateWork) {
+        rpcClient.authToken = manager.token;
+    }
+    return manager;
+}
+
+- (id)initWithHandler:(id<PDInvocationHandler>)handler parentInvocation:(PDInvocation *)parent {
+    self = [super initWithHandler:handler parentInvocation:parent];
     if (self) {
         _pushToken = [MRUserDefaults sharedDefaults].pushToken;
         
         NSString *token = [MRUserDefaults sharedDefaults].token;
         NSNumber *userId = [MRUserDefaults sharedDefaults].userId;
         if (token && userId) {
-            self.token = token;
-            self.userId = [userId longLongValue];
-            self.phone = [[MRUserDefaults sharedDefaults].confirmatedPhone longLongValue];
-            self.state = MRMarketolisManagerStateWork;
+            _token = token;
+            _userId = [userId longLongValue];
+            _phone = [[MRUserDefaults sharedDefaults].confirmatedPhone longLongValue];
+            _state = MRMarketolisManagerStateWork;
         }
     }
     return self;
@@ -50,14 +67,13 @@
 - (void)setPushToken:(NSString *)pushToken {
     _pushToken = pushToken;
     [MRUserDefaults sharedDefaults].pushToken = pushToken;
+    // TODO: send token to server
 }
 
 #pragma mark - Auth
 
 - (NSOperation *)loginByPhoneNumber:(int64_t )number callback:(MRManagerCallback)callback {
     return [[self auth] loginByPhoneNumber:number callback:^(id result, NSError *error) {
-        NSLog(@"LoginByPhoneNumber: %@ %@", result, error);
-        
         if (error) {
         } else {
             self.confirmationPhone = number;
@@ -74,25 +90,51 @@
     NSString *pushToken = self.pushToken ?: @"";
     
     return [[self auth] confirmPhoneNumber:self.confirmationPhone code:code pushToken:pushToken callback:^(id result, NSError *error) {
-        NSLog(@"ConfirmPhoneNumber: %@ %@", result, error);
-        
         if (error) {
         } else {
             MRAuthResult *authResult = result;
             
-            NSLog(@"%lld, %@", authResult.userId, authResult.token);
-            NSLog(@"completed?: %d", authResult.complete);
+            self.token = authResult.token;
+            self.userId = authResult.userId;
+            self.phone = self.confirmationPhone;
+            
+            self.rpcClient.authToken = self.token;
             
             if (authResult.complete) {
-                self.token = authResult.token;
-                self.userId = authResult.userId;
-                self.phone = self.confirmationPhone;
                 [self dumpTokenAndUser];
-                
                 self.state = MRMarketolisManagerStateWork;
             } else {
                 self.state = MRMarketolisManagerStateIncomplete;
             }
+        }
+        
+        if (callback) {
+            callback(result, error);
+        }
+    }];
+}
+
+- (NSOperation *)resendCodeCallback:(MRManagerCallback)callback {
+    return [[self auth] loginByPhoneNumber:self.confirmationPhone callback:^(id result, NSError *error) {
+        if (error) {
+        } else {
+        }
+        
+        if (callback) {
+            callback(result, error);
+        }
+    }];
+}
+
+- (NSOperation *)completeWithName:(NSString *)name callback:(MRManagerCallback)callback {
+    MREditableUserData *user = [[MREditableUserData alloc] init];
+    user.name = name;
+    
+    return [[self users] updateId:self.userId data:user callback:^(id result, NSError *error) {
+        if (error) {
+        } else {
+            [self dumpTokenAndUser];
+            self.state = MRMarketolisManagerStateWork;
         }
         
         if (callback) {
@@ -106,14 +148,13 @@
     self.state = MRMarketolisManagerStateNone;
 }
 
-#pragma mark - Singletons
+#pragma mark - Singleton
 
 + (MRMarketolisManager *)sharedManager {
     static MRMarketolisManager *_sharedManager;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        PDRpcClient *rpcClient = [[PDRpcClient alloc] initWithDescriptor:MRMarketolisDescriptor() baseUrl:@"http://54.220.36.48/api"];
-        _sharedManager = [[MRMarketolisManager alloc] initWithHandler:rpcClient];
+        _sharedManager = [self marketolisManager];
     });
     return _sharedManager;
 }

@@ -93,6 +93,15 @@
 
 // Enter
 "enter.phone.title" = "Вход";
+"enter.phone.phone.title" = "Россия (+7)";
+"enter.phone.details" = "Код доступа будет высла в СМС";
+
 "enter.confirm.title" = "Подтверждение";
+"enter.confirm.code.title" = "Код доступа";
+"enter.confirm.details" = "Если вы не получили код в течение\n60 секунд, нажмите кнопку «Повторить»";
+"enter.confirm.resend.button" = "Переотправить";
+
+"enter.name.title" = "Профль";
+"enter.name.name.title" = "Имя";
 
 "enter.next" = "Далее";
