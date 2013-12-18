@@ -2,14 +2,15 @@
 
 #import <Foundation/Foundation.h>
 #import "PDef.h"
+#import "MRInboxThreadType.h"
 @class MRMessageData;
 
 
-@interface MRDialogData : PDMessage
+@interface MRInboxThreadData : PDMessage
 @property (nonatomic) int64_t id;
 @property (nonatomic) NSDate *time;
+@property (nonatomic) MRInboxThreadType type;
 @property (nonatomic) int32_t unread;
-@property (nonatomic) BOOL deleted;
 @property (nonatomic) int64_t postId;
 @property (nonatomic) NSSet *memberIds;
 @property (nonatomic) MRMessageData *lastMessage;
@@ -20,11 +21,11 @@
 - (BOOL) hasTime;
 - (void) clearTime;
 
+- (BOOL) hasType;
+- (void) clearType;
+
 - (BOOL) hasUnread;
 - (void) clearUnread;
-
-- (BOOL) hasDeleted;
-- (void) clearDeleted;
 
 - (BOOL) hasPostId;
 - (void) clearPostId;

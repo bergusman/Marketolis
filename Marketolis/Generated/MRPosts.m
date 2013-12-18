@@ -10,6 +10,7 @@
 #import "MRPostData.h"
 #import "MRPostData.h"
 #import "MRPageQuery.h"
+#import "MRPostImages.h"
 
 
 #pragma mark MRPosts client
@@ -71,18 +72,23 @@
                          }];
     return [self.handler handleInvocation:_invocation callback:callback];
 }
-- (NSOperation *) postsUserId:(int64_t )userId
+- (NSOperation *) queryUserId:(int64_t )userId
         page:(MRPageQuery *)page
-        state:(MRPostState )state
         callback:(void (^)(id result, NSError *error))callback {
     PDInvocation *_invocation = [self
-            captureInvocation:[self getMethodForName:@"posts"]
+            captureInvocation:[self getMethodForName:@"query"]
                          args:@{
                                  @"userId" :@(userId),
                                  @"page" :page,
-                                 @"state" :@(state),
                          }];
     return [self.handler handleInvocation:_invocation callback:callback];
+}
+- (id<MRPostImages> ) images {
+    PDInvocation *_invocation = [self
+            captureInvocation:[self getMethodForName:@"images"]
+                         args:@{
+                         }];
+    return [[MRPostImagesClient alloc] initWithHandler: self.handler parentInvocation:_invocation];
 }
 
 - (PDMethodDescriptor *)getMethodForName:(NSString *)name {
@@ -145,13 +151,17 @@ PDInterfaceDescriptor *MRPostsDescriptor() {
                         ]
                      post:YES],
      [[PDMethodDescriptor alloc]
-             initWithName:@"posts"
+             initWithName:@"query"
            resultSupplier:^PDDescriptor *() { return [PDDescriptors listWithElement:[MRPostData typeDescriptor]]; }
                      args:@[
            [[PDArgumentDescriptor alloc] initWithName:@"userId" type: [PDDescriptors int64] post:NO query:NO],
-           [[PDArgumentDescriptor alloc] initWithName:@"page" type: [MRPageQuery typeDescriptor] post:NO query:NO],
-           [[PDArgumentDescriptor alloc] initWithName:@"state" type: MRPostStateDescriptor() post:NO query:NO],
+           [[PDArgumentDescriptor alloc] initWithName:@"page" type: [MRPageQuery typeDescriptor] post:NO query:YES],
                         ]
+                     post:NO],
+     [[PDMethodDescriptor alloc]
+             initWithName:@"images"
+           resultSupplier:^PDDescriptor *() { return MRPostImagesDescriptor(); }
+                     args:@[]
                      post:NO],
                          ]];
     });

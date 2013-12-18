@@ -3,6 +3,8 @@
 #import "MRPostData.h"
 #import "MREditablePostData.h"
 #import "MRLocation.h"
+#import "MRImageData.h"
+#import "MRImageData.h"
 
 
 @implementation MRPostData {
@@ -10,6 +12,8 @@
     BOOL _userId_isset;
     BOOL _createdAt_isset;
     BOOL _state_isset;
+    BOOL _titleImage_isset;
+    BOOL _images_isset;
 }
 static PDMessageDescriptor *_MRPostDataDescriptor;
 
@@ -48,13 +52,13 @@ static PDMessageDescriptor *_MRPostDataDescriptor;
     return _createdAt_isset;
 }
 
-- (void)setCreatedAt:(int64_t )createdAt {
+- (void)setCreatedAt:(NSDate *)createdAt {
     _createdAt = createdAt;
     _createdAt_isset = YES;
 }
 
 - (void)clearCreatedAt {
-    _createdAt = 0L;
+    _createdAt = nil;
     _createdAt_isset = NO;
 }
 
@@ -71,6 +75,36 @@ static PDMessageDescriptor *_MRPostDataDescriptor;
 - (void)clearState {
     _state = 0;
     _state_isset = NO;
+}
+
+// titleImage
+- (BOOL)hasTitleImage {
+    return _titleImage_isset;
+}
+
+- (void)setTitleImage:(MRImageData *)titleImage {
+    _titleImage = titleImage;
+    _titleImage_isset = YES;
+}
+
+- (void)clearTitleImage {
+    _titleImage = nil;
+    _titleImage_isset = NO;
+}
+
+// images
+- (BOOL)hasImages {
+    return _images_isset;
+}
+
+- (void)setImages:(NSArray *)images {
+    _images = images;
+    _images_isset = YES;
+}
+
+- (void)clearImages {
+    _images = nil;
+    _images_isset = NO;
 }
 
 
@@ -95,8 +129,10 @@ static PDMessageDescriptor *_MRPostDataDescriptor;
                    fields:@[
     [[PDFieldDescriptor alloc] initWithName:@"id" typeSupplier:^PDDataTypeDescriptor *() { return [PDDescriptors int64]; } discriminator:NO],
     [[PDFieldDescriptor alloc] initWithName:@"userId" typeSupplier:^PDDataTypeDescriptor *() { return [PDDescriptors int64]; } discriminator:NO],
-    [[PDFieldDescriptor alloc] initWithName:@"createdAt" typeSupplier:^PDDataTypeDescriptor *() { return [PDDescriptors int64]; } discriminator:NO],
+    [[PDFieldDescriptor alloc] initWithName:@"createdAt" typeSupplier:^PDDataTypeDescriptor *() { return [PDDescriptors datetime]; } discriminator:NO],
     [[PDFieldDescriptor alloc] initWithName:@"state" typeSupplier:^PDDataTypeDescriptor *() { return MRPostStateDescriptor(); } discriminator:NO],
+    [[PDFieldDescriptor alloc] initWithName:@"titleImage" typeSupplier:^PDDataTypeDescriptor *() { return [MRImageData typeDescriptor]; } discriminator:NO],
+    [[PDFieldDescriptor alloc] initWithName:@"images" typeSupplier:^PDDataTypeDescriptor *() { return [PDDescriptors listWithElement:[MRImageData typeDescriptor]]; } discriminator:NO],
                            ]];
 }
 @end

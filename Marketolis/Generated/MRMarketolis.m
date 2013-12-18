@@ -3,6 +3,8 @@
 #import "MRMarketolis.h"
 #import "MRMarketolisException.h"
 #import "MRAuth.h"
+#import "MRBlockLists.h"
+#import "MRFavorites.h"
 #import "MRMessages.h"
 #import "MRPosts.h"
 #import "MRSearch.h"
@@ -18,6 +20,20 @@
                          args:@{
                          }];
     return [[MRAuthClient alloc] initWithHandler: self.handler parentInvocation:_invocation];
+}
+- (id<MRBlockLists> ) blockLists {
+    PDInvocation *_invocation = [self
+            captureInvocation:[self getMethodForName:@"blockLists"]
+                         args:@{
+                         }];
+    return [[MRBlockListsClient alloc] initWithHandler: self.handler parentInvocation:_invocation];
+}
+- (id<MRFavorites> ) favorites {
+    PDInvocation *_invocation = [self
+            captureInvocation:[self getMethodForName:@"favorites"]
+                         args:@{
+                         }];
+    return [[MRFavoritesClient alloc] initWithHandler: self.handler parentInvocation:_invocation];
 }
 - (id<MRMessages> ) messages {
     PDInvocation *_invocation = [self
@@ -67,6 +83,16 @@ PDInterfaceDescriptor *MRMarketolisDescriptor() {
      [[PDMethodDescriptor alloc]
              initWithName:@"auth"
            resultSupplier:^PDDescriptor *() { return MRAuthDescriptor(); }
+                     args:@[]
+                     post:NO],
+     [[PDMethodDescriptor alloc]
+             initWithName:@"blockLists"
+           resultSupplier:^PDDescriptor *() { return MRBlockListsDescriptor(); }
+                     args:@[]
+                     post:NO],
+     [[PDMethodDescriptor alloc]
+             initWithName:@"favorites"
+           resultSupplier:^PDDescriptor *() { return MRFavoritesDescriptor(); }
                      args:@[]
                      post:NO],
      [[PDMethodDescriptor alloc]

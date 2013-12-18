@@ -4,55 +4,47 @@
 #import "PDef.h"
 @class MRMessageData;
 @class MRMessageData;
-@class MRPageQuery;
-@class MRDialogListData;
-#import "MRDialogListType.h"
-@class MRDialogListData;
-@class MRDialogData;
-@class MRDialogData;
-#import "MRDialogListType.h"
+@class MRInboxData;
+@class MRInboxThreadData;
+@class MRInboxThreadData;
 @class MRPageQuery;
 @class MRMessageData;
+@class MRPageQuery;
 
 
 @protocol MRMessages
-/** Sends a message to a dialog. */
-- (NSOperation *) sendDialogId:(int64_t )dialogId
+/** Sends a message to a thread. */
+- (NSOperation *) sendThreadId:(int64_t )threadId
         text:(NSString *)text
-            callback:(void (^)(id result, NSError *error))callback;
-
-/** Returns a list of messages. */
-- (NSOperation *) messagesDialogId:(int64_t )dialogId
-        page:(MRPageQuery *)page
-            callback:(void (^)(id result, NSError *error))callback;
-
-/** Returns a user dialog list by its type. */
-- (NSOperation *) dialogListType:(MRDialogListType )type
-            callback:(void (^)(id result, NSError *error))callback;
-
-/** Returns all user dialog lists. */
-- (NSOperation *) dialogListsCallback:(void (^)(id result, NSError *error))response;
-
-/** Returns a dialog by id. */
-- (NSOperation *) dialogId:(int64_t )id
-            callback:(void (^)(id result, NSError *error))callback;
-
-/** Returns a user dialogs in a list. */
-- (NSOperation *) dialogsType:(MRDialogListType )type
-        page:(MRPageQuery *)page
-            callback:(void (^)(id result, NSError *error))callback;
-
-/** Mark a dialog as read. */
-- (NSOperation *) markDialogAsReadDialogId:(int64_t )dialogId
-            callback:(void (^)(id result, NSError *error))callback;
-
-/** Delete a dialog by its id. */
-- (NSOperation *) deleteDialogDialogId:(int64_t )dialogId
             callback:(void (^)(id result, NSError *error))callback;
 
 /** Sends a message to a post (to a post author). */
-- (NSOperation *) sendPostMessagePostId:(int64_t )postId
+- (NSOperation *) sendToPostPostId:(int64_t )postId
         text:(NSString *)text
+            callback:(void (^)(id result, NSError *error))callback;
+
+/** Returns a user inbox. */
+- (NSOperation *) inboxCallback:(void (^)(id result, NSError *error))response;
+
+/** Returns a thread by id. */
+- (NSOperation *) threadId:(int64_t )id
+            callback:(void (^)(id result, NSError *error))callback;
+
+/** Returns user threads in his inbox. */
+- (NSOperation *) threadsPage:(MRPageQuery *)page
+            callback:(void (^)(id result, NSError *error))callback;
+
+/** Returns thread messages. */
+- (NSOperation *) messagesThreadId:(int64_t )threadId
+        page:(MRPageQuery *)page
+            callback:(void (^)(id result, NSError *error))callback;
+
+/** Mark a thread as read. */
+- (NSOperation *) markThreadAsReadThreadId:(int64_t )threadId
+            callback:(void (^)(id result, NSError *error))callback;
+
+/** Delete a thread by its id. */
+- (NSOperation *) deleteThreadThreadId:(int64_t )threadId
             callback:(void (^)(id result, NSError *error))callback;
 
 @end

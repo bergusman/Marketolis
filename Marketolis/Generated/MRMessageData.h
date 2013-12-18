@@ -7,7 +7,7 @@
 @interface MRMessageData : PDMessage
 @property (nonatomic) int64_t id;
 @property (nonatomic) int64_t userId;
-@property (nonatomic) int64_t dialogId;
+@property (nonatomic) int64_t threadId;
 @property (nonatomic) NSDate *time;
 @property (nonatomic) NSString *text;
 
@@ -17,8 +17,8 @@
 - (BOOL) hasUserId;
 - (void) clearUserId;
 
-- (BOOL) hasDialogId;
-- (void) clearDialogId;
+- (BOOL) hasThreadId;
+- (void) clearThreadId;
 
 - (BOOL) hasTime;
 - (void) clearTime;

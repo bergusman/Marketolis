@@ -11,11 +11,11 @@
 @class MRPostData;
 @class MRPostData;
 @class MRPageQuery;
-#import "MRPostState.h"
+@protocol MRPostImages;
 
 
 @protocol MRPosts
-/** Returns a post. */
+/** Returns a post with images. */
 - (NSOperation *) getId:(int64_t )id
             callback:(void (^)(id result, NSError *error))callback;
 
@@ -41,10 +41,12 @@
             callback:(void (^)(id result, NSError *error))callback;
 
 /** Returns a list of user posts. */
-- (NSOperation *) postsUserId:(int64_t )userId
+- (NSOperation *) queryUserId:(int64_t )userId
         page:(MRPageQuery *)page
-        state:(MRPostState )state
             callback:(void (^)(id result, NSError *error))callback;
+
+/** Returns post images interface. */
+- (id<MRPostImages> ) images;
 
 @end
 

@@ -4,6 +4,8 @@
 #import "PDef.h"
 @class MRMarketolisException;
 @protocol MRAuth;
+@protocol MRBlockLists;
+@protocol MRFavorites;
 @protocol MRMessages;
 @protocol MRPosts;
 @protocol MRSearch;
@@ -13,6 +15,12 @@
 @protocol MRMarketolis
 /** Login and sign up. */
 - (id<MRAuth> ) auth;
+
+/** Block lists. */
+- (id<MRBlockLists> ) blockLists;
+
+/** Favorite posts. */
+- (id<MRFavorites> ) favorites;
 
 /** Post dialogs and messages. */
 - (id<MRMessages> ) messages;

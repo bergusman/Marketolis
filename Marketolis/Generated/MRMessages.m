@@ -3,102 +3,90 @@
 #import "MRMessages.h"
 #import "MRMessageData.h"
 #import "MRMessageData.h"
-#import "MRPageQuery.h"
-#import "MRDialogListData.h"
-#import "MRDialogListData.h"
-#import "MRDialogData.h"
-#import "MRDialogData.h"
+#import "MRInboxData.h"
+#import "MRInboxThreadData.h"
+#import "MRInboxThreadData.h"
 #import "MRPageQuery.h"
 #import "MRMessageData.h"
+#import "MRPageQuery.h"
 
 
 #pragma mark MRMessages client
 @implementation MRMessagesClient
 
-- (NSOperation *) sendDialogId:(int64_t )dialogId
+- (NSOperation *) sendThreadId:(int64_t )threadId
         text:(NSString *)text
         callback:(void (^)(id result, NSError *error))callback {
     PDInvocation *_invocation = [self
             captureInvocation:[self getMethodForName:@"send"]
                          args:@{
-                                 @"dialogId" :@(dialogId),
+                                 @"threadId" :@(threadId),
                                  @"text" :text,
                          }];
     return [self.handler handleInvocation:_invocation callback:callback];
 }
-- (NSOperation *) messagesDialogId:(int64_t )dialogId
-        page:(MRPageQuery *)page
+- (NSOperation *) sendToPostPostId:(int64_t )postId
+        text:(NSString *)text
         callback:(void (^)(id result, NSError *error))callback {
     PDInvocation *_invocation = [self
-            captureInvocation:[self getMethodForName:@"messages"]
+            captureInvocation:[self getMethodForName:@"sendToPost"]
                          args:@{
-                                 @"dialogId" :@(dialogId),
-                                 @"page" :page,
+                                 @"postId" :@(postId),
+                                 @"text" :text,
                          }];
     return [self.handler handleInvocation:_invocation callback:callback];
 }
-- (NSOperation *) dialogListType:(MRDialogListType )type
-        callback:(void (^)(id result, NSError *error))callback {
+- (NSOperation *) inboxCallback:(void (^)(id result, NSError *error))callback {
     PDInvocation *_invocation = [self
-            captureInvocation:[self getMethodForName:@"dialogList"]
-                         args:@{
-                                 @"type" :@(type),
-                         }];
-    return [self.handler handleInvocation:_invocation callback:callback];
-}
-- (NSOperation *) dialogListsCallback:(void (^)(id result, NSError *error))callback {
-    PDInvocation *_invocation = [self
-            captureInvocation:[self getMethodForName:@"dialogLists"]
+            captureInvocation:[self getMethodForName:@"inbox"]
                          args:@{
                          }];
     return [self.handler handleInvocation:_invocation callback:callback];
 }
-- (NSOperation *) dialogId:(int64_t )id
+- (NSOperation *) threadId:(int64_t )id
         callback:(void (^)(id result, NSError *error))callback {
     PDInvocation *_invocation = [self
-            captureInvocation:[self getMethodForName:@"dialog"]
+            captureInvocation:[self getMethodForName:@"thread"]
                          args:@{
                                  @"id" :@(id),
                          }];
     return [self.handler handleInvocation:_invocation callback:callback];
 }
-- (NSOperation *) dialogsType:(MRDialogListType )type
-        page:(MRPageQuery *)page
+- (NSOperation *) threadsPage:(MRPageQuery *)page
         callback:(void (^)(id result, NSError *error))callback {
     PDInvocation *_invocation = [self
-            captureInvocation:[self getMethodForName:@"dialogs"]
+            captureInvocation:[self getMethodForName:@"threads"]
                          args:@{
-                                 @"type" :@(type),
                                  @"page" :page,
                          }];
     return [self.handler handleInvocation:_invocation callback:callback];
 }
-- (NSOperation *) markDialogAsReadDialogId:(int64_t )dialogId
+- (NSOperation *) messagesThreadId:(int64_t )threadId
+        page:(MRPageQuery *)page
         callback:(void (^)(id result, NSError *error))callback {
     PDInvocation *_invocation = [self
-            captureInvocation:[self getMethodForName:@"markDialogAsRead"]
+            captureInvocation:[self getMethodForName:@"messages"]
                          args:@{
-                                 @"dialogId" :@(dialogId),
+                                 @"threadId" :@(threadId),
+                                 @"page" :page,
                          }];
     return [self.handler handleInvocation:_invocation callback:callback];
 }
-- (NSOperation *) deleteDialogDialogId:(int64_t )dialogId
+- (NSOperation *) markThreadAsReadThreadId:(int64_t )threadId
         callback:(void (^)(id result, NSError *error))callback {
     PDInvocation *_invocation = [self
-            captureInvocation:[self getMethodForName:@"deleteDialog"]
+            captureInvocation:[self getMethodForName:@"markThreadAsRead"]
                          args:@{
-                                 @"dialogId" :@(dialogId),
+                                 @"threadId" :@(threadId),
                          }];
     return [self.handler handleInvocation:_invocation callback:callback];
 }
-- (NSOperation *) sendPostMessagePostId:(int64_t )postId
-        text:(NSString *)text
+- (NSOperation *) deleteThreadThreadId:(int64_t )threadId
         callback:(void (^)(id result, NSError *error))callback {
     PDInvocation *_invocation = [self
-            captureInvocation:[self getMethodForName:@"sendPostMessage"]
+            captureInvocation:[self getMethodForName:@"deleteThread"]
                          args:@{
-                                 @"postId" :@(postId),
-                                 @"text" :text,
+                                 @"threadId" :@(threadId),
                          }];
     return [self.handler handleInvocation:_invocation callback:callback];
 }
@@ -123,65 +111,57 @@ PDInterfaceDescriptor *MRMessagesDescriptor() {
              initWithName:@"send"
            resultSupplier:^PDDescriptor *() { return [MRMessageData typeDescriptor]; }
                      args:@[
-           [[PDArgumentDescriptor alloc] initWithName:@"dialogId" type: [PDDescriptors int64] post:NO query:NO],
+           [[PDArgumentDescriptor alloc] initWithName:@"threadId" type: [PDDescriptors int64] post:NO query:NO],
            [[PDArgumentDescriptor alloc] initWithName:@"text" type: [PDDescriptors string] post:YES query:NO],
                         ]
                      post:YES],
      [[PDMethodDescriptor alloc]
-             initWithName:@"messages"
-           resultSupplier:^PDDescriptor *() { return [PDDescriptors listWithElement:[MRMessageData typeDescriptor]]; }
+             initWithName:@"sendToPost"
+           resultSupplier:^PDDescriptor *() { return [MRMessageData typeDescriptor]; }
                      args:@[
-           [[PDArgumentDescriptor alloc] initWithName:@"dialogId" type: [PDDescriptors int64] post:NO query:NO],
-           [[PDArgumentDescriptor alloc] initWithName:@"page" type: [MRPageQuery typeDescriptor] post:NO query:YES],
+           [[PDArgumentDescriptor alloc] initWithName:@"postId" type: [PDDescriptors int64] post:NO query:NO],
+           [[PDArgumentDescriptor alloc] initWithName:@"text" type: [PDDescriptors string] post:YES query:NO],
                         ]
-                     post:NO],
+                     post:YES],
      [[PDMethodDescriptor alloc]
-             initWithName:@"dialogList"
-           resultSupplier:^PDDescriptor *() { return [MRDialogListData typeDescriptor]; }
-                     args:@[
-           [[PDArgumentDescriptor alloc] initWithName:@"type" type: MRDialogListTypeDescriptor() post:NO query:NO],
-                        ]
-                     post:NO],
-     [[PDMethodDescriptor alloc]
-             initWithName:@"dialogLists"
-           resultSupplier:^PDDescriptor *() { return [PDDescriptors listWithElement:[MRDialogListData typeDescriptor]]; }
+             initWithName:@"inbox"
+           resultSupplier:^PDDescriptor *() { return [MRInboxData typeDescriptor]; }
                      args:@[]
                      post:NO],
      [[PDMethodDescriptor alloc]
-             initWithName:@"dialog"
-           resultSupplier:^PDDescriptor *() { return [MRDialogData typeDescriptor]; }
+             initWithName:@"thread"
+           resultSupplier:^PDDescriptor *() { return [MRInboxThreadData typeDescriptor]; }
                      args:@[
            [[PDArgumentDescriptor alloc] initWithName:@"id" type: [PDDescriptors int64] post:NO query:NO],
                         ]
                      post:NO],
      [[PDMethodDescriptor alloc]
-             initWithName:@"dialogs"
-           resultSupplier:^PDDescriptor *() { return [PDDescriptors listWithElement:[MRDialogData typeDescriptor]]; }
+             initWithName:@"threads"
+           resultSupplier:^PDDescriptor *() { return [PDDescriptors listWithElement:[MRInboxThreadData typeDescriptor]]; }
                      args:@[
-           [[PDArgumentDescriptor alloc] initWithName:@"type" type: MRDialogListTypeDescriptor() post:NO query:YES],
            [[PDArgumentDescriptor alloc] initWithName:@"page" type: [MRPageQuery typeDescriptor] post:NO query:YES],
                         ]
                      post:NO],
      [[PDMethodDescriptor alloc]
-             initWithName:@"markDialogAsRead"
+             initWithName:@"messages"
+           resultSupplier:^PDDescriptor *() { return [PDDescriptors listWithElement:[MRMessageData typeDescriptor]]; }
+                     args:@[
+           [[PDArgumentDescriptor alloc] initWithName:@"threadId" type: [PDDescriptors int64] post:NO query:NO],
+           [[PDArgumentDescriptor alloc] initWithName:@"page" type: [MRPageQuery typeDescriptor] post:NO query:YES],
+                        ]
+                     post:NO],
+     [[PDMethodDescriptor alloc]
+             initWithName:@"markThreadAsRead"
            resultSupplier:^PDDescriptor *() { return [PDDescriptors void0]; }
                      args:@[
-           [[PDArgumentDescriptor alloc] initWithName:@"dialogId" type: [PDDescriptors int64] post:NO query:NO],
+           [[PDArgumentDescriptor alloc] initWithName:@"threadId" type: [PDDescriptors int64] post:NO query:NO],
                         ]
                      post:YES],
      [[PDMethodDescriptor alloc]
-             initWithName:@"deleteDialog"
+             initWithName:@"deleteThread"
            resultSupplier:^PDDescriptor *() { return [PDDescriptors void0]; }
                      args:@[
-           [[PDArgumentDescriptor alloc] initWithName:@"dialogId" type: [PDDescriptors int64] post:NO query:NO],
-                        ]
-                     post:YES],
-     [[PDMethodDescriptor alloc]
-             initWithName:@"sendPostMessage"
-           resultSupplier:^PDDescriptor *() { return [MRMessageData typeDescriptor]; }
-                     args:@[
-           [[PDArgumentDescriptor alloc] initWithName:@"postId" type: [PDDescriptors int64] post:NO query:NO],
-           [[PDArgumentDescriptor alloc] initWithName:@"text" type: [PDDescriptors string] post:YES query:NO],
+           [[PDArgumentDescriptor alloc] initWithName:@"threadId" type: [PDDescriptors int64] post:NO query:NO],
                         ]
                      post:YES],
                          ]];

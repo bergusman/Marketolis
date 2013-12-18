@@ -100,12 +100,13 @@
     
     [self registerForRemoteNotifications];
     
+    
     if ([MRMarketolisManager sharedManager].state == MRMarketolisManagerStateWork) {
         [self showApp];
     } else {
         [self showWelcome];
     }
-    
+     
     return YES;
 }
 

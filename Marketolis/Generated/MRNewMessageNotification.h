@@ -8,7 +8,7 @@
 
 @interface MRNewMessageNotification : MRNotification
 @property (nonatomic) int64_t userId;
-@property (nonatomic) int64_t dialogId;
+@property (nonatomic) int64_t threadId;
 @property (nonatomic) int64_t messageId;
 @property (nonatomic) NSString *locUserName;
 @property (nonatomic) NSString *locText;
@@ -16,8 +16,8 @@
 - (BOOL) hasUserId;
 - (void) clearUserId;
 
-- (BOOL) hasDialogId;
-- (void) clearDialogId;
+- (BOOL) hasThreadId;
+- (void) clearThreadId;
 
 - (BOOL) hasMessageId;
 - (void) clearMessageId;

@@ -6,7 +6,7 @@
 @implementation MRMessageData {
     BOOL _id_isset;
     BOOL _userId_isset;
-    BOOL _dialogId_isset;
+    BOOL _threadId_isset;
     BOOL _time_isset;
     BOOL _text_isset;
 }
@@ -42,19 +42,19 @@ static PDMessageDescriptor *_MRMessageDataDescriptor;
     _userId_isset = NO;
 }
 
-// dialogId
-- (BOOL)hasDialogId {
-    return _dialogId_isset;
+// threadId
+- (BOOL)hasThreadId {
+    return _threadId_isset;
 }
 
-- (void)setDialogId:(int64_t )dialogId {
-    _dialogId = dialogId;
-    _dialogId_isset = YES;
+- (void)setThreadId:(int64_t )threadId {
+    _threadId = threadId;
+    _threadId_isset = YES;
 }
 
-- (void)clearDialogId {
-    _dialogId = 0L;
-    _dialogId_isset = NO;
+- (void)clearThreadId {
+    _threadId = 0L;
+    _threadId_isset = NO;
 }
 
 // time
@@ -109,7 +109,7 @@ static PDMessageDescriptor *_MRMessageDataDescriptor;
                    fields:@[
     [[PDFieldDescriptor alloc] initWithName:@"id" typeSupplier:^PDDataTypeDescriptor *() { return [PDDescriptors int64]; } discriminator:NO],
     [[PDFieldDescriptor alloc] initWithName:@"userId" typeSupplier:^PDDataTypeDescriptor *() { return [PDDescriptors int64]; } discriminator:NO],
-    [[PDFieldDescriptor alloc] initWithName:@"dialogId" typeSupplier:^PDDataTypeDescriptor *() { return [PDDescriptors int64]; } discriminator:NO],
+    [[PDFieldDescriptor alloc] initWithName:@"threadId" typeSupplier:^PDDataTypeDescriptor *() { return [PDDescriptors int64]; } discriminator:NO],
     [[PDFieldDescriptor alloc] initWithName:@"time" typeSupplier:^PDDataTypeDescriptor *() { return [PDDescriptors datetime]; } discriminator:NO],
     [[PDFieldDescriptor alloc] initWithName:@"text" typeSupplier:^PDDataTypeDescriptor *() { return [PDDescriptors string]; } discriminator:NO],
                            ]];

@@ -6,7 +6,7 @@
 
 @implementation MRNewMessageNotification {
     BOOL _userId_isset;
-    BOOL _dialogId_isset;
+    BOOL _threadId_isset;
     BOOL _messageId_isset;
     BOOL _locUserName_isset;
     BOOL _locText_isset;
@@ -35,19 +35,19 @@ static PDMessageDescriptor *_MRNewMessageNotificationDescriptor;
     _userId_isset = NO;
 }
 
-// dialogId
-- (BOOL)hasDialogId {
-    return _dialogId_isset;
+// threadId
+- (BOOL)hasThreadId {
+    return _threadId_isset;
 }
 
-- (void)setDialogId:(int64_t )dialogId {
-    _dialogId = dialogId;
-    _dialogId_isset = YES;
+- (void)setThreadId:(int64_t )threadId {
+    _threadId = threadId;
+    _threadId_isset = YES;
 }
 
-- (void)clearDialogId {
-    _dialogId = 0L;
-    _dialogId_isset = NO;
+- (void)clearThreadId {
+    _threadId = 0L;
+    _threadId_isset = NO;
 }
 
 // messageId
@@ -116,7 +116,7 @@ static PDMessageDescriptor *_MRNewMessageNotificationDescriptor;
          subtypeSuppliers:@[]
                    fields:@[
     [[PDFieldDescriptor alloc] initWithName:@"userId" typeSupplier:^PDDataTypeDescriptor *() { return [PDDescriptors int64]; } discriminator:NO],
-    [[PDFieldDescriptor alloc] initWithName:@"dialogId" typeSupplier:^PDDataTypeDescriptor *() { return [PDDescriptors int64]; } discriminator:NO],
+    [[PDFieldDescriptor alloc] initWithName:@"threadId" typeSupplier:^PDDataTypeDescriptor *() { return [PDDescriptors int64]; } discriminator:NO],
     [[PDFieldDescriptor alloc] initWithName:@"messageId" typeSupplier:^PDDataTypeDescriptor *() { return [PDDescriptors int64]; } discriminator:NO],
     [[PDFieldDescriptor alloc] initWithName:@"locUserName" typeSupplier:^PDDataTypeDescriptor *() { return [PDDescriptors string]; } discriminator:NO],
     [[PDFieldDescriptor alloc] initWithName:@"locText" typeSupplier:^PDDataTypeDescriptor *() { return [PDDescriptors string]; } discriminator:NO],

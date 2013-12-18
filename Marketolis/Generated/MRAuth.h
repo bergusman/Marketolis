@@ -6,7 +6,7 @@
 
 
 @protocol MRAuth
-/** Logs in a user by a phone, creates a new user if not present, sends a verification sms. */
+/** Logs in a user by a phone, creates a new user if not present, sends a confirmation sms. */
 - (NSOperation *) loginByPhoneNumber:(int64_t )number
             callback:(void (^)(id result, NSError *error))callback;
 

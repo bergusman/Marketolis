@@ -2,15 +2,10 @@
 
 #import <Foundation/Foundation.h>
 #import "PDef.h"
-#import "MRDialogListType.h"
 
 
-@interface MRDialogListData : PDMessage
-@property (nonatomic) MRDialogListType type;
+@interface MRInboxData : PDMessage
 @property (nonatomic) int32_t unread;
-
-- (BOOL) hasType;
-- (void) clearType;
 
 - (BOOL) hasUnread;
 - (void) clearUnread;
