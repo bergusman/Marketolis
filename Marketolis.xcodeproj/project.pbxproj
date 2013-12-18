@@ -91,6 +91,43 @@
 		ADAA10191826BFB80036F14E /* MRProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA10171826BFB80036F14E /* MRProfileViewController.xib */; };
 		ADAA101D1826BFCC0036F14E /* MRCreatePostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA101B1826BFCC0036F14E /* MRCreatePostViewController.m */; };
 		ADAA101E1826BFCC0036F14E /* MRCreatePostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA101C1826BFCC0036F14E /* MRCreatePostViewController.xib */; };
+		ADAB11FB186189A1002E2279 /* MRAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11B2186189A1002E2279 /* MRAuth.m */; };
+		ADAB11FC186189A1002E2279 /* MRAuthException.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11B4186189A1002E2279 /* MRAuthException.m */; };
+		ADAB11FD186189A1002E2279 /* MRAuthResult.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11B6186189A1002E2279 /* MRAuthResult.m */; };
+		ADAB11FE186189A1002E2279 /* MRBlockLists.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11B8186189A1002E2279 /* MRBlockLists.m */; };
+		ADAB11FF186189A1002E2279 /* MRBoundingBox.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11BA186189A1002E2279 /* MRBoundingBox.m */; };
+		ADAB1200186189A1002E2279 /* MRBusinessErrorCode.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11BC186189A1002E2279 /* MRBusinessErrorCode.m */; };
+		ADAB1201186189A1002E2279 /* MRBusinessException.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11BE186189A1002E2279 /* MRBusinessException.m */; };
+		ADAB1202186189A1002E2279 /* MREditablePostData.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11C0186189A1002E2279 /* MREditablePostData.m */; };
+		ADAB1203186189A1002E2279 /* MREditableUserData.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11C2186189A1002E2279 /* MREditableUserData.m */; };
+		ADAB1204186189A1002E2279 /* MRFavorites.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11C4186189A1002E2279 /* MRFavorites.m */; };
+		ADAB1205186189A1002E2279 /* MRForbiddenException.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11C6186189A1002E2279 /* MRForbiddenException.m */; };
+		ADAB1206186189A1002E2279 /* MRImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11C8186189A1002E2279 /* MRImageData.m */; };
+		ADAB1207186189A1002E2279 /* MRImageUrls.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11CA186189A1002E2279 /* MRImageUrls.m */; };
+		ADAB1208186189A1002E2279 /* MRInboxData.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11CC186189A1002E2279 /* MRInboxData.m */; };
+		ADAB1209186189A1002E2279 /* MRInboxThreadData.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11CE186189A1002E2279 /* MRInboxThreadData.m */; };
+		ADAB120A186189A1002E2279 /* MRInboxThreadType.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11D0186189A1002E2279 /* MRInboxThreadType.m */; };
+		ADAB120B186189A1002E2279 /* MRIncompleteProfileException.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11D2186189A1002E2279 /* MRIncompleteProfileException.m */; };
+		ADAB120C186189A1002E2279 /* MRInvalidException.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11D4186189A1002E2279 /* MRInvalidException.m */; };
+		ADAB120D186189A1002E2279 /* MRLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11D6186189A1002E2279 /* MRLocation.m */; };
+		ADAB120E186189A1002E2279 /* MRMarketolis.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11D8186189A1002E2279 /* MRMarketolis.m */; };
+		ADAB120F186189A1002E2279 /* MRMarketolisException.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11DA186189A1002E2279 /* MRMarketolisException.m */; };
+		ADAB1210186189A1002E2279 /* MRMarketolisExceptionCode.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11DC186189A1002E2279 /* MRMarketolisExceptionCode.m */; };
+		ADAB1211186189A1002E2279 /* MRMessageData.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11DE186189A1002E2279 /* MRMessageData.m */; };
+		ADAB1212186189A1002E2279 /* MRMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11E0186189A1002E2279 /* MRMessages.m */; };
+		ADAB1213186189A1002E2279 /* MRNewMessageNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11E2186189A1002E2279 /* MRNewMessageNotification.m */; };
+		ADAB1214186189A1002E2279 /* MRNotFoundException.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11E4186189A1002E2279 /* MRNotFoundException.m */; };
+		ADAB1215186189A1002E2279 /* MRNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11E6186189A1002E2279 /* MRNotification.m */; };
+		ADAB1216186189A1002E2279 /* MRNotificationType.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11E8186189A1002E2279 /* MRNotificationType.m */; };
+		ADAB1217186189A1002E2279 /* MRPageQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11EA186189A1002E2279 /* MRPageQuery.m */; };
+		ADAB1218186189A1002E2279 /* MRPostData.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11EC186189A1002E2279 /* MRPostData.m */; };
+		ADAB1219186189A1002E2279 /* MRPostImages.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11EE186189A1002E2279 /* MRPostImages.m */; };
+		ADAB121A186189A1002E2279 /* MRPosts.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11F0186189A1002E2279 /* MRPosts.m */; };
+		ADAB121B186189A1002E2279 /* MRPostState.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11F2186189A1002E2279 /* MRPostState.m */; };
+		ADAB121C186189A1002E2279 /* MRSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11F4186189A1002E2279 /* MRSearch.m */; };
+		ADAB121D186189A1002E2279 /* MRSearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11F6186189A1002E2279 /* MRSearchResult.m */; };
+		ADAB121E186189A1002E2279 /* MRUserData.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11F8186189A1002E2279 /* MRUserData.m */; };
+		ADAB121F186189A1002E2279 /* MRUsers.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB11FA186189A1002E2279 /* MRUsers.m */; };
 		ADB0144018390FC800DE0936 /* MRProfileNotificationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB0143F18390FC800DE0936 /* MRProfileNotificationCell.m */; };
 		ADB014421839100600DE0936 /* MRProfileNotificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADB014411839100600DE0936 /* MRProfileNotificationCell.xib */; };
 		ADB01447183912FF00DE0936 /* MRPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB01445183912FF00DE0936 /* MRPostViewController.m */; };
@@ -118,40 +155,6 @@
 		ADD992AE182C240D00E6F9BB /* map-item.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD992AC182C240D00E6F9BB /* map-item.png */; };
 		ADD992AF182C240D00E6F9BB /* map-item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD992AD182C240D00E6F9BB /* map-item@2x.png */; };
 		ADDA2E6E185A273900635947 /* MRTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2E6D185A273900635947 /* MRTableViewController.m */; };
-		ADDA2EBE185A298600635947 /* MRAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2E7B185A298600635947 /* MRAuth.m */; };
-		ADDA2EBF185A298600635947 /* MRAuthException.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2E7D185A298600635947 /* MRAuthException.m */; };
-		ADDA2EC0185A298600635947 /* MRAuthResult.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2E7F185A298600635947 /* MRAuthResult.m */; };
-		ADDA2EC1185A298600635947 /* MRBoundingBox.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2E81185A298600635947 /* MRBoundingBox.m */; };
-		ADDA2EC2185A298600635947 /* MRBusinessErrorCode.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2E83185A298600635947 /* MRBusinessErrorCode.m */; };
-		ADDA2EC3185A298600635947 /* MRBusinessException.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2E85185A298600635947 /* MRBusinessException.m */; };
-		ADDA2EC4185A298600635947 /* MRDialogData.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2E87185A298600635947 /* MRDialogData.m */; };
-		ADDA2EC5185A298600635947 /* MRDialogListData.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2E89185A298600635947 /* MRDialogListData.m */; };
-		ADDA2EC6185A298600635947 /* MRDialogListType.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2E8B185A298600635947 /* MRDialogListType.m */; };
-		ADDA2EC7185A298600635947 /* MREditablePostData.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2E8D185A298600635947 /* MREditablePostData.m */; };
-		ADDA2EC8185A298600635947 /* MREditableUserData.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2E8F185A298600635947 /* MREditableUserData.m */; };
-		ADDA2EC9185A298600635947 /* MRForbiddenException.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2E91185A298600635947 /* MRForbiddenException.m */; };
-		ADDA2ECA185A298600635947 /* MRImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2E93185A298600635947 /* MRImageData.m */; };
-		ADDA2ECB185A298600635947 /* MRImageUrls.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2E95185A298600635947 /* MRImageUrls.m */; };
-		ADDA2ECC185A298600635947 /* MRIncompleteProfileException.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2E97185A298600635947 /* MRIncompleteProfileException.m */; };
-		ADDA2ECD185A298600635947 /* MRInvalidException.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2E99185A298600635947 /* MRInvalidException.m */; };
-		ADDA2ECE185A298600635947 /* MRLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2E9B185A298600635947 /* MRLocation.m */; };
-		ADDA2ECF185A298600635947 /* MRMarketolis.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2E9D185A298600635947 /* MRMarketolis.m */; };
-		ADDA2ED0185A298600635947 /* MRMarketolisException.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2E9F185A298600635947 /* MRMarketolisException.m */; };
-		ADDA2ED1185A298600635947 /* MRMarketolisExceptionCode.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2EA1185A298600635947 /* MRMarketolisExceptionCode.m */; };
-		ADDA2ED2185A298600635947 /* MRMessageData.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2EA3185A298600635947 /* MRMessageData.m */; };
-		ADDA2ED3185A298600635947 /* MRMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2EA5185A298600635947 /* MRMessages.m */; };
-		ADDA2ED4185A298600635947 /* MRNewMessageNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2EA7185A298600635947 /* MRNewMessageNotification.m */; };
-		ADDA2ED5185A298600635947 /* MRNotFoundException.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2EA9185A298600635947 /* MRNotFoundException.m */; };
-		ADDA2ED6185A298600635947 /* MRNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2EAB185A298600635947 /* MRNotification.m */; };
-		ADDA2ED7185A298600635947 /* MRNotificationType.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2EAD185A298600635947 /* MRNotificationType.m */; };
-		ADDA2ED8185A298600635947 /* MRPageQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2EAF185A298600635947 /* MRPageQuery.m */; };
-		ADDA2ED9185A298600635947 /* MRPostData.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2EB1185A298600635947 /* MRPostData.m */; };
-		ADDA2EDA185A298600635947 /* MRPosts.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2EB3185A298600635947 /* MRPosts.m */; };
-		ADDA2EDB185A298600635947 /* MRPostState.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2EB5185A298600635947 /* MRPostState.m */; };
-		ADDA2EDC185A298600635947 /* MRSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2EB7185A298600635947 /* MRSearch.m */; };
-		ADDA2EDD185A298600635947 /* MRSearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2EB9185A298600635947 /* MRSearchResult.m */; };
-		ADDA2EDE185A298600635947 /* MRUserData.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2EBB185A298600635947 /* MRUserData.m */; };
-		ADDA2EDF185A298600635947 /* MRUsers.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2EBD185A298600635947 /* MRUsers.m */; };
 		ADDA2EE3185A2D0300635947 /* MRMarketolisManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2EE2185A2D0300635947 /* MRMarketolisManager.m */; };
 		ADDA2EE6185A47A300635947 /* MRPhoneHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2EE5185A47A300635947 /* MRPhoneHelper.m */; };
 		ADDA2EEA185A573500635947 /* MRUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA2EE9185A573500635947 /* MRUserDefaults.m */; };
@@ -271,6 +274,81 @@
 		ADAA101A1826BFCC0036F14E /* MRCreatePostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCreatePostViewController.h; sourceTree = "<group>"; };
 		ADAA101B1826BFCC0036F14E /* MRCreatePostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCreatePostViewController.m; sourceTree = "<group>"; };
 		ADAA101C1826BFCC0036F14E /* MRCreatePostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRCreatePostViewController.xib; sourceTree = "<group>"; };
+		ADAB11B0186189A1002E2279 /* Marketolis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Marketolis.h; sourceTree = "<group>"; };
+		ADAB11B1186189A1002E2279 /* MRAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRAuth.h; sourceTree = "<group>"; };
+		ADAB11B2186189A1002E2279 /* MRAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRAuth.m; sourceTree = "<group>"; };
+		ADAB11B3186189A1002E2279 /* MRAuthException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRAuthException.h; sourceTree = "<group>"; };
+		ADAB11B4186189A1002E2279 /* MRAuthException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRAuthException.m; sourceTree = "<group>"; };
+		ADAB11B5186189A1002E2279 /* MRAuthResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRAuthResult.h; sourceTree = "<group>"; };
+		ADAB11B6186189A1002E2279 /* MRAuthResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRAuthResult.m; sourceTree = "<group>"; };
+		ADAB11B7186189A1002E2279 /* MRBlockLists.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRBlockLists.h; sourceTree = "<group>"; };
+		ADAB11B8186189A1002E2279 /* MRBlockLists.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRBlockLists.m; sourceTree = "<group>"; };
+		ADAB11B9186189A1002E2279 /* MRBoundingBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRBoundingBox.h; sourceTree = "<group>"; };
+		ADAB11BA186189A1002E2279 /* MRBoundingBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRBoundingBox.m; sourceTree = "<group>"; };
+		ADAB11BB186189A1002E2279 /* MRBusinessErrorCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRBusinessErrorCode.h; sourceTree = "<group>"; };
+		ADAB11BC186189A1002E2279 /* MRBusinessErrorCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRBusinessErrorCode.m; sourceTree = "<group>"; };
+		ADAB11BD186189A1002E2279 /* MRBusinessException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRBusinessException.h; sourceTree = "<group>"; };
+		ADAB11BE186189A1002E2279 /* MRBusinessException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRBusinessException.m; sourceTree = "<group>"; };
+		ADAB11BF186189A1002E2279 /* MREditablePostData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MREditablePostData.h; sourceTree = "<group>"; };
+		ADAB11C0186189A1002E2279 /* MREditablePostData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MREditablePostData.m; sourceTree = "<group>"; };
+		ADAB11C1186189A1002E2279 /* MREditableUserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MREditableUserData.h; sourceTree = "<group>"; };
+		ADAB11C2186189A1002E2279 /* MREditableUserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MREditableUserData.m; sourceTree = "<group>"; };
+		ADAB11C3186189A1002E2279 /* MRFavorites.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRFavorites.h; sourceTree = "<group>"; };
+		ADAB11C4186189A1002E2279 /* MRFavorites.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRFavorites.m; sourceTree = "<group>"; };
+		ADAB11C5186189A1002E2279 /* MRForbiddenException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRForbiddenException.h; sourceTree = "<group>"; };
+		ADAB11C6186189A1002E2279 /* MRForbiddenException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRForbiddenException.m; sourceTree = "<group>"; };
+		ADAB11C7186189A1002E2279 /* MRImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRImageData.h; sourceTree = "<group>"; };
+		ADAB11C8186189A1002E2279 /* MRImageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRImageData.m; sourceTree = "<group>"; };
+		ADAB11C9186189A1002E2279 /* MRImageUrls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRImageUrls.h; sourceTree = "<group>"; };
+		ADAB11CA186189A1002E2279 /* MRImageUrls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRImageUrls.m; sourceTree = "<group>"; };
+		ADAB11CB186189A1002E2279 /* MRInboxData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRInboxData.h; sourceTree = "<group>"; };
+		ADAB11CC186189A1002E2279 /* MRInboxData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRInboxData.m; sourceTree = "<group>"; };
+		ADAB11CD186189A1002E2279 /* MRInboxThreadData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRInboxThreadData.h; sourceTree = "<group>"; };
+		ADAB11CE186189A1002E2279 /* MRInboxThreadData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRInboxThreadData.m; sourceTree = "<group>"; };
+		ADAB11CF186189A1002E2279 /* MRInboxThreadType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRInboxThreadType.h; sourceTree = "<group>"; };
+		ADAB11D0186189A1002E2279 /* MRInboxThreadType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRInboxThreadType.m; sourceTree = "<group>"; };
+		ADAB11D1186189A1002E2279 /* MRIncompleteProfileException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRIncompleteProfileException.h; sourceTree = "<group>"; };
+		ADAB11D2186189A1002E2279 /* MRIncompleteProfileException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRIncompleteProfileException.m; sourceTree = "<group>"; };
+		ADAB11D3186189A1002E2279 /* MRInvalidException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRInvalidException.h; sourceTree = "<group>"; };
+		ADAB11D4186189A1002E2279 /* MRInvalidException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRInvalidException.m; sourceTree = "<group>"; };
+		ADAB11D5186189A1002E2279 /* MRLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRLocation.h; sourceTree = "<group>"; };
+		ADAB11D6186189A1002E2279 /* MRLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRLocation.m; sourceTree = "<group>"; };
+		ADAB11D7186189A1002E2279 /* MRMarketolis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMarketolis.h; sourceTree = "<group>"; };
+		ADAB11D8186189A1002E2279 /* MRMarketolis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMarketolis.m; sourceTree = "<group>"; };
+		ADAB11D9186189A1002E2279 /* MRMarketolisException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMarketolisException.h; sourceTree = "<group>"; };
+		ADAB11DA186189A1002E2279 /* MRMarketolisException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMarketolisException.m; sourceTree = "<group>"; };
+		ADAB11DB186189A1002E2279 /* MRMarketolisExceptionCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMarketolisExceptionCode.h; sourceTree = "<group>"; };
+		ADAB11DC186189A1002E2279 /* MRMarketolisExceptionCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMarketolisExceptionCode.m; sourceTree = "<group>"; };
+		ADAB11DD186189A1002E2279 /* MRMessageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMessageData.h; sourceTree = "<group>"; };
+		ADAB11DE186189A1002E2279 /* MRMessageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMessageData.m; sourceTree = "<group>"; };
+		ADAB11DF186189A1002E2279 /* MRMessages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMessages.h; sourceTree = "<group>"; };
+		ADAB11E0186189A1002E2279 /* MRMessages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMessages.m; sourceTree = "<group>"; };
+		ADAB11E1186189A1002E2279 /* MRNewMessageNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNewMessageNotification.h; sourceTree = "<group>"; };
+		ADAB11E2186189A1002E2279 /* MRNewMessageNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNewMessageNotification.m; sourceTree = "<group>"; };
+		ADAB11E3186189A1002E2279 /* MRNotFoundException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNotFoundException.h; sourceTree = "<group>"; };
+		ADAB11E4186189A1002E2279 /* MRNotFoundException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNotFoundException.m; sourceTree = "<group>"; };
+		ADAB11E5186189A1002E2279 /* MRNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNotification.h; sourceTree = "<group>"; };
+		ADAB11E6186189A1002E2279 /* MRNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNotification.m; sourceTree = "<group>"; };
+		ADAB11E7186189A1002E2279 /* MRNotificationType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNotificationType.h; sourceTree = "<group>"; };
+		ADAB11E8186189A1002E2279 /* MRNotificationType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNotificationType.m; sourceTree = "<group>"; };
+		ADAB11E9186189A1002E2279 /* MRPageQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRPageQuery.h; sourceTree = "<group>"; };
+		ADAB11EA186189A1002E2279 /* MRPageQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRPageQuery.m; sourceTree = "<group>"; };
+		ADAB11EB186189A1002E2279 /* MRPostData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRPostData.h; sourceTree = "<group>"; };
+		ADAB11EC186189A1002E2279 /* MRPostData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRPostData.m; sourceTree = "<group>"; };
+		ADAB11ED186189A1002E2279 /* MRPostImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRPostImages.h; sourceTree = "<group>"; };
+		ADAB11EE186189A1002E2279 /* MRPostImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRPostImages.m; sourceTree = "<group>"; };
+		ADAB11EF186189A1002E2279 /* MRPosts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRPosts.h; sourceTree = "<group>"; };
+		ADAB11F0186189A1002E2279 /* MRPosts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRPosts.m; sourceTree = "<group>"; };
+		ADAB11F1186189A1002E2279 /* MRPostState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRPostState.h; sourceTree = "<group>"; };
+		ADAB11F2186189A1002E2279 /* MRPostState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRPostState.m; sourceTree = "<group>"; };
+		ADAB11F3186189A1002E2279 /* MRSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRSearch.h; sourceTree = "<group>"; };
+		ADAB11F4186189A1002E2279 /* MRSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRSearch.m; sourceTree = "<group>"; };
+		ADAB11F5186189A1002E2279 /* MRSearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRSearchResult.h; sourceTree = "<group>"; };
+		ADAB11F6186189A1002E2279 /* MRSearchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRSearchResult.m; sourceTree = "<group>"; };
+		ADAB11F7186189A1002E2279 /* MRUserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRUserData.h; sourceTree = "<group>"; };
+		ADAB11F8186189A1002E2279 /* MRUserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRUserData.m; sourceTree = "<group>"; };
+		ADAB11F9186189A1002E2279 /* MRUsers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRUsers.h; sourceTree = "<group>"; };
+		ADAB11FA186189A1002E2279 /* MRUsers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRUsers.m; sourceTree = "<group>"; };
 		ADB0143E18390FC800DE0936 /* MRProfileNotificationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRProfileNotificationCell.h; sourceTree = "<group>"; };
 		ADB0143F18390FC800DE0936 /* MRProfileNotificationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRProfileNotificationCell.m; sourceTree = "<group>"; };
 		ADB014411839100600DE0936 /* MRProfileNotificationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRProfileNotificationCell.xib; sourceTree = "<group>"; };
@@ -304,75 +382,6 @@
 		ADD992AD182C240D00E6F9BB /* map-item@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "map-item@2x.png"; path = "Resources/Images/map-item@2x.png"; sourceTree = "<group>"; };
 		ADDA2E6C185A273900635947 /* MRTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRTableViewController.h; sourceTree = "<group>"; };
 		ADDA2E6D185A273900635947 /* MRTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRTableViewController.m; sourceTree = "<group>"; };
-		ADDA2E79185A298600635947 /* Marketolis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Marketolis.h; sourceTree = "<group>"; };
-		ADDA2E7A185A298600635947 /* MRAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRAuth.h; sourceTree = "<group>"; };
-		ADDA2E7B185A298600635947 /* MRAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRAuth.m; sourceTree = "<group>"; };
-		ADDA2E7C185A298600635947 /* MRAuthException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRAuthException.h; sourceTree = "<group>"; };
-		ADDA2E7D185A298600635947 /* MRAuthException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRAuthException.m; sourceTree = "<group>"; };
-		ADDA2E7E185A298600635947 /* MRAuthResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRAuthResult.h; sourceTree = "<group>"; };
-		ADDA2E7F185A298600635947 /* MRAuthResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRAuthResult.m; sourceTree = "<group>"; };
-		ADDA2E80185A298600635947 /* MRBoundingBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRBoundingBox.h; sourceTree = "<group>"; };
-		ADDA2E81185A298600635947 /* MRBoundingBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRBoundingBox.m; sourceTree = "<group>"; };
-		ADDA2E82185A298600635947 /* MRBusinessErrorCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRBusinessErrorCode.h; sourceTree = "<group>"; };
-		ADDA2E83185A298600635947 /* MRBusinessErrorCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRBusinessErrorCode.m; sourceTree = "<group>"; };
-		ADDA2E84185A298600635947 /* MRBusinessException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRBusinessException.h; sourceTree = "<group>"; };
-		ADDA2E85185A298600635947 /* MRBusinessException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRBusinessException.m; sourceTree = "<group>"; };
-		ADDA2E86185A298600635947 /* MRDialogData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRDialogData.h; sourceTree = "<group>"; };
-		ADDA2E87185A298600635947 /* MRDialogData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRDialogData.m; sourceTree = "<group>"; };
-		ADDA2E88185A298600635947 /* MRDialogListData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRDialogListData.h; sourceTree = "<group>"; };
-		ADDA2E89185A298600635947 /* MRDialogListData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRDialogListData.m; sourceTree = "<group>"; };
-		ADDA2E8A185A298600635947 /* MRDialogListType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRDialogListType.h; sourceTree = "<group>"; };
-		ADDA2E8B185A298600635947 /* MRDialogListType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRDialogListType.m; sourceTree = "<group>"; };
-		ADDA2E8C185A298600635947 /* MREditablePostData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MREditablePostData.h; sourceTree = "<group>"; };
-		ADDA2E8D185A298600635947 /* MREditablePostData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MREditablePostData.m; sourceTree = "<group>"; };
-		ADDA2E8E185A298600635947 /* MREditableUserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MREditableUserData.h; sourceTree = "<group>"; };
-		ADDA2E8F185A298600635947 /* MREditableUserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MREditableUserData.m; sourceTree = "<group>"; };
-		ADDA2E90185A298600635947 /* MRForbiddenException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRForbiddenException.h; sourceTree = "<group>"; };
-		ADDA2E91185A298600635947 /* MRForbiddenException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRForbiddenException.m; sourceTree = "<group>"; };
-		ADDA2E92185A298600635947 /* MRImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRImageData.h; sourceTree = "<group>"; };
-		ADDA2E93185A298600635947 /* MRImageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRImageData.m; sourceTree = "<group>"; };
-		ADDA2E94185A298600635947 /* MRImageUrls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRImageUrls.h; sourceTree = "<group>"; };
-		ADDA2E95185A298600635947 /* MRImageUrls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRImageUrls.m; sourceTree = "<group>"; };
-		ADDA2E96185A298600635947 /* MRIncompleteProfileException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRIncompleteProfileException.h; sourceTree = "<group>"; };
-		ADDA2E97185A298600635947 /* MRIncompleteProfileException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRIncompleteProfileException.m; sourceTree = "<group>"; };
-		ADDA2E98185A298600635947 /* MRInvalidException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRInvalidException.h; sourceTree = "<group>"; };
-		ADDA2E99185A298600635947 /* MRInvalidException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRInvalidException.m; sourceTree = "<group>"; };
-		ADDA2E9A185A298600635947 /* MRLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRLocation.h; sourceTree = "<group>"; };
-		ADDA2E9B185A298600635947 /* MRLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRLocation.m; sourceTree = "<group>"; };
-		ADDA2E9C185A298600635947 /* MRMarketolis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMarketolis.h; sourceTree = "<group>"; };
-		ADDA2E9D185A298600635947 /* MRMarketolis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMarketolis.m; sourceTree = "<group>"; };
-		ADDA2E9E185A298600635947 /* MRMarketolisException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMarketolisException.h; sourceTree = "<group>"; };
-		ADDA2E9F185A298600635947 /* MRMarketolisException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMarketolisException.m; sourceTree = "<group>"; };
-		ADDA2EA0185A298600635947 /* MRMarketolisExceptionCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMarketolisExceptionCode.h; sourceTree = "<group>"; };
-		ADDA2EA1185A298600635947 /* MRMarketolisExceptionCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMarketolisExceptionCode.m; sourceTree = "<group>"; };
-		ADDA2EA2185A298600635947 /* MRMessageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMessageData.h; sourceTree = "<group>"; };
-		ADDA2EA3185A298600635947 /* MRMessageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMessageData.m; sourceTree = "<group>"; };
-		ADDA2EA4185A298600635947 /* MRMessages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMessages.h; sourceTree = "<group>"; };
-		ADDA2EA5185A298600635947 /* MRMessages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMessages.m; sourceTree = "<group>"; };
-		ADDA2EA6185A298600635947 /* MRNewMessageNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNewMessageNotification.h; sourceTree = "<group>"; };
-		ADDA2EA7185A298600635947 /* MRNewMessageNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNewMessageNotification.m; sourceTree = "<group>"; };
-		ADDA2EA8185A298600635947 /* MRNotFoundException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNotFoundException.h; sourceTree = "<group>"; };
-		ADDA2EA9185A298600635947 /* MRNotFoundException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNotFoundException.m; sourceTree = "<group>"; };
-		ADDA2EAA185A298600635947 /* MRNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNotification.h; sourceTree = "<group>"; };
-		ADDA2EAB185A298600635947 /* MRNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNotification.m; sourceTree = "<group>"; };
-		ADDA2EAC185A298600635947 /* MRNotificationType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNotificationType.h; sourceTree = "<group>"; };
-		ADDA2EAD185A298600635947 /* MRNotificationType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNotificationType.m; sourceTree = "<group>"; };
-		ADDA2EAE185A298600635947 /* MRPageQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRPageQuery.h; sourceTree = "<group>"; };
-		ADDA2EAF185A298600635947 /* MRPageQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRPageQuery.m; sourceTree = "<group>"; };
-		ADDA2EB0185A298600635947 /* MRPostData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRPostData.h; sourceTree = "<group>"; };
-		ADDA2EB1185A298600635947 /* MRPostData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRPostData.m; sourceTree = "<group>"; };
-		ADDA2EB2185A298600635947 /* MRPosts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRPosts.h; sourceTree = "<group>"; };
-		ADDA2EB3185A298600635947 /* MRPosts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRPosts.m; sourceTree = "<group>"; };
-		ADDA2EB4185A298600635947 /* MRPostState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRPostState.h; sourceTree = "<group>"; };
-		ADDA2EB5185A298600635947 /* MRPostState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRPostState.m; sourceTree = "<group>"; };
-		ADDA2EB6185A298600635947 /* MRSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRSearch.h; sourceTree = "<group>"; };
-		ADDA2EB7185A298600635947 /* MRSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRSearch.m; sourceTree = "<group>"; };
-		ADDA2EB8185A298600635947 /* MRSearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRSearchResult.h; sourceTree = "<group>"; };
-		ADDA2EB9185A298600635947 /* MRSearchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRSearchResult.m; sourceTree = "<group>"; };
-		ADDA2EBA185A298600635947 /* MRUserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRUserData.h; sourceTree = "<group>"; };
-		ADDA2EBB185A298600635947 /* MRUserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRUserData.m; sourceTree = "<group>"; };
-		ADDA2EBC185A298600635947 /* MRUsers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRUsers.h; sourceTree = "<group>"; };
-		ADDA2EBD185A298600635947 /* MRUsers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRUsers.m; sourceTree = "<group>"; };
 		ADDA2EE1185A2D0300635947 /* MRMarketolisManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMarketolisManager.h; sourceTree = "<group>"; };
 		ADDA2EE2185A2D0300635947 /* MRMarketolisManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMarketolisManager.m; sourceTree = "<group>"; };
 		ADDA2EE4185A47A300635947 /* MRPhoneHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRPhoneHelper.h; sourceTree = "<group>"; };
@@ -670,75 +679,81 @@
 		AD4110B518565E7400593D71 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
-				ADDA2E79185A298600635947 /* Marketolis.h */,
-				ADDA2E7A185A298600635947 /* MRAuth.h */,
-				ADDA2E7B185A298600635947 /* MRAuth.m */,
-				ADDA2E7C185A298600635947 /* MRAuthException.h */,
-				ADDA2E7D185A298600635947 /* MRAuthException.m */,
-				ADDA2E7E185A298600635947 /* MRAuthResult.h */,
-				ADDA2E7F185A298600635947 /* MRAuthResult.m */,
-				ADDA2E80185A298600635947 /* MRBoundingBox.h */,
-				ADDA2E81185A298600635947 /* MRBoundingBox.m */,
-				ADDA2E82185A298600635947 /* MRBusinessErrorCode.h */,
-				ADDA2E83185A298600635947 /* MRBusinessErrorCode.m */,
-				ADDA2E84185A298600635947 /* MRBusinessException.h */,
-				ADDA2E85185A298600635947 /* MRBusinessException.m */,
-				ADDA2E86185A298600635947 /* MRDialogData.h */,
-				ADDA2E87185A298600635947 /* MRDialogData.m */,
-				ADDA2E88185A298600635947 /* MRDialogListData.h */,
-				ADDA2E89185A298600635947 /* MRDialogListData.m */,
-				ADDA2E8A185A298600635947 /* MRDialogListType.h */,
-				ADDA2E8B185A298600635947 /* MRDialogListType.m */,
-				ADDA2E8C185A298600635947 /* MREditablePostData.h */,
-				ADDA2E8D185A298600635947 /* MREditablePostData.m */,
-				ADDA2E8E185A298600635947 /* MREditableUserData.h */,
-				ADDA2E8F185A298600635947 /* MREditableUserData.m */,
-				ADDA2E90185A298600635947 /* MRForbiddenException.h */,
-				ADDA2E91185A298600635947 /* MRForbiddenException.m */,
-				ADDA2E92185A298600635947 /* MRImageData.h */,
-				ADDA2E93185A298600635947 /* MRImageData.m */,
-				ADDA2E94185A298600635947 /* MRImageUrls.h */,
-				ADDA2E95185A298600635947 /* MRImageUrls.m */,
-				ADDA2E96185A298600635947 /* MRIncompleteProfileException.h */,
-				ADDA2E97185A298600635947 /* MRIncompleteProfileException.m */,
-				ADDA2E98185A298600635947 /* MRInvalidException.h */,
-				ADDA2E99185A298600635947 /* MRInvalidException.m */,
-				ADDA2E9A185A298600635947 /* MRLocation.h */,
-				ADDA2E9B185A298600635947 /* MRLocation.m */,
-				ADDA2E9C185A298600635947 /* MRMarketolis.h */,
-				ADDA2E9D185A298600635947 /* MRMarketolis.m */,
-				ADDA2E9E185A298600635947 /* MRMarketolisException.h */,
-				ADDA2E9F185A298600635947 /* MRMarketolisException.m */,
-				ADDA2EA0185A298600635947 /* MRMarketolisExceptionCode.h */,
-				ADDA2EA1185A298600635947 /* MRMarketolisExceptionCode.m */,
-				ADDA2EA2185A298600635947 /* MRMessageData.h */,
-				ADDA2EA3185A298600635947 /* MRMessageData.m */,
-				ADDA2EA4185A298600635947 /* MRMessages.h */,
-				ADDA2EA5185A298600635947 /* MRMessages.m */,
-				ADDA2EA6185A298600635947 /* MRNewMessageNotification.h */,
-				ADDA2EA7185A298600635947 /* MRNewMessageNotification.m */,
-				ADDA2EA8185A298600635947 /* MRNotFoundException.h */,
-				ADDA2EA9185A298600635947 /* MRNotFoundException.m */,
-				ADDA2EAA185A298600635947 /* MRNotification.h */,
-				ADDA2EAB185A298600635947 /* MRNotification.m */,
-				ADDA2EAC185A298600635947 /* MRNotificationType.h */,
-				ADDA2EAD185A298600635947 /* MRNotificationType.m */,
-				ADDA2EAE185A298600635947 /* MRPageQuery.h */,
-				ADDA2EAF185A298600635947 /* MRPageQuery.m */,
-				ADDA2EB0185A298600635947 /* MRPostData.h */,
-				ADDA2EB1185A298600635947 /* MRPostData.m */,
-				ADDA2EB2185A298600635947 /* MRPosts.h */,
-				ADDA2EB3185A298600635947 /* MRPosts.m */,
-				ADDA2EB4185A298600635947 /* MRPostState.h */,
-				ADDA2EB5185A298600635947 /* MRPostState.m */,
-				ADDA2EB6185A298600635947 /* MRSearch.h */,
-				ADDA2EB7185A298600635947 /* MRSearch.m */,
-				ADDA2EB8185A298600635947 /* MRSearchResult.h */,
-				ADDA2EB9185A298600635947 /* MRSearchResult.m */,
-				ADDA2EBA185A298600635947 /* MRUserData.h */,
-				ADDA2EBB185A298600635947 /* MRUserData.m */,
-				ADDA2EBC185A298600635947 /* MRUsers.h */,
-				ADDA2EBD185A298600635947 /* MRUsers.m */,
+				ADAB11B0186189A1002E2279 /* Marketolis.h */,
+				ADAB11B1186189A1002E2279 /* MRAuth.h */,
+				ADAB11B2186189A1002E2279 /* MRAuth.m */,
+				ADAB11B3186189A1002E2279 /* MRAuthException.h */,
+				ADAB11B4186189A1002E2279 /* MRAuthException.m */,
+				ADAB11B5186189A1002E2279 /* MRAuthResult.h */,
+				ADAB11B6186189A1002E2279 /* MRAuthResult.m */,
+				ADAB11B7186189A1002E2279 /* MRBlockLists.h */,
+				ADAB11B8186189A1002E2279 /* MRBlockLists.m */,
+				ADAB11B9186189A1002E2279 /* MRBoundingBox.h */,
+				ADAB11BA186189A1002E2279 /* MRBoundingBox.m */,
+				ADAB11BB186189A1002E2279 /* MRBusinessErrorCode.h */,
+				ADAB11BC186189A1002E2279 /* MRBusinessErrorCode.m */,
+				ADAB11BD186189A1002E2279 /* MRBusinessException.h */,
+				ADAB11BE186189A1002E2279 /* MRBusinessException.m */,
+				ADAB11BF186189A1002E2279 /* MREditablePostData.h */,
+				ADAB11C0186189A1002E2279 /* MREditablePostData.m */,
+				ADAB11C1186189A1002E2279 /* MREditableUserData.h */,
+				ADAB11C2186189A1002E2279 /* MREditableUserData.m */,
+				ADAB11C3186189A1002E2279 /* MRFavorites.h */,
+				ADAB11C4186189A1002E2279 /* MRFavorites.m */,
+				ADAB11C5186189A1002E2279 /* MRForbiddenException.h */,
+				ADAB11C6186189A1002E2279 /* MRForbiddenException.m */,
+				ADAB11C7186189A1002E2279 /* MRImageData.h */,
+				ADAB11C8186189A1002E2279 /* MRImageData.m */,
+				ADAB11C9186189A1002E2279 /* MRImageUrls.h */,
+				ADAB11CA186189A1002E2279 /* MRImageUrls.m */,
+				ADAB11CB186189A1002E2279 /* MRInboxData.h */,
+				ADAB11CC186189A1002E2279 /* MRInboxData.m */,
+				ADAB11CD186189A1002E2279 /* MRInboxThreadData.h */,
+				ADAB11CE186189A1002E2279 /* MRInboxThreadData.m */,
+				ADAB11CF186189A1002E2279 /* MRInboxThreadType.h */,
+				ADAB11D0186189A1002E2279 /* MRInboxThreadType.m */,
+				ADAB11D1186189A1002E2279 /* MRIncompleteProfileException.h */,
+				ADAB11D2186189A1002E2279 /* MRIncompleteProfileException.m */,
+				ADAB11D3186189A1002E2279 /* MRInvalidException.h */,
+				ADAB11D4186189A1002E2279 /* MRInvalidException.m */,
+				ADAB11D5186189A1002E2279 /* MRLocation.h */,
+				ADAB11D6186189A1002E2279 /* MRLocation.m */,
+				ADAB11D7186189A1002E2279 /* MRMarketolis.h */,
+				ADAB11D8186189A1002E2279 /* MRMarketolis.m */,
+				ADAB11D9186189A1002E2279 /* MRMarketolisException.h */,
+				ADAB11DA186189A1002E2279 /* MRMarketolisException.m */,
+				ADAB11DB186189A1002E2279 /* MRMarketolisExceptionCode.h */,
+				ADAB11DC186189A1002E2279 /* MRMarketolisExceptionCode.m */,
+				ADAB11DD186189A1002E2279 /* MRMessageData.h */,
+				ADAB11DE186189A1002E2279 /* MRMessageData.m */,
+				ADAB11DF186189A1002E2279 /* MRMessages.h */,
+				ADAB11E0186189A1002E2279 /* MRMessages.m */,
+				ADAB11E1186189A1002E2279 /* MRNewMessageNotification.h */,
+				ADAB11E2186189A1002E2279 /* MRNewMessageNotification.m */,
+				ADAB11E3186189A1002E2279 /* MRNotFoundException.h */,
+				ADAB11E4186189A1002E2279 /* MRNotFoundException.m */,
+				ADAB11E5186189A1002E2279 /* MRNotification.h */,
+				ADAB11E6186189A1002E2279 /* MRNotification.m */,
+				ADAB11E7186189A1002E2279 /* MRNotificationType.h */,
+				ADAB11E8186189A1002E2279 /* MRNotificationType.m */,
+				ADAB11E9186189A1002E2279 /* MRPageQuery.h */,
+				ADAB11EA186189A1002E2279 /* MRPageQuery.m */,
+				ADAB11EB186189A1002E2279 /* MRPostData.h */,
+				ADAB11EC186189A1002E2279 /* MRPostData.m */,
+				ADAB11ED186189A1002E2279 /* MRPostImages.h */,
+				ADAB11EE186189A1002E2279 /* MRPostImages.m */,
+				ADAB11EF186189A1002E2279 /* MRPosts.h */,
+				ADAB11F0186189A1002E2279 /* MRPosts.m */,
+				ADAB11F1186189A1002E2279 /* MRPostState.h */,
+				ADAB11F2186189A1002E2279 /* MRPostState.m */,
+				ADAB11F3186189A1002E2279 /* MRSearch.h */,
+				ADAB11F4186189A1002E2279 /* MRSearch.m */,
+				ADAB11F5186189A1002E2279 /* MRSearchResult.h */,
+				ADAB11F6186189A1002E2279 /* MRSearchResult.m */,
+				ADAB11F7186189A1002E2279 /* MRUserData.h */,
+				ADAB11F8186189A1002E2279 /* MRUserData.m */,
+				ADAB11F9186189A1002E2279 /* MRUsers.h */,
+				ADAB11FA186189A1002E2279 /* MRUsers.m */,
 			);
 			path = Generated;
 			sourceTree = "<group>";
@@ -1217,74 +1232,77 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADDA2EC0185A298600635947 /* MRAuthResult.m in Sources */,
+				ADAB121B186189A1002E2279 /* MRPostState.m in Sources */,
 				ADAA100E1826BF9C0036F14E /* MRPostsViewController.m in Sources */,
-				ADDA2ED3185A298600635947 /* MRMessages.m in Sources */,
-				ADDA2EC8185A298600635947 /* MREditableUserData.m in Sources */,
-				ADDA2ED9185A298600635947 /* MRPostData.m in Sources */,
-				ADDA2ED8185A298600635947 /* MRPageQuery.m in Sources */,
-				ADDA2ECA185A298600635947 /* MRImageData.m in Sources */,
+				ADAB1216186189A1002E2279 /* MRNotificationType.m in Sources */,
+				ADAB120E186189A1002E2279 /* MRMarketolis.m in Sources */,
+				ADAB1203186189A1002E2279 /* MREditableUserData.m in Sources */,
 				AD258E00185DC02900125527 /* MRRPCClient.m in Sources */,
 				AD411039185635F200593D71 /* MREnterPhoneViewController.m in Sources */,
-				ADDA2EC2185A298600635947 /* MRBusinessErrorCode.m in Sources */,
 				4424BBC617B956970060CD49 /* main.m in Sources */,
 				AD41103E1856361200593D71 /* MREnterConfirmViewController.m in Sources */,
-				ADDA2EC5185A298600635947 /* MRDialogListData.m in Sources */,
-				ADDA2EC9185A298600635947 /* MRForbiddenException.m in Sources */,
 				ADAA101D1826BFCC0036F14E /* MRCreatePostViewController.m in Sources */,
-				ADDA2EDB185A298600635947 /* MRPostState.m in Sources */,
-				ADDA2ECC185A298600635947 /* MRIncompleteProfileException.m in Sources */,
-				ADDA2EDC185A298600635947 /* MRSearch.m in Sources */,
+				ADAB1212186189A1002E2279 /* MRMessages.m in Sources */,
 				ADC2E3D618392C670065BB96 /* MRPostPhotoCell.m in Sources */,
-				ADDA2EC4185A298600635947 /* MRDialogData.m in Sources */,
 				ADDA2EE3185A2D0300635947 /* MRMarketolisManager.m in Sources */,
-				ADDA2ECD185A298600635947 /* MRInvalidException.m in Sources */,
+				ADAB121D186189A1002E2279 /* MRSearchResult.m in Sources */,
+				ADAB1200186189A1002E2279 /* MRBusinessErrorCode.m in Sources */,
+				ADAB1219186189A1002E2279 /* MRPostImages.m in Sources */,
 				4424BBCA17B956970060CD49 /* MRAppDelegate.m in Sources */,
-				ADDA2EDF185A298600635947 /* MRUsers.m in Sources */,
 				ADC111D718320059004202EC /* MRProfileEditorViewController.m in Sources */,
+				ADAB120F186189A1002E2279 /* MRMarketolisException.m in Sources */,
 				ADAA10131826BFA80036F14E /* MRMessagesViewController.m in Sources */,
-				ADDA2EDD185A298600635947 /* MRSearchResult.m in Sources */,
 				4424BC4E17B96E0E0060CD49 /* MRPostAnnotationView.m in Sources */,
-				ADDA2ECF185A298600635947 /* MRMarketolis.m in Sources */,
-				ADDA2EBE185A298600635947 /* MRAuth.m in Sources */,
+				ADAB121F186189A1002E2279 /* MRUsers.m in Sources */,
 				4424BC5217B96E380060CD49 /* MRPointAnnotation.m in Sources */,
-				ADDA2ED7185A298600635947 /* MRNotificationType.m in Sources */,
-				ADDA2EC7185A298600635947 /* MREditablePostData.m in Sources */,
-				ADDA2EBF185A298600635947 /* MRAuthException.m in Sources */,
 				AD06D3AC17B995DC009C880D /* MRWelcomeViewController.m in Sources */,
+				ADAB121E186189A1002E2279 /* MRUserData.m in Sources */,
+				ADAB11FB186189A1002E2279 /* MRAuth.m in Sources */,
+				ADAB1208186189A1002E2279 /* MRInboxData.m in Sources */,
 				AD95BBC41827A1B800E1C0E1 /* MRViewController.m in Sources */,
 				ADC2E3DD18392FB20065BB96 /* MRPostEditorViewController.m in Sources */,
+				ADAB120D186189A1002E2279 /* MRLocation.m in Sources */,
 				ADAA10181826BFB80036F14E /* MRProfileViewController.m in Sources */,
+				ADAB120A186189A1002E2279 /* MRInboxThreadType.m in Sources */,
+				ADAB121A186189A1002E2279 /* MRPosts.m in Sources */,
 				AD95BBCA1827A30600E1C0E1 /* MRChatViewController.m in Sources */,
 				AD06D3E117B99E22009C880D /* MRDialogCell.m in Sources */,
-				ADDA2EC1185A298600635947 /* MRBoundingBox.m in Sources */,
-				ADDA2ECB185A298600635947 /* MRImageUrls.m in Sources */,
-				ADDA2ED5185A298600635947 /* MRNotFoundException.m in Sources */,
-				ADDA2EC6185A298600635947 /* MRDialogListType.m in Sources */,
 				AD3A47F317C54F2700CA2FD9 /* MRSeparatorView.m in Sources */,
+				ADAB1202186189A1002E2279 /* MREditablePostData.m in Sources */,
+				ADAB1217186189A1002E2279 /* MRPageQuery.m in Sources */,
+				ADAB1211186189A1002E2279 /* MRMessageData.m in Sources */,
 				ADDA2E6E185A273900635947 /* MRTableViewController.m in Sources */,
+				ADAB1201186189A1002E2279 /* MRBusinessException.m in Sources */,
+				ADAB1206186189A1002E2279 /* MRImageData.m in Sources */,
+				ADAB120B186189A1002E2279 /* MRIncompleteProfileException.m in Sources */,
 				ADAA10091826BD6C0036F14E /* MRMapViewController.m in Sources */,
-				ADDA2EDE185A298600635947 /* MRUserData.m in Sources */,
+				ADAB1218186189A1002E2279 /* MRPostData.m in Sources */,
 				AD3A480E17C557BE00CA2FD9 /* MRPostCell.m in Sources */,
-				ADDA2EC3185A298600635947 /* MRBusinessException.m in Sources */,
+				ADAB120C186189A1002E2279 /* MRInvalidException.m in Sources */,
 				ADB0144018390FC800DE0936 /* MRProfileNotificationCell.m in Sources */,
+				ADAB11FF186189A1002E2279 /* MRBoundingBox.m in Sources */,
+				ADAB121C186189A1002E2279 /* MRSearch.m in Sources */,
+				ADAB1204186189A1002E2279 /* MRFavorites.m in Sources */,
 				AD8923BE1849F73E005BDAEA /* MRRubleLabel.m in Sources */,
+				ADAB1213186189A1002E2279 /* MRNewMessageNotification.m in Sources */,
 				AD84AA5117C9D31B000444FD /* MRInterfaceHelper.m in Sources */,
-				ADDA2EDA185A298600635947 /* MRPosts.m in Sources */,
-				ADDA2ED0185A298600635947 /* MRMarketolisException.m in Sources */,
+				ADAB1207186189A1002E2279 /* MRImageUrls.m in Sources */,
 				AD84AA5417C9F082000444FD /* MRBadgeView.m in Sources */,
-				ADDA2ED6185A298600635947 /* MRNotification.m in Sources */,
+				ADAB1209186189A1002E2279 /* MRInboxThreadData.m in Sources */,
+				ADAB11FD186189A1002E2279 /* MRAuthResult.m in Sources */,
+				ADAB1205186189A1002E2279 /* MRForbiddenException.m in Sources */,
+				ADAB11FC186189A1002E2279 /* MRAuthException.m in Sources */,
 				ADDA2EEA185A573500635947 /* MRUserDefaults.m in Sources */,
+				ADAB1214186189A1002E2279 /* MRNotFoundException.m in Sources */,
 				AD38C74C17E7AB8E00831CF8 /* MRRightBubbleCell.m in Sources */,
+				ADAB11FE186189A1002E2279 /* MRBlockLists.m in Sources */,
+				ADAB1210186189A1002E2279 /* MRMarketolisExceptionCode.m in Sources */,
 				ADDA2EE6185A47A300635947 /* MRPhoneHelper.m in Sources */,
-				ADDA2ED2185A298600635947 /* MRMessageData.m in Sources */,
 				ADB01447183912FF00DE0936 /* MRPostViewController.m in Sources */,
 				AD38C74F17E7AB9E00831CF8 /* MRLeftBubbleCell.m in Sources */,
-				ADDA2ED1185A298600635947 /* MRMarketolisExceptionCode.m in Sources */,
-				ADDA2ED4185A298600635947 /* MRNewMessageNotification.m in Sources */,
 				AD411044185644CD00593D71 /* MREnterNameViewController.m in Sources */,
 				AD38C75217E7ABB300831CF8 /* MRInputTextBar.m in Sources */,
-				ADDA2ECE185A298600635947 /* MRLocation.m in Sources */,
+				ADAB1215186189A1002E2279 /* MRNotification.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
