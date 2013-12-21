@@ -25,11 +25,6 @@
 >
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
-
-@property (weak, nonatomic) IBOutlet UIView *filterView;
-@property (weak, nonatomic) IBOutlet UIImageView *filterBackgroundImageView;
-@property (weak, nonatomic) IBOutlet UITextField *filterTextField;
-
 @property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
 
 @end
@@ -39,17 +34,26 @@
 #pragma mark - Setups
 
 - (void)setupFilterView {
-    UIImage *bg = [UIImage imageNamed:@"map-search-filed"];
-    bg = [bg stretchableImageWithLeftCapWidth:10 topCapHeight:0];
-    self.filterBackgroundImageView.image = bg;
-    
-    self.filterTextField.rightView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"map-search-button-clear"]];
+    self.navigationItem.titleView = self.searchBar;
 }
 
 - (void)setupTestAnnotations {
+    
+    /*
     MRPointAnnotation *pointAnnotation = [[MRPointAnnotation alloc] init];
     pointAnnotation.coordinate = CLLocationCoordinate2DMake(45, 52);
     [self.mapView addAnnotation:pointAnnotation];
+     */
+    
+    
+    MRPageQuery *page = [[MRPageQuery alloc] init];
+    page.limit = 10;
+    page.offset = 0;
+    
+    [[[MRMarketolisManager sharedManager] search] queryQ:@"п" page:page callback:^(id result, NSError *error) {
+        NSLog(@"%@ %@", result, error);
+    }];
+    
 }
 
 #pragma mark - Actions
@@ -118,12 +122,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //[self.navigationController setNavigationBarHidden:YES animated:NO];
-    
     [self setupFilterView];
     [self setupTestAnnotations];
     
-    self.navigationItem.titleView = self.searchBar;
+    //[self.navigationController setNavigationBarHidden:YES animated:NO];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
